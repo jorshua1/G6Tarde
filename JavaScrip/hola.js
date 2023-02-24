@@ -1,2 +1,2 @@
 console.log("Hola mundo");
-HTMLHRElement
+console.log("Hola mundo");
