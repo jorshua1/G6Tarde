@@ -5,8 +5,7 @@ La creacion de este repo esta enfocado a que los talentos del grupo G6 puedan su
 <br>
 
 ## **A continuacion un listado de lo que se vera en el primer modulo**
-
-<br>
+> Haga click al enlace que desea visitar
 
 - ### [Introduccion a la algoritmia](./docs/introAlgoritmia.md)
 - ### [Introduccion a la programacion con javascript](./docs/introJavascript.md)
