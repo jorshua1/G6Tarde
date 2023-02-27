@@ -1,2 +1,1 @@
-console.log("Hola Mundo");
-console.log("Hola Mundo");
+console.log("prueba del lunes");
