@@ -1,1 +1,0 @@
-var num1 = prompt()
