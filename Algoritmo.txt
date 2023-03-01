@@ -1,0 +1,11 @@
+Algoritmo para crear una cuenta de Facebook
+
+1. Encender el dispositivo.
+2. Acceder a la página o aplicación de Facebook
+3. Dar al botón de "Crear cuenta nueva"
+4. Escribir su nombre y apellido.
+5. Escribir un número telefónico o correo electrónico.
+6. Escribir una contraseña para la cuenta (puede contener números, mayúsculas y minúsculas, caracteres especiales, etc.).
+7. Indicar su fecha de nacimientos DD/MM/AA 
+8. Indicar su género.
+9. Dar al botón de "Registrarte"
