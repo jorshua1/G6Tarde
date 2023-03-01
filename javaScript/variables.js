@@ -36,3 +36,7 @@ console.log(igual)
 let var3 = 200;
 
 
+let numm = parseInt(prompt("ingrese su primer numero"));
+let nummm = parseInt(prompt("ingrese su segundo numero"));
+let resultado = numm + nummm;
+console.log(resultado)
