@@ -86,10 +86,13 @@ var vText = "2"
     let vDobleSumaa = vN02 !== vText;
     console.log(vDobleSumaa);
 
-    let vVariable = "";
-    vVariable = prompt("ingrese su nombre");
+   /* let vVariable = "";
+    vVariable = prompt("ingrese su nombre");*/
 
     var vNumeroPorTeclado = parseInt (prompt("Ingrese un numero"));
     console.log(vNumeroPorTeclado)
 
     /*isNaN - es verdadero o falso*/
+
+/* taller */
+
