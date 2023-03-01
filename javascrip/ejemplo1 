@@ -1,0 +1,23 @@
+var num1 = parseInt(prompt(""));
+var num2 = parseInt(prompt(""));
+
+
+var total= num1+num2;
+console.log(total);
+
+
+
+/*Escriba un algoritmo para ingrasar la distancia entre dos vehiculos(Km) y sus respectiva
+ velocidades (Km/h) y cone sto determinar y mostrar en que tiempo (minutos) alcanzara el vehiculo mas rapido al otro , teniendo en cuenta que los dos vehiculos viajan a difetentes velocidades y estan distanciados por una distancia d. el que esta detas viaja a una velocidad mayos Formula V=D/T*/
+
+
+let distancia = parseInt(prompt("ingrese la distancia"));
+let velocidad1 = parseInt(prompt("ingrese la velocida del carro mas rapido")) ;
+let velocidad2 = parseInt(prompt("ingrese la otra distancia"));
+ ;
+
+let Tiempo= (distancia/(velocidad1-velocidad2 ))*60;
+
+
+console.log("el tiempo en minutos es" + Tiempo);
+
