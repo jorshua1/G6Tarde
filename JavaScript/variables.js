@@ -64,6 +64,20 @@ console.log(x%=num2);
 var NumeroPorTeclado = parseInt(prompt("ingrese un numero"));
 
 
+//EJERCICIO 1
+var numero1 = parseInt(prompt("ingrese un numero"));
+var numero2 = parseInt(prompt("ingrese numero dos"));
+var total = numero1 + numero2;
+alert("el resultado de la suma es" + total);
+//EJERCICIO 2
+var distancia = parseInt(prompt("ingrese la distancia entre los autos en km"));
+var velocidad1 = parseInt(prompt("ingrese la velocidad del auto que va adelante km/h"));
+var velocidad2 = parseInt(prompt("ingrese la velocidad del auto que va atras recuerde que debe ser mayor km/h"));
+var tiempo = distancia/(velocidad2-velocidad1);
+var tiempoMinutos = tiempo * 60
+alert("el tiempo que tarda en alcanzar el auto mas veloz al otro en minutos es " + tiempoMinutos);
+
+
 
 
 
