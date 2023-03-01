@@ -1,0 +1,6 @@
+let examenMate=parseFloat(prompt("Ingrese la nota del examen de matematicas:"))
+let tarea1Mate=parseFloat(prompt("Ingrese la nota de la tarea 1 de matematicas:"))
+let tarea2Mate=parseFloat(prompt("Ingrese la nota de la tarea 2 de matematicas:"))
+let tarea3Mate=parseFloat(prompt("Ingrese la nota de la tarea 3 de matematicas:"))
+let examenFisica=parseFloat(prompt("Ingrese la nota del examen de Fisica:"))
+let tarea1Fisica=parseFloat(prompt("Ingrese la nota promedio de tareas de Fisica:"))
