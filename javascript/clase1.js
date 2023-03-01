@@ -17,6 +17,7 @@ let objeto={nombre:"brayan", cedula:1001000111, acceso:true};
 let arreglo =["hola ","tengo ","hambre " ,"que","va","a","gastar"];//la posicion de los arreglos empieza desde 0
 let mensaje1=arreglo[0]+=arreglo[1]+=arreglo[2];
 console.log(mensaje1);
+let n=1;
 
 
 
