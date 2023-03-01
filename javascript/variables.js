@@ -58,5 +58,5 @@ x = x / 5;
 console.log(x)
 
 
-var num1= prompt("ingrese un numero");
+
 
