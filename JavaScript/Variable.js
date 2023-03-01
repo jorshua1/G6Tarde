@@ -84,3 +84,10 @@ console.log(true||false)
 //operador logico de Y
 console.log(true&&false);
 
+
+var dato1= prompt("ingrese un numero");
+var dato2= prompt("ingrese otro numero");;
+
+var suma= parseInt(dato1)+parseInt(dato2);
+
+console.log("la suma es "+ suma);
