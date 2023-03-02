@@ -1,0 +1,14 @@
+let notaExamen1 = parseInt(prompt("ingrese la nota del examen de matematicas"));
+let notaTareasM = parseInt(prompt("ingrese la suma de las notas de las tareas de matematicas"));
+let notaMatematicas = (notaExamen1*0.9)+(notaTareasM/3)*0.1;
+alert("nota de matematicas " + notaMatematicas);
+let notaExamen2 = parseInt(prompt("ingrese la nota del examen de fisica"));
+let notaTareasF = parseInt(prompt("ingrese la suma de las notas de las tareas de Fisica"));
+let notaFisica = (notaExamen2*0.8)+(notaTareasF/2)*0.2;
+alert("nota de Fisica" + notaFisica);
+let notaExamen3 = parseInt(prompt("ingrese la nota del examen de Quimica"));
+let notaTareasQ = parseInt(prompt("ingrese la suma de las notas de las tareas de Quimica"));
+let notaQuimica = (notaExamen3*0.85)+(notaTareasQ/3)*0.15;
+alert("nota de Quimica" + notaQuimica);
+let notaFinal = (notaMatematicas+notaFisica+notaQuimica)/3;
+alert("nota final" + notaFinal);
