@@ -1,0 +1,7 @@
+let sueldobase = parseInt(prompt("ingrese el suelo "));
+let ventastotal = parseInt(prompt("ingrese el valor total de las ventasd"));
+
+let comision = 0.1 * ventastotal
+
+
+console.log(" su sueldo es " + "", comision + sueldobase)

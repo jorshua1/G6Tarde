@@ -1,0 +1,4 @@
+var pulsaciones = (220-edad)/10;
+var edad = parseInt(prompt("ingrese la edad"));
+
+console.log("El numero de pulsaciones es " + "", pulsaciones);

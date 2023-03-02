@@ -1,0 +1,12 @@
+let salario = 980000
+let numeroautos = parseInt(prompt("ingrese el numero de autos vendidos "));
+let comision = 170000 * numeroautos
+let totalmontovendido = parseInt(prompt("ingrese el monto vendido"));
+let porcentaje = 0.05 * totalmontovendido
+
+
+
+
+
+
+console.log("su salario es " + "", 980000 + comision + porcentaje)

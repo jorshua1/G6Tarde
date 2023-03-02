@@ -1,0 +1,6 @@
+let base =parseInt(prompt("Ingrese la medida de la base"));
+let altura = parseInt(prompt("Ingrese la altura"));
+
+
+let area = (base*altura)/2
+console.log("el area del triangulo es" + "",area );

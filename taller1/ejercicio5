@@ -1,0 +1,9 @@
+let nota1=parseInt(prompt("ingrese su nota"));
+let nota2=parseInt(prompt("ingrese su segunda nota"));
+let nota3=parseInt(prompt("ingrese su tercera nota"));
+let nota4=parseInt(prompt("ingrese su cuarta nota"));
+
+
+let cuarenta = ((nota1 + nota2) *0.4)/2;
+let veinte = ((nota3 + nota4)*0.6)/2;
+ console.log(" la nota total es " + "",cuarenta+veinte)

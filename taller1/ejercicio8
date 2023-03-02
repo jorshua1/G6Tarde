@@ -1,0 +1,37 @@
+let mathexamen = parseInt(prompt("ingrese su nota de examen de matematicas"));
+let mathtarea1 = parseInt(prompt("ingrese su nota de tarea 1"));
+let mathtarea2 = parseInt(prompt("ingrese su nota de tarea 2"));
+let mathtarea3 = parseInt(prompt("ingrese su nota de tarea 3"));
+
+let mathexnota = mathexamen*0.9;
+
+let mathtareanota = ((mathtarea1+mathtarea2+mathtarea3)/3)*0.1;
+
+
+
+console.log("Su nota de parcial es"+"",mathexamen ,""+"esta es el 90% de la nota"+"",mathexnota,""+ "y esta es su nota de tareas"+"",(mathtarea1+mathtarea2+mathtarea3)/3,""+ "este es el 10% de la nota"+"",mathtareanota,""+"y la nota total es"+"",mathexnota+mathtareanota);
+
+
+let fisiexamen = parseInt(prompt("ingrese su nota de examen de fisica"));
+let fisitarea1 = parseInt(prompt("ingrese su nota de tarea 1"));
+let fisitarea2 = parseInt(prompt("ingrese su nota de tarea 2"));
+
+
+let fisiexnota = fisiexamen*0.8;
+
+let fisitareanota = ((fisitarea1+fisitarea2)/2)*0.2;
+
+console.log("esta es su nota del examen de fisica"+"", fisiexamen,""+ "y esta es el 80% de la nota"+"",fisiexnota,""+ "y esta es su nota de tareas"+"",(fisitarea1+fisitarea2)/2 ,""+"y este es el 20% de la nota"+"",fisitareanota,""+"y la nota total es"+"",fisiexnota+fisitareanota);
+
+
+let chemiexamen = parseInt(prompt("ingrese su nota de examen de quimica"));
+let chemitarea1 = parseInt(prompt("ingrese su nota de tarea 1"));
+let chemitarea2 = parseInt(prompt("ingrese su nota de tarea 2"));
+let chemitarea3 = parseInt(prompt("ingrese su nota de tarea 3"));
+
+let chemixnota = chemiexamen*0.85;
+
+let chemitareanota = (chemitarea1+chemitarea2+chemitarea3)/3*0.15;
+
+console.log("esta es su nota del examen de quimica"+"",chemiexamen,""+"y esta es el 85% de la nota"+"",chemixnota,""+ "y esta es su nota de tareas"+"",(chemitarea1+chemitarea2+chemitarea3)/3,""+"y este es el 15% de lanota"+"",chemitareanota,""+"y la nota total es"+"",chemixnota+chemitareanota)
+
