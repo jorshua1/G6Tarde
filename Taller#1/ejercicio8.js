@@ -12,8 +12,7 @@ alert("Apreciado estudiate: "+ nombre + " la calificacion de Matematicas fue: " 
 let examenFisica= parseFloat(prompt("ingrese el valor de su examen de Fisica"))*0.8;
 let tareaF1 = parseFloat(prompt("ingrese las nota de la tarea#1"));
 let tareaF2 = parseFloat(prompt("ingrese las nota de la tarea#2"));
-let tareaF3 = parseFloat(prompt("ingrese las nota de la tarea#3"));
-let promedioTareasFisica=((tareaF1+tareaF2+tareaF3)/3)*0.20;
+let promedioTareasFisica=((tareaF1+tareaF2)/2)*0.20;
 
 let defFisica = (promedioTareasFisica+examenFisica);
 
@@ -29,4 +28,4 @@ let defQuimica = (promedioTareasQuimica+examenQuimica);
 
 alert("Apreciado estudiate: "+ nombre + " la calificacion de Quimica fue: " +defQuimica);
 
-alert("Apreciado estudiate: "+ nombre + " sus definitivas son las siguientes" + "Matematicas" + defMatematicas + "Fisica" + defFisica + "Quimica" +defQuimica);
+alert("Apreciado estudiate: "+ nombre + " sus definitivas son las siguientes" + "Matematicas  " + defMatematicas + "Fisica  " + defFisica + "Quimica  " +defQuimica);
