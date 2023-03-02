@@ -7,7 +7,7 @@ let PromedioTareasMate = ((tareaM1+tareaM2+tareaM3)/3)*0.10;
 
 let defMatematicas = (PromedioTareasMate+examenMatematicas);
 
-alert("Apreciado estudiate: "+ nombre + " la calificacion de Matematicas fue: " + defmatematicas);
+alert("Apreciado estudiate: "+ nombre + " la calificacion de Matematicas fue: " + defMatematicas);
 
 let examenFisica= parseFloat(prompt("ingrese el valor de su examen de Fisica"))*0.8;
 let tareaF1 = parseFloat(prompt("ingrese las nota de la tarea#1"));
