@@ -1,7 +1,7 @@
-let capital = parseInt(prompt("Ingrese el capital de la inversión"))
+let capital = parseInt(prompt("Ingrese el capital de la inversión"));
 
-let pagoBanco = 0.012
+let pagoBanco = 0.012;
 
-let ganancia = capital*pagoBanco
+let ganancia = capital*pagoBanco;
 
-alert("El usuario ganará: " + ganancia)
+alert("El usuario ganará: " + ganancia);
