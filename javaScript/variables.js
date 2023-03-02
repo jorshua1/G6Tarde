@@ -40,3 +40,16 @@ let numm = parseInt(prompt("ingrese su primer numero"));
 let nummm = parseInt(prompt("ingrese su segundo numero"));
 let resultado = numm + nummm;
 console.log(resultado)
+
+
+let car1 = prompt("ingrese la velocidad del carro de adelante")
+let car2 = prompt("ingrese la velocidad del carro de atras")
+let distance1y2 = prompt("ingrese la distancia entre el carro de adelante y atras")
+
+let velocidad = car2-car1;
+let tiempo = distance1y2/velocidad;
+
+   
+console.log("el vehiculo màs rapido alcanzara al otro en  "+tiempo+"  minutos");
+
+
