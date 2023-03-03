@@ -64,3 +64,32 @@ if(isNaN(diametro) || diametro<0){
 }else{
     console.log("la rueda es para un vehiculo pequeño")
 }
+/*cree una calculadora para saber si un año es bisiesto
+a)si es divisible por 4 y no es divisible por 100 o divisible 400 es bisiesto
+b)si no divisible por 100 o si es divisible por 400
+*/
+let año = Number(prompt("ingrese el año"));
+if(isNaN(año) || año<0){
+    console.log("error")
+}else if(año%4==0 && año%100!=0 || año%400==0){
+    console.log("el año es bisiesto")
+}else{
+    console.log("el año no es bisiesto")
+}
+/*cree una calculadora para calcular el descuento del valor de una compra
+a)si la compra es mayor de 500000 el descuento es de 30%
+b)si la compra es menor de 500000 el descuento es del 15%
+mostrar el descuento y el valor de la compra con él.
+*/
+let compra = Number(prompt("ingrese el valor de la compra"));
+if(isNaN(compra) || compra<0){
+    console.log("error")
+}else if(compra>500000){
+descuento = compra*0.3;
+valorCompra = compra-descuento; 
+console.log("su descuento es de"+descuento+"total a pagar "+valorCompra)
+}else if(compra<500000){
+    descuento2=compra*0.15
+    valorCompra2=compra-descuento2
+    alert("su descuento es de"+ descuento2 + "total a pagar" + valorCompra2)
+}
