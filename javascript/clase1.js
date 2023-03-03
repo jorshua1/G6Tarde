@@ -35,5 +35,5 @@ let tiempo=distancia/(velocidasegundovehiculo-velocidaprimervehiculo);
 let resultado=tiempo*60;
 console.log(resultado);
 
-
+//prueba desde la casa para ver si el archivo se sube bien 
 
