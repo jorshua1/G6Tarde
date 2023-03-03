@@ -1,4 +1,4 @@
 // ejercicio 6
 let Edad = parseFloat(prompt ("Dijite su Edad"));
 let Numpulsaciones = ((220-Edad)/10);
-console.log (Numpulsaciones)
+console.log ("El número de pulsaciones es", Numpulsaciones)

@@ -5,4 +5,4 @@ let Venta2 = parseFloat(prompt ("Valor venta 2"));
 let Venta3 = parseFloat(prompt ("Valor venta 3"));
 let ComisionT = ((Venta1+Venta2+Venta3)*0.1)
 let SueldoTotal = (SueldoBase+ComisionT)
-console.log (SueldoTotal)
+console.log ("Su sueldo Total es",SueldoTotal)
