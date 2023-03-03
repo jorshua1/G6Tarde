@@ -2,7 +2,7 @@
 {
     let vPromedioMateriaTotal;
 
-    let vPromedioMateria01; //Matematicas
+    //Matematicas
     let vExamenMate = parseFloat(prompt("Ingrese la nota del examen de Matematicas"));
     let vPorcentajeExamenMate = vExamenMate * 0.90;
         let vTareaMate01 = parseFloat(prompt("Ingrese la tarea#1 de Matematicas"));
@@ -13,7 +13,7 @@
     let vPromedioMateriaMate = (vPorcentajeExamenMate + vPorcentajeTareaMate);
     
 
-    let vPromedioMateria02; //Fisica
+    //Fisica
     let vExamenFisi = parseFloat(prompt("Ingrese la nota del examen de Fisica"));
     let vPorcentajeExamenFisi = vExamenFisi * 0.80;
         let vTareaFisi01 = parseFloat(prompt("Ingrese la tarea#1 de Fisica"));
@@ -23,7 +23,7 @@
     let vPromedioMateriaFisi = (vPorcentajeExamenFisi + vPorcentajeTareaFisi);
     
 
-    let vPromedioMateria03; //Quimica
+    //Quimica
     let vExamenQuimi = parseFloat(prompt("Ingrese la nota del examen de Quimica"));
     let vPorcentajeExamenQuimi = vExamenQuimi * 0.85;
         let vTareaQuimi01 = parseFloat(prompt("Ingrese la tarea#1 de Quimica"));
