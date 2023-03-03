@@ -10,6 +10,7 @@ let porcentaje = montototal * valordeventa
 let total = operacion + porcentaje + salario
 
 alert(total)
+"anashe"
 
 
 

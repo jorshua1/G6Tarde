@@ -65,5 +65,11 @@ console.log (a<b)
 
 console.log (a>b)
 
-var NumeroPorTeclado = prompt ("ingrese un nombre")
+let num1 = parseInt(prompt("Ingrese su primer numero"))
+let num2 = parseInt(prompt("Ingrese su segundo numero"))
+let resultado = num1 + num2
+
+console.log (resultado)
+
+
 

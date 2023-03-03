@@ -36,5 +36,3 @@ alert("Su nota final en matematicas es: " + operacionFm)
 alert("Su nota final en fisica es: " + operacionFF)
 alert("Su nota final en Quimica es: " + operacionFQ)
 
-
-
