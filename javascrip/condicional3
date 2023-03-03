@@ -1,0 +1,14 @@
+let edad=parseInt(prompt("ingrese la edad"));
+
+if(isNaN(edad)){
+    console.log("error")
+
+}else if(edad>=18){
+    console.log("es mayor de edad");
+
+}else if(edad<=0){
+    console.log("error")
+
+}else{
+    console.log("es menor de edad");
+}
