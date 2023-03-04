@@ -17,4 +17,5 @@ La creacion de este repo esta enfocado a que los talentos del grupo G6 puedan su
     | [Documentacion MDN js](https://developer.mozilla.org/es/docs/Learn/JavaScript/First_steps/Variables)      | Documentacion  | muy completa pero mucho texto 😮‍💨
     | [w3schools javascript](https://www.w3schools.com/js/js_statements.asp)     | Documentacion / sandbox  | Super completa y facil de usar 🤓 (ingles)
     | [video: Aprende javascript](https://youtu.be/ivdTnPl1ND0) | videotutorial/curso     | Facil de seguir pero largo (~10H) 🥶
+    | [Guia sobre git](https://training.github.com/downloads/es_ES/github-git-cheat-sheet/) | Articulo     | Facil de seguir 🤓
         
