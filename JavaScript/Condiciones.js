@@ -47,7 +47,7 @@ else {
 
 {
     //let vAge = Number(prompt("Ingrese su edad"));
-    if (isNaN(vAge) ׀׀ vAge>=0 ) {
+    if (isNaN(vAge) || vAge>=0 ) {
         console.log("Error");
         alert("Ingrese un numero");
     }

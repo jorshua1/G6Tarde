@@ -16,6 +16,7 @@ else {
 }*/
 let vGender = prompt("Ingrese su genero \n Solo son validos: Hombre, Mujer, Indefinido");
 
+confirm("Recuerde la palabra debe ser toda minuscula o solo la primera en mayuscula");
 
 if (vGender == "Hombre" || vGender == "hombre") {
     alert("Eres Hombre");
