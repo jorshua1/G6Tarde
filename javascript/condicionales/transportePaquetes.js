@@ -9,6 +9,7 @@ if(isNaN(pesoPaquete)|| pesoPaquete<=0){
 }else if(pesoPaquete>5){
     alert("Lo sentimos, por medidas de seguridad, no podemos transportar paquetes de más de 5kg");
 }else{
+    alert("El peso del paquete a transportar es de: " + pesoPaquete + "kg")
     zonaDestino = Number(prompt("¿A qué zona es el envío? Seleccione el número de la opción: 1. América del Norte -- 2. América Central -- 3. America del Sur -- 4. Europa -- 5. Asia"))
     if(isNaN(zonaDestino) ||zonaDestino<=0 || zonaDestino>=6){
         alert("Por favor, ingrese una zona de destino válida (Un número del 1 al 5)");
