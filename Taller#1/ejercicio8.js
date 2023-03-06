@@ -28,4 +28,4 @@ let defQuimica = (promedioTareasQuimica+examenQuimica);
 
 alert("Apreciado estudiate: "+ nombre + " la calificacion de Quimica fue: " +defQuimica);
 
-alert("Apreciado estudiate: "+ nombre + " sus definitivas son las siguientes" + "Matematicas  " + defMatematicas + "Fisica  " + defFisica + "Quimica  " +defQuimica);
+alert("Apreciado estudiate: "+ nombre + " sus definitivas son las siguientes" + "  Matematicas  " + defMatematicas + "  Fisica  " + defFisica + "  Quimica  " +defQuimica  );
