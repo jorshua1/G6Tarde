@@ -93,3 +93,100 @@ console.log("su descuento es de"+descuento+"total a pagar "+valorCompra)
     valorCompra2=compra-descuento2
     alert("su descuento es de"+ descuento2 + "total a pagar" + valorCompra2)
 }
+/*En este ejercicio debes pedir dos números enteros y devolver el cociente 
+de dividir el primero entre el segundo, pero si este es cero no debe hacer 
+la división, sino lanzar un mensaje de error*/
+let num1 = Number(prompt("ingrese el dividendo"));
+let num2 = Number(prompt("ingrese el divisor"));
+if(isNaN(num1) || isNaN(num2)){
+    console.log("error ingrese numeros enteros")
+}else if((num1 && num2)>0){
+     cociente = num1/num2;
+     console.log("el cociente de la division es " + cociente)
+}else{
+    console.log("error")
+}
+/*Este script pide al usuario que teclee una letra entre A, B, C, D.
+Si pulsa la letra A en mayúsucla o en minúscula le dará el mensaje de que ha acertado, 
+en caso contrario le dirá que se equivocó...*/
+var letra = prompt("teclee una letra entre A B C D");
+if(letra == "A" || letra == "a"){
+    console.log("felicitaciones acerto")
+}else{
+    console.log("te equivocaste")
+}
+/*Este ejercicio dirigirá a los clientes a la barra de bebidas o a la de comidas,
+ para ello el cliente puede pedir vino, cerveza, refresco, agua. Si pide una cerveza 
+ o vino se le dirige a la barra y si no pues se le dirige a la tienda.*/
+ var pedido = prompt("digite que quiere consumir a.vino b.cerveza c.refresco d.agua");
+ if(pedido == "a" || pedido == "b"){
+    console.log("por favor dirijase a la barra")
+ }else{
+    console.log("por favor dirijase a la tienda")
+ }
+ /*En un tramo de un rally los conductores no deben ir ni demasiado rápido ni demasiado lentos.
+  Este ejercicio debe tomar la longitud del tramo en kilometros y el tiempo empleado, 
+  si la velocidad está entre 40 y 60 km/h el conductor pasa la prueba en caso contrario es descalificado.*/
+  let longitud = parseInt(prompt("digite la longitud o distancia del tramo en kilometros"));
+  let tiempo = parseInt (prompt("ingrese el tiempo que tarda en horas"));
+  let velocidad = longitud/tiempo;
+  if(velocidad >= 40 && velocidad <= 60){
+    console.log("prueba superada")
+  }else{
+    console.log("descalificado")
+  }
+  /*Crea un programa que pida la nota de un estudiante en los tres trimestres del curso 
+  y calcule la nota promedio. El resultado que dará será suspenso si la media es menor de 5, 
+  aprobado si está entre 5 y 7 y  Notable por encima de 7.*/
+  let nota1 = parseInt(prompt("ingrese la nota del primer trimestre"));
+  let nota2 = parseInt(prompt("ingrese la nota del segundo trimestre"));
+  let nota3 = parseInt(prompt("ingrese la nota del tercer trimestre"));
+  let notatotal= (nota1+nota2+nota3)/3;
+  if(notatotal<5){
+    console.log("suspendido")
+  }else if(notatotal >= 5 && notatotal <= 7){
+    console.log("aprobado")
+  }else{
+    console.log("notable")
+  }
+  /*una empresa tiene una promocion donde por compras mayores o iguales a 250000 
+  da un 30% de descuento a la compra, por compras mayores o iguales a 200000 da un 20 % 
+  de descuento a la compra, si la compra es menor a 200000 no hay descuento y toca notificarle 
+  al usuario, si la compra es menor a 50000 agregar 2000 por Parqueadero*/
+  var compra = parseInt(prompt("ingrese el valor de la compra"));
+  if(isNaN(compra)){
+    console.log("error")
+  }else if(compra >= 250000){
+  var pago1 = (compra-(compra*0.3)); 
+    console.log("su descuento es del 30% el pago total con el descuento aplicado es "+ pago1)
+  }else if(compra >= 200000){
+  var pago2 = (compra-(compra*0.2)); 
+    console.log("su descuento es del 20% el pago total con el descuento aplicado es "+ pago2)
+  }else if(compra<200000 && compra>50000){
+    console.log("no aplica descuento pero no paga parqueadero")
+  }else if(compra<50000){
+    var pago3 = compra+2000
+    console.log("no aplica descuento debe pagar parqueadero total es  "+pago3)
+  }else{
+    console.log("no aplica descuento")
+  }
+  /*
+crear un algoritmo que compruebe la estacion en la que se encuentra un mes, 
+para saber si el mes esta en verano, otoño, primavera, invierno.*/
+var mes = prompt("ingrese el mes para saber la estacion de 1-12 segun el mes ejemplo enero=1 y diciembre=12");
+if(isNaN(mes)|| mes<0 || mes>12){
+    console.log("error")
+}else if(mes >= 3 && mes<=6){
+    console.log("primavera")
+}else if(mes>6 && mes<=9){
+    console.log("verano")
+}else if(mes>9 && mes<=12){
+    console.log("otoño")
+}else{
+    console.log("invierno")
+}
+/*determinar el tipo de triangulo segun la medida de sus lados: escaleno, iscoceles o equilatero*/
+var base = parseInt(prompt("ingrese la base del triaungulo en cm"));
+var a = parseInt(prompt("ingrese el primer lado")); 
+var c = parseInt
+
