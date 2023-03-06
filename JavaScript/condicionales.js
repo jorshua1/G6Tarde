@@ -86,7 +86,7 @@ if(isNaN(diametro)){
 
 //ejercicio compañeros 2
 let año=Number(prompt("Ingrese año"));
-if(año%4==0 && año%100==0 && año%400==0){
+if(año%4==0 && (año%100==0 || año%400==0)){
     alert("Es bisciesto")
 }else if(año%100==0 && año%400!==0){
     alert("No es bisciesto")
