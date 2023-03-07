@@ -9,15 +9,29 @@ cada concepto una persona que realiza una llamada. */
 
 let tiempoLlamada = parseFloat(prompt("¿cuantos minutos duro la llamada?"))
 let cobro = 0;
-if (isNaN(tiempoLlamada)){
+let domingo = prompt("Realizo la llamada un domingo? (S) Si -- (N) No")
+let impuesto = 0;
+
+if (domingo === "s" || domingo ==="S"){
+    impuesto = 0.03;
+}else if (domingo === "N" || domingo === "n"){
+    impuesto = 0.15;
+}else{
+    alert("Por favor ingrese datos validos")
+}
+
+if (isNaN(tiempoLlamada) || tiempoLlamada <= 0){
     alert("Por favor ingrese datos validos")
 }else if(tiempoLlamada < 5){
-    cobro = 1;
+    cobro = impuesto * 1 + 1;
     alert("el cobro de la llamada esta por " + cobro + " euro")
 }else if(tiempoLlamada >= 5 && tiempoLlamada < 8){
-    cobro = 1.80;
+    cobro = impuesto * 1.80 + 1.80;
     alert("el cobro de la llamada esta por " + cobro + " euros")
 }else if(tiempoLlamada >= 8 && tiempoLlamada < 10){
-    cobro = 2.5;
+    cobro = impuesto * 2.5 + 2.5;
+    alert("el cobro de la llamada esta por " + cobro + " euros")
+}else if(tiempoLlamada > 10){
+    cobro = impuesto * 3 + 3;
     alert("el cobro de la llamada esta por " + cobro + " euros")
 }
