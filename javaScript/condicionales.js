@@ -75,7 +75,7 @@ if (isNaN(temperatura) || temperatura >= 32){
 }else if (temperatura<= 27){
         alert("Encender calefactor del galpon.");   
     }else{
-    alert("gi.");
+    alert("Temperatura estable, tomar registro de termometros fisicos");
 }
 
 let diametroRueda = parseFloat(prompt("Ingrese su diametro."));
