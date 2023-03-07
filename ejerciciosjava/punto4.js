@@ -7,7 +7,7 @@ let precio = Number(prompt("Ingrese el valor de un alriculo"));
 let valor = numarticulos*precio;
 if (isNaN(numarticulos, precio)){
     console.log("¡ERROR!");
-}else if (valor>40){
+}else if (valor>40 && numarticulos>10){
     let descuento = valor*0.15
     console.log("Su total a pagar es de: "+descuento);
 }else{
