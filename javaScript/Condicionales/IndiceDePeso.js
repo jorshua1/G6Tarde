@@ -6,7 +6,7 @@ let estatura = parseFloat(prompt("Ingrese su estatura"))
 let peso = parseFloat(prompt("Ingrese su peso en kilos"))
 let imc = peso / (estatura * estatura);
 
-if ((isNaN(estatura)) && (isNaN(peso))){
+if ((isNaN(estatura)) || (isNaN(peso)) || peso <0 || estatura <0){
     alert("Ingrese valores validos")
 }else if (imc < 18.5){
     alert("Su indice de masa corporal es de: " + imc + " se encuentra en peso bajo")
@@ -14,6 +14,6 @@ if ((isNaN(estatura)) && (isNaN(peso))){
     alert("Su indice de masa corporal es de: " + imc + " se encuentra en peso normal")
 }else if (imc >= 24.9 && imc <= 29.9){
     alert("Su indice de masa corporal es de: " + imc + " se encuentra en sobre peso")
-}else {
+}else if(imc > 30){
     alert("Su indice de masa corporal se encuentra en: " + imc + " se encuentra en sobrepeso")
 }

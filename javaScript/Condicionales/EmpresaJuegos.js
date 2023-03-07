@@ -6,7 +6,7 @@ precio de la entrada. Si el cliente es menor de 4 años puede entrar gratis, si 
 
 let edad = parseFloat(prompt("Ingrese la edad"))
 
-if (isNaN(edad)){
+if (isNaN(edad) || edad <= 0){
     alert("Ingrese datos validos ")
 }else if(edad < 4){
     alert("El valor de la entrada es gratis ")

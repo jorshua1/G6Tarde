@@ -6,10 +6,10 @@ Para los hombres esta representada de la siguiente manera: Hasta 1 ,2m de altura
 pertenece a la categoría Junior, luego hasta 1,70m su categoría es Media y mas de
 1.70m pertenece a Adultos. */
 
-let genero = prompt("Ingrese su genero: coloque (M) para masculino, (F) para femenino ")
+let genero = prompt("Ingrese su genero: \n (M) para masculino \n (F) para femenino ")
 let estatura = parseFloat(prompt("Ingrese su estarura "))
 
-if (isNaN(estatura)){
+if (isNaN(estatura) || estatura <=0){
     alert("Ingrese valores validos")
 }else if ((genero == "F" || genero == "f") && estatura <= 1){
     alert("Su categoria de natacion es: Junior ")

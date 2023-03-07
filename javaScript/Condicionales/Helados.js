@@ -12,8 +12,23 @@ por pantalla «no tenemos este topping, lo sentimos. » y a continuación inform
 precio del helado sin ningún topping. Finalmente, el programa escribe por pantalla 
 el precio del helado con el topping seleccionado (o ninguno). */
 
-let helado = prompt("ingrese como desea su helado: \n 1. Sin topping \n 2. topping de oreo \n 3. topping de KitKat \n 4. topping de brownie \n 5. topping de lacasitos ")
+let helado = prompt("Ingrese el sabor de su helado \n 1. oreo \n 2. kitkat \n 3. brownie \n 4. lacasitos");
+let precioBase =1.90;
+let precioTopping = 0;
+let total = (precioBase+precioTopping);
 
-if (helado === "Sin topping"){
-    alert("")
+if(helado=="oreo"){
+    precioTopping = 1;
+    alert("El precio del helado base es: " + precioTopping + " mas el valor del topping de oreo el precio total es de: " + total);
+}else if(helado=="kitkat"){
+    precioTopping = 1.50;
+    alert("El precio del helado base es: " + precioTopping + " mas el valor del topping de kitkat el precio total es de: " + total);
+}else if(helado=="brownie"){
+    precioTopping = 0.75;
+    alert("El precio del helado base es: " + precioTopping + " mas el valor del topping de brownie el precio total es de: " + total);
+}else if(helado=="lacasitos"){
+    precioTopping = 0.95;
+    alert("El precio del helado base es: " + precioTopping + " mas el valor del topping de lacasitos el precio total es de: " + total);
+}else{
+    alert("No tenemos este topping, lo sentimos.");
 }
