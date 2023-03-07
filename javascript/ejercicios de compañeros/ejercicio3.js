@@ -8,13 +8,12 @@ if(isNaN(edad || ingresos)){
     console.log("uno de los valores ingresados no es valido");
 }
 else if(edad>=16){
-    if(ingresos=>1000){
+    if(ingresos>=1000){
         console.log("usted debe pagar impuestos")
     }
     else if(ingresos<1000){
         console.log("usted no debe pagar impuestos")
     }
-
 }
 else{
     console.log("usted no debe pagar impuestos")
