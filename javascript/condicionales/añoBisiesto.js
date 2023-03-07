@@ -1,6 +1,6 @@
 //Año bisiesto
 
-let año = Number(prompt("Escriba un año"))
+let año = Number(prompt("Escriba un año"));
 
 if(isNaN(año)){
     console.log("Ingrese un año");

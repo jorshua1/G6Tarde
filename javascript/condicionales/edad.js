@@ -34,7 +34,7 @@ let edad = Number(prompt("Ingrese su edad"));
 if (isNaN(edad) || edad<0){
     console.log("Error, ingrese un valor válido");
 }else if(edad>=18){
-    console.log("Es mayor de edad")
+    console.log("Es mayor de edad");
 }else{
-    console.log("Es menor de edad")
+    console.log("Es menor de edad");
 }
