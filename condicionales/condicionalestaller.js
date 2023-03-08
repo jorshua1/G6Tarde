@@ -293,9 +293,85 @@ if(isNaN(articulos) || isNaN(precio)){
     }else{
         console.log("pertenece a la categoria matusalen")
     }
+    /*Escribir un programa para una empresa que tiene salas de juegos para todas las edades y quiere calcular de forma automática 
+    el precio que debe cobrar a sus clientes por entrar. El programa debe preguntar al usuario la edad del cliente y mostrar el 
+    precio de la entrada. Si el cliente es menor de 4 años puede entrar gratis, si tiene entre 4 y 18 años debe pagar 5€ y si es 
+    mayor de 18 años, 10€.*/
+    let edad = parseInt(prompt("ingrese su edad"));
+    if(isNaN(edad) || edad<0){
+        console.log("error")
+    }else if(edad < 4){
+        console.log("entra gratis")
 
+    }else if(edad >= 4 && edad < 18){
+        console.log("precio de la entrada 5 €")
+    }else{
+        console.log("precio de la entrada 10 €")
+    }
+    /*Crear un programa que me identifique a cual categoría de natación pertenece una persona según su estatura, 
+    teniendo en cuenta que para las mujeres estaría representado de la siguiente manera: Hasta 1m de altura pertenece 
+    a la categoría Junior, luego hasta 1,60m su categoría es Media y mas de 1.60 pertenece a Adultos. Para los hombres esta 
+    representada de la siguiente manera: Hasta 1,2m de altura pertenece a la categoría Junior, luego hasta 1,70m su categoría es 
+    Media y mas de 1.70m pertenece a Adultos. Para los hombres esta representada de la siguiente manera.*/
+    var genero = parseInt(prompt("teclee un numero segun su genero 1.femenino 2.masculino "));
+    var estatura = parseInt(prompt("digite su estatura por ejemplo 1.7"))
+    if(isNaN())
 
+    //SWITCH CASE
+    let dato = 3
+    switch (dato){
+        case 1:
+            console.log("ingreso el numero uno");
+            break;
+        case "1":
+            console.log("ingreso el numero uno pero como string");
+            break;
+        default
+    }
+    //ejemplo
+    let mes = prompt("escriba el mes")
+    switch(mes){
+        case "diciembre":
+        case "enero":
+        case "febrero":
+            console.log("invierno");
+            break;
+        case "marzo":
+        case "abril":
+        case "mayo":
+            console.log("primavera");
+            break;
+        case "junio":
+        case "julio":
+        case "agosto":
+            console.log("verano");
+            break;
+        case "septiembre":
+        case "octubre":
+        case "noviembre":
+            console.log("otoño");
+            break;
+         default:
+            console.log("no es un mes valido");
+    }
+//OPERADOR TERNARIO
+let nombre = prompt("ingrese su nombre");
+let saludo = nombre===""? "ingrese su nombre valido" : "Hola" +nombre
+console.log(saludo)
 
+if(nombre===""){
+    "ingrese un nombre valido"
+}else{
+    "hola"+ nombre
+}
+
+nombre==="" || nombre==="." || typeof nombre === "Number" ?
+"ingrese un nombre valido" : nombre === "Jorshua" ? 
+"bienvenido" : "bienvenido invitado"
+
+//ejemplo: saber si un numero es par o impar
+let numero = parseInt(prompt("ingrese un numero"));
+console.log(numero%2==0 ? "numero es par" : "numero es impar");
 
 
 
