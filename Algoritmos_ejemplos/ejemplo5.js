@@ -8,4 +8,3 @@ let genero=(prompt("ingrese el genero"))
     alert("ingresaste Indefinido")
 }else if (genero!="Masculino" ,genero!="Femenino", genero!="Indefinido"){
     alert("ingreso un valor invalido")}
-

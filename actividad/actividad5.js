@@ -10,5 +10,5 @@ result= sumaNotas*0.4
 result2=sumaNotas2*0.6
 
 resultado=result+result2
-alert("su promedi es de" + resultado)
+alert(" su promedi es de "+ resultado)
 

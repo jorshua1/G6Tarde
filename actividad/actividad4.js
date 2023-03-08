@@ -1,13 +1,15 @@
-let numAuto= parseInt(prompt("numero de autos"))
+let numAuto= parseInt(prompt("numero de autos"));
 
 
-valorAutos=numAuto*170000
+valorAutos=numAuto*170000;
 
-let valorVenta = parseInt(prompt("valor total de venta"))
+let valorVenta = parseInt(prompt("valor total de venta"));
 
-valortotal=valorVenta*0.05
+valortotal=valorVenta*0.05;
 
-salario=valorAutos+valortotal+980000
+salario=valorAutos+valortotal+980000;
 
-alert("su salario es de"+salario)
+alert("su salario es de"+salario);
+
+
 

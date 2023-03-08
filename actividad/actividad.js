@@ -8,4 +8,3 @@ console.log(resultado)
 
 let resultado2=(((b+c)/2*a+10)*3*b)-6
 console.log(resultado2)
-
