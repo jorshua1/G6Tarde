@@ -8,13 +8,13 @@ var ladoC = Number(prompt("Ingrese medida lado C"))
 
 if (isNaN(ladoA) || ladoA <= 0) {
     console.log("Ingrese un valor valido")
-} if (isNaN(ladoB) || ladoB <= 0) {
+}else if(isNaN(ladoB) || ladoB <= 0) {
     console.log("Ingrese un valor valido")
-} if (isNaN(ladoC) || ladoC <= 0) {
+}else if (isNaN(ladoC) || ladoC <= 0) {
     console.log("Ingrese un valor valido")
-} if ((ladoA === ladoB) && (ladoB === ladoC)) {
+}else if ((ladoA === ladoB) && (ladoB === ladoC)) {
     alert("Triangulo equilatero")
-}else if ((ladoA === ladoB) || (ladoB === ladoC)) {
+}else if ((ladoA === ladoB) || (ladoB === ladoC) || (ladoC === ladoA)) {
     alert("Triangulo isosceles")
 }else {
     alert("Triangulo escaleno")
