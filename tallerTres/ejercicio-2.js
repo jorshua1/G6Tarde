@@ -6,12 +6,31 @@ continuaciónsi el número es 1, 3, 5, 7, 9, escribir un mensaje de "impar" si e
 6, 8, 10, escribir un mensaje de "par". 
 */
 
-let numero = 1;/*parseInt(Prompt("Por favor ingrese numero"));*/
+let numero = 0;/*parseInt(Prompt("Por favor ingrese numero"));*/
+
+if (isNaN(numero) || numero >=1 && numero <=10){
+    console.log("El numero " + numero + " esta en el rango de 1 a 10.");
+}else{
+    console.log("Por favor ingrese un numero valido entre 1 a 10.");
+}
 
 switch(numero){
     case 1:
     case 3:
     case 5:
-    case 7:        console.log(numero + " es impar.")
+    case 7:
+    case 9:        
+    console.log(numero + " es impar.")
     break;
+
+    case 2:
+    case 4:
+    case 6:
+    case 8:
+    case 10:        
+    console.log(numero + " es par.")
+    break;
+    
+    default : 
+    console.log("El dato ingresado no es valido para este ejercicio.")
 }
