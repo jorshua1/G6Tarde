@@ -13,6 +13,6 @@ if (isNaN(duracionLlamada)  || duracionLlamada >= 0 && duracionLlamada <= 3){
     console.log("el costo de la llamada es de " + costoBase );
 }else{
     (duracionLlamada>3)
-    costoExtendido = duracionLlamada * 100;
+    costoExtendido = (3 * 200) + ((duracionLlamada - 3) * 100);
     console.log("El costo de la llamada es de " + costoExtendido);
 }
