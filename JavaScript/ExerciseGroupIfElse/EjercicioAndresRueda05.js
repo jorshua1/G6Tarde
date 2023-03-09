@@ -6,12 +6,6 @@ let vGender = String(prompt("Ingrese su genero"));
 
 console.log(vName >= ["a"-"m"]);
 
-
-let vName = String(prompt("Ingrese su nombre"));
-let vGender = String(prompt("Ingrese su genero"));
-
-console.log(vName >= ["a"-"m"]);
-
 if ((vGender == "mujer") && (vName <= "l")) {
     alert("Su nombre es: " + vName + "\n Su genero es: " + vGender + "\n Pertenece al GRUPO A");
 }

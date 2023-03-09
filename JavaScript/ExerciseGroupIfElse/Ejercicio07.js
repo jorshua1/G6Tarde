@@ -4,36 +4,26 @@ sabiendo el número de artículos y el precio de un articulo.
  */
 
 
-//------------------------------------EJERCICIO INCOMPLETO--------------------------------------------------
-
-
-
-let vProducto = String(prompt("Ingrese el producto a comprar solo son validos: \n leche, arroz, huevos y panela"));
+let vProducto = String(prompt("Ingrese el producto a comprar"));
+let vCashUnidad = parseFloat(prompt("Cuanto sera el importe por unidad del articulo escogido"));
 let vUnidades = Number(prompt("Cuantas unidades de este articulo desea llevar"));
-let vTotaltotal;
 
-vProducto === ("leche" || "arroz" || "huevos" || "panela");
+let vTotal = vCashUnidad * vUnidades;
+let vPorcentaje = vTotal * 0.15;
+let vTotaltotal = vTotal - vPorcentaje;
 
-/*
-leche = 2400
-arroz =  1800
-huevos =  600
-panela = 2000
-*/
+if (isNaN(vUnidades) || isNaN(vCashUnidad)) {
+    alert("ERROR!!! \n Ingrese un valor valido");
 
-if (isNaN(vUnidades)) {
-    if (vProducto == "leche") {
+}else if ((vCashUnidad > 4000) && (vUnidades >= 10)) {
+    alert("Sr@ cliente su articulo " + vProducto + " tiene un precio de " + vCashUnidad + " por unidad, y usted ha comprado " + vUnidades + " unidades. \n El importe total de su compra es: " + vTotal + "\n Ademas como su compra es: " + vTotal + " se le obsequiara un 15% de su compra lo cual es total de su compra es: \n " + vTotaltotal);
 
-    }
+}else if (vUnidades >= 10) {
+    alert("Sr@ cliente su articulo " + vProducto + " tiene un precio de " + vCashUnidad + " por unidad, y usted ha comprado " + vUnidades + " unidades. \n El importe total de su compra es: " + vTotal);
+
+}else if ((vCashUnidad > 0) && (vUnidades > 0)){
+    alert("Sr@ cliente su articulo " + vProducto + " tiene un precio de " + vCashUnidad + " por unidad, y usted ha comprado " + vUnidades + " unidades. \n El importe total de su compra es: " + vTotal);
+
 }
 
-//---------------------------------------------------------------
-if (isNaN(vUnidades) || vUnidades >= 10) {
-    let vPorcentaje = vUnidades * 0.15;
-    vTotaltotal = vUnidades - vPorcentaje;
 
-    alert("El producto es: " + vProducto + "\n Llevaras estas " + vUnidades + " unidades el cual tendra un descuento del 15% en este articulo");
-}
-else {
-    alert("El producto es: " + vProducto + "\n Llevaras estas " + vUnidades + " unidades");
-}
