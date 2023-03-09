@@ -160,3 +160,14 @@ if(isNaN(presupuesto) || isNaN(psiquiatria) || isNaN(pediatria) || isNaN(traumat
 }
 
 //EJERCICIO 9
+var distancia = parseInt(prompt("ingrese la distancia en km"));
+var dias = parseInt(prompt("ingrese los dias de su estancia"));
+if(isNaN(distancia) || isNaN(dias) || distancia<0 || dias<0){
+    console.log("error");
+}else if(dias>=7 && distancia>800){
+    var preciotiquete = (distancia*2.5)-((distancia*2.5)*0.3);
+    console.log("precio tiquete aplicando el 30% " + preciotiquete)
+}else{
+    var preciotiquetesin =(distancia*2.5);
+    console.log("precio tiquete" + preciotiquetesin)
+}
