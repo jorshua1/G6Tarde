@@ -103,13 +103,124 @@ let blanco1 = parseInt(
 let p1 = parseInt(prompt("Ingrese el valor por conejo blanco vendido"));
 let p2 = parseInt(prompt("Ingrese el valor por conejo negro vendido"));
 
-if (isNaN(niggas1) || niggas1 < 0 || isNaN(blanco1) || blanco1 < 0) {
+if (isNaN(niggas1) || niggas1 <= 0 || isNaN(blanco1) || blanco1 <= 0) {
   console.log("Digite un valor valido de conejos");
 } else {
   let conojos = niggas1 + blanco1;
   console.log("La cantidad de conejos vendidas es: " + conojos);
-  if (isNaN(p1) || p1 < 0 || isNaN(p2) || p2 < 0) {
-    console.log("Digite un valor valido");
+  if (blanco1 > niggas1) {
+    console.log("Los conejos que mas se vendieron son los blancos");
   } else {
+    console.log("los conejos que mas se vendieron son los negros");
+  }
+}
+
+if (isNaN(p1) || p1 <= 0 || isNaN(p2) || p2 <= 0) {
+  console.log("Digite un valor valido de precio");
+} else {
+  let precioConojos = p1 * blanco1 + p2 * niggas1;
+  console.log(
+    "El precio total de los conejos negros y blancos es de: " + precioConojos
+  );
+}
+
+//6
+let nota1 = parseInt(prompt("Ingrese la evaluacion 1 mamawebo"));
+let nota2 = parseInt(prompt("Ingrese la evaluacion 2 mamawebo"));
+let nota3 = parseInt(prompt("Ingrese la evaluacion 3 mamawebo"));
+let traba1 = parseInt(prompt("Ingrese el trabajo 1 mamawebo"));
+let traba2 = parseInt(prompt("Ingrese el trabajo 2 mamawebo"));
+
+if (
+  isNaN(nota1) || isNaN(nota2) || isNaN(nota3) || nota1<0 || nota2<0 || nota3<0 || nota1>5 || nota2 >5 || nota3 > 5 || isNaN(traba1) || isNaN(traba2) || traba1 <0 ||traba2 < 0 || traba1 >5 ||traba2 > 5)
+ {
+  console.log("Digite un valor de notas o trabajos valido");
+} else {
+  let notaE = (nota1 + nota2 + nota3) / 3;
+  notaE = notaE * 0.6;
+  let notaT = (traba1 + traba2) / 2;
+  notaT = notaT * 0.4;
+  let notaF = notaE + notaT;
+
+  if (notaF <= 1) {
+    console.log("La nota final es 1");
+  } else {
+    console.log("La nota final es: " + notaF);
+  }
+}
+
+//7
+let articulo = prompt("Ingrese el nombre del articulo ");
+let clave = parseInt(prompt("Ingrese la clave del articulo"));
+let cantidad = parseInt(prompt("Digite la cantidad del articulo"));
+let prezio = parseInt(prompt("Digite el precio del articulo"));
+let descuento = 0;
+let descuentot = 0;
+let total = 0;
+
+if (isNaN(prezio) || prezio <= 0 || isNaN(cantidad) || cantidad <= 0) {
+  console.log("Digite valores validos mamawebero");
+} else {
+  switch (clave) {
+    case 1:
+      descuento = prezio*cantidad;
+      descuentot = descuento*0.1; 
+      total = descuento-descuentot;
+      console.log("El nombre del articulo es: " +articulo);
+      console.log("El precio original es: " +prezio);
+      console.log("La clave del producto es 1");
+      console.log("La cantidad del producto es: " +cantidad);
+      console.log("El precio con descuento es: " +total);
+      break;
+    case 2:
+      descuento = prezio*cantidad;
+      descuentot = descuento*0.2; 
+      total = descuento-descuentot;
+      console.log("El nombre del articulo es: " +articulo);
+      console.log("El precio original es: " +prezio);
+      console.log("La clave del producto es 2");
+      console.log("La cantidad del producto es: " +cantidad);
+      console.log("El precio con descuento es: " +total);
+      break;
+  
+    default:
+      console.log("Digite valores validos pendejo");
+      break;
+  }
+}
+
+//8
+
+let presupuestoano = parseInt(prompt("Ingrese el presupuesto anual: "));
+let siq = parseInt(prompt("Ingrese el porcentaje de Psiquiatria: "));
+let ped = parseInt(prompt("Ingrese el porcentaje de Pediatria: "));
+let trau = parseInt(prompt("Ingrese el porcentaje de Traumatologia: "));
+
+if (isNaN(presupuestoano) || presupuestoano < 0 || siq+ped+trau != 100 || isNaN(siq) || isNaN(ped) || isNaN(trau)) {
+  console.log("Digite valores validos ");
+} else {
+   let presiq = (presupuestoano)*(siq/100);
+   console.log("El presupuesto para Psiquiatria es: " +presiq);
+   let preped = (presupuestoano)*(ped/100);
+   console.log("El presupuesto para Pediatria es:" +preped);
+   let pretrau = (presupuestoano)*(trau/100);
+   console.log("El presupuesto para Traumatologia es: " +pretrau);
+}
+
+//9
+let distancia = parseInt(prompt("Digite la distancia de su viaje en kilometros"));
+let dias = parseInt(prompt("Digite los dias de estancia"));
+
+
+if (isNaN(distancia) || distancia <= 0 || isNaN(dias) || dias <=0 ) {
+  console.log("Digite datos validos");
+} else {
+  let precio = distancia*2.5;
+  if (dias >=7 && distancia > 800) {
+    let desT = precio*0.3;
+    let pagazion = precio-desT;
+    console.log("El precio del tiquete es: " +pagazion);
+  } else {
+    console.log("El precio del tiquete es: " +precio);
   }
 }
