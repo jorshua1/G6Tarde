@@ -2,9 +2,9 @@
 las notas que saco en las 3 evaluaciones y teniendo en cuenta que 
 la primera y la segunda evaluacion valen el 30% y la tercera el 40% */
 
-let nota1 = parseFloat(prompt("Digite la nota que saco el la primera nota del 30% "))
-let nota2 = parseFloat(prompt("Digite la nota que saco el la segunda nota del 30% "))
-let nota3 = parseFloat(prompt("Digite la nota que saco el la nota del 40% "))
+let nota1 = parseFloat(prompt("Digite la nota que saco en la primera nota del 30% "))
+let nota2 = parseFloat(prompt("Digite la nota que saco en la segunda nota del 30% "))
+let nota3 = parseFloat(prompt("Digite la nota que saco en la nota del 40% "))
 let notaFinal = 0;
 if (isNaN(nota1) || isNaN(nota2) || isNaN(nota3)){
     alert("Ingrese datos validos")
