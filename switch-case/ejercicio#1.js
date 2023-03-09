@@ -24,7 +24,16 @@ switch (mes.toLowerCase()) {
         console.log("por favor ingrese un valor logico")
 }   
 
-//ejercicio #2
+//ejercicio #2 operador ternario
 
 let nombre = prompt ("ingrese su nombre");
 let saludo = nombre==="" ? " ingrese un valor valido" : "hola" + nombre;
+
+console.log(saludo);
+
+// otro ejercicio con conectores
+let nombres = prompt ("ingrese su nombre");
+nombres==="" || nombres==="." || typeof nombres ==="Number" ? "ingrese un nombre valido" : nombres ==="Sergio" ? "Bienvenido " : "Bienvenido Invitado";
+
+// ejercicio si es par o impar
+
