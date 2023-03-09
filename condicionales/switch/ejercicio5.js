@@ -5,8 +5,19 @@
 
 var numeroConejos = Number (prompt("Ingrese numero de conejos"))
 var conejosNegros = Number (prompt("Ingrese numero de conejos negros"))
-var precioCB = Number (prompt("Ingrese precio de conejo blanco"))
-var precioCN = Number (prompt("ingrese precio de conejo blanco"))
 var conejosBlancos = numeroConejos - conejosNegros
+var numeroConejosNVendidos = Number (prompt("Ingrese numero de conejos negros vendidos"))
+var numeroConejosBVendidos = Number (prompt("Ingrese numero de conejos blancos vendidos"))
+var precioCB = parseFloat (prompt("Ingrese precio de conejo blanco"))
+var precioCN = parseFloat (prompt("ingrese precio de conejo negro"))
 
-switch
+
+var conejosVentidos = numeroConejosBVendidos + numeroConejosNVendidos
+    alert ("Se han vendido = " + conejosVentidos + '\n' +"conejos")
+var totalVenta = parseFloat ((numeroConejosNVendidos * precioCN) + (numeroConejosBVendidos * precioCB))
+    alert ("El precio total de los conejos vendidos es = " + totalVenta)
+if (numeroConejosBVendidos > numeroConejosNVendidos){
+    alert("Se vendieron mas conejos blancos")
+}else {
+    alert("Se vendieron mas conejos negros")
+}

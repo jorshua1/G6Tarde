@@ -26,3 +26,18 @@ vPromedioMateria03 = (vPromedioExamenFisica + vPromedioTareaF);
 
 let vTotalTodasM = (vPromedioMateria01 + vPromedioMateria02 + vPromedioMateria03) / 3;
      alert("El promedio de matematicas es = " + PromedioMateria01 + '\n' + "El promedio de fisica es = " + vPromedioMateria02 + '\n' + "El promedio de quimica es = " + vPromedioMateria03 + '\n' + "El promedio general es = " + vTotalTodasM)
+
+
+
+
+
+
+
+//     let vExamenMate = parseInt(prompt("Ingrese la nota del examen de Matematicas"));
+//     let vPromedio = vExamenMate * 0.90;
+//     if(vPromedio <= 5.0) {
+//          alert( vPromedio)
+//     }else{
+//          alert("Error")
+//     }
+
