@@ -1,5 +1,7 @@
 //calcular la calificacion de cada estudiante de la escuela Pequeños Brocolitos
-alert("Por favor ingresar los valores de las notas entre los parametros")
+alert("ANUNCIO INFORMATIVO ANTES DE INGRESAR DATOS \n"+
+    "\n"+
+    "Por favor ingresar los valores de las notas entre los parametros [0 y 5]")
 
 //Se declaran las variables y se inicialian por medio de la informacion igresada por el prompt
 let exam_1 = parseInt(prompt("por favor digitar la nota obtenida del primer examen"));
