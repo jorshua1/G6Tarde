@@ -57,13 +57,13 @@ if((isNaN(examen1)) || (examen1<0) || (examen1>5)){
                                 notaDefinitiva = promedioExamenes + promedioTrabajos + examenFinal + promedioAutoCoevaluacion
                                 if(notaDefinitiva >= 4.7){
                                     alert("Promedio exámenes: " + promedioExamenes + "\nPromedio trabajos: " + promedioTrabajos + "\nPromedio examen final: " + examenFinal + "\nPromedio AutoCoevalaución: " + promedioAutoCoevaluacion + "\n\nEl estudiante se encuentra en el nivel Superior con una definitiva de: " + notaDefinitiva + "\nEl estudiante aprueba el curso.")
-                                }else if((notaDefinitiva >= 4.0) && (notaDefinitiva <= 4.6)){
+                                }else if((notaDefinitiva >= 4.0) && (notaDefinitiva < 4.7)){
                                     alert("Promedio exámenes: " + promedioExamenes + "\nPromedio trabajos: " + promedioTrabajos + "\nPromedio examen final: " + examenFinal + "\nPromedio AutoCoevalaución: " + promedioAutoCoevaluacion + "\n\nEl estudiante se encuentra en el nivel Alto con una definitiva de: " + notaDefinitiva + "\nEl estudiante aprueba el curso.")
-                                }else if((notaDefinitiva >= 3.0) && (notaDefinitiva <= 3.9)){
+                                }else if((notaDefinitiva >= 3.0) && (notaDefinitiva < 4.0)){
                                     alert("Promedio exámenes: " + promedioExamenes + "\nPromedio trabajos: " + promedioTrabajos + "\nPromedio examen final: " + examenFinal + "\nPromedio AutoCoevalaución: " + promedioAutoCoevaluacion + "\n\nEl estudiante se encuentra en el nivel Básico con una definitiva de: " + notaDefinitiva + "\nEl estudiante aprueba el curso.")
-                                }else if((notaDefinitiva >= 2.0) && (notaDefinitiva <= 2.9)){
+                                }else if((notaDefinitiva >= 2.0) && (notaDefinitiva < 3.0)){
                                     alert("Promedio exámenes: " + promedioExamenes + "\nPromedio trabajos: " + promedioTrabajos + "\nPromedio examen final: " + examenFinal + "\nPromedio AutoCoevalaución: " + promedioAutoCoevaluacion + "\n\nEl estudiante se encuentra en el nivel Bajo con una definitiva de: " + notaDefinitiva + "\nEl estudiante reprueba el curso.") 
-                                }else if(notaDefinitiva <= 1.9){
+                                }else if(notaDefinitiva < 2.0){
                                     alert("Promedio exámenes: " + promedioExamenes + "\nPromedio trabajos: " + promedioTrabajos + "\nPromedio examen final: " + examenFinal + "\nPromedio AutoCoevalaución: " + promedioAutoCoevaluacion + "\n\nEl estudiante se encuentra en el nivel Muy bajo con una definitiva de: " + notaDefinitiva + "\nEl estudiante reprueba el curso.") 
                                 }
                             }
