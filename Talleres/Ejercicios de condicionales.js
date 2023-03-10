@@ -13,20 +13,14 @@ if (isNaN(diametro)){
 
 ////////////////////////////////////////////////////
 
-let año = Number(prompt("Ingrese el año"));
-
-if (año % 4 === 0 && año % 100 === 0 && año % 400 === 0){
-    console.log("
-}
-
-
 
 
 ///////////////////////////////////////////////////////77
 
-/*let calificación = Number(prompt("Ingrese la calificación"));
-
-if ( calificación < 2.0 && calificación >=  1.0){
+let calificación = Number(prompt("Ingrese la calificación"));
+if (isNaN(calificación)){
+    console.log("error, ingrese un numero")
+}else if ( calificación < 2.0 && calificación >=  1.0){
     console.log("Calificacion Insuficiente");
 }else if ( calificación === 3.0) {
     console.log("Calificacion Suficiente");
@@ -36,4 +30,4 @@ if ( calificación < 2.0 && calificación >=  1.0){
     console.log ("Calificacion Excelente")
 }else {
     console.log ("Calificación Invalida")
-} */
+} 
