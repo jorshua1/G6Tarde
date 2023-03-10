@@ -1,30 +1,37 @@
-// Pedimos al usuario que ingrese las notas y las almacenamos en variables
 let nota1 = parseFloat(prompt("Ingrese la nota 1 (0-5):"));
-if (nota1 > 5) {
-  alert("La nota no puede ser mayor a 5. Programa terminado.");
-  throw new Error("Nota mayor a 5.");
-}
-let nota2 = parseFloat(prompt("Ingrese la nota 2 (0-5):"));
-if (nota2 > 5) {
-  alert("La nota no puede ser mayor a 5. Programa terminado.");
-  throw new Error("Nota mayor a 5.");
-}
-let nota3 = parseFloat(prompt("Ingrese la nota 3 (0-5):"));
-if (nota3 > 5) {
-  alert("La nota no puede ser mayor a 5. Programa terminado.");
-  throw new Error("Nota mayor a 5.");
-}
-let nota4 = parseFloat(prompt("Ingrese la nota 4 (0-5):"));
-if (nota4 > 5) {
-  alert("La nota no puede ser mayor a 5. Programa terminado.");
-  throw new Error("Nota mayor a 5.");
-}
-let nota5 = parseFloat(prompt("Ingrese la nota 5 (0-5):"));
-if (nota5 > 5) {
-  alert("La nota no puede ser mayor a 5. Programa terminado.");
-  throw new Error("Nota mayor a 5.");
+
+if (nota1 > 5 || isNaN(nota1)) {
+  console.error("La nota ingresada no es válida");
+  throw new Error("Programa cerrado");
 }
 
+let nota2 = parseFloat(prompt("Ingrese la nota 2 (0-5):"));
+
+if (nota2 > 5 || isNaN(nota2)) {
+  console.error("La nota ingresada no es válida");
+  throw new Error("Programa cerrado");
+}
+
+let nota3 = parseFloat(prompt("Ingrese la nota 3 (0-5):"));
+
+if (nota3 > 5 || isNaN(nota3)) {
+  console.error("La nota ingresada no es válida");
+  throw new Error("Programa cerrado");
+}
+
+let nota4 = parseFloat(prompt("Ingrese la nota del trabajo final (0-5):"));
+
+if (nota4 > 5 || isNaN(nota4)) {
+  console.error("La nota ingresada no es válida");
+  throw new Error("Programa cerrado");
+}
+
+let nota5 = parseFloat(prompt("Ingrese la nota de autoevaluación y co-evaluación (0-5):"));
+
+if (nota5 > 5 || isNaN(nota5)) {
+  console.error("La nota ingresada no es válida");
+  throw new Error("Programa cerrado");
+}
 
 // Verificamos si las notas ingresadas están dentro del rango permitido (0-5)
 if (nota1 < 0 || nota1 > 5 || nota2 < 0 || nota2 > 5 || nota3 < 0 || nota3 > 5 || nota4 < 0 || nota4 > 5 || nota5 < 0 || nota5 > 5) {
