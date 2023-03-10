@@ -31,30 +31,30 @@ var promedioEva;
 var final;
 
 var nota1 = Number (prompt("Ingrese Valor nota 1"))
-if (nota1 <= 5){
+if (nota1 > 0 && nota1 <= 5.0){
     nota2 = Number (prompt("Ingrese valor nota 3"))
-    }if (nota2 <= 5){
+    }if (nota2 > 0 && nota2 <= 5.0){
     nota3 = Number (prompt("Ingrese valor nota 3"))
-    }if (nota3 <= 5){
+    }if (nota3 > 0 && nota3 <= 5.0){
     promedioNotas = ((nota1 + nota2 + nota3)/3) * 0.55
        alert ("Promedio de notas = " + promedioNotas)
        trabajo1 = Number (prompt("Ingrese valor trabajo 1"))
-    }if (trabajo1 <= 5){
+    }if (trabajo1 > 0 && trabajo1 <= 5.0){
         trabajo2 = Number (prompt("Ingrese valor trabajo 1"))
-    }if (trabajo2 <= 5){
+    }if (trabajo2 > 0 && trabajo2 <= 5.0){
     promedioTrabajo = ((trabajo1+ trabajo2)/2) * 0.15
         alert ("Promedio de trabajos = " + promedioTrabajo)
         notaExamenFi = Number (prompt("Ingrese valor Examen final"))
-    }if (notaExamenFi <= 5){
+    }if (notaExamenFi > 0 && notaExamenFi <= 5.0){
     promedioExamenFi = notaExamenFi * 0.20
         alert ("Promedio de examen final = " + promedioExamenFi)
         notaAutoEva = Number (prompt("Ingrese valor de autoevaluacion"))
-    }if (notaAutoEva <= 5){
+    }if (notaAutoEva > 0 && notaAutoEva <= 5.0){
         notaCoEva = Number(prompt("Ingrese valor nota co evaluacion"))
-    }if (notaCoEva <= 5){
+    }if (notaCoEva > 0 && notaCoEva <= 5.0){
     promedioEva = ((notaCoEva + notaAutoEva)/2) * 0.10
         alert ("Promedio de evaluacion y coevalucion = " + promedioEva)
-    }if (notaCoEva <= 5){
+    }if (notaCoEva > 0 && notaCoEva <= 5.0){
     final = (promedioNotas + promedioTrabajo + promedioEva + promedioEva)
         alert("Nota final = " + final)
             }if (final == 0 || final <= 1.9){
