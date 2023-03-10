@@ -50,19 +50,18 @@ if (isNaN(notaEx1) || notaEx1 < 0 || notaEx1 >5){
                                 let notatra = (notaTRA1+notaTRA2)/2;
                                 let notatraF = notatra*0.15;
                                 let notaFinal = exaFIN*0.20;
-                                let dosnotas = (notaAUT+notaCOE)*0.10
-                                let defenitiva = notaexaF+notatraF+notaFinal+dosnotas;
-                                if(defenitiva >= 0 && defenitiva <= 1.9){
-                                    console.log("Usted reprobó con un nivel muy bajo con una nota de: "+defenitiva);
-                                }else if (defenitiva >= 2.0 && defenitiva <= 2.9){
-                                    console.log("Usted reprobó con un nivel bajo con una nota de: "+defenitiva);
-                                }else if (defenitiva >= 3.0 && defenitiva <= 3.9){
-                                    console.log("Usted aprobó con un nivel básico con una nota de: "+defenitiva);
-                                }else if (definitiva >= 4.0 && defenitiva <= 4.6){
-                                    console.log("Usted aprobó con un nivel alto con una nota de: "+defenitiva);
-                                }else if (defenitiva >= 4.7 && defenitiva <= 5.0){
-                                    console.log("Usted aprobó con un nivel superior con una nota de: "+defenitiva);
-
+                                let dosnotas = ((notaAUT+notaCOE)/2)*0.10;
+                                let definitiva = notaexaF+notatraF+notaFinal+dosnotas;
+                                if(definitiva >= 0 && definitiva <= 1.9){
+                                    console.log("Usted reprobó con un nivel muy bajo con una nota de: "+definitiva);
+                                }else if (definitiva >= 2.0 && definitiva <= 2.9){
+                                    console.log("Usted reprobó con un nivel bajo con una nota de: "+definitiva);
+                                }else if (definitiva >= 3.0 && definitiva <= 3.9){
+                                    console.log("Usted aprobó con un nivel básico con una nota de: "+definitiva);
+                                }else if (definitiva >= 4.0 && definitiva <= 4.6){
+                                    console.log("Usted aprobó con un nivel alto con una nota de: "+definitiva);
+                                }else if (definitiva >= 4.7 && definitiva <= 5.0){
+                                    console.log("Usted aprobó con un nivel superior con una nota de: "+definitiva);
                                 }
                             }
                         }
