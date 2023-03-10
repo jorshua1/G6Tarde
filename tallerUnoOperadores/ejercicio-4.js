@@ -9,8 +9,8 @@ let salarioBase = 980000;
 let comision = 170000;
 let extraComision = 5;/*5 % del valor de la venta*/
 
-totalMontoVenta = autosVendidos*valorVehiculos;
+totalMontoVenta = autosVendidos * valorVehiculos;
 
-salarioVendedor = (salarioBase + (autosVendidos * comision)) + (totalMontoVenta * (extraComision/100));
+salarioVendedor = (salarioBase + (autosVendidos * comision)) + (totalMontoVenta * (extraComision / 100));
 
-console.log("El salario del vendedor es de : $" + salarioVendedor + " , a razón de " + autosVendidos + " autos vendidos y un monto total de venta de $" + totalMontoVenta );
+console.log("El salario del vendedor es de : $" + salarioVendedor + " , a razón de " + autosVendidos + " autos vendidos y un monto total de venta de $" + totalMontoVenta);

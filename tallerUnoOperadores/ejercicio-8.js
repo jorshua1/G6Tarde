@@ -31,19 +31,19 @@ let tareaUnoQuimica = parseFloat(prompt(" Por favor ingrese nota de tarea uno qu
 let tareaUDosQuimica = parseFloat(prompt(" Por favor ingrese nota de tarea dos quimica"));
 let tareaTresQuimica = parseFloat(prompt(" Por favor ingrese nota de tarea tres quimica"));
 
-notaExamenMatematica = (examenMatematica/100)*90;
-notaTareaMatematica = (((tareaUnoMatematica + tareaUDosMatematica + tareaTresMatematica)/3)/100)*10;
+notaExamenMatematica = (examenMatematica / 100) * 90;
+notaTareaMatematica = (((tareaUnoMatematica + tareaUDosMatematica + tareaTresMatematica) / 3) / 100) * 10;
 promedioMatematica = notaExamenMatematica + notaTareaMatematica;
 
-notaExamenFisica = (examenFisica/100)*80;
-notaTareaFisica = (((tareaUnoFisica+ tareaUDosFisica)/2)/100)*20;
+notaExamenFisica = (examenFisica / 100) * 80;
+notaTareaFisica = (((tareaUnoFisica + tareaUDosFisica) / 2) / 100) * 20;
 promedioFisica = notaExamenFisica + notaTareaFisica;
 
-notaExamenQuimica = (examenQuimica/100)*85;
-notaTareaQuimica = (((tareaUnoQuimica+ tareaUDosQuimica+ tareaTresQuimica)/3)/100)*15;
+notaExamenQuimica = (examenQuimica / 100) * 85;
+notaTareaQuimica = (((tareaUnoQuimica + tareaUDosQuimica + tareaTresQuimica) / 3) / 100) * 15;
 promedioQuimica = notaExamenQuimica + notaTareaQuimica;
 
-promedioTotal= promedioMatematica + promedioFisica + promedioQuimica;
+promedioTotal = promedioMatematica + promedioFisica + promedioQuimica;
 
 console.log(" los promedio que obtendra de las materias son : Matematicas = " + promedioMatematica + "; Fisica = " + promedioFisica + "; Quimica = " + promedioQuimica + " y un promedio total de : " + promedioTotal);
 

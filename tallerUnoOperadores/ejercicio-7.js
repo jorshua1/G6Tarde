@@ -8,8 +8,8 @@ let valorVentas = parseInt(prompt("por favor ingrese el valor total de las venta
 let salarioBase = parseInt(prompt("Por favor ingresar sueldo base del vendedor:"));
 let extraComision = 10;/*10 % del valor de la venta*/
 
-totalMontoVenta = ventasRealizadas*valorVentas;
-comisionVendedor = totalMontoVenta*(extraComision/100);
+totalMontoVenta = ventasRealizadas * valorVentas;
+comisionVendedor = totalMontoVenta * (extraComision / 100);
 salarioVendedor = salarioBase + comisionVendedor;
 
 console.log("El vendedor obtendra por concepto de venta una comision de: $" + comisionVendedor + " , por lo tanto recibirá un total de salario de :" + salarioVendedor);

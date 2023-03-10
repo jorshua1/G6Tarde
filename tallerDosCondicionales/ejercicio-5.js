@@ -7,6 +7,6 @@ eso deberá aparecer un mensaje que diga "dijiste un valor válido", y si ha ing
 
 let generoPersona = hombre;/*prompt("Por favor ingrese genero de la persona, si es mujer, hombre o indefinido.")*/
 
-if ((isNaN(generoPersona)) || generoPersona >= 0){
+if ((isNaN(generoPersona)) || generoPersona >= 0) {
     console.log("Por favor ingrese un valor")
 }

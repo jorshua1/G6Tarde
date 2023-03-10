@@ -17,9 +17,9 @@ let conejosVendidosX = 0;
 conejosN = (isNaN(conejosC1) || isNaN(conejosC2) || conejosC1 + conejosC2);
 console.log("En la granja existen N = " + conejosN + " conejos.");
 
-if (isNaN(conejosY) || conejosY >= 1){
+if (isNaN(conejosY) || conejosY >= 1) {
     conejosBlancos = conejosC1 - conejosY;
     console.log(" los conejos blancos vendidos fueron: " + conejosBlancos);
-}else{
+} else {
     console.log("No se han vendido conejos blancos");
 }

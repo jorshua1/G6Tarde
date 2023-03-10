@@ -8,11 +8,11 @@ pesos.
 
 let duracionLlamada = 5; /*parseFloat(prompt("Por favor ingrese tiempo de la llamada."));*/
 
-if (isNaN(duracionLlamada)  || duracionLlamada >= 0 && duracionLlamada <= 3){
+if (isNaN(duracionLlamada) || duracionLlamada >= 0 && duracionLlamada <= 3) {
     costoBase = duracionLlamada * 200;
-    console.log("el costo de la llamada es de " + costoBase );
-}else{
-    (duracionLlamada>3)
+    console.log("el costo de la llamada es de " + costoBase);
+} else {
+    (duracionLlamada > 3)
     costoExtendido = (3 * 200) + ((duracionLlamada - 3) * 100);
     console.log("El costo de la llamada es de " + costoExtendido);
 }
