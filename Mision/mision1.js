@@ -32,7 +32,7 @@ var final;
 
 var nota1 = Number (prompt("Ingrese Valor nota 1"))
 if (nota1 > 0 && nota1 <= 5.0){
-    nota2 = Number (prompt("Ingrese valor nota 3"))
+    nota2 = Number (prompt("Ingrese valor nota 2"))
     }if (nota2 > 0 && nota2 <= 5.0){
     nota3 = Number (prompt("Ingrese valor nota 3"))
     }if (nota3 > 0 && nota3 <= 5.0){
@@ -40,7 +40,7 @@ if (nota1 > 0 && nota1 <= 5.0){
        alert ("Promedio de notas = " + promedioNotas)
        trabajo1 = Number (prompt("Ingrese valor trabajo 1"))
     }if (trabajo1 > 0 && trabajo1 <= 5.0){
-        trabajo2 = Number (prompt("Ingrese valor trabajo 1"))
+        trabajo2 = Number (prompt("Ingrese valor trabajo 2"))
     }if (trabajo2 > 0 && trabajo2 <= 5.0){
     promedioTrabajo = ((trabajo1+ trabajo2)/2) * 0.15
         alert ("Promedio de trabajos = " + promedioTrabajo)
@@ -55,7 +55,7 @@ if (nota1 > 0 && nota1 <= 5.0){
     promedioEva = ((notaCoEva + notaAutoEva)/2) * 0.10
         alert ("Promedio de evaluacion y coevalucion = " + promedioEva)
     }if (notaCoEva > 0 && notaCoEva <= 5.0){
-    final = (promedioNotas + promedioTrabajo + promedioEva + promedioEva)
+    final = (promedioNotas + promedioTrabajo + promedioExamenFi + promedioEva)
         alert("Nota final = " + final)
             }if (final == 0 || final <= 1.9){
                 alert ("Reprobado" + '\n' + "Rango muy bajo")            
