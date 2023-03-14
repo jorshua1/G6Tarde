@@ -6,7 +6,7 @@ Otoño: septiembre, octubre, noviembre
 Invierno: Diciembre, enero y febrero.
 */
 
-let estacion = 13; /*parseInt(prompt("Por favor ingrese mes del año que desea consultar estacion teniendo en cuenta su orden en el calendario de  1 al 12: "))*/
+let estacion = 12; /*parseInt(prompt("Por favor ingrese mes del año que desea consultar estacion teniendo en cuenta su orden en el calendario de  1 al 12: "))*/
 
 if (estacion > 12) {
     console.log("ingrese numero de mes valido.");
