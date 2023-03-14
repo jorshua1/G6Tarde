@@ -50,37 +50,37 @@ if (isNaN(notauno) || notauno < 0 || notauno > 5) {
               if (promedioTotal < 3 && promedioTotal >= 2) {
                 alert(
                   'su promedio total es de ' +
-                    promedioTotal +
-                    ' su nivel de desempeño es Bajo ' +
-                    ' ha reprobado curso',
+                  promedioTotal +
+                  ' su nivel de desempeño es Bajo ' +
+                  ' ha reprobado curso',
                 )
               } else if (promedioTotal < 4 && promedioTotal >= 3) {
                 alert(
                   'su promedio total es de ' +
-                    promedioTotal +
-                    ' su nivel de desempeño es Basico ' +
-                    ' ha aprovado curso',
+                  promedioTotal +
+                  ' su nivel de desempeño es Basico ' +
+                  ' ha aprovado curso',
                 )
               } else if (promedioTotal <= 4.6 && promedioTotal >= 4) {
                 alert(
                   'su promedio total es de ' +
-                    promedioTotal +
-                    ' su nivel de desempeño es Alto ' +
-                    ' ha aprovado curso',
+                  promedioTotal +
+                  ' su nivel de desempeño es Alto ' +
+                  ' ha aprovado curso',
                 )
               } else if (promedioTotal <= 5 && promedioTotal >= 4.7) {
                 alert(
                   'su promedio total es de ' +
-                    promedioTotal +
-                    ' su nivel de desempeño es Superior ' +
-                    ' ha aprovado curso',
+                  promedioTotal +
+                  ' su nivel de desempeño es Superior ' +
+                  ' ha aprovado curso',
                 )
               } else if (promedioTotal < 2 && promedioTotal >= 0) {
                 alert(
                   'su promedio total es de ' +
-                    promedioTotal +
-                    ' su nivel de desempeño es Muy Bajo ' +
-                    ' ha reprobado curso',
+                  promedioTotal +
+                  ' su nivel de desempeño es Muy Bajo ' +
+                  ' ha reprobado curso',
                 )
               }
             }
