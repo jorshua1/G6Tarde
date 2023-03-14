@@ -60,13 +60,3 @@ if (isNaN(examen1) || examen1 < 0 || examen1 > 5) {
 
     }
 }
-
-
-
-
-
-
-
-
-
-
