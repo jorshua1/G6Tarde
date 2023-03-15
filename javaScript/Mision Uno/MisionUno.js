@@ -32,7 +32,6 @@ if (isNaN(examen1) || examen1 < 0 || examen1 > 5) {
                             if (isNaN(coEva) || coEva < 0 || coEva > 5) {
                                 alert("Por favor revise la nota e ingresela de nuevo. \n\nRecuerde que la nota minima es de 0.0 y la nota maxima es 5.0. ");
                             } else {
-
                                 let promedioExamenes = ((examen1 + examen2 + examen3) * 0.55) / 3;
                                 let promedioTrabajos = ((trabajos1 + trabajos2) * 0.15) / 2;
                                 examenFinal = examenFinal * 0.20;
@@ -50,23 +49,11 @@ if (isNaN(examen1) || examen1 < 0 || examen1 > 5) {
                                 } else {
                                     alert("El estudiante " + nombre + " aprobo el curso, con un nivel Superior \nSu nota final es de: " + notaFinal);
                                 }
-
                             }
                         }
                     }
                 }
             }
         }
-
     }
 }
-
-
-
-
-
-
-
-
-
-
