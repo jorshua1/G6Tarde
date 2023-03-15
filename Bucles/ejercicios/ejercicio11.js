@@ -1,0 +1,1 @@
+//Crear una función que convierta un número decimal a binario
