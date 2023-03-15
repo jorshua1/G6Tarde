@@ -1,0 +1,19 @@
+let num = 1;
+while (num <=10) {
+    console.log(num);
+    num++;
+}
+console.log("XD");
+///////////////////////////////////////////////////////////////77
+let numer = Number(prompt("INGRESE UN NUMERO"));
+if (isNaN(numero) || numero < 0){
+    console.log("ERROR, INGRESE UN NUMERO VALIDO");
+}else{
+    let contador = 0
+    while (contador <= 10) {
+        let mult = numero*contador;
+        console.log(numero + "*" + contador + "=" + mult);
+        contador = contador + 1;
+        
+    }
+}
