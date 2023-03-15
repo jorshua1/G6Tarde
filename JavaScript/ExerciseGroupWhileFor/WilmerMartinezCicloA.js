@@ -13,7 +13,7 @@ while (isNaN(vAge) || vAge < 0 || vAge > 150) {
 while (!isNaN(vTransportation)) {
     vTransportation = String(prompt("Ingrese la forma en la que se dezplaza \n Solo sera valido ingresar: moto, carro, caminando, bicicleta"));
 }
-if (vTransportation == "moto" || vTransportation == "carro" || vTransportation == "caminando" || vTransportation == "bicicleta" ) {
+if (vTransportation == "moto" || vTransportation == "carro" || vTransportation == "caminando" || vTransportation == "bicicleta") {
 
     if (vAge < 16 && vTransportation == "caminando") {
         alert("Tienes " + vAge + " tranquilo se puede ir caminando");
@@ -27,7 +27,8 @@ if (vTransportation == "moto" || vTransportation == "carro" || vTransportation =
         alert("Es menor de edad no debe conducir aún, pero puede practicar");
     } else if (vAge < 16 && vTransportation == "carro") {
         alert("Va bien pero aun no esta en edad de manejar estos veiculos");
-    } if (vCarnet !== "no carnet" || vCarnet !== "si carnet" || vCarnetRV !== "renovado" || vCarnetRV !== "vencido") {
+    } else {
+        if (vCarnet !== "no carnet" || vCarnet !== "si carnet" || vCarnetRV !== "renovado" || vCarnetRV !== "vencido") {
         alert(confirm("Ahora debera ingresar si posee carnet, \n ingresar si carnet o no carnet, \n ademas si lo tiene renovado o no, \n ingresar renovado o vencido"));
         var vCarnet = String(prompt("Ingrese si posee su carnet"));
         if (vAge >= 16 && vTransportation == "moto" && vCarnet == "no carnet") {
@@ -48,6 +49,7 @@ if (vTransportation == "moto" || vTransportation == "carro" || vTransportation =
         }
     }
 
+}    
 } else {
     alert("Ingrese un dato valido");
 }
