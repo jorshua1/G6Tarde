@@ -1,3 +1,4 @@
+/**Calcular el factorial de un número x */
 let numero = parseInt(prompt("Ingrese un numero"));
 let factorial = 1; 
 
