@@ -12,7 +12,7 @@ multiplosQuince = 0;
 acumuladoSumaPares = 0;
 
 for (i = 0; i < 10; i++) {
-    let entero = parseInt(prompt("Por favor ingrese numero entero."));
+    let entero = -15;/*parseInt(prompt("Por favor ingrese numero entero."));*/
     if (entero < 0) {
         negativosIngresados++;
     } else {
@@ -26,5 +26,5 @@ for (i = 0; i < 10; i++) {
     if (entero % 2 == 0) {
         acumuladoSumaPares = acumuladoSumaPares + entero;
     }
-    alert("La cantidad de valores negativos ingresados es: " + negativosIngresados + "\nLa cantidad de valores positivos ingresados es: " + positivosIngresados + "\nLa cantidad de múltiplos de 15 es: " + multiplosQuince + "\nEl valor acumulado de los números ingresados que son pares: " + acumuladoSumaPares);
 }
+/*alert*/console.log("La cantidad de valores negativos ingresados es: " + negativosIngresados + "\nLa cantidad de valores positivos ingresados es: " + positivosIngresados + "\nLa cantidad de múltiplos de 15 es: " + multiplosQuince + "\nEl valor acumulado de los números ingresados que son pares: " + acumuladoSumaPares);
