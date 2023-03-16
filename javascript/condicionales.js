@@ -627,7 +627,7 @@ let pezo = parseInt(prompt("Digite su peso"));
 let altura = parseInt(prompt("Digite su altura"));
 let altura2 = altura*altura;
 let IMC = pezo/altura2;
-
+console.log(altura);
 console.log(IMC);
 if (isNaN(pezo) || pezo < 0 || isNaN(altura) || altura < 0) {
   console.log("Digite datos validos");
