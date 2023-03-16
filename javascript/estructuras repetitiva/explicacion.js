@@ -28,6 +28,9 @@ while(hastael10<11){
 //prueba de for
 let i=0
 let c=parseInt(prompt("ingrese un numero"))
+while(isNaN(c)||c<=0){
+    alert("ingrese un hpta valor valido")
+}
 for(i ;i<=10;i++){
     console.log(i*c)
 }
