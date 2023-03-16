@@ -11,7 +11,7 @@ if(isNaN(exam1)|| exam1<0 || exam1>5){
                 let exam3 = parseFloat(prompt("Ingrese la nota de su tercer examen"));
                 if(isNaN(exam3)|| exam3<0 || exam3>5){
                     console.log("Error")
-                    }
+                    }             
                     else{
                         let trab1 = parseFloat(prompt("Ingrese la nota de su primer trabajo"));
                         if(isNaN(trab1)|| trab1<0 || trab1>5){
@@ -67,3 +67,4 @@ if(isNaN(exam1)|| exam1<0 || exam1>5){
                         }
                 }
         }
+        
