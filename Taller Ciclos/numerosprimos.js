@@ -1,14 +1,33 @@
-var cantidadNumeros = parseInt(prompt("Ingrese la cantidad de numeros que quiere calcular en numeros primos"));
-while (cantidadNumeros < 0 || isNaN(cantidadNumeros)) {
-    alert("La informacion que ingreso es incorrecta, escriba un numero positivo");
-    cantidadNumeros = parseInt(prompt("Ingrese la cantidad de numeros que quiere calcular en numeros primos"));
-}
-let suma = 0;
+let contador = parseInt(prompt("Por favor, ingrese la cantidad de los primeros números primos que desea visualizar. (Las cifras decimales no serán tenidas en cuenta.)"));
+let base = 6;
 
-for (let i = 1; i <= cantidadNumeros; i++) {
-  const numeroPromedio = i * (i + 1) / 2 / i;
-  suma += numeroPromedio;
-  console.log(numeroPromedio);
+while ((isNaN(contador)) || (contador <= 0)) {
+  contador = parseInt(prompt("Error. Por favor, ingrese un valor númerico válido. (Las cifras decimales no serán tenidas en cuenta.)"));
 }
-const promedio = suma / cantidadNumeros;
-console.log(`El promedio de los ${cantidadNumeros} números promedio es ${promedio}`);
+if (contador == 1) {
+  console.log(2);
+  contador = 0;
+} else if (contador == 2) {
+  console.log(2);
+  console.log(3);
+  contador = 0;
+} else if (contador == 3) {
+  console.log(2);
+  console.log(3);
+  console.log(5);
+  contador = 0;
+} else {
+  console.log(2);
+  console.log(3);
+  console.log(5);
+  contador = contador - 3
+  for (contador; contador > 0;) {
+    if (((base / base) == 1) && ((base / 1) == base) && ((base % 2) != 0) && ((base % 3) != 0) && ((base % 5) != 0)) {
+      contador--
+      console.log(base)
+      base++
+    } else {
+      base++
+    }
+  }
+}
