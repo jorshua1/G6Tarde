@@ -5,14 +5,26 @@ b) La cantidad de valores positivos ingresados.
 c) La cantidad de múltiplos de 15.
 d) El valor acumulado de los números ingresados que son pares.
 */
-let enteroUno = parseInt(prompt("Por favor ingrese numero entero uno."));
-let enteroDos = parseInt(prompt("Por favor ingrese numero entero dos."));
-let enteroTres = parseInt(prompt("Por favor ingrese numero entero tres."));
-let enteroCuatro = parseInt(prompt("Por favor ingrese numero entero cuatro."));
-let enteroCinco = parseInt(prompt("Por favor ingrese numero entero cinco."));
-let enteroSeis = parseInt(prompt("Por favor ingrese numero entero seis."));
-let enteroSiete = parseInt(prompt("Por favor ingrese numero entero siete."));
-let enteroOcho = parseInt(prompt("Por favor ingrese numero entero ocho."));
-let enteroNueve = parseInt(prompt("Por favor ingrese numero entero nueve."));
-let enteroDiez = parseInt(prompt("Por favor ingrese numero entero diez."));
 
+negativosIngresados = 0;
+positivosIngresados = 0;
+multiplosQuince = 0;
+acumuladoSumaPares = 0;
+
+for (i = 0; i < 10; i++) {
+    let entero = parseInt(prompt("Por favor ingrese numero entero."));
+    if (entero < 0) {
+        negativosIngresados++;
+    } else {
+        if (entero > 0) {
+            positivosIngresados++;
+        }
+    }
+    if (entero % 15 == 0) {
+        multiplosQuince++;
+    }
+    if (entero % 2 == 0) {
+        acumuladoSumaPares = acumuladoSumaPares + entero;
+    }
+    alert("La cantidad de valores negativos ingresados es: " + negativosIngresados + "\nLa cantidad de valores positivos ingresados es: " + positivosIngresados + "\nLa cantidad de múltiplos de 15 es: " + multiplosQuince + "\nEl valor acumulado de los números ingresados que son pares: " + acumuladoSumaPares);
+}
