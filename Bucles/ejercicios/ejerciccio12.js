@@ -43,7 +43,7 @@ if (edad >= 16 && medioTransporte == "moto" || medioTransporte == "carro" || med
    }
    if (estadoLisencia == "vigente"){
     alert("muy bien")
-   }if (estadoLisencia == "vencido"){
+   }else if (estadoLisencia == "vencido"){
          alert("lo van a multar")
         }
    }
