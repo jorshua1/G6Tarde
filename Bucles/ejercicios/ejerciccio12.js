@@ -9,25 +9,43 @@
 
 
 var edad = parseInt (prompt("Ingrese su edad"))
+while(isNaN(edad)){
+    alert("error")
+    edad = parseInt (prompt("Ingrese su edad"))
+}
 if (edad <=200){{
     var medioTransporte = prompt ("Ingrese su medio de transporte")
      }
 if (medioTransporte !== "pie" && medioTransporte !== "moto" && medioTransporte !== "carro" && medioTransporte !== "bicicleta"){
     alert("no es medio de transporte valido")
-}if (edad >= 16 && medioTransporte == "moto" || medioTransporte == "carro" || medioTransporte == "bicicleta" ){
+}while(medioTransporte !== "pie" && medioTransporte !== "moto" && medioTransporte !== "carro" && medioTransporte !== "bicicleta"){
+    medioTransporte = prompt ("Ingrese su medio de transporte")
+}
+if (edad >= 16 && medioTransporte == "moto" || medioTransporte == "carro" || medioTransporte == "bicicleta" ){
     alert("Cumple " + '\n' + "Edad = " + edad + '\n' + "medio de transporte = " + medioTransporte)  
    }if (edad < 16 && medioTransporte == "moto" || medioTransporte == "carro" || medioTransporte == "bicicleta"){
        alert("No tiene edad para coducir")
    }if (edad > 16){
     var carnetConduccion = prompt ("Tiene lisencia de conduccion")
-   }if (carnetConduccion == "si"){
+   }while(carnetConduccion !== "si" && carnetConduccion !== "no"){
+    alert("error")
+    carnetConduccion = prompt ("Tiene lisencia de conduccion")
+    }
+   if (carnetConduccion == "no"){
+    alert ("es momento de sacar lisencia")
+    
+   }else if(carnetConduccion == "si"){{
     var estadoLisencia = prompt("ingrese el estado de su lisencia")
-   }if (estadoLisencia == "vigente"){
+   } 
+   while(estadoLisencia !== "vencida" && estadoLisencia !== "vigente"){
+    alert("error")
+    estadoLisencia = prompt("ingrese el estado de su lisencia")
+   }
+   if (estadoLisencia == "vigente"){
     alert("muy bien")
-   }else if (estadoLisencia == "vencido"){
+   }if (estadoLisencia == "vencido"){
          alert("lo van a multar")
-   }   else if (carnetConduccion == "no"){
-      alert ("es momento de sacar lisencia")
+        }
    }
 }
 else {
