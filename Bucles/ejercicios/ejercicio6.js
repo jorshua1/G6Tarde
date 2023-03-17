@@ -3,7 +3,7 @@
 var numeroAleatorio = parseInt
 var intento = parseInt
 var contador = parseInt
-contador= 10;
+contador = 10;
 // Obtención de número aleatorio
 numeroAleatorio = parseInt((Math.random()*100+1));
 alert("Intenta adivinar un número aleatorio entre el 1 y 100. "
@@ -12,6 +12,10 @@ alert("Intenta adivinar un número aleatorio entre el 1 y 100. "
 do {
    alert("Número contador: " + contador);
   intento = parseInt(prompt("Introduce el número que creas posible: "));
+       while (isNaN(intento) || intento > 100){
+        alert("ERROR" + '\n' + "Ingrese dato valido")
+        intento = parseInt(prompt("Introduce el número que creas posible: "));
+       }
 
   if (intento > numeroAleatorio) {
     alert("El número que buscas es menor, te quedan "
