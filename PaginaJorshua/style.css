@@ -1,0 +1,86 @@
+body{
+    background: rgb(0, 0, 0);
+    height: 100vh;
+
+}
+
+.imagenes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    
+}
+.imagen1{
+    order: 2;
+    flex-grow: 1;
+    height: 500px;
+    width: 200px;
+    transition: filter 0.3s ease-in-out;
+    transition: box-shadow 0.3s ease-in-out;
+    border-radius: 50cm;
+    
+}.imagen1:hover {
+    border-color: rgb(231, 49, 49);
+    box-shadow: 0 0 20px 5px rgba(255, 0, 0, 0.5);
+    filter: brightness(120%);
+
+}@media only screen and (min-width: 601px) {
+    .imagen1 {
+      width: 25%;
+    }
+}
+.imagen2{
+    order: 1;
+    flex-grow: 2;
+    height: 500px;
+    width: 200px;
+    transition: filter 0.3s ease-in-out;
+    transition: box-shadow 0.3s ease-in-out;
+    border-radius: 50cm;
+
+
+}.imagen2:hover {
+    box-shadow: 0 0 20px 5px rgba(255, 0, 0, 0.5);
+    border-color: rgb(231, 49, 49);
+  filter: brightness(120%);
+}@media only screen and (min-width: 601px) {
+    .imagen2 {
+      width: 25%;
+    }
+  }
+
+p{
+    font-style: oblique;
+    font-size: 0.5cm;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.btnInsta{
+    background-color: brown;
+    border-radius: 50cm;
+
+}
+.container{
+    background-color: rgb(255, 255, 255);
+}
+h1{
+    font-style: oblique;
+    text-align: center;
+}
+.button {
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    border-radius: 8px;
+    background-color:rgb(255, 0, 119);
+    
+    
+}
+
+.button:hover {
+    background-color: #af6b4c; /* Green */
+    color: white;
+}
+.divbtn{
+    align-items: center;
+}
