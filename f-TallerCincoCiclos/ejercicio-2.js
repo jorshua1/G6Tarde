@@ -28,10 +28,7 @@ if (formaPago == "1" || formaPago == "2") {
         precioDescuentoTres = precioOriginalTres - (precioOriginalTres * 0.20);
         precioDescuentoCuatro = precioOriginalCuatro - (precioOriginalCuatro * 0.20);
     }
-    console.log("El nombre del articulo es: " + nombreArticuloUno + " \nLa forma de pago es: " + formaPago + "\nEl precio original es: " + precioOriginalUno + "\nEl precio con descuento es: " + precioDescuentoUno);
-    console.log("El nombre del articulo es: " + nombreArticuloDos + " \nLa forma de pago es: " + formaPago + "\nEl precio original es: " + precioOriginalDos + "\nEl precio con descuento es: " + precioDescuentoDos);
-    console.log("El nombre del articulo es: " + nombreArticuloTres + " \nLa forma de pago es: " + formaPago + "\nEl precio original es: " + precioOriginalTres + "\nEl precio con descuento es: " + precioDescuentoTres);
-    console.log("El nombre del articulo es: " + nombreArticuloCuatro + " \nLa forma de pago es: " + formaPago + "\nEl precio original es: " + precioOriginalCuatro + "\nEl precio con descuento es: " + precioDescuentoCuatro);
+    console.log("La forma de pago es: " + formaPago + "\n\nEl articulo uno es: " + nombreArticuloUno + "\nEl precio original es: " + precioOriginalUno + "\nEl precio con descuento es: " + precioDescuentoUno + "\n\nEl articulo dos es: " + nombreArticuloDos + "\nEl precio original es: " + precioOriginalDos + "\nEl precio con descuento es: " + precioDescuentoDos + "\n\nEl articulo tres es: " + nombreArticuloTres + "\nEl precio original es: " + precioOriginalTres + "\nEl precio con descuento es: " + precioDescuentoTres + "\n\nEl articulo cuatro es: " + nombreArticuloCuatro + "\nEl precio original es: " + precioOriginalCuatro + "\nEl precio con descuento es: " + precioDescuentoCuatro);
 } else {
     console.log("Por favor ingrese una forma de pago valida");
 }
