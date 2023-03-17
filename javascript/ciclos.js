@@ -91,11 +91,11 @@ do {
   }
 } while (contador < 10);
 
-//.......................
+//--------------------------------------------------------------------------------
 
 num = parseInt(prompt("Ingrese hasta que rango quiere ver los numeros primos"));
 
-while (isNaN(numUsu) || numUsu <= 0) {
+while (isNaN(num) || num <= 0) {
   num = parseInt(
     prompt(
       "Ingrese un numero valido hasta que rango quiere ver los numeros primos"
@@ -103,8 +103,199 @@ while (isNaN(numUsu) || numUsu <= 0) {
   );
 }
 
-for (let index = 0; index < num; index++) {
-  if (num % 2 == 0 || num % 3 == 0 || num % 7 == 0) {
+for (let index = 1; index <= num; index++) {
+  if (
+    index % 2 == 0 ||
+    index % 3 == 0 ||
+    index % 5 == 0 ||
+    index % 7 == 0 ||
+    index % 11 == 0
+  ) {
+    if (
+      index === 2 ||
+      index === 3 ||
+      index === 5 ||
+      index === 7 ||
+      index === 11
+    ) {
+      console.log("Estos son primos: " + index);
+    }
   } else {
+    console.log("Estos son primos: " + index);
   }
 }
+
+//--------------------------------------------------------------------------------
+
+num = parseInt(prompt("Ingrese un numero"));
+while (isNaN(num) || num < 0) {
+  num = parseInt(prompt("Ingrese un numero valido"));
+}
+
+for (let index = 1; index <= num; index++) {
+  if (index % 2 != 0) {
+    console.log(index);
+  }
+}
+
+//--------------------------------------------------------------------------------
+
+articulo1 = prompt("Ingrese el primer articulo");
+articulo2 = prompt("Ingrese el segundo articulo");
+articulo3 = prompt("Ingrese el tercer articulo");
+articulo4 = prompt("Ingrese el segundo articulo");
+
+precioO1 = parseInt(prompt("Ingrese el precio del primer articulo"));
+while (isNaN(precioO1) || precioO1 <= 0) {
+  precioO1 = parseInt(prompt("Ingrese el precio valido del primer articulo"));
+}
+
+precioO2 = parseInt(prompt("Ingrese el precio del segundo articulo"));
+while (isNaN(precioO2) || precioO2 <= 0) {
+  precioO2 = parseInt(prompt("Ingrese el precio valido del segundo articulo"));
+}
+
+precioO3 = parseInt(prompt("Ingrese el precio del tercer articulo"));
+while (isNaN(precioO3) || precioO3 <= 0) {
+  precioO3 = parseInt(prompt("Ingrese el precio valido del tercer articulo"));
+}
+
+precioO4 = parseInt(prompt("Ingrese el precio del cuarto articulo"));
+while (isNaN(precioO4) || precioO4 <= 0) {
+  precioO4 = parseInt(prompt("Ingrese el precio valido del cuarto articulo"));
+}
+
+clave = parseInt(
+  prompt("Si paga a contado ingrese 1, Si paga a credito ingrese 2")
+);
+while (isNaN(clave) || clave <= 0) {
+  precioO4 = parseInt(prompt("Ingrese el precio valido del cuarto articulo"));
+}
+
+switch (clave) {
+  case 1:
+    descuento1 = precioO1 * 0.1;
+    descuento1 = precioO1 - descuento1;
+    console.log(
+      "El precio con descuento de " + articulo1 + " es de: " + descuento1
+    );
+
+    descuento2 = precioO2 * 0.1;
+    descuento2 = precioO2 - descuento2;
+    console.log(
+      "El precio con descuento de " + articulo2 + " es de: " + descuento2
+    );
+
+    descuento3 = precioO3 * 0.1;
+    descuento3 = precioO3 - descuento3;
+    console.log(
+      "El precio con descuento de " + articulo3 + " es de: " + descuento3
+    );
+
+    descuento4 = precioO4 * 0.1;
+    descuento4 = precioO4 - descuento4;
+    console.log(
+      "El precio con descuento de " + articulo4 + " es de: " + descuento4
+    );
+    console.log("Se realizo un descuento de 10% a cada articulo");
+    break;
+  case 2:
+    descuento1 = precioO1 * 0.2;
+    descuento1 = precioO1 - descuento1;
+    console.log(
+      "El precio con descuento de " + articulo1 + " es de: " + descuento1
+    );
+
+    descuento2 = precioO2 * 0.2;
+    descuento2 = precioO2 - descuento2;
+    console.log(
+      "El precio con descuento de " + articulo2 + " es de: " + descuento2
+    );
+
+    descuento3 = precioO3 * 0.2;
+    descuento3 = precioO3 - descuento3;
+    console.log(
+      "El precio con descuento de " + articulo3 + " es de: " + descuento3
+    );
+
+    descuento4 = precioO4 * 0.2;
+    descuento4 = precioO4 - descuento4;
+    console.log(
+      "El precio con descuento de " + articulo4 + " es de: " + descuento4
+    );
+    console.log("Se realizo un descuento de 20% a cada articulo");
+    break;
+
+  default:
+    console.log("Ingrese un valor de clave valido");
+    break;
+}
+
+//-------------------------------------------------------------------
+
+pesoN = 0;
+pesoJ = 0;
+pesoA = 0;
+pesoV = 0;
+contadorN = 0;
+contadorJ = 0;
+contadorA = 0;
+contadorV = 0;
+
+for (let index = 0; index < 4; index++) {
+  edad = parseInt(prompt("Ingrese su edad"));
+  while (isNaN(edad) || edad <= 0) {
+    edad = parseInt(prompt("Ingrese su edad valida"));
+  }
+
+  if (edad >= 0 && edad <= 12) {
+    peso = parseInt(prompt("Ingrese su peso"));
+    while (isNaN(peso) || peso <= 0) {
+      peso = parseInt(prompt("Ingrese su peso valido"));
+    }
+    pesoN = pesoN + peso;
+    contadorN = contadorN + 1;
+  } else {
+    if (edad >= 13 && edad <= 29) {
+      peso = parseInt(prompt("Ingrese su peso"));
+      while (isNaN(peso) || peso <= 0) {
+        peso = parseInt(prompt("Ingrese su peso valido"));
+      }
+      pesoJ = pesoJ + peso;
+      contadorJ = contadorJ + 1;
+    } else {
+      if (edad >= 30 && edad <= 59) {
+        peso = parseInt(prompt("Ingrese su peso"));
+        while (isNaN(peso) || peso <= 0) {
+          peso = parseInt(prompt("Ingrese su peso valido"));
+        }
+        pesoA = pesoA + peso;
+        contadorA = contadorA + 1;
+      } else {
+        if (edad >= 60) {
+          peso = parseInt(prompt("Ingrese su peso"));
+          while (isNaN(peso) || peso <= 0) {
+            peso = parseInt(prompt("Ingrese su peso valido"));
+          }
+          pesoV = pesoV + peso;
+          contadorV = contadorV + 1;
+        }
+      }
+    }
+  }
+}
+
+console.log(
+  "El promedio del peso de los niños es; " + (promedioN = pesoN / contadorN)
+);
+console.log(
+  "El promedio del peso de los jovenes es; " + (promedioJ = pesoJ / contadorJ)
+);
+console.log(
+  "El promedio del peso de los adultos es; " + (promedioA = pesoA / contadorA)
+);
+console.log(
+  "El promedio del peso de los awelos es; " + (promedioV = pesoV / contadorV)
+);
+
+//------------------------------------------------------
