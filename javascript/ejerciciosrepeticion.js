@@ -6,14 +6,6 @@ while(isNaN(num) || num<0){
 
 }
 
-
-for (let index = 0; index < array.length; index++) {
-
-
-    
-}
-
-
 let numero=10
 if(numero<=10){
 
@@ -162,8 +154,108 @@ if(valor==num){
     console.log("Numero de intentos agotado")
 }
 
-//
+//Mostrar en pantalla los N primero número primos. Se pide por teclado la cantidad 
+//de números primos que queremos mostrar.
+ 
+var numero= parseInt(prompt("dijite el numero para mostrar sus primos"))
+for(i=0; i<=numero; i++){
     
+   if(i % 2 === 0 || i%3 === 0 || i % 5 === 0 || i % 7 === 0 || i%11 === 0){
+       if(i === 2|| i===3 || i ===5 || i===7 || i===11){
+           console.log(i)
+       }
+    }
+    else{
+        console.log(i)
+    }
+}
+
+//////////////////////////////////////////////////////////////////(4)
+var numero= parseInt(prompt("dijite el numero para mostrar sus primos"))
+for(i=0; i<=numero; i++){
+    
+   if(i % 2 !== 0 ){
+    console.log(i)
+       }
+    }
+
+//////////////////////////////////////////////////////////////////(5)
+art1=prompt("dijite el nombre del articulo 1")
+valor1=parseInt(prompt("dijite el valor del articulo 1"))
+while(isNaN(valor1)||valor1<=0){
+    valor1=parseInt(prompt("dijite un valor valido para el articulo 1")) 
+}
+
+art2=prompt("dijite el nombre del articulo 2")
+valor2=parseInt(prompt("dijite el valor del articulo 2"))
+while(isNaN(valor2)||valor2<=0){
+    valor2=parseInt(prompt("dijite un valor valido para el articulo 1")) 
+}
+
+art3=prompt("dijite el nombre del articulo 3")
+valor3=parseInt(prompt("dijite el valor del articulo 3"))
+while(isNaN(valor3)||valor3<=0){
+    valor3=parseInt(prompt("dijite un valor valido para el articulo 1")) 
+}
+
+art4=prompt("dijite el nombre del articulo 4")
+valor4=parseInt(prompt("dijite el valor del articulo 4"))
+while(isNaN(valor4)||valor4<=0){
+    valor4=parseInt(prompt("dijite un valor valido para el articulo 1")) 
+}
+
+clave=parseInt(prompt("como desea pagar (1--->debito o 2--->credito)"))
+
+while(isNaN(clave)){
+        clave=parseInt(prompt("dijite una clave valida (1--->debito o 2--->credito)"))
+    }
+
+if (clave !== 1 || clave !==2){
+    while(clave !== 1 && clave !==2){
+        clave=parseInt(prompt("dijite una clave valida (1--->debito o 2--->credito)"))
+    }
+}
+
+    totalNeto= valor1+valor2+valor3+valor4
+    dc1=totalNeto*(10/100)
+    dc2=totalNeto*(20/100)
+    console.log(dc1)
+    console.log(dc2)
+       
+    if(clave ===1){
+        dcto1=valor1*(10/100)
+        dcto2=valor2*(10/100)
+        dcto3=valor3*(10/100)
+        dcto4=valor4*(10/100)
+        total1=dcto1+dcto2+dcto3+dcto4
+        total=totalNeto-total1
+    
+        console.log("articolo: "+art1+"---> "+valor1+"---> descuento: "+dcto1)
+        console.log("articolo: "+art1+"---> "+valor2+"---> descuento: "+dcto2)
+        console.log("articolo: "+art1+"---> "+valor3+"---> descuento: "+dcto3)
+        console.log("articolo: "+art1+"---> "+valor4+"---> descuento: "+dcto4)
+        console.log("Tiene un dcto cel 10% por pagar con metodo debito para cada articulo")
+        console.log("Total a pagar: "+total);
+     
+    }else if(clave ===2){
+        dcto1=valor1*(20/100)
+        dcto2=valor2*(20/100)
+        dcto3=valor3*(20/100)
+        dcto4=valor4*(20/100)
+        total1=dcto1+dcto2+dcto3+dcto4
+        total=totalNeto-total1
+    
+        console.log("articolo: "+art1+"---> "+valor1+"---> descuento: "+dcto1)
+        console.log("articolo: "+art1+"---> "+valor2+"---> descuento: "+dcto2)
+        console.log("articolo: "+art1+"---> "+valor3+"---> descuento: "+dcto3)
+        console.log("articolo: "+art1+"---> "+valor4+"---> descuento: "+dcto4)
+        console.log("Tiene un dcto cel 20% por pagar con metodo credito para cada articulo")
+        console.log("Total a pagar: "+total);
+    }
+
+    /////////////////////////////////////////////////////////////(6)
+
+
 
 
 
