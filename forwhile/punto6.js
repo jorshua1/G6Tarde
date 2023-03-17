@@ -25,3 +25,18 @@ for (i = 1; i <= numero; i++){
         
     }
 }
+//////////////////////////////////////////////////////////////////////////////////
+numero = parseInt(prompt("INGRESE EL RANGO"));
+
+while (isNaN(numero) || numero <= 0) {
+numero = parseInt(prompt("INGRESE UN RANGO CORRECTO"));}
+
+for (let conta = 1; conta <= numero; conta++) {
+if (conta % 2 == 0 || conta % 3 == 0 || conta % 5 == 0 || conta % 7 == 0 || conta % 11 == 0) {
+    if(conta === 2 || conta === 3 || conta === 5 || conta === 7 || conta === 11){
+    console.log("Estos son primos: " + conta);
+    }
+} else {
+    console.log("Estos son primos: " + conta);
+}
+}
