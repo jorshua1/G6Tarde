@@ -9,3 +9,29 @@ Jóvenes          13 - 29
 Adultos          30 - 59
 Viejos           60 - en adelante
 */
+let numeroPersonas = 1;
+personaNiño = 0;
+personaJovenes = 0;
+personaAdultos = 0;
+personaViejos = 0;
+
+for (i = 0; i < numeroPersonas; i++) {
+    let edadPersona = 1;/*parseInt(prompt("Por favor ingrese edad de la persona."));*/
+    if (edadPersona >= 0 || edadPersona <= 12) {
+        promNiño = personaNiño / numeroPersonas;
+        personaNiño++;
+    } else {
+        if (edadPersona >= 13 || edadPersona <= 29) {
+            personaJovenes++;
+        } else {
+            if (edadPersona >= 30 || edadPersona <= 59) {
+                personaAdultos++;
+            } else {
+                if (edadPersona >= 60) {
+                    personaViejos++;
+                }
+            }
+        }
+    }
+}
+/*alert*/console.log("El promedio de niños es " + promNiño + " con una cantidad de " + personaNiño + " personas");
