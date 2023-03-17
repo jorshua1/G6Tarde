@@ -72,4 +72,4 @@ switch (n) {
         alert("El numero ingresado es invalido de acuerdo al menú del metodo de pagos");
         break;
 }
-}while (n != 1 || n !=2);
+}while (n != 1 || n != 2);
