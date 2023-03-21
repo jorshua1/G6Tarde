@@ -255,9 +255,202 @@ if (clave !== 1 || clave !==2){
 
     /////////////////////////////////////////////////////////////(6)
 
+cn=0
+cj=0
+ca=0
+cv=0
+pn=0
+pj=0
+pa=0
+pv=0
+
+for(i=1 ; i <= 20 ; i++){
+    edad=parseInt(prompt("dijite la edad del invividuo "+i+": "))
+
+    while(isNaN(edad) || edad <= 0){
+        edad=parseInt(prompt("dijite una edad valida para el invividuo "+i+": "))
+    }
+
+    peso=parseInt(prompt("dijite el peso del invividuo "+i+": "))
+    while(isNaN(peso) || peso <= 0){
+        peso=parseInt(prompt("dijite un peso valido para el invividuo "+i+": "))
+    }
+    
+   if(edad >= 0 && edad <=12 ){
+       console.log("niño")
+       pn=pn+peso
+       cn=cn+1
+   }else if(edad >12 && edad <= 29){
+       console.log("joven")
+       pj=pj+peso
+       cj=cj+1
+   }else if(edad >29 && edad <=59){
+       console.log("adulto")
+       pa=pa+peso
+       ca=ca+1
+   }else if(edad >59){
+       console.log("viejo")
+       pv=pv+peso
+       cv=cv+1
+   }
+}
+ptn=pn/cn
+ptj=pj/cj
+pta=pa/ca
+ptv=pv/cv
+
+//console.log(cn)
+//console.log(cv)
+//console.log(cj)
+//console.log(ca)
+
+//console.log(pn)
+//console.log(pv)
+//console.log(pj)
+//console.log(pa)
+
+console.log("el promedio de los niños es: "+ptn)
+console.log("el promedio de los jovenes es: "+ptj)
+console.log("el promedio de los adultos es: "+pta)
+console.log("el promedio de los ancianos es: "+ptv)
+
+  /////////////////////////////////////////////////////////////(7)
+
+for (let i = 1; i <=5; i++) {
+    for (let j = 1; j < 2; j++) {
+         console.log("1."+i+"."+j+"  "+"1."+i+"."+(j+1)+"  "+"1."+i+"."+(j+2)+"  "+"1."+i+"."+(j+3))
+         
+    }     
+}
+
+/////////////////////////////////////////////////////////////(8)
+
+var animal= prompt("dijite el nombre del animal")
+animalito=animal.toLowerCase()
+
+ec=0
+ej=0
+ea=0
+jc=0
+jj=0
+ja=0
+cc=0
+cj=0
+ca=0
 
 
+if(animalito !== "elefantes" ||animalito !== "jirafas" ||animalito !== "chimpanses"  ){
 
+    while(animalito !== "elefantes" && animalito !== "jirafas" && animalito !== "chimpanses"){
+
+        var animal= prompt("dijite un nombre valido para un animal (elefanes, jirafas, chimpanses)")
+        animalito=animal.toLowerCase()
+
+    }
+
+
+}
+
+
+    if(animalito=== "elefantes" || animalito==="jirafas" || animalito==="chimpanses"){
+
+        switch (animalito) {
+    
+            case "elefantes":
+
+            for(i=1 ; i <= 20 ; i++){
+                edad=parseInt(prompt("dijite la edad del animal "+i+": "))
+            
+                while(isNaN(edad) || edad <= 0){
+                    edad=parseInt(prompt("dijite una edad valida para el animal "+i+": "))
+                }
+            
+                
+               if(edad >= 0 && edad <=1 ){
+                   console.log("cachorro")
+                   ec=ec+1
+
+               }else if(edad >1 && edad <= 3){
+                   console.log("joven")
+                   ej=ej+1
+
+               }else if(edad >3){
+                   console.log("adulto")
+                   ea=ea+1
+
+               }
+            }
+
+            pec=(ec*100)/20
+            pej=(ej*100)/20
+            pea=(ea*100)/20
+
+            console.log("el procentaje de cachorros es: "+pec+"%")
+            console.log("el procentaje de cachorros es: "+pej+"%")
+            console.log("el procentaje de cachorros es: "+pea+"%")
+
+                break;
+    
+            case "jirafas":
+
+            for(i=1 ; i <= 15 ; i++){
+                edad=parseInt(prompt("dijite la edad del animal "+i+": "))
+            
+                while(isNaN(edad) || edad <= 0){
+                    edad=parseInt(prompt("dijite una edad valida para el animal "+i+": "))
+                }
+            
+                
+               if(edad >= 0 && edad <1 ){
+                   console.log("cachorro")
+
+               }else if(edad >1 && edad <= 3){
+                   console.log("joven")
+
+               }else if(edad >3){
+                   console.log("adulto")
+
+               }
+            }
+
+                break;
+    
+            case "chimpanses":
+
+            for(i=1 ; i <= 40 ; i++){
+                edad=parseInt(prompt("dijite la edad del animal "+i+": "))
+            
+                while(isNaN(edad) || edad <= 0){
+                    edad=parseInt(prompt("dijite una edad valida para el animal "+i+": "))
+                }
+            
+                
+               if(edad >= 0 && edad <1 ){
+                   console.log("cachorro")
+
+               }else if(edad >1 && edad <= 3){
+                   console.log("joven")
+
+               }else if(edad >3){
+                   console.log("adulto")
+
+               }
+            }
+
+                break
+        
+            default:
+                break;
+        }
+    
+    }else{
+        while (!isNaN(animal)){
+            animal= prompt("dijite un nombre de animal valido")
+        }
+    }
+
+
+////////////////////////////////////////
 
 
 
