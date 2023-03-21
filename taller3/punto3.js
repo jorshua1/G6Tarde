@@ -47,5 +47,3 @@ promedioPesoAdultos = pesoCatAdultos/catAdultos;
 promedioPesoViejos = pesoCatViejos/catViejos
 
 alert("Hubieron " + catNiños + " niños en el muestreo de las 20 personas. Su peso promedio es de = " + promedioPesoNiños + "kg.\nHubieron " + catJovenes + " jóvenes en el muestreo de las 20 personas. Su peso promedio es de = " + promedioPesoJovenes + "kg.\nHubieron " + catAdultos + " adultos en el muestreo de las 20 personas. Su peso promedio es de = " + promedioPesoAdultos + "kg.\nHubieron " + catViejos + " viejos en el muestreo de las 20 personas. Su peso promedio es de = " + promedioPesoViejos + "kg.\n");
-
-
