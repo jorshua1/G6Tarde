@@ -2,7 +2,7 @@
 Ciclo while
 */
 
-let numero = 1;
+let numero = 11;
 
 while (numero <= 10) {
     console.log(numero);
