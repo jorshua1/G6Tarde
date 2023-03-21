@@ -3,7 +3,7 @@ let pesoNiños = 0, pesojovenes = 0, pesoAdultos = 0, pesoViejos  = 0;
 let totalPesoNIños = 0, totalPesoJovenes = 0, totalPesoAdultos = 0, totalPesoViejos = 0;
 let promedioNiños = 0, promedioJovenes = 0, promedioAdultos = 0, promedioViejos = 0;
 
-for (i = 1; i <= 5; i++){
+for (i = 1; i <= 20; i++){
     edad = parseInt(prompt("Ingrese la edad de la " + i + " persona que va a muestrear"));
     while (isNaN(edad) || edad < 0){
         edad = parseInt(prompt("Ingrese datos validos para la edad de la " + i + " persona que va a muestrear"));
@@ -16,27 +16,21 @@ for (i = 1; i <= 5; i++){
             pesoNiños = parseInt(prompt("ERROR, porfavor ingrese datos validos para el peso."));
         }
         totalPesoNIños += pesoNiños;
-    }
-
-    if (edad >= 13 && edad <= 29){
+    }else if (edad >= 13 && edad <= 29){
         jovenes++;
         pesojovenes = parseFloat(prompt("Ingrese el peso del joven " + jovenes + " en Kg "));
         while (isNaN(pesojovenes) || pesojovenes < 0){
             pesojovenes = parseInt(prompt("ERROR, porfavor ingrese datos validos para el peso."));
         }
         totalPesoJovenes += pesojovenes;
-    }
-
-    if (edad >= 30 && edad <= 59){
+    }else if (edad >= 30 && edad <= 59){
         adultos++;
         pesoAdultos = parseFloat(prompt("Ingrese el peso del adulto " + adultos + " en Kg "));
         while (isNaN(pesoAdultos) || pesoAdultos < 0){
             pesoAdultos = parseInt(prompt("ERROR, porfavor ingrese datos validos para el peso."));
         }
         totalPesoAdultos += pesoAdultos;
-    }
-
-    if (edad > 60){
+    }else if (edad > 60){
         viejos++;
         pesoViejos = parseFloat(prompt("Ingrese el peso del viejos " + viejos + " en Kg "));
         while (isNaN(pesoViejos) || pesoViejos < 0){
