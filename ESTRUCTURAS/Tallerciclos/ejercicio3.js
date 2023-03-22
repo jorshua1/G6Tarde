@@ -24,8 +24,15 @@ for(i = 1; i<=20 ; i++){
 }
 if(edad >= 0 && edad <= 12){
     contadorniños+=1;
-    let peso = parseInt(prompt("ingrese el peso del niño en kg"));
-    while(isNaN(peso) || peso < 0){
-        peso = parseInt(prompt("ingrese el peso del niño en kg"))
+    let pesoniños1 = parseInt(prompt("ingrese el peso del niño en kg"));
+    while(isNaN(pesoniños1) || pesoniños1 < 0){
+        pesoniños1 = parseInt(prompt("ingrese el peso del niño en kg"))
     }
+    pesoniños+=peso
+}else if(edad >= 13 && edad <= 29){
+    contadorjovenes+=1;
+    let pesojovenes = parseInt(prompt("ingrese el peso del joven en kg"));
+    while(isNaN(pesojovenes) || pesojovenes)
+
+
 }
