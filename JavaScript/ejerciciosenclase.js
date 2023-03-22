@@ -16,35 +16,41 @@ else if (compras >= 250000){
 /*crear un algoritmo que compruebe la estacion en la que se encuentra un mes, 
 para saber si el mes esta en verano, otoño, primavera, invierno.*/
 
-let mes = "digite el mes del año"
-if (!isNaN(mes)){
-    console.log ("Error")
-}else if (mes == "Diciembre"){
-    console.log ("Estamos en", invierno);
-}else if (mes == "Enero"){
-    console.log ("Estamos en", invierno);
-}else if (mes == "Febrero"){
-    console.log ("Estamos en", invierno);
-}else if (mes == "Marzo"){
-    console.log ("Estamos en", primavera);
-}else if (mes == "Abril"){
-    console.log ("Estamos en", primavera);
-}else if (mes == "Mayo"){
-    console.log ("Estamos en", primavera);
-}else if (mes == "Junio"){
-    console.log ("Estamos en", verano);
-}else if (mes == "Julio"){
-    console.log ("Estamos en", verano);
-}else if (mes == "Agosto"){
-    console.log ("Estamos en", verano);
-}else if (mes == "Septiembre"){
-    console.log ("Estamos en", otoño);
-}else if (mes == "Octubre"){
-    console.log ("Estamos en", otoño);
-}else if (mes == "Noviembre"){
-    console.log ("Estamos en", otoño);
+let mes = ""
+switch (mes){
+    case "diciembre":
+    case "enero":
+    case "febrero":
+        console.log ("invierno");
+        break;
+    case "marzo":
+    case "abril":
+    case "mayo":
+        console.log ("primavera");
+        break;
+    case "junio":
+    case "julio":
+    case "agosto":
+        console.log ("verano");
+    case "septiembre":
+    case "octubre":
+    case "noviembre":
+        console.log ("verano");
+        break;
+    default:
+        console.log ("ingrese un mes valido")
+        break;
 }
+//
 
+let nombre = prompt("ingrese su nombre");
+let saludo = nombre === "" ? "ingrese un nombre valido":
+"hola " + nombre + " no estes bravo"
+console.log (saludo);
+
+//
+
+}
 /*determinar el tipo de triangulo segun la medida de sus lados: escaleno, iscoceles o equilatero*/
 
 let lado1= Number(prompt ("digite el valor del lado"));
