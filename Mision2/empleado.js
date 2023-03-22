@@ -156,3 +156,4 @@ nombre = "";
 //resultados por ventas realizadas en el dia :)
 alert("Ha finalizado la jornada laboral con la venta de "+cantidadvendidos+ " celulares vendidos \n" +
     "Y una ganancia de: "+ventadia);
+//:)
