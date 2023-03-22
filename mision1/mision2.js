@@ -125,7 +125,7 @@ do {
           sumatoriaTotalSamsung =
             ventaSamsung * precioSamsung + sumatoriaTotalSamsung;
           cantidadSamsung = cantidadSamsung - ventaSamsung;
-          console.log("Quedan: " + cantidadSamsung);
+          console.log("Quedan: " + cantidadSamsung + " Samsung");
 
           break;
 
@@ -155,7 +155,7 @@ do {
           sumatoriaTotalIphone =
             ventaIphone * precioIphone + sumatoriaTotalIphone;
           cantidadIphone = cantidadIphone - ventaIphone;
-          console.log("Quedan: " + cantidadIphone);
+          console.log("Quedan: " + cantidadIphone + " Iphone");
 
           break;
 
@@ -185,7 +185,7 @@ do {
           sumatoriaTotalXiaomi =
             ventaXiaomi * precioXiaomi + sumatoriaTotalXiaomi;
           cantidadXiaomi = cantidadXiaomi - ventaXiaomi;
-          console.log("Quedan: " + cantidadXiaomi);
+          console.log("Quedan: " + cantidadXiaomi + " Xiaomi");
 
           break;
 
@@ -217,7 +217,7 @@ do {
           sumatoriaTotalMotorola =
             ventaMotorola * precioMotorola + sumatoriaTotalMotorola;
           cantidadMotorola = cantidadMotorola - ventaMotorola;
-          console.log("Quedan: " + cantidadMotorola);
+          console.log("Quedan: " + cantidadMotorola + " Motorola");
 
           break;
 
@@ -247,7 +247,7 @@ do {
           sumatoriaTotalHuawei =
             ventaHuawei * precioHuawei + sumatoriaTotalHuawei;
           cantidadHuawei = cantidadHuawei - ventaHuawei;
-          console.log("Quedan: " + cantidadHuawei);
+          console.log("Quedan: " + cantidadHuawei + " Huawei");
 
           break;
 
@@ -276,7 +276,7 @@ do {
 
           sumatoriaTotalOPPO = ventaOPPO * precioOPPO + sumatoriaTotalOPPO;
           cantidadOPPO = cantidadOPPO - ventaOPPO;
-          console.log("Quedan: " + cantidadOPPO);
+          console.log("Quedan: " + cantidadOPPO + " OPPO");
 
           break;
 
