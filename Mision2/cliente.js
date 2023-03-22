@@ -87,3 +87,4 @@
     alert("El valor de la compra de "+cantidadvendidos+" celular/es es de "+ preciototal+"\n"+
         "\n"+
         nombre+" Gracias por su compra");
+//:)
