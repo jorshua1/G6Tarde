@@ -32,6 +32,7 @@ examen1= parseFloat(prompt("porfavor dijite la nota del primer examen: "))
                             if(coevaluacion<0 || coevaluacion>5 || isNaN(coevaluacion)){
                                 console.log("porfavor dijite una nota valida para la coevaluacion esta debe ser numerica (0 a 5)")
                             }else{
+
                                 promedioexamen= ((examen1+examen2+examen3)/3)*(55/100)
                                 promediotrabajos=((trabajo1+trabajo2)/2)*(15/100)
                                 final=parcial*(20/100)
