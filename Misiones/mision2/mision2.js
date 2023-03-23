@@ -6,7 +6,11 @@ let dispositivosTotalesInventario = 0;
 let inventario = ""
 let registrarVenta = 0;
 let marcaTelefonoVendido = 0;
+let cantidadVentaTelefono = 0;
+let contadorPrecios = 0;
+let contadorTelefono = 0;
 let precioTelefono = 0;
+let precioAcumulado = 0;
 let confirmarVenta = 0;
 let dispositivosTotalesVendidos = 0;
 let dineroVentas = 0;
@@ -50,12 +54,14 @@ inventario = "Teléfonos disponibles de acuerdo a sus marcas:\n\nTélefonos Sams
 do {
     dispositivosTotalesInventario = samsung + iphone + xiaomi + motorola + huawei + oppo;
     if (dispositivosTotalesInventario > 0) {
+        contadorTelefono = 0;
         precioTelefono = 0;
+        precioAcumulado = 0;
         alert(inventario);
-        registrarVenta = Number(prompt("¿Desea registrar alguna venta? Escriba:\n1 para registrar una venta.\n2 para ver los teléfonos disponibles.\n3 para cerrar el programa."));
-        while ((registrarVenta !== 1) && (registrarVenta !== 2) && (registrarVenta !== 3)) {
+        registrarVenta = Number(prompt("¿Desea registrar alguna venta? Escriba:\n1 para registrar una venta.\n2 para ver los teléfonos disponibles.\n3 para ver el resumen de ventas y ganancias.\n4 para cerrar el programa"));
+        while ((registrarVenta !== 1) && (registrarVenta !== 2) && (registrarVenta !== 3) && (registrarVenta !== 4)) {
             alert("Parece ser que ha introducido una opción no válida, por favor, inténtelo de nuevo.");
-            registrarVenta = Number(prompt("¿Desea registrar alguna venta? Escriba:\n1 para registrar una venta.\n2 para ver los teléfonos disponibles.\n3 para cerrar el programa."));
+            registrarVenta = Number(prompt("¿Desea registrar alguna venta? Escriba:\n1 para registrar una venta.\n2 para ver los teléfonos disponibles.\n3 para ver el resumen de ventas y ganancias.\n4 para cerrar el programa"));
         }
         if (registrarVenta === 1) {
             marcaTelefonoVendido = Number(prompt("¿Cuál es la marca del teléfono vendido? Seleccione digitando el número de la opción.\n1. Samsung.\n2. iPhone.\n3. Xiaomi.\n4. Motorola.\n5. Huawei.\n6. OPPO.\n7. Volver al menú principal."));
@@ -64,117 +70,189 @@ do {
                 marcaTelefonoVendido = Number(prompt("¿Cuál es la marca del teléfono vendido? Seleccione digitando el número de la opción.\n1. Samsung.\n2. iPhone.\n3. Xiaomi.\n4. Motorola.\n5. Huawei.\n6. OPPO.\n7. Volver al menú principal."));
             }
             if ((marcaTelefonoVendido === 1) && (samsung > 0)) {
-                precioTelefono = Number(prompt("¿Cuál fue el precio del teléfono marca Samsung vendido?"));
-                while ((isNaN(precioTelefono)) || (precioTelefono <= 0)) {
-                    alert("Ha ingresado un precio de venta no válido, por favor, ingrese un valor válido.");
-                    precioTelefono = Number(prompt("¿Cuál fue el precio del teléfono marca Samsung vendido?"));
+                cantidadVentaTelefono = Number(prompt("¿Cuántos teléfonos de marca Samsung vendió?"));
+                while((isNaN(cantidadVentaTelefono))||(cantidadVentaTelefono<=0)||(!Number.isInteger(cantidadVentaTelefono))||(cantidadVentaTelefono>samsung)){
+                    alert("Por favor, ingrese un cantidad de teléfonos válida");
+                    alert("Teléfonos Samsung disponibles: " + samsung + ".");
+                    cantidadVentaTelefono = Number(prompt("¿Cuántos teléfonos de marca Samsung vendió?"));
                 }
-                confirmarVenta = Number(prompt("Marca teléfono: Samsung.\nPrecio: " + precioTelefono + "$.\n\nEs correcta la información? 1. Si./2. No."));
+                contadorPrecios = cantidadVentaTelefono
+                for(contadorPrecios;contadorPrecios>0;contadorPrecios--){
+                    contadorTelefono++
+                    precioTelefono = Number(prompt("Ingrese el valor del teléfono Nº" + contadorTelefono + " vendido."))
+                    while ((isNaN(precioTelefono)) || (precioTelefono <= 0)) {
+                        alert("Ha ingresado un precio de venta no válido, por favor, ingrese un valor válido.");
+                        precioTelefono = Number(prompt("¿Cuál fue el precio del teléfono marca Samsung vendido?"));
+                    }
+                    precioAcumulado = precioAcumulado + precioTelefono;
+                }
+                confirmarVenta = Number(prompt("Marca teléfono: Samsung.\nCantidad: " + cantidadVentaTelefono + "$.\nPrecio total: " + precioAcumulado +  "$\n\nEs correcta la información? 1. Si./2. No."));
                 while((confirmarVenta!==1)&&(confirmarVenta!==2)){
                     alert("Por favor, seleccione una opción válida para confirmar.");
-                    confirmarVenta = Number(prompt("Marca teléfono: Samsung.\nPrecio: " + precioTelefono + "$.\n\nEs correcta la información? 1. Si./2. No."));
+                    confirmarVenta = Number(prompt("Marca teléfono: Samsung.\nCantidad: " + cantidadVentaTelefono + "$.\nPrecio total: " + precioAcumulado + "$\n\nEs correcta la información? 1. Si./2. No."));
                 }
                 if(confirmarVenta === 1){
                     alert("Muchas gracias, se ha registrado la venta realizada.");
-                    dispositivosTotalesVendidos++;
-                    samsung--;
+                    dispositivosTotalesVendidos = dispositivosTotalesVendidos+cantidadVentaTelefono;
+                    samsung = samsung-cantidadVentaTelefono;
                 }else{
                     precioTelefono = 0;
+                    precioAcumulado = 0;
                     alert("La venta no se ha registrado. Volverás al menú principal.")
                 }
             } else if ((marcaTelefonoVendido === 2) && (iphone > 0)) {
-                precioTelefono = Number(prompt("¿Cuál fue el precio del teléfono marca iPhone vendido?"));
-                while ((isNaN(precioTelefono)) || (precioTelefono <= 0)) {
-                    alert("Ha ingresado un precio de venta no válido, por favor, ingrese un valor válido.");
-                    precioTelefono = Number(prompt("¿Cuál fue el precio del teléfono marca iPhone vendido?"));
+                cantidadVentaTelefono = Number(prompt("¿Cuántos teléfonos de marca iPhone vendió?"));
+                while((isNaN(cantidadVentaTelefono))||(cantidadVentaTelefono<=0)||(!Number.isInteger(cantidadVentaTelefono))||(cantidadVentaTelefono>iphone)){
+                    alert("Por favor, ingrese un cantidad de teléfonos válida");
+                    alert("Teléfonos iphone disponibles: " + iphone + ".");
+                    cantidadVentaTelefono = Number(prompt("¿Cuántos teléfonos de marca iPhone vendió?"));
                 }
-                confirmarVenta = Number(prompt("Marca teléfono: iPhone.\nPrecio: " + precioTelefono + "$.\n\nEs correcta la información? 1. Si./2. No."));
+                contadorPrecios = cantidadVentaTelefono
+                for(contadorPrecios;contadorPrecios>0;contadorPrecios--){
+                    contadorTelefono++
+                    precioTelefono = Number(prompt("Ingrese el valor del teléfono Nº" + contadorTelefono + " vendido."))
+                    while ((isNaN(precioTelefono)) || (precioTelefono <= 0)) {
+                        alert("Ha ingresado un precio de venta no válido, por favor, ingrese un valor válido.");
+                        precioTelefono = Number(prompt("¿Cuál fue el precio del teléfono marca iPhone vendido?"));
+                    }
+                    precioAcumulado = precioAcumulado + precioTelefono;
+                }
+                confirmarVenta = Number(prompt("Marca teléfono: iPhone.\nCantidad: " + cantidadVentaTelefono + "$.\nPrecio total: " + precioAcumulado +  "$\n\nEs correcta la información? 1. Si./2. No."));
                 while((confirmarVenta!==1)&&(confirmarVenta!==2)){
                     alert("Por favor, seleccione una opción válida para confirmar.");
-                    confirmarVenta = Number(prompt("Marca teléfono: iPhone.\nPrecio: " + precioTelefono + "$.\n\nEs correcta la información? 1. Si./2. No."));
+                    confirmarVenta = Number(prompt("Marca teléfono: iPhone.\nCantidad: " + cantidadVentaTelefono + "$.\nPrecio total: " + precioAcumulado + "$\n\nEs correcta la información? 1. Si./2. No."));
                 }
                 if(confirmarVenta === 1){
                     alert("Muchas gracias, se ha registrado la venta realizada.");
-                    dispositivosTotalesVendidos++;
-                    iphone--;
+                    dispositivosTotalesVendidos = dispositivosTotalesVendidos+cantidadVentaTelefono;
+                    iphone = iphone-cantidadVentaTelefono;
                 }else{
                     precioTelefono = 0;
+                    precioAcumulado = 0;
                     alert("La venta no se ha registrado. Volverás al menú principal.")
                 }
             } else if ((marcaTelefonoVendido === 3) && (xiaomi > 0)) {
-                precioTelefono = Number(prompt("¿Cuál fue el precio del teléfono marca Xiaomi vendido?"));
-                while ((isNaN(precioTelefono)) || (precioTelefono <= 0)) {
-                    alert("Ha ingresado un precio de venta no válido, por favor, ingrese un valor válido.");
-                    precioTelefono = Number(prompt("¿Cuál fue el precio del teléfono marca Xiaomi vendido?"));
+                cantidadVentaTelefono = Number(prompt("¿Cuántos teléfonos de marca Xiaomi vendió?"));
+                while((isNaN(cantidadVentaTelefono))||(cantidadVentaTelefono<=0)||(!Number.isInteger(cantidadVentaTelefono))||(cantidadVentaTelefono>xiaomi)){
+                    alert("Por favor, ingrese un cantidad de teléfonos válida");
+                    alert("Teléfonos Xiaomi disponibles: " + xiaomi + ".");
+                    cantidadVentaTelefono = Number(prompt("¿Cuántos teléfonos de marca Xiaomi vendió?"));
                 }
-                confirmarVenta = Number(prompt("Marca teléfono: Xiaomi.\nPrecio: " + precioTelefono + "$.\n\nEs correcta la información? 1. Si./2. No."));
+                contadorPrecios = cantidadVentaTelefono
+                for(contadorPrecios;contadorPrecios>0;contadorPrecios--){
+                    contadorTelefono++
+                    precioTelefono = Number(prompt("Ingrese el valor del teléfono Nº" + contadorTelefono + " vendido."))
+                    while ((isNaN(precioTelefono)) || (precioTelefono <= 0)) {
+                        alert("Ha ingresado un precio de venta no válido, por favor, ingrese un valor válido.");
+                        precioTelefono = Number(prompt("¿Cuál fue el precio del teléfono marca Xiaomi vendido?"));
+                    }
+                    precioAcumulado = precioAcumulado + precioTelefono;
+                }
+                confirmarVenta = Number(prompt("Marca teléfono: Xiaomi.\nCantidad: " + cantidadVentaTelefono + "$.\nPrecio total: " + precioAcumulado +  "$\n\nEs correcta la información? 1. Si./2. No."));
                 while((confirmarVenta!==1)&&(confirmarVenta!==2)){
                     alert("Por favor, seleccione una opción válida para confirmar.");
-                    confirmarVenta = Number(prompt("Marca teléfono: Xiaomi.\nPrecio: " + precioTelefono + "$.\n\nEs correcta la información? 1. Si./2. No."));
+                    confirmarVenta = Number(prompt("Marca teléfono: Xiaomi.\nCantidad: " + cantidadVentaTelefono + "$.\nPrecio total: " + precioAcumulado + "$\n\nEs correcta la información? 1. Si./2. No."));
                 }
                 if(confirmarVenta === 1){
                     alert("Muchas gracias, se ha registrado la venta realizada.");
-                    dispositivosTotalesVendidos++;
-                    xiaomi--;
+                    dispositivosTotalesVendidos = dispositivosTotalesVendidos+cantidadVentaTelefono;
+                    xiaomi = xiaomi-cantidadVentaTelefono;
                 }else{
                     precioTelefono = 0;
+                    precioAcumulado = 0;
                     alert("La venta no se ha registrado. Volverás al menú principal.")
                 }
             } else if ((marcaTelefonoVendido === 4) && (motorola > 0)) {
-                precioTelefono = Number(prompt("¿Cuál fue el precio del teléfono marca Motorola vendido?"));
-                while ((isNaN(precioTelefono)) || (precioTelefono <= 0)) {
-                    alert("Ha ingresado un precio de venta no válido, por favor, ingrese un valor válido.");
-                    precioTelefono = Number(prompt("¿Cuál fue el precio del teléfono marca Motorola vendido?"));
+                cantidadVentaTelefono = Number(prompt("¿Cuántos teléfonos de marca Motorola vendió?"));
+                while((isNaN(cantidadVentaTelefono))||(cantidadVentaTelefono<=0)||(!Number.isInteger(cantidadVentaTelefono))||(cantidadVentaTelefono>motorola)){
+                    alert("Por favor, ingrese un cantidad de teléfonos válida");
+                    alert("Teléfonos Motorola disponibles: " + motorola + ".");
+                    cantidadVentaTelefono = Number(prompt("¿Cuántos teléfonos de marca Motorola vendió?"));
                 }
-                confirmarVenta = Number(prompt("Marca teléfono: Motorola.\nPrecio: " + precioTelefono + "$.\n\nEs correcta la información? 1. Si./2. No."));
+                contadorPrecios = cantidadVentaTelefono
+                for(contadorPrecios;contadorPrecios>0;contadorPrecios--){
+                    contadorTelefono++
+                    precioTelefono = Number(prompt("Ingrese el valor del teléfono Nº" + contadorTelefono + " vendido."))
+                    while ((isNaN(precioTelefono)) || (precioTelefono <= 0)) {
+                        alert("Ha ingresado un precio de venta no válido, por favor, ingrese un valor válido.");
+                        precioTelefono = Number(prompt("¿Cuál fue el precio del teléfono marca Motorola vendido?"));
+                    }
+                    precioAcumulado = precioAcumulado + precioTelefono;
+                }
+                confirmarVenta = Number(prompt("Marca teléfono: Motorola.\nCantidad: " + cantidadVentaTelefono + "$.\nPrecio total: " + precioAcumulado +  "$\n\nEs correcta la información? 1. Si./2. No."));
                 while((confirmarVenta!==1)&&(confirmarVenta!==2)){
                     alert("Por favor, seleccione una opción válida para confirmar.");
-                    confirmarVenta = Number(prompt("Marca teléfono: Motorola.\nPrecio: " + precioTelefono + "$.\n\nEs correcta la información? 1. Si./2. No."));
+                    confirmarVenta = Number(prompt("Marca teléfono: Motorola.\nCantidad: " + cantidadVentaTelefono + "$.\nPrecio total: " + precioAcumulado + "$\n\nEs correcta la información? 1. Si./2. No."));
                 }
                 if(confirmarVenta === 1){
                     alert("Muchas gracias, se ha registrado la venta realizada.");
-                    dispositivosTotalesVendidos++;
-                    motorola--;
+                    dispositivosTotalesVendidos = dispositivosTotalesVendidos+cantidadVentaTelefono;
+                    motorola = motorola-cantidadVentaTelefono;
                 }else{
                     precioTelefono = 0;
+                    precioAcumulado = 0;
                     alert("La venta no se ha registrado. Volverás al menú principal.")
                 }
             } else if ((marcaTelefonoVendido === 5) && (huawei > 0)) {
-                precioTelefono = Number(prompt("¿Cuál fue el precio del teléfono marca Huawei vendido?"));
-                while ((isNaN(precioTelefono)) || (precioTelefono <= 0)) {
-                    alert("Ha ingresado un precio de venta no válido, por favor, ingrese un valor válido.");
-                    precioTelefono = Number(prompt("¿Cuál fue el precio del teléfono marca Huawei vendido?"));
+                cantidadVentaTelefono = Number(prompt("¿Cuántos teléfonos de marca Huawei vendió?"));
+                while((isNaN(cantidadVentaTelefono))||(cantidadVentaTelefono<=0)||(!Number.isInteger(cantidadVentaTelefono))||(cantidadVentaTelefono>huawei)){
+                    alert("Por favor, ingrese un cantidad de teléfonos válida");
+                    alert("Teléfonos Huawei disponibles: " + huawei + ".");
+                    cantidadVentaTelefono = Number(prompt("¿Cuántos teléfonos de marca Huawei vendió?"));
                 }
-                confirmarVenta = Number(prompt("Marca teléfono: Huawei.\nPrecio: " + precioTelefono + "$.\n\nEs correcta la información? 1. Si./2. No."));
+                contadorPrecios = cantidadVentaTelefono
+                for(contadorPrecios;contadorPrecios>0;contadorPrecios--){
+                    contadorTelefono++
+                    precioTelefono = Number(prompt("Ingrese el valor del teléfono Nº " + contadorTelefono + " vendido."))
+                    while ((isNaN(precioTelefono)) || (precioTelefono <= 0)) {
+                        alert("Ha ingresado un precio de venta no válido, por favor, ingrese un valor válido.");
+                        precioTelefono = Number(prompt("¿Cuál fue el precio del teléfono marca Huawei vendido?"));
+                    }
+                    precioAcumulado = precioAcumulado + precioTelefono;
+                }
+                confirmarVenta = Number(prompt("Marca teléfono: Huawei.\nCantidad: " + cantidadVentaTelefono + "$.\nPrecio total: " + precioAcumulado +  "$\n\nEs correcta la información? 1. Si./2. No."));
                 while((confirmarVenta!==1)&&(confirmarVenta!==2)){
                     alert("Por favor, seleccione una opción válida para confirmar.");
-                    confirmarVenta = Number(prompt("Marca teléfono: Huawei.\nPrecio: " + precioTelefono + "$.\n\nEs correcta la información? 1. Si./2. No."));
+                    confirmarVenta = Number(prompt("Marca teléfono: Huawei.\nCantidad: " + cantidadVentaTelefono + "$.\nPrecio total: " + precioAcumulado + "$\n\nEs correcta la información? 1. Si./2. No."));
                 }
                 if(confirmarVenta === 1){
                     alert("Muchas gracias, se ha registrado la venta realizada.");
-                    dispositivosTotalesVendidos++;
-                    huawei--;
+                    dispositivosTotalesVendidos = dispositivosTotalesVendidos+cantidadVentaTelefono;
+                    huawei = huawei-cantidadVentaTelefono;
                 }else{
                     precioTelefono = 0;
+                    precioAcumulado = 0;
                     alert("La venta no se ha registrado. Volverás al menú principal.")
                 }
             } else if ((marcaTelefonoVendido === 6) && (oppo > 0)) {
-                precioTelefono = Number(prompt("¿Cuál fue el precio del teléfono marca OPPO vendido?"));
-                while ((isNaN(precioTelefono)) || (precioTelefono <= 0)) {
-                    alert("Ha ingresado un precio de venta no válido, por favor, ingrese un valor válido.");
-                    precioTelefono = Number(prompt("¿Cuál fue el precio del teléfono marca OPPO vendido?"));
+                cantidadVentaTelefono = Number(prompt("¿Cuántos teléfonos de marca OPPO vendió?"));
+                while((isNaN(cantidadVentaTelefono))||(cantidadVentaTelefono<=0)||(!Number.isInteger(cantidadVentaTelefono))||(cantidadVentaTelefono>oppo)){
+                    alert("Por favor, ingrese un cantidad de teléfonos válida");
+                    alert("Teléfonos OPPO disponibles: " + oppo + ".");
+                    cantidadVentaTelefono = Number(prompt("¿Cuántos teléfonos de marca OPPO vendió?"));
                 }
-                confirmarVenta = Number(prompt("Marca teléfono: OPPO.\nPrecio: " + precioTelefono + "$.\n\nEs correcta la información? 1. Si./2. No."));
+                contadorPrecios = cantidadVentaTelefono
+                for(contadorPrecios;contadorPrecios>0;contadorPrecios--){
+                    contadorTelefono++
+                    precioTelefono = Number(prompt("Ingrese el valor del teléfono Nº " + contadorTelefono + " vendido."))
+                    while ((isNaN(precioTelefono)) || (precioTelefono <= 0)) {
+                        alert("Ha ingresado un precio de venta no válido, por favor, ingrese un valor válido.");
+                        precioTelefono = Number(prompt("¿Cuál fue el precio del teléfono marca OPPO vendido?"));
+                    }
+                    precioAcumulado = precioAcumulado + precioTelefono;
+                }
+                confirmarVenta = Number(prompt("Marca teléfono: OPPO.\nCantidad: " + cantidadVentaTelefono + ".\nPrecio total: " + precioAcumulado +  "$\n\nEs correcta la información? 1. Si./2. No."));
                 while((confirmarVenta!==1)&&(confirmarVenta!==2)){
                     alert("Por favor, seleccione una opción válida para confirmar.");
-                    confirmarVenta = Number(prompt("Marca teléfono: OPPO.\nPrecio: " + precioTelefono + "$.\n\nEs correcta la información? 1. Si./2. No."));
+                    confirmarVenta = Number(prompt("Marca teléfono: OPPO.\nCantidad: " + cantidadVentaTelefono + "$.\nPrecio total: " + precioAcumulado + "$\n\nEs correcta la información? 1. Si./2. No."));
                 }
                 if(confirmarVenta === 1){
                     alert("Muchas gracias, se ha registrado la venta realizada.");
-                    dispositivosTotalesVendidos++;
-                    oppo--;
+                    dispositivosTotalesVendidos = dispositivosTotalesVendidos+cantidadVentaTelefono;
+                    oppo = oppo-cantidadVentaTelefono;
                 }else{
                     precioTelefono = 0;
+                    precioAcumulado = 0;
                     alert("La venta no se ha registrado. Volverás al menú principal.")
                 }
             } else if (marcaTelefonoVendido === 7){
@@ -183,14 +261,16 @@ do {
                 alert("No hay teléfonos disponibles de la marca indicada. Volverás al menú principal.");
             }
             inventario = "Teléfonos disponibles de acuerdo a sus marcas:\n\nTélefonos Samsung: " + samsung + " disponibles.\nTélefonos iPhone: " + iphone + " disponibles.\nTélefonos Xiaomi: " + xiaomi + " disponibles.\nTélefonos Motorola: " + motorola + " disponibles.\nTélefonos Huawei: " + huawei + " disponibles.\nTélefonos OPPO: " + oppo + " disponibles.";
-            dineroVentas = dineroVentas + precioTelefono;
+            dineroVentas = dineroVentas + precioAcumulado;
         } else if (registrarVenta===2){
 
         }else if (registrarVenta===3){
+            alert("Teléfonos vendidos: " + dispositivosTotalesVendidos + ".\nTeléfonos sin vender: " + dispositivosTotalesInventario + ".\nDinero recaudado con las ventas realizadas: " + dineroVentas + "$.");
+        }else if (registrarVenta===4){
             dispositivosTotalesInventario = samsung + iphone + xiaomi + motorola + huawei + oppo;
             alert("Se cerrará el programa.\nTeléfonos vendidos: " + dispositivosTotalesVendidos + ".\nTeléfonos sin vender: " + dispositivosTotalesInventario + ".\nDinero recaudado con las ventas realizadas: " + dineroVentas + "$.");
         }
     } else {
         alert("No hay ningún teléfono disponible en el inventario. Se cerrará el programa.\nTeléfonos vendidos: " + dispositivosTotalesVendidos + ".\nTeléfonos sin vender: " + dispositivosTotalesInventario + ".\nDinero recaudado con las ventas realizadas: " + dineroVentas + "$.");
     }
-} while ((dispositivosTotalesInventario > 0) && (registrarVenta !== 3));
+} while ((dispositivosTotalesInventario > 0) && (registrarVenta !== 4));
