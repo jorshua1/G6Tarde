@@ -9,7 +9,7 @@ OPPO
 El algoritmo debe permitir descontar segun su marca y actualizar la cantidad de telefonos disponibles,
 ademas debe calcular el total de dimnero recaudado por las ventas
 */
-let inicio = prompt("Por favor ingrese: \n (Y) para iniciar registro de inventario \n o \n (N) para terminar registro de inventario");
+let inicio = prompt("Por favor ingrese: \n\n (Y) para iniciar registro de inventario \n\n (N) para terminar registro de inventario");
 let registros = 0;
 let marca = 0;
 let precio = 0;
@@ -36,54 +36,57 @@ let invMotorola = 0;
 let invHuawei = 0;
 let invOPPO = 0;
 
-let precioVentaSamsung = 0;
-let precioVentaIphone = 0;
-let precioVentaXiaomi = 0;
-let precioVentaMotorola = 0;
-let precioVentaHuawei = 0;
-let precioVentaOPPO = 0;
+let precioInvSamsung = 0;
+let precioInvIphone = 0;
+let precioInvXiaomi = 0;
+let precioInvMotorola = 0;
+let precioInvHuawei = 0;
+let precioInvOPPO = 0;
 
-if (inicio == "N" || inicio == "n") {
-    alert("Has oprimido salir, gracias");
+//Codigo para alimentar inventario//
+if (inicio != "N" || inicio != "n") {
+    alert("Has oprimido salir, gracias.");
 } else {
     if (inicio == "Y" || inicio == "y"); {
-        alert("Iniciamos ingreso de materiales al inventario.");
-        registros = parseInt(prompt("Por favor ingrese el numero de registros a ingresar"));
+        alert("Iniciamos ingreso de celulares al inventario.");
+        registros = parseInt(prompt("Por favor ingrese el numero de registros de marcas a ingresar"));
         for (i = 0; i < registros; i++) {
-            marca = parseInt(prompt("Por favor ingrese el codigo de la marca de celular segun la siguiente lista: \n (1) - Samsung. \n (2) - Iphome. \n (3) - Xiaomi. \n (4) - Motorola. \n (5) - Huawei. \n (6) - OPPO."));
-            precio = parseInt(prompt("Digite precio de venta."));
+            marca = parseInt(prompt("Por favor ingrese el codigo de la marca de celular según la siguiente lista: \n (1) - Samsung. \n (2) - Iphone. \n (3) - Xiaomi. \n (4) - Motorola. \n (5) - Huawei. \n (6) - OPPO."));
+            cantidad = parseInt(prompt("Digite la cantidad de celulares."));
+            precio = parseInt(prompt("Digite el precio de venta unitario."));
             if (isNaN(marca) || marca < 0 || marca > 6) {
-                alert("Por favor ingrese un codigo valido");
+                alert("Has digitado una referencia no existente,\n por favor ingrese un codigo valido.");
+                break;
             } else {
                 if (marca == 1) {
-                    inSamsung++;
-                    invSamsung++;
-                    precioVentaSamsung = precioVentaSamsung + precio;
+                    inSamsung = inSamsung + cantidad;
+                    invSamsung = inSamsung;
+                    precioInvSamsung = invSamsung * precio;
                 } else {
                     if (marca == 2) {
-                        inIphone++;
-                        invIphone++;
-                        precioVentaIphone = precioVentaIphone + precio;
+                        inIphone = inIphone + cantidad;
+                        invIphone = inIphone;
+                        precioInvIphone = invIphone * precio;
                     } else {
                         if (marca == 3) {
-                            inXiaomi++;
-                            invXiaomi++;
-                            precioVentaXiaomi = precioVentaXiaomi + precio;
+                            inXiaomi = inXiaomi + cantidad;
+                            invXiaomi = inXiaomi;
+                            precioInvXiaomi = invXiaomi * precio;
                         } else {
                             if (marca == 4) {
-                                inMotorola++;
-                                invMotorola++;
-                                precioVentaMotorola = precioVentaMotorola + precio;
+                                inMotorola = inMotorola + cantidad;
+                                invMotorola = inMotorola;
+                                precioInvMotorola = invMotorola * precio;
                             } else {
                                 if (marca == 5) {
-                                    inHuawei++;
-                                    invHuawei++;
-                                    precioVentaHuawei = precioVentaHuawei + precio;
+                                    inHuawei = inHuawei + cantidad;
+                                    invHuawei = inHuawei;
+                                    precioInvHuawei = invHuawei * precio;
                                 } else {
                                     if (marca == 6) {
-                                        inOPPO++;
-                                        invOPPO++;
-                                        precioVentaOPPO = precioVentaOPPO + precio;
+                                        inOPPO = inOPPO + cantidad;
+                                        invOPPO = inOPPO;
+                                        precioInvOPPO = invOPPO * precio;
                                     }
                                 }
                             }
@@ -92,6 +95,6 @@ if (inicio == "N" || inicio == "n") {
                 }
             }
         }
-        alert("Material        Ent      Sal      Inv     | Costo Inv \n Samsung:      " + inSamsung + "         " + outSamsung + "         " + invSamsung + "         " + precioVentaSamsung + " \n Iphone:          " + inIphone + "         " + outIphone + "         " + invIphone + "         " + precioVentaIphone + " \n Xiaomi:          " + inXiaomi + "         " + outXiaomi + "         " + invXiaomi + "         " + precioVentaXiaomi + " \n Motorola:      " + inMotorola + "         " + outMotorola + "         " + invMotorola + "         " + precioVentaMotorola + " \n Huawei:         " + inHuawei + "         " + outHuawei + "         " + invHuawei + "         " + precioVentaHuawei + " \n OPPO:           " + inOPPO + "         " + outOPPO + "         " + invOPPO + "         " + precioVentaOPPO);
+        alert("          ALMACEN DE INVENTARIO \n Material        Ent      Sal      Inv     | Costo Inv \n\n Samsung:      " + inSamsung + "         " + outSamsung + "         " + invSamsung + "         " + precioInvSamsung + " \n Iphone:          " + inIphone + "         " + outIphone + "         " + invIphone + "         " + precioInvIphone + " \n Xiaomi:          " + inXiaomi + "         " + outXiaomi + "         " + invXiaomi + "         " + precioInvXiaomi + " \n Motorola:      " + inMotorola + "         " + outMotorola + "         " + invMotorola + "         " + precioInvMotorola + " \n Huawei:         " + inHuawei + "         " + outHuawei + "         " + invHuawei + "         " + precioInvHuawei + " \n OPPO:           " + inOPPO + "         " + outOPPO + "         " + invOPPO + "         " + precioInvOPPO);
     }
 }
