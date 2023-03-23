@@ -15,13 +15,12 @@ if(empezar == "no" || empezar == "No" || empezar == "NO"){
     alert("sistema cerrado")
 }else if(empezar == "si" || empezar == "Si" || empezar == "SI"){
 
-    alert("bienvenido acontinuacion digite el numero de la marca segun su interes 1.samsung 2.iphone 3.xiaomi 4.motorola 5.huawei 6.oppo")
+   
 
-let marca = parseInt(prompt("ingrese el numero segun la marca (1,2,3,4,5,6)"));
+let marca = parseInt(prompt("bienvenido acontinuacion digite el numero de la marca segun su interes o si desea ver las ventas totales y el inventario digite el numero que requiera 1.samsung 2.iphone 3.xiaomi 4.motorola 5.huawei 6.oppo ingrese el numero segun la marca 7. ventas 8. inventario (1,2,3,4,5,6,7,8)"));
 switch(marca){
     case 1:
-        alert("por favor digite el numero segun el proceso que necesita realizar" + "\n 1.registro de ventas" + "\n 2.registrar inventario" + "\n 3.volver ")
-        let proceso1 = parseInt(prompt("digite el numero de la accion que quiere realizar (1,2,3)"))
+        let proceso1 = parseInt(prompt("por favor digite el numero segun el proceso que necesita realizar" + "\n 1.registro de ventas" + "\n 2.registrar inventario" + "\n 3.volver " + " \n digite el numero de la accion que quiere realizar (1,2,3)"))
         while(isNaN(proceso1) || proceso1<0){
             proceso1 = parseInt(prompt("digite el numero de la accion que quiere realizar (1,2,3)"))
         }if(proceso1 == 1){ 
@@ -102,4 +101,4 @@ switch(marca){
         console.log("ingrese una marca valida que se encuentre en el inventario (1.samsung 2.iphone 3.xiaomi 4.motorola 5.huawei 6.oppo)");
 }
 }
-}
+

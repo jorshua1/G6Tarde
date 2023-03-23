@@ -42,3 +42,5 @@ if(notaDefinitiva>=4.7 && notaDefinitiva<=5){
 }else{
     alert("error datos invalidos")
 }  }  }  }  }  }  }  }
+
+
