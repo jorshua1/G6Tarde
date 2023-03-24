@@ -9,32 +9,32 @@ alert("buenos dias extrellitas :)\nEmpezamos el dia laboral con el ingreso de lo
 samsungcant = parseInt(prompt("ingrese la cantidad de celulares samsung que hay en almacen"));
 while (isNaN(samsungcant)) {
     console.log("Error, valor digitado no valido");
-    nombre = (prompt("ingrese la cantidad de celulares samsung que hay en almacen"));
+    samsungcant = (prompt("ingrese la cantidad de celulares samsung que hay en almacen"));
 }
 iphonecant = parseInt(prompt("ingrese la cantidad de celulares iphone que hay en almacen"));
-while (isNaN(samsungcant)) {
+while (isNaN(iphonecant)) {
     console.log("Error, valor digitado no valido");
-    nombre = (prompt("ingrese la cantidad de celulares iphone que hay en almacen"));
+    iphonecant = (prompt("ingrese la cantidad de celulares iphone que hay en almacen"));
 }
 xiaomicant = parseInt(prompt("ingrese la cantidad de celulares xiaomi que hay en almacen"));
-while (isNaN(samsungcant)) {
+while (isNaN(xiaomicant)) {
     console.log("Error, valor digitado no valido");
-    nombre = (prompt("ingrese la cantidad de celulares xiaomi que hay en almacen"));
+    xiaomicant = (prompt("ingrese la cantidad de celulares xiaomi que hay en almacen"));
 }
 motorolacant = parseInt(prompt("ingrese la cantidad de celulares motorola que hay en almacen"));
-while (isNaN(samsungcant)) {
+while (isNaN(motorolacant)) {
     console.log("Error, valor digitado no valido");
-    nombre = (prompt("ingrese la cantidad de celulares motorola que hay en almacen"));
+    motorolacant = (prompt("ingrese la cantidad de celulares motorola que hay en almacen"));
 }
 huaweicant = parseInt(prompt("ingrese la cantidad de celulares huawei que hay en almacen"));
-while (isNaN(samsungcant)) {
+while (isNaN(huaweicant)) {
     console.log("Error, valor digitado no valido");
-    nombre = (prompt("ingrese la cantidad de celulares huawei que hay en almacen"));
+    huaweicant = (prompt("ingrese la cantidad de celulares huawei que hay en almacen"));
 }
 oppocant = parseInt(prompt("ingrese la cantidad de celulares oppo que hay en almacen"));
-while (isNaN(samsungcant)) {
+while (isNaN(oppocant)) {
     console.log("Error, valor digitado no valido");
-    nombre = (prompt("ingrese la cantidad de celulares oppo que hay en almacen"));
+    oppocant = (prompt("ingrese la cantidad de celulares oppo que hay en almacen"));
 }
 alert("Mission complete\ningreso de inventario terminado");
 //registro de ventas realizadas
