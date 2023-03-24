@@ -42,4 +42,3 @@ for (nombrexd;!isNaN(nombrexd);){
     nombrexd = prompt("Ingrese un nombre valido");
 }
 
-//:)
