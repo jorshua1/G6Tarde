@@ -4,4 +4,4 @@
    más largo, de varias líneas
  */
 
-/* Sin embargo, no se pueden /* anidar comentarios */ SyntaxError * /
+/* Sin embargo, no se pueden*/ /* anidar comentarios */ /*"SyntaxError" */
