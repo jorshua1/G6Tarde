@@ -1,8 +1,7 @@
 /*
-Crea una aplicación que permita adivinar un número. La aplicación genera un número aleatorio del 
-1 al 100. A continuación va pidiendo números y va respondiendo si el número a adivinar es mayor 
-o menor que el introducido, a demás de los intentos que te quedan (tienes 10 intentos para 
-acertarlo). 
-El programa termina cuando se acierta el número (además te dice en cuantos intentos lo has 
-acertado), si se llega al limite de intentos te muestra el número que había generado.
+Una compañía de seguros tiene contratados a n vendedores. 
+Cada uno hace tres ventas a la semana. 
+Su política de pagos es que un vendedor recibe un sueldo base, y un 10°/o extra por comisiones de sus ventas. 
+El gerente de su compañía desea saber cuánto dinero obtendrá en la semana cada vendedor 
+por concepto de comisiones por las tres ventas realizadas, y cuanto tomando en cuenta su sueldo base y sus comisiones.
 */
