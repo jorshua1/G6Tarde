@@ -1,0 +1,8 @@
+git config --global user.name [nombre usuario]. (Crea un usuario global)
+git config --global user.email [correo usuario]. (Crea un correo para el usuario global)
+git config --list (Muestra todas las configuraciones)
+git clone [enlace del repositorio] (Clona en el equipo el repositorio deseado)
+git branch [nombreRama] (Crea una nueva rama)
+git branch (Ver en que rama se está)
+git switch [nombreRama] (Ubicarse en la rama deseada)
+git remote add origin [enlace del repositorio] (Para añadir archivos locales a un repositorio no clonado en el dispositivo)
