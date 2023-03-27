@@ -4,7 +4,9 @@
    más largo, de varias líneas
  */
 
-/* Sin embargo, no se pueden*/ /* anidar comentarios */ /*"SyntaxError" */
+/* 
+Sin embargo, no se pueden*/ /* anidar comentarios */ /*"SyntaxError" 
+*/
 
 /*                                                                Declaraciones
 JavaScript tiene tres tipos de declaraciones de variables.
@@ -35,5 +37,7 @@ $credit
 _name.
 */
 
-/*https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Grammar_and_types*/
+/*
+https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Grammar_and_types
+*/
 
