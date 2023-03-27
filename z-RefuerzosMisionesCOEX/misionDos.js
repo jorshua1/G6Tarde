@@ -176,7 +176,7 @@ while (option !== 5) {
       alert(`El inventario cuenta con las siguientes cantidades:
         
         Material   Cantidad
-        Samsung:  ${quantitySamsung})
+        Samsung:  ${quantitySamsung}
         Iphone:   ${quantityIphone}
         Xiaomy:   ${quantityXiaomy}
         Huawei:   ${quantityHuawei}
