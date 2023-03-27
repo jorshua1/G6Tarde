@@ -1,5 +1,6 @@
-let Samsung = 0; let iPhone = 0; let Xiaomi = 0; let Motorola = 0; let Huawei = 0; let OPPO = 0;
-let valSamsung = 0; let valiPhone = 0; let valXiaomi = 0; let valMotorola = 0; let valHuawei = 0; let valOPPO = 0;
+let Samsung = 0; let iPhone = 0; let Xiaomi = 0; let Motorola = 0; let Huawei = 0; let Oppo = 0;
+let vendidoSamsung=0;let vendidoIphone=0;let vendidoXiaomi=0;let vendidoMotorola=0;let vendidoHuawei=0;let vendidoOppo=0;
+let valorSamsung = 0; let valorIphone = 0; let valorXiaomi = 0; let valorMotorola = 0; let valorHuawei = 0; let valorOppo = 0;
 let cantidad = 0;
 var boleano = true;
 
@@ -28,25 +29,25 @@ MENÚ
         case 1:
             let celular = 0;
             while (celular != 7) {
-                celular = Number(prompt(`Seleccione a cual celular desea ingresarle una cantidad
-        CELULAR            CANTIDAD
-        1.. Samsung      ${Samsung}
-        2.. iPhone       ${iPhone}
-        3.. Xiaomi       ${Xiaomi}
-        4.. Motorola     ${Motorola}
-        5.. Huawei       ${Huawei}
-        6.. OPPO         ${OPPO}
+                celular = Number(prompt(`Escriba el numero segun el telefono que desea ingresarle una cantidad
+        CELULAR.........CANTIDAD
+        1.. Samsung.....${Samsung}
+        2.. iPhone......${iPhone}
+        3.. Xiaomi......${Xiaomi}
+        4.. Motorola....${Motorola}
+        5.. Huawei......${Huawei}
+        6.. Oppo........${Oppo}
         7.. Atrás`));
                 while (isNaN(celular) || (celular != 1 && celular != 2 && celular != 3 && celular != 4 && celular != 5 && celular != 6 && celular != 7)) {
-                    celular = Number(prompt(`Seleccione a cual celular desea ingresarle una cantidad
-                1CELULAR            CANTIDAD
-                1.. Samsung      ${Samsung}
-                2.. iPhone       ${iPhone}
-                3.. Xiaomi       ${Xiaomi}
-                4.. Motorola     ${Motorola}
-                5.. Huawei       ${Huawei}
-                6.. OPPO         ${OPPO}
-                7.. Atrás`));
+                    celular = Number(prompt(`ERROR. Escriba el numero segun el telefono que desea ingresarle una cantidad
+                    CELULAR.........CANTIDAD
+                    1.. Samsung.....${Samsung}
+                    2.. iPhone......${iPhone}
+                    3.. Xiaomi......${Xiaomi}
+                    4.. Motorola....${Motorola}
+                    5.. Huawei......${Huawei}
+                    6.. Oppo........${Oppo}
+                    7.. Atrás`));
                 }
                 switch (celular) {
                     case 1:
@@ -56,10 +57,10 @@ MENÚ
                         }
                         Samsung += cantidad;
                         cantidad = 0;
-                        if (valSamsung == 0) {
-                            valSamsung = Number(prompt("Ingrese el valor por unidad del telefono Samsung"));
-                            while (isNaN(valSamsung) || valSamsung < 0) {
-                                valSamsung = Number(prompt("ERROR. Ingrese el valor por unidad del telefono Samsung"));
+                        if (valorSamsung === 0) {
+                            valorSamsung = Number(prompt("Ingrese el valor por unidad del telefono Samsung"));
+                            while (isNaN(valorSamsung) || valorSamsung < 0) {
+                                valorSamsung = Number(prompt("ERROR. Ingrese el valor por unidad del telefono Samsung"));
                             }
                         }
                         break;
@@ -72,10 +73,10 @@ MENÚ
                         }
                         iPhone += cantidad;
                         cantidad = 0;
-                        if (valiPhone == 0) {
-                            valiPhone = Number(prompt("Ingrese el valor por unidad del telefono iPhone"));
-                            while (isNaN(valiPhone) || valiPhone < 0) {
-                                valiPhone = Number(prompt("ERROR. Ingrese el valor por unidad del telefono iPhone"));
+                        if (valorIphone === 0) {
+                            valorIphone = Number(prompt("Ingrese el valor por unidad del telefono iPhone"));
+                            while (isNaN(valorIphone) || valorIphone < 0) {
+                                valorIphone = Number(prompt("ERROR. Ingrese el valor por unidad del telefono iPhone"));
                             }
                         }
                         break;
@@ -87,10 +88,10 @@ MENÚ
                         }
                         Xiaomi += cantidad;
                         cantidad = 0;
-                        if (valXiaomi == 0) {
-                            valXiaomi = Number(prompt("Ingrese el valor por unidad del telefono xiaomi"));
-                            while (isNaN(valXiaomi) || valXiaomi < 0) {
-                                valXiaomi = Number(prompt("ERROR. Ingrese el valor por unidad del telefono xiaomi"));
+                        if (valorXiaomi === 0) {
+                            valorXiaomi = Number(prompt("Ingrese el valor por unidad del telefono xiaomi"));
+                            while (isNaN(valorXiaomi) || valorXiaomi < 0) {
+                                valorXiaomi = Number(prompt("ERROR. Ingrese el valor por unidad del telefono xiaomi"));
                             }
                         }
                         break;
@@ -102,10 +103,10 @@ MENÚ
                         }
                         Motorola += cantidad;
                         cantidad = 0;
-                        if (valMotorola == 0) {
-                            valMotorola = Number(prompt("Ingrese el valor por unidad del telefono motorola"));
-                            while (isNaN(valMotorola) || valMotorola < 0) {
-                                valMotorola = Number(prompt("ERROR. Ingrese el valor por unidad del telefono motorola"));
+                        if (valorMotorola === 0) {
+                            valorMotorola = Number(prompt("Ingrese el valor por unidad del telefono motorola"));
+                            while (isNaN(valorMotorola) || valorMotorola < 0) {
+                                valorMotorola = Number(prompt("ERROR. Ingrese el valor por unidad del telefono motorola"));
                             }
                         }
                         break;
@@ -117,25 +118,25 @@ MENÚ
                         }
                         Huawei += cantidad;
                         cantidad = 0;
-                        if (valHuawei == 0) {
-                            valHuawei = Number(prompt("Ingrese el valor por unidad del telefono huawei"));
-                            while (isNaN(valHuawei) || valHuawei < 0) {
-                                valHuawei = Number(prompt("ERROR. Ingrese el valor por unidad del telefono huawei"));
+                        if (valorHuawei === 0) {
+                            valorHuawei = Number(prompt("Ingrese el valor por unidad del telefono huawei"));
+                            while (isNaN(valorHuawei) || valorHuawei < 0) {
+                                valorHuawei = Number(prompt("ERROR. Ingrese el valor por unidad del telefono huawei"));
                             }
                         }
                         break;
 
                     case 6:
-                        cantidad = Number(prompt("Ingrese la cantidad de oppo que tiene"));
+                        cantidad = Number(prompt("Ingrese la cantidad de Oppo que tiene"));
                         while (isNaN(cantidad) || cantidad < 0) {
-                            cantidad = Number(prompt("Ingrese la cantidad de OPPO que tiene"));
+                            cantidad = Number(prompt("Ingrese la cantidad de Oppo que tiene"));
                         }
-                        OPPO += cantidad;
+                        Oppo += cantidad;
                         cantidad = 0;
-                        if (valOPPO == 0) {
-                            valOPPO = Number(prompt("Ingrese el valor por unidad del telefono OPPO"));
-                            while (isNaN(valOPPO) || valOPPO < 0) {
-                                valOPPO = Number(prompt("ERROR. Ingrese el valor por unidad del telefono OPPO"));
+                        if (valorOppo === 0) {
+                            valorOppo = Number(prompt("Ingrese el valor por unidad del telefono Oppo"));
+                            while (isNaN(valorOppo) || valorOppo < 0) {
+                                valorOppo = Number(prompt("ERROR. Ingrese el valor por unidad del telefono Oppo"));
                             }
                         }
                         break;
@@ -154,24 +155,24 @@ MENÚ
             let opcion = 0;
             while (opcion != 7) {
                 opcion = Number(prompt(`Seleccione el celular el cual desea descontarle cantidad de inventario
-            CELULAR            CANTIDAD
-            1.. Samsung      ${Samsung}
-            2.. iPhone       ${iPhone}
-            3.. Xiaomi       ${Xiaomi}
-            4.. Motorola     ${Motorola}
-            5.. Huawei       ${Huawei}
-            6.. OPPO         ${OPPO}
-            7.. Atrás`));
+                CELULAR.........CANTIDAD
+                1.. Samsung.....${Samsung}
+                2.. iPhone......${iPhone}
+                3.. Xiaomi......${Xiaomi}
+                4.. Motorola....${Motorola}
+                5.. Huawei......${Huawei}
+                6.. Oppo........${Oppo}
+                7.. Atrás`));
                 while (isNaN(opcion) || (opcion != 1 && opcion != 2 && opcion != 3 && opcion != 4 && opcion != 5 && opcion != 6 && opcion != 7)) {
                     opcion = Number(prompt(`Seleccione el celular el cual desea descontarle cantidad de inventario
-            CELULAR            CANTIDAD
-            1.. Samsung      ${Samsung}
-            2.. iPhone       ${iPhone}
-            3.. Xiaomi       ${Xiaomi}
-            4.. Motorola     ${Motorola}
-            5.. Huawei       ${Huawei}
-            6.. OPPO         ${OPPO}
-            7.. Atrás`));
+                    CELULAR.........CANTIDAD
+                    1.. Samsung.....${Samsung}
+                    2.. iPhone......${iPhone}
+                    3.. Xiaomi......${Xiaomi}
+                    4.. Motorola....${Motorola}
+                    5.. Huawei......${Huawei}
+                    6.. Oppo........${Oppo}
+                    7.. Atrás`));
                 }
 
                 switch (opcion) {
@@ -180,10 +181,11 @@ MENÚ
                         while (isNaN(cantidad) || cantidad < 0) {
                             cantidad = Number(prompt("Ingrese la cantidad de samsung que vendió"));
                         }
-                        if (cantidad > Samsung) {
-                            cantidad = Number(prompt(`Ingrese una cantidad válida, la cantidad (${cantidad})ingresada supera la cantidad de celulares samsung (${Samsung}) que tiene`))
+                        if (Samsung === 0 && cantidad > Samsung) {
+                            alert(`ERROR. La cantidad (${cantidad}) ingresada supera la cantidad (${Samsung}) de celulares Samsung que tiene, no se puede realizar la operación. `);
                         } else {
                             Samsung -= cantidad;
+                            vendidoSamsung+=cantidad;
                         } cantidad = 0;
 
                         break;
@@ -194,11 +196,11 @@ MENÚ
                         while (isNaN(cantidad) || cantidad < 0) {
                             cantidad = Number(prompt("Ingrese la cantidad de iPhone que vendió"));
                         }
-                        if (cantidad > iPhone) {
-                            cantidad = Number(prompt(`Ingrese una cantidad válida.
-                        La cantidad (${cantidad}) ingresada supera la cantidad (${iPhone}) de celulares iPhone que tiene`));
+                        if (iPhone === 0 && cantidad > iPhone) {
+                            alert(`ERROR. La cantidad (${cantidad}) ingresada supera la cantidad (${iPhone}) de celulares iPhone que tiene, no se puede realizar la operación. `);
                         } else {
                             iPhone -= cantidad;
+                            vendidoIphone+=cantidad;
                         } cantidad = 0;
 
                         break;
@@ -209,11 +211,11 @@ MENÚ
                         while (isNaN(cantidad) || cantidad < 0) {
                             cantidad = Number(prompt("Ingrese la cantidad de Xiaomi que vendió"));
                         }
-                        if (cantidad > Xiaomi) {
-                            cantidad = Number(prompt(`Ingrese una cantidad válida.
-                        La cantidad (${cantidad}) ingresada supera la cantidad (${Xiaomi}) de celulares Xiaomi que tiene`));
+                        if (Xiaomi === 0 && cantidad > Xiaomi) {
+                            alert(`ERROR. La cantidad (${cantidad}) ingresada supera la cantidad (${Xiaomi}) de celulares Xiaomi que tiene, no se puede realizar la operación. `);
                         } else {
                             Xiaomi -= cantidad;
+                            vendidoXiaomi+=cantidad;
                         } cantidad = 0;
 
                         break;
@@ -224,11 +226,11 @@ MENÚ
                         while (isNaN(cantidad) || cantidad < 0) {
                             cantidad = Number(prompt("Ingrese la cantidad de Motorola que vendió"));
                         }
-                        if (cantidad > Motorola) {
-                            cantidad = Number(prompt(`Ingrese una cantidad válida.
-                        La cantidad (${cantidad}) ingresada supera la cantidad (${Motorola}) de celulares Motorola que tiene`));
+                        if (Motorola === 0 && cantidad > Motorola) {
+                            alert(`ERROR. La cantidad (${cantidad}) ingresada supera la cantidad (${Motorola}) de celulares Motorola que tiene, no se puede realizar la operación. `);
                         } else {
                             Motorola -= cantidad;
+                            vendidoMotorola+=cantidad;
                         } cantidad = 0;
 
                         break;
@@ -239,26 +241,26 @@ MENÚ
                         while (isNaN(cantidad) || cantidad < 0) {
                             cantidad = Number(prompt("Ingrese la cantidad de Huawei que vendió"));
                         }
-                        if (cantidad > Huawei) {
-                            cantidad = Number(prompt(`Ingrese una cantidad válida.
-                        La cantidad (${cantidad}) ingresada supera la cantidad (${Huawei}) de celulares Huawei que tiene`));
+                        if (Huawei === 0 && cantidad > Huawei) {
+                            alert(`ERROR. La cantidad (${cantidad}) ingresada supera la cantidad (${Huawei}) de celulares Huawei que tiene, no se puede realizar la operación. `);
                         } else {
                             Huawei -= cantidad;
+                            vendidoHuawei+=cantidad;
                         } cantidad = 0;
 
                         break;
 
                     case 6:
 
-                        cantidad = Number(prompt("Ingrese la cantidad de OPPO que vendió"));
+                        cantidad = Number(prompt("Ingrese la cantidad de Oppo que vendió"));
                         while (isNaN(cantidad) || cantidad < 0) {
-                            cantidad = Number(prompt("Ingrese la cantidad de OPPO que vendió"));
+                            cantidad = Number(prompt("Error. Ingrese la cantidad de Oppo que vendió"));
                         }
-                        if (cantidad > OPPO) {
-                            cantidad = Number(prompt(`Ingrese una cantidad válida.
-                        La cantidad (${cantidad}) ingresada supera la cantidad (${OPPO}) de celulares OPPO que tiene`));
+                        if (Oppo === 0 && cantidad > Oppo) {
+                            alert(`ERROR. La cantidad (${cantidad}) ingresada supera la cantidad (${Oppo}) de celulares Oppo que tiene, no se puede realizar la operación. `);
                         } else {
-                            OPPO -= cantidad;
+                            Oppo -= cantidad;
+                            vendidoOppo+=cantidad;
                         } cantidad = 0;
 
                         break;
@@ -276,13 +278,25 @@ MENÚ
     }
 }
 
-let recaudo= ((Samsung*valSamsung)+(iPhone*valiPhone)+(Xiaomi*valXiaomi)+(Motorola*valMotorola)+(Huawei*valHuawei)+(OPPO*valOPPO))
+let recaudo= ((vendidoSamsung*valorSamsung)+(vendidoIphone*valorIphone)+(vendidoXiaomi*valorXiaomi)+(vendidoMotorola*valorMotorola)+(vendidoHuawei*valorHuawei)+(vendidoOppo*valorOppo))
 alert(`
-Se vendieron -> CANTIDAD   ->  VALOR 
-Samsung -> ${Samsung}   -> ${valSamsung}
-iPhone -> ${iPhone}  -> ${valiPhone}
-Xiaomi -> ${Xiaomi}  -> ${valXiaomi}
-Motorola -> ${Motorola}  -> ${valMotorola}
-Huawei -> ${Huawei}  -> ${valHuawei}
-OPPO -> ${OPPO}   -> ${valOPPO}
+Se vendieron....CANTIDAD......VALOR 
+Samsung.........${vendidoSamsung}....${valorSamsung}
+iPhone..........${vendidoIphone}.....${valorIphone}
+Xiaomi..........${vendidoXiaomi}.....${valorXiaomi}
+Motorola........${vendidoMotorola}...${valorMotorola}
+Huawei..........${vendidoHuawei}.....${valorHuawei}
+Oppo............${vendidoOppo}.......${valorOppo}
 El dinero total recaudado por las ventas es ${recaudo}`);
+
+/** 
+declarcion de variables, tipos de datos, pracitcas para crear buenas variables
+
+condicionales, estructura, casos de usooo
+
+ciclos, para que sirve cada unoooo, que problemas puede ocasionar
+operadores logicos, tipos de operadores y usos
+alcances-> lugares que puede acceder la variables segun su declaracion
+validaciones de datos. 
+git comandos de github
+*/
