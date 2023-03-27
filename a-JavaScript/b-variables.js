@@ -329,7 +329,7 @@ console.log(false && false);
 
 console.log(true || true);
 console.log(true || false);
-console.log(false||false);
+console.log(false || false);
 
 console.log(!true);
 console.log(!false);
@@ -349,7 +349,15 @@ console.log(numeroDiez);
 
 console.log("El numero uno es " + numeroUno);
 
-let comparacionNumeros=(numeroUno>numeroDos)?"si":"No";
+let comparacionNumeros = (numeroUno > numeroDos) ? "si" : "No";
 console.log(comparacionNumeros);
 
 console.log(typeof comparacionNumeros);
+
+console.log(`
+Hola
+Este
+es
+un
+string
+`);
