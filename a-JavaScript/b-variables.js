@@ -346,7 +346,6 @@ console.log(numeroNueve);
 console.log(numeroDiez);
 
 //Operadores especiales.
-
 console.log("El numero uno es " + numeroUno);
 
 let comparacionNumeros = (numeroUno > numeroDos) ? "si" : "No";
