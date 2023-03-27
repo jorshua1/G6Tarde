@@ -2,12 +2,22 @@
 
 *Pseudocodigo.
 
-SI (condición){
-    Hacer si es verdadero.
-}sino{
-    Hacer si es falso.
+if (condición) {
+  código a ejecutar si la condición es verdadera
+} else {
+  ejecuta este otro código si la condición es falsa
 }
 
+Aquí tenemos:
+
+La palabra clave if seguida de unos paréntesis.
+Una condición a probar, puesta dentro de los paréntesis (típicamente "¿es este valor mayor que este otro valor?", o "¿existe este valor?"). Esta condición usará los operadores de comparación que hemos hablado en el módulo anterior y retorna un valor true o false (verdadero o falso).
+Un conjunto de llaves, en las cuales tenemos algún código — puede ser cualquier código que deseemos, código que se ejecutará sólamente si la condición retorna true.
+La palabra clave else.
+Otro conjunto de llaves, dentro de las cuales tendremos otro código — puede ser cualquier código que deseemos, y sólo se ejecutará si la condición no es true.
+Este código es fácil de leer — está diciendo "si (if) la condición retorna verdadero (true), entonces ejecute el código A, sino (else) ejecute el código B"
+
+Habrás notado que no tienes que incluir else y el segundo bloque de llaves — La siguiente declaración también es perfectmaente legal.
 */
 let edad1 = parseInt(prompt("Ingrese su edad: "));
 
