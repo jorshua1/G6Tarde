@@ -14,3 +14,14 @@ if (isNaN(numeroMultiplicando)) {
         console.log(numeroMultiplicando + " x " + numeroMultiplicador + " = " + resultado);
     }
 }
+
+let alto, ancho, linea, cadena;
+
+alto = 10;/*parseInt(prompt("Teclea un numero N"));*/
+for (linea = 0; linea < alto; linea++) {
+    cadena = ''
+    for (ancho = 0; ancho <= linea; ancho++) {
+        cadena += "*";
+    }
+    console.log(`${cadena}`);
+}
