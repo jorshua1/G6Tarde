@@ -1,4 +1,4 @@
-let Samsung = 0; let iPhone = 0; let Xiaomi = 0; let Motorola = 0; let Huawei = 0; let Oppo = 0;
+let Samsung = 0; let Iphone = 0; let Xiaomi = 0; let Motorola = 0; let Huawei = 0; let Oppo = 0;
 let vendidoSamsung=0;let vendidoIphone=0;let vendidoXiaomi=0;let vendidoMotorola=0;let vendidoHuawei=0;let vendidoOppo=0;
 let valorSamsung = 0; let valorIphone = 0; let valorXiaomi = 0; let valorMotorola = 0; let valorHuawei = 0; let valorOppo = 0;
 let cantidad = 0;
@@ -32,7 +32,7 @@ MENÚ
                 celular = Number(prompt(`Escriba el numero segun el telefono que desea ingresarle una cantidad
         CELULAR.........CANTIDAD
         1.. Samsung.....${Samsung}
-        2.. iPhone......${iPhone}
+        2.. Iphone......${Iphone}
         3.. Xiaomi......${Xiaomi}
         4.. Motorola....${Motorola}
         5.. Huawei......${Huawei}
@@ -42,7 +42,7 @@ MENÚ
                     celular = Number(prompt(`ERROR. Escriba el numero segun el telefono que desea ingresarle una cantidad
                     CELULAR.........CANTIDAD
                     1.. Samsung.....${Samsung}
-                    2.. iPhone......${iPhone}
+                    2.. Iphone......${Iphone}
                     3.. Xiaomi......${Xiaomi}
                     4.. Motorola....${Motorola}
                     5.. Huawei......${Huawei}
@@ -67,16 +67,16 @@ MENÚ
 
 
                     case 2:
-                        cantidad = Number(prompt("Ingrese la cantidad de iPhone que tiene"));
+                        cantidad = Number(prompt("Ingrese la cantidad de Iphone que tiene"));
                         while (isNaN(cantidad) || cantidad < 0) {
-                            cantidad = Number(prompt("Ingrese la cantidad de iPhone que tiene"));
+                            cantidad = Number(prompt("Ingrese la cantidad de Iphone que tiene"));
                         }
-                        iPhone += cantidad;
+                        Iphone += cantidad;
                         cantidad = 0;
                         if (valorIphone === 0) {
-                            valorIphone = Number(prompt("Ingrese el valor por unidad del telefono iPhone"));
+                            valorIphone = Number(prompt("Ingrese el valor por unidad del telefono Iphone"));
                             while (isNaN(valorIphone) || valorIphone < 0) {
-                                valorIphone = Number(prompt("ERROR. Ingrese el valor por unidad del telefono iPhone"));
+                                valorIphone = Number(prompt("ERROR. Ingrese el valor por unidad del telefono Iphone"));
                             }
                         }
                         break;
@@ -157,7 +157,7 @@ MENÚ
                 opcion = Number(prompt(`Seleccione el celular el cual desea descontarle cantidad de inventario
                 CELULAR.........CANTIDAD
                 1.. Samsung.....${Samsung}
-                2.. iPhone......${iPhone}
+                2.. Iphone......${Iphone}
                 3.. Xiaomi......${Xiaomi}
                 4.. Motorola....${Motorola}
                 5.. Huawei......${Huawei}
@@ -167,7 +167,7 @@ MENÚ
                     opcion = Number(prompt(`Seleccione el celular el cual desea descontarle cantidad de inventario
                     CELULAR.........CANTIDAD
                     1.. Samsung.....${Samsung}
-                    2.. iPhone......${iPhone}
+                    2.. Iphone......${Iphone}
                     3.. Xiaomi......${Xiaomi}
                     4.. Motorola....${Motorola}
                     5.. Huawei......${Huawei}
@@ -192,14 +192,14 @@ MENÚ
 
                     case 2:
 
-                        cantidad = Number(prompt("Ingrese la cantidad de iPhone que vendió"));
+                        cantidad = Number(prompt("Ingrese la cantidad de Iphone que vendió"));
                         while (isNaN(cantidad) || cantidad < 0) {
-                            cantidad = Number(prompt("Ingrese la cantidad de iPhone que vendió"));
+                            cantidad = Number(prompt("Ingrese la cantidad de Iphone que vendió"));
                         }
-                        if (iPhone === 0 && cantidad > iPhone) {
-                            alert(`ERROR. La cantidad (${cantidad}) ingresada supera la cantidad (${iPhone}) de celulares iPhone que tiene, no se puede realizar la operación. `);
+                        if (Iphone === 0 && cantidad > Iphone) {
+                            alert(`ERROR. La cantidad (${cantidad}) ingresada supera la cantidad (${Iphone}) de celulares Iphone que tiene, no se puede realizar la operación. `);
                         } else {
-                            iPhone -= cantidad;
+                            Iphone -= cantidad;
                             vendidoIphone+=cantidad;
                         } cantidad = 0;
 
@@ -282,7 +282,7 @@ let recaudo= ((vendidoSamsung*valorSamsung)+(vendidoIphone*valorIphone)+(vendido
 alert(`
 Se vendieron....CANTIDAD......VALOR 
 Samsung.........${vendidoSamsung}....${valorSamsung}
-iPhone..........${vendidoIphone}.....${valorIphone}
+Iphone..........${vendidoIphone}.....${valorIphone}
 Xiaomi..........${vendidoXiaomi}.....${valorXiaomi}
 Motorola........${vendidoMotorola}...${valorMotorola}
 Huawei..........${vendidoHuawei}.....${valorHuawei}
