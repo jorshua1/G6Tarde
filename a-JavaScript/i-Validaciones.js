@@ -13,3 +13,13 @@ for (nombreX; !isNaN(nombreX);); {
 
 let comparacionNumeros = (1 > 2) ? "si" : "No";
 console.log(comparacionNumeros);
+
+let i = 1;
+while (i) {
+    console.log(i);
+    i++
+}console.log("XD");
+
+let j = 2;
+while (j) console.log(j--);
+console.log(j);
