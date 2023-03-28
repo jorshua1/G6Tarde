@@ -7,13 +7,15 @@
 //Validacion con el ciclo condicional WHILE 
 nombre = prompt("por favor digite su nombre");
 while (!isNaN(nombre)){
+    console.log("Error, por favor ingresar valor de tipo texto");
     nombre = prompt("por favor digite su nombre");
 }
 alert(nombre);
 
 edad = parseInt(prompt("Por favor digite su edad"));
-while (isNaN(edad)){
-    edad = prompt("por favor digite su edad");
+while (isNaN(edad) || edad < 0){
+    console.log("Error, por favor ingresar valor de tipo numerico y mayor que 0");
+    edad = prompt("por favor digite su edad");  
 }
 alert(edad);
 
@@ -41,4 +43,12 @@ nombrexd = prompt("INgrese su nombre");
 for (nombrexd;!isNaN(nombrexd);){
     nombrexd = prompt("Ingrese un nombre valido");
 }
+
+//Nota adicional
+
+
+!Number.isInteger("Variable aquí");
+
+
+//Esta validacion sirve para cuando queremos numeros que no sean decimales :3
 
