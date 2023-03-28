@@ -92,8 +92,6 @@ if (primermenú == 1) {
         case 3:
             break;
 
-
-
       }
 
     }
