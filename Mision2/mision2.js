@@ -289,14 +289,3 @@ Huawei..........${vendidoHuawei}.....${valorHuawei}
 Oppo............${vendidoOppo}.......${valorOppo}
 El dinero total recaudado por las ventas es ${recaudo}`);
 
-/** 
-declarcion de variables, tipos de datos, pracitcas para crear buenas variables
-
-condicionales, estructura, casos de usooo
-
-ciclos, para que sirve cada unoooo, que problemas puede ocasionar
-operadores logicos, tipos de operadores y usos
-alcances-> lugares que puede acceder la variables segun su declaracion
-validaciones de datos. 
-git comandos de github
-*/
