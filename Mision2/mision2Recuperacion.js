@@ -1,4 +1,3 @@
-let boleanoControladorMenu = false;
 let opcionMenuPrincipal = 0;
 let cantidadFamiliares = 0;
 let promedioAlturaFamiliares = 0;
