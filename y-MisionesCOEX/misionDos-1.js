@@ -42,11 +42,11 @@ let opcionesMenu = 0;
 let opcionesSubMenu = 0;
 var CantidadPersonas = 0;
 var registroPersonas = 0;
+let parentescoPersona;
 let nombrePersona;
 let pesoPersona;
 let alturaPersona;
-
-let parentescoPersona;
+let indiceMasaCorporal = 0;
 
 
 //Desarrollo del menu principal de opciones.
@@ -96,7 +96,7 @@ while (opcionesMenu !== 4) {
                 //Desarrollo sub menu ingresar  familiares.
                 switch (opcionesSubMenu) {
 
-                    //1. Ingresar cantidad de familiares.:::::MENU INGRESAR FAMILIARES:::::
+                    //1. Ingresar cantidad de familiares.:::::SUBMENU INGRESAR FAMILIARES:::::
                     case 1:
                         CantidadPersonas = parseInt(prompt(`Por favor ingrese numero de personas a registrar:`));
 
@@ -107,22 +107,19 @@ while (opcionesMenu !== 4) {
                         alert("Se Han habilitado " + registroPersonas + " registros.");
                         break;
 
-                    //1. Ingresar datos basicos de familiares.:::::MENU INGRESAR FAMILIARES:::::
+                    //1. Ingresar datos basicos de familiares.:::::SUBMENU INGRESAR FAMILIARES:::::
                     case 2:
                         for (i = 1; i <= CantidadPersonas; i++) {
 
-                            parentescoPersona = prompt("Por favor ingrese parentesco de persona." + i + ":");
-                            nombrePersona = prompt("Por favor ingrese nomnre de su " + parentescoPersona + ":");
+                            parentescoPersona = prompt("Por favor ingrese parentesco de persona " + i + ":");
+                            nombrePersona = prompt("Por favor ingrese nombre de su " + parentescoPersona + ":");
 
                             while (!isNaN(parentescoPersona) || !isNaN(nombrePersona)) {
-                                parentescoPersona = parseInt(prompt(`Por favor No usar numeros o caranteres especiales.
-                                ingrese parentesco de persona:`));
-
-                                while (isNaN(opcionesSubMenu) || opcionesSubMenu <= 0 || opcionesSubMenu > 3) {
-                                    opcionesSubMenu = parseInt(prompt(`Por favor No usar numeros o caranteres especiales.
-                                    ingrese parentesco de persona:`));
-                                }
+                                alert("Por favor no usar numeros o caracteres especiales.");
+                                parentescoPersona = prompt("Por favor ingrese parentesco de persona " + i + ":");
+                                nombrePersona = prompt("Por favor ingrese nombre de su " + parentescoPersona + ":");
                             }
+                            alert("Has registrado a " + nombrePersona + " con parentesco " + parentescoPersona);
                         }
                         break;
                 }
@@ -145,6 +142,27 @@ while (opcionesMenu !== 4) {
                     1. Ingresar medidas.
                     2. Regresar al menu principal.`)
                     );
+                }
+                //Desarrollo sub menu ingresar medidas.
+                switch (opcionesSubMenu) {
+
+                    //1. Ingresar medidas.:::::SUBMENU INGRESAR DATOS PARA CALCULO DE IMC.:::::
+                    case 1:
+                        for (i = 1; i <= CantidadPersonas; i++) {
+
+                            alturaPersona = prompt("Por favor ingrese altura de persona " + i + ":");
+                            pesoPersona = prompt("Por favor ingrese peso de persona " + i + ":");
+
+                            while (isNaN(alturaPersona) || isNaN(pesoPersona)) {
+                                alert("Por favor no usar texo.");
+                                pesoPersona = prompt("Por favor ingrese parentesco de persona " + i + ":");
+                                nombrePersona = prompt("Por favor ingrese nombre de su " + parentescoPersona + ":");
+
+                            }
+                            indiceMasaCorporal= (pesoPersona/(alturaPersona)**2);
+                            alert("El IMC de la persona 1 es: " + indiceMasaCorporal);
+                        }
+                        break;
                 }
             }
             break;
