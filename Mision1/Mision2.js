@@ -78,14 +78,14 @@ valortotal =
 
 alert('el total de dinero por todos los dispositivo es ' + valortotal)
 
-alert(' calculadora de compra')
+let yes=parseInt(prompt('ingresar 1 si desea hacer una compra, otra tecla si desea finalizar'))
+if (yes=1){alert(' calculadora de compra')
 let si = parseInt(
   prompt(
     'ingrese 1 para continuar la compra al final del proceso y otra tecla para cancelar ',
-  ),
-)
-
-while ((si = 1)) {
+  ))
+  
+  while ((si =1)) {
   let tipoDispositivo = parseInt(
     prompt(
       'ingrese 1, para Samsug. 2, para Iphone. 3, para Xiaomi. 4, para Motorola. 5, para Huawei, 6, para OPPO',
@@ -205,11 +205,15 @@ while ((si = 1)) {
 
       break
   }
+  
+  
   si = parseInt(
     prompt(
       'ingrese 1 para continuar la compra al final del proceso y otra tecla para cancelar ',
     ),
-  )
+  
+)
+
 }
 
 restantesSamsung = cantidadSamsung - compraSamsung
@@ -234,7 +238,11 @@ alert(
     restantesOPPO,
 )
 
-valorventaTotal =(totalXiaomi+totalHuawei+totalSamsung+totalIphone+totalMotorola+totalOPPO)
+valorVentaTotal =(totalXiaomi+totalHuawei+totalSamsung+totalIphone+totalMotorola+totalOPPO)
 
+alert
 
-//no he terminado, jajaja////////////////////////////////
+}else{
+alert("sistema cerrado")
+
+}
