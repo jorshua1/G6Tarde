@@ -87,10 +87,14 @@
                 }
                 break;
             case 3:
+            
             promediofamiliaImc=(sumaImc/cantidad);
-            if (imc < 18.5) {
-                alert("El promedio de IMC de la familia fue: " + promediofamiliaImc + " y Sus niveles de peso son Bajos");
-            } else {
+            if (cantidad===0){ 
+            alert("NO hay resultados aun, por favor ingrese al primer Punto");
+            }else {
+                if(imc < 18.5){
+                        alert("El promedio de IMC de la familia fue: " + promediofamiliaImc + " y Sus niveles de peso son Bajos");
+                }
                 if (imc >= 18.5 && imc <= 24.9) {
                     alert("El promedio de IMC de la familia fue: " + promediofamiliaImc + " y Sus niveles de peso son Normales");
                 } else {
