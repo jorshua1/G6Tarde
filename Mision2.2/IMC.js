@@ -122,4 +122,4 @@ switch(opcion) {
     }
 }while(repetir == 0);
 alert("Gracias por usar este programa :3");
-//:)
+//:(
