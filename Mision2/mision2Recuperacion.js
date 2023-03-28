@@ -4,6 +4,7 @@ let promedioAlturaFamiliares = 0;
 let promedioPesoFamiliares = 0;
 let promedioIndiceMasaCorporalFamiliares = 0;
 let promedioNivelDePesoFamiliares;
+let promedioEdadFamiliares=0;
 
 
 while (opcionMenuPrincipal !== 4) {
@@ -25,7 +26,7 @@ while (opcionMenuPrincipal !== 4) {
         case 1:
             if (cantidadFamiliares === 0) {
                 cantidadFamiliares = Number(prompt("Digite la cantidad de familiares que tiene y desea realizarle un IMC."));
-                while (isNaN(cantidadFamiliares) || cantidadFamiliares < 0) {
+                while (isNaN(cantidadFamiliares) || cantidadFamiliares <= 0) {
                     cantidadFamiliares = Number(prompt(`
                 ERROR. 
                 Digite la cantidad de familiares que tiene y desea realizarle un IMC.`));
@@ -39,6 +40,16 @@ while (opcionMenuPrincipal !== 4) {
         case 2:
             if (cantidadFamiliares > 0 && promedioAlturaFamiliares === 0) {
                 for (let i = 1; i <= cantidadFamiliares; i++) {
+                    let edad=Number(prompt(`Ingrese la edad del familiar ${i} que desea registrar`));
+                    while(isNaN(edad)||edad<20){
+                        if(isNaN(edad)){
+                            edad= Number(prompt(`
+                            ERROR
+                            Ingrese la edad del familiar ${i}`))
+                        }else if (edad<20){
+                            edad=Number(prompt(`La edad ingresada no es válida para esta formula del IMC, digite la edad de otro familiar mayor de 20 años. `));
+                        }
+                    }
                     let nombreFamiliar = prompt(`Ingrese el nombre del familiar #${i} que desea registrar`);
                     while (nombreFamiliar === "") {
                         nombreFamiliar = prompt(`
@@ -84,6 +95,7 @@ while (opcionMenuPrincipal !== 4) {
                     }
                     alert(`
                     ****RESULTADOS ${nombreFamiliar}****
+                    Edad -> ${edad}
                     Parentezco -> ${parentezcoFamiliar}
                     Peso -> ${pesoFamiliar}
                     Altura -> ${alturaFamiliar}
@@ -105,6 +117,7 @@ while (opcionMenuPrincipal !== 4) {
             break;
         case 3:
             if (cantidadFamiliares !== 0 && promedioAlturaFamiliares !== 0 && promedioPesoFamiliares !== 0) {
+                promedioEdadFamiliares=promedioEdadFamiliares/cantidadFamiliares;
                 promedioPesoFamiliares = promedioPesoFamiliares / cantidadFamiliares;
                 promedioAlturaFamiliares = promedioAlturaFamiliares / cantidadFamiliares;
                 promedioIndiceMasaCorporalFamiliares = (promedioPesoFamiliares / (promedioAlturaFamiliares ** 2));
@@ -123,6 +136,7 @@ while (opcionMenuPrincipal !== 4) {
                 alert(`
                 ****Resultados Finales de la Familia****
                 La cantidad de familiares registrados fueron -> ${cantidadFamiliares}
+                EL promedio de edad en la familia es -> ${promedioEdadFamiliares}
                 El promedio del peso en la familia es -> ${promedioPesoFamiliares}
                 El promedio de la altura en la familia es -> ${promedioAlturaFamiliares}
                 El promedio de indice de masa corporal en la familia es -> ${promedioIndiceMasaCorporalFamiliares}
@@ -146,4 +160,4 @@ while (opcionMenuPrincipal !== 4) {
             break;
     }
 }
-
+ 
