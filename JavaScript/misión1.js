@@ -1,9 +1,9 @@
 // MISIÓN 
 
 let examen1 = parseFloat(prompt("ingrese la nota del primer examen"));
-  if (isNaN(examen1)||(examen1<0)||(examen1>5)){
+if (isNaN(examen1)||(examen1<0)||(examen1>5)){
     console.log ("error");
-  }else{
+}else{
     let examen2 = parseFloat(prompt("ingrese la nota del segundo examen"));
     if (isNaN(examen2)||(examen2<0)||(examen2>5)){
         console.log ("error");
@@ -19,19 +19,19 @@ let examen1 = parseFloat(prompt("ingrese la nota del primer examen"));
                     let trabajo2 = parseFloat(prompt("ingrese la nota del segundo trabajo"));
                     if (isNaN(trabajo2)||(trabajo2<0)||(trabajo2>5)){
                         console.log ("error");
-                     }else {
+                    }else {
                         let examenfinal = parseFloat(prompt("ingrese la nota del examen final"));
                         if (isNaN(examenfinal)||(examenfinal<0)||(examenfinal>5)){
                             console.log ("error");
-                         }else {
+                        }else {
                             let autoevaluE = parseFloat(prompt("ingrese la nota de la autoevalución del estudiante"));
                             if (isNaN(autoevaluE)||(autoevaluE<0)||(autoevaluE>5)){
                                 console.log ("error");
-                             }else {
+                            }else {
                                 let coevaluacion = parseFloat(prompt("ingrese la nota de co-evalucion del estudiante" ));
                                 if (isNaN(examenfinal)||(examenfinal<0)||(examenfinal>5)){
                                     console.log ("error");
-                                 }else {
+                                }else {
                                     let notaFinal = ((((examen1+examen2+examen3)/3)*0.55)+(((trabajo1+trabajo2)/2)*0.15)+(examenfinal*0.20)+(((autoevaluE+coevaluacion)/2)*0.10))
                                         console.log ("la nota final del estudiante", notaFinal)
                                         if(notaFinal<=5 && notaFinal>=4.7){
@@ -48,53 +48,15 @@ let examen1 = parseFloat(prompt("ingrese la nota del primer examen"));
 
                                     }
 
-                                 }
-                             }
+                                }
+                            }
 
-                         }
-                     }
-                
+                        }
+                    }
                 }
-            }    
+            }
         }
     }
-  
-    
-                    
-                                
-                                            
-                                        
-                                     
-                                 
-                            
-                         
-                    
-                 
-             
-            
-         
-                
-                 
-                        
-                                
-                               
-                                
-                             
-
-                         
-                     
-
-                 
-
-             
-            
- 
-        
-  
-    
- 
-    
-  
 
 
 
