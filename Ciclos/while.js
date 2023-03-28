@@ -1,10 +1,9 @@
+//Aqui se define la variable Numero y es donde se almacenara el dato.
 let numero = Number(prompt("Ingrese un numero"));
-//let numero = 1;
 
+//Aqui explicamos que si la Variable llamada "numero" es <=10
 while(numero <=10){
     alert(numero);
-    numero++
-
     break;
 }
-console.log();
+console.log(numero);
