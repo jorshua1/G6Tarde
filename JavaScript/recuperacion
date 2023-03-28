@@ -1,0 +1,140 @@
+let estatura = 0
+let peso = 0
+let nombre = 0
+let parentesco = 0
+let opcionMenu = 0
+let opcionFamiliares = 0
+let cantidadFamiliares = 0
+let datosfamiliar = 0
+let imc = 0
+let sumaimc = 0
+let promediodeImc = 0
+
+while (opcionMenu!==5){
+    opcionMenu = parseInt(prompt(`SELECCIONA LA OPCION DEL MENU QUE DESEES
+    1. CANTIDAD DE FAMILIARES.
+    2. INGRESAR DATOS DEL FAMILIAR.
+    3. PROMEDIO DEL IMC.
+    4. SALIR.
+    `));
+    while (isNaN(opcionMenu) || opcionMenu <= 0 || opcionMenu > 5) {
+        opcionMenu = parseInt(prompt(`INGRESE UN DATO VALIDO
+        1. FAMILIARES.
+        2. INGRESAR DATOS DEL FAMILIAR.
+        3. PROMEDIO DEL IMC.
+        4. SALIR.`));
+    }
+    switch (opcionMenu) {
+        case 1:
+            while (opcionFamiliares !== 2) {
+                opcionFamiliares = parseInt(prompt(`SELECCIONA LA OPCION QUE DESEES
+                1. CANTIDAD DE FAMILIARES.
+                2. SALIR `));
+                while (isNaN(opcionFamiliares) || opcionFamiliares <= 0 || opcionFamiliares > 3) {
+                    opcionFamiliares = parseInt(prompt(`SELECCIONA LA OPCION QUE DESEES
+                    1. CANTIDAD DE FAMILIARES.
+                    2. SALIR `));
+                }
+                switch (opcionFamiliares) {
+                    case 1:
+                        cantidadFamiliares = parseInt(prompt(`Ingrese la cantidad de familiares al que desees
+                        calular el IMC`));
+                        while (isNaN(cantidadFamiliares) || cantidadFamiliares == 0) {
+                            cantidadFamiliares = parseInt(prompt(`Ingrese la cantidad de familiares al que desees
+                            calular el IMC`));
+                        }
+                        break;
+                    case 2:
+                        break;
+                    default:
+                        alert("ingrese un dato valido;")
+        break;
+                }
+            }
+        case 2:
+            for (i=0; i< cantidadFamiliares-1; i++){
+                while (datosfamiliar !== 5) {
+                    datosfamiliar = parseInt(prompt(`INGRESE LOS SIGUIENTES DATOS
+                1. NOMBRE
+                2. PARENTESCO
+                3. PESO
+                4. ESTATURA
+                5. IMC
+                5. SALIR`));
+                    while (isNaN(datosfamiliar) || datosfamiliar <= 0 || datosfamiliar > 7) {
+                        datosfamiliar = parseInt(prompt(`INGRESE LOS SIGUIENTES DATOS
+                    1. NOMBRE
+                    2. PARENTESCO
+                    3. PESO
+                    4. ESTATURA
+                    5. IMC
+                    6. SALIR`));
+                    }
+                    switch (datosfamiliar) {
+                        case 1:
+                            nombre = prompt(" Ingrese el nombre del familiar");
+                            while (!isNaN(nombre)) {
+                                nombre = prompt(" ingrese el nombre del familiar");
+                            }
+                            break;
+                        case 2:
+                            parentesco = prompt("Ingrese cual es el parentesco que tiene con el familiar");
+                            while (!isNaN(parentesco)) {
+                                parentesco = prompt(" ingrese el nombre del familiar");
+                            }
+                            break;
+                        case 3:
+                            peso = parseFloat(prompt("Ingrese el peso de la persona en kilogramos"));
+                            while (isNaN(peso) || peso <= 0) {
+                                peso = parseFloat(prompt("Ingrese el peso de la persona en kilogramos"));
+                            }
+                            break;
+                        case 4:
+                            estatura = parseFloat(prompt("ingrese la estatura de la persona en metros"));
+                            while (isNaN(estatura) || estatura <= 0) {
+                                estatura = parseFloat(prompt("Ingrese el peso de la persona en kilogramos"));
+                            }
+                            break;
+                        case 5:
+                            imc = parseInt(prompt(peso / (estatura * estatura)));
+                                alert("El imc de su familiar es",imc);
+                            while (isNaN(imc)|| imc <= 0){
+                                imc = (peso / (estatura * estatura))
+                                alert("El imc de su familiar es", imc);
+                            }if (imc < 18.5) {
+                                    alert("Su nivel de peso es Bajo")
+                                } else if (imc >= 18.5 && imc <= 24.9) {
+                                    alert("Su nivel de peso es Normal")
+                                } else if (imc <= 25.0 && imc >= 28.9) {
+                                    alert("Su  nivel de peso es de Sobrepeso")
+                                } else if (imc <= 29.9 && imc >= 34.9) {
+                                    alert("Su nivel de peso es Obeso I")
+                                } else if (imc > 35.0) {
+                                    alert("Su nivel de peso es Obeso II")
+                                }
+                        case 6:
+                            break;
+                        default:
+                            alert("ingrese un dato valido")
+        break;
+                    }
+                }
+                }
+        break;
+        case 3:
+            sumaimc += imc
+            if (isNaN(promediodeImc) || (promediodeImc = 0)) {
+                alert("error");
+            } else {
+                promediodeImc = (sumaimc /cantidadFamiliares)
+                alert("El promediodeImc de su familia es", promediodeImc)
+        break;
+            }
+        case 4:
+            break;
+            default:
+                alert("ingrese un dato valido")
+        break;
+        }
+break;
+    }
