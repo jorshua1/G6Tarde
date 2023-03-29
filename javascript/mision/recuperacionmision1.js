@@ -67,10 +67,6 @@ primermenu = Number(prompt("bienvenido a su algoritmo para calcular el IMC\n por
                         alert(nombre + " con parentesco " + parentesco + " tiene un indice de masa corporal de " + imc + " y tiene obesidad 2");
                     }
                  salida=Number(prompt("desea cancelar la operacion?\nselecione:\n 1. si \n 2. no "));
-                 while(salida!==1 ||salida!==2){
-                    salida=Number(prompt("valor invalido\n desea cancelar la operacion?\nselecione:\n 1. si \n 2. no "));
-
-                 }
                 if(salida==1 && contador!==cantidadfamiliares){
                     contador=cantidadfamiliares
                 }
