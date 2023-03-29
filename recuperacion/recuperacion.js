@@ -30,17 +30,23 @@ while (menu !== 4) {
     alert(menu);
     switch (menu) {
         case 1:
-            cantidadFamiliares = parseInt(prompt(`
+            if (cantidadFamiliares === 0) {
+                cantidadFamiliares = parseInt(prompt(`
             Ingrese el numero total de familiares,
             recuerde que este dato es necesario para
             realizar continuar a la opción 2 y 3 
             para poder realizar los cálculos.
             `))
-            if (isNaN(cantidadFamiliares) || cantidadFamiliares <= 0) {
-                alert("ERROR INGRESE UN DATO VALIDO")
+                if (isNaN(cantidadFamiliares) || cantidadFamiliares <= 0) {
+                    alert("ERROR INGRESE UN DATO VALIDO")
+                } else {
+                    alert("Dato registrado correctamente")
+                }
             } else {
-                alert("Dato registrado correctamente")
+                alert("Usted ya definio la cantidad de familiares, no puede ingresar nuevamente");
+                break;
             }
+
             break;
         case 2:
             if (cantidadFamiliares <= 0) {
