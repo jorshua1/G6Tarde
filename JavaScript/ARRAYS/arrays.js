@@ -35,9 +35,16 @@ var colegio={
 console.log(colegio.estudiantes.primaria[2]);
 
 
-let numeros = [1,2,3,4,5,6,7,8,9];
+let numeros = [1,2,3,4,5,6,7,8,9,10];
 let cubico=[]
 for (let i=0;i<numeros.length;i++){
     cubico[i]=[numeros[i]**3]
 }
 console.log(cubico);
+
+let valores=[]
+for(let x=0;x<10;x++){
+    let valor=prompt("ingrese dato")
+    valores[x]=valor
+}
+console.log(valores);
