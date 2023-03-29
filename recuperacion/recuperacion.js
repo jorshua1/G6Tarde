@@ -1,147 +1,149 @@
 
-
 let nombre = 0;
 let parentesco = 0;
 let estatura = 0;
 let peso = 0;
 let edad = 0;
-let opcion = 0;
+let menu = 0;
 let cantidadFamiliares = 0;
-let datosFamiliar = 0;
+let promedioImc = 0;
 
-while (opcion !== 4) {
-    opcion = parseInt(prompt(`
-        Selecciona una opción del Menú:
-        1. Ingresar familiares.
-        2. Ingresar datos del familiar para realizar el cálculo.
-        3. Mostrar resultados.
-        4. Salir del programa.
-        `))
-    while (isNaN(opcion) || opcion <= 0 || opcion >= 5) {
-        opcion = parseInt(prompt(`
-        ERROR POR FAVOR ELEGIR UN NUMERO ENTRE LAS OPCIONES(1,2,3,4)
-        Selecciona una opción del Menú:
-        1. Ingresar familiares.
-        2. Ingresar datos del familiar para realizar el cálculo.
-        3. Mostrar resultados.
-        4. Salir del programa.
-        `))
+
+while (menu !== 4) {
+    menu = parseInt(prompt(`
+    Digite un número según 
+    la acción que desea ejecutar:
+    1. Ingresar familiares.
+    2. Ingresar datos necesarios para los cálculos.
+    3. Mostrar resultados.
+    4. Salir`))
+    while (isNaN(menu) || menu <= 0 || menu >= 5) {
+        menu = parseInt(prompt(`
+    ERROR NUMERO INVALIDO!!!
+    Digite un número según 
+    la acción que desea ejecutar:
+    1. Ingresar familiares.
+    2. Ingresar datos necesarios para los cálculos.
+    3. Mostrar resultados.
+    4. Salir`))
     }
-    alert("Seleccionaste la opción" + opcion)
-    switch (opcion) {
+    alert(menu);
+    switch (menu) {
         case 1:
             cantidadFamiliares = parseInt(prompt(`
-            Por favor digite la cantidad total
-            de familiares que va a registrar
-            (Recuerde este registro solo se puede hacer
-            una vez por familia)
+            Ingrese el numero total de familiares,
+            recuerde que este dato es necesario para
+            realizar continuar a la opción 2 y 3 
+            para poder realizar los cálculos.
             `))
             if (isNaN(cantidadFamiliares) || cantidadFamiliares <= 0) {
-                alert("ERROR recuerde que solo puede ingresar un numero indicando la cantidad de familiares")
+                alert("ERROR INGRESE UN DATO VALIDO")
             } else {
-                alert("Dato registrado correctamente.")
+                alert("Dato registrado correctamente")
             }
             break;
         case 2:
-            datosFamiliar = 0;
-            if (cantidadFamiliares > 0){ 
-                while (datosFamiliar !== 7) {
-                    datosFamiliar = parseInt(prompt(`
-                A continuacion vamos a llenar 
-                los siguientes datos:
-                1.Nombre
-                2.Parentesco
-                3.Estatura
-                4.Edad
-                5.peso
-                6.Conocer el imc del familiar
-                7.Regresar al Menú anterior
-                Datos obligatorios para el cálculo son 
-                Nombre, estatura y peso(1,3,5)`))
-                    while (isNaN(datosFamiliar) || datosFamiliar <= 0 || datosFamiliar >= 8) {
-                        datosFamiliar = parseInt(prompt(`
-                    ERROR POR FAVOR SELECCIONAR UN NUMERO VALIDO
-                    A continuacion vamos a llenar 
-                    los siguientes datos:
-                    1.Nombre
-                    2.Parentesco
-                    3.Estatura
-                    4.Edad
-                    5.peso
-                    6.Conocer el imc del familiar
-                    7.Regresar al menú anterior
-                    Datos obligatorios para el cálculo son 
-                    Nombre, estatura y peso(1,3,5)`))
-                    } }
+            if (cantidadFamiliares <= 0) {
+                alert(`
+                No se pueden realizar cálculos hasta que no indique
+                cuantos familiares son en la opción 1 por favor 
+                registrar la cantidad para continuar con el cálculo.`)
 
-                
-            }else{
-                alert("ERROR no se pueden ingresar los datos debido a que no ha registrado ningun familiar por favor ingrese a la opción 1")
-            }
-            switch (datosFamiliar) {
-                case 1:
-                    nombre = prompt("Ingrese el nombre del Familiar");
-                    break;
-                case 2:
-                    parentesco = prompt("Ingrese el parentesco que tiene con el familiar");
-                    break;
-                case 3:
-                    estatura = parseInt(prompt("Ingrese la estatura en metros por ejemplo: 1.70"));
-                    while (isNaN(estatura) || estatura <= 0) {
-                        estatura = parseInt(prompt(`
-                            ERROR POR FAVOR DIGITAR UN NUMERO VALIDO
-                            Ingrese la estatura en metros para
-                            poder realizar el cálculo ej: 1.70`))
-                    }
-                    break;
-                case 4:
-                    edad = parseInt(prompt("Ingrese la edad del familiar"))
-                    while (isNaN(edad) || edad <= 0) {
-                        edad = parseInt(prompt(`
-                        ERROR INGRESE UN DATO VALIDO
-                        Ingrese la edad del familiar`))
-                    }
-                    break;
-                case 5:
-                    peso = parseInt(prompt("Ingrese el peso del familiar en kilogramos"))
-                    while (isNaN(peso) || peso <= 0) {
-                        peso = parseInt(prompt(`
-                            ERROR INGRESE UN DATO VALIDO
-                            Ingrese el peso del familiar`))
-                    }
-                    break;
-                case 6:
-                    if (isNaN(peso) || peso <= 0) {
-                        alert("Error aun no ha registrado los datos requeridos para el cálculo")
+            } else {
+                for (i = 1; i <= cantidadFamiliares; i++) {
+                    edad = parseInt(prompt(`Ingrese la edad del familiar ${i}`));
+                    if (edad < 20) {
+                        alert(`Lo sentimos esta persona por la edad no cumple 
+                        para calcular el imc deben tener 20 o mas años`)
                     } else {
-                        imc = (peso / (estatura ** 2));
-                        if (imc <= 18.5) {
+                        nombre = prompt(`Ingrese el nombre del familiar ${i}`);
+                        parentesco = prompt(`Ingrese el parentesco del familiar ${i}`);
+                        estatura = Number(prompt(`Ingrese la estatura del familiar ${i}`));
+                        peso = Number(prompt(`Ingrese el peso del familiar ${i}`));
+                        let imc = (peso / (estatura ** 2));
+                        if (imc < 18.5) {
                             alert(`
-                                El imc de ${nombre} es de ${imc} su nivel de peso segun este
-                                imc es de nivel bajo.
-                                datos utilizados del familiar para el cálculo:
-                                ${estatura}
-                                ${peso}
-                                demas datos del familiar:
-                                parentesco: ${parentesco}
-                                edad: ${edad}`)
+                            DATOS DEL FAMILIAR:
+                            NOMBRE: ${nombre}   EDAD: ${edad}
+                            PESO: ${peso}       ESTATURA: ${estatura}
+                            PARENTESCO: ${parentesco}
+                            El imc de ${nombre} es de ${imc} esto indica 
+                            que esta en la categoria de Bajo peso.`)
+                        } else if (imc >= 18.5 && imc <= 24.9) {
+                            alert(`
+                            NOMBRE: ${nombre}   EDAD: ${edad}
+                            PESO: ${peso}       ESTATURA: ${estatura}
+                            PARENTESCO: ${parentesco}
+                            El imc de ${nombre} es de ${imc} esto indica 
+                            que esta en la categoria de peso Normal.
+                            `)
+                        } else if (imc >= 25 && imc <= 28.9) {
+                            alert(`
+                            NOMBRE: ${nombre}   EDAD: ${edad}
+                            PESO: ${peso}       ESTATURA: ${estatura}
+                            PARENTESCO: ${parentesco}
+                            El imc de ${nombre} es de ${imc} esto indica 
+                            que esta en la categoria de Sobrepeso.
+                            `)
+                        } else if (imc >= 29 && imc <= 34.9) {
+                            alert(`
+                            NOMBRE: ${nombre}   EDAD: ${edad}
+                            PESO: ${peso}       ESTATURA: ${estatura}
+                            PARENTESCO: ${parentesco}
+                            El imc de ${nombre} es de ${imc} esto indica 
+                            que esta en la categoria de Obeso I.
+                            `)
+                        } else if (imc >= 35) {
+                            alert(`
+                            NOMBRE: ${nombre}   EDAD: ${edad}
+                            PESO: ${peso}       ESTATURA: ${estatura}
+                            PARENTESCO: ${parentesco}
+                            El imc de ${nombre} es de ${imc} esto indica 
+                            que esta en la categoria de Obeso II.
+                            `)
+                        } else {
+                            alert("ERROR DATOS INVALIDADOS")
                         }
+                        promedioImc += imc;
+
                     }
-                    break;
-                case 7:
-                    alert("volviendo al menu anterior");
-                    break;
-                default:
-                    alert("ingrese un valor valido")
+
+                }
             }
-    
-
-    break;
+            break;
         case 3:
-    break;
-
+            promedioTotalImc = promedioImc / cantidadFamiliares;
+            if (isNaN(promedioTotalImc) || promedioTotalImc <= 0) {
+                alert("ERROR DATOS INVALIDOS RECUERDE QUE DEBE REGISTRAR LA INFORMACIÓN DE 1 Y 2 ANTES.")
+            } else if (promedioTotalImc < 18.5) {
+                alert(`La familia evaluada de ${cantidadFamiliares} personas
+                se encuentra en la categoria de bajo peso
+                su imc promedio fue de ${promedioTotalImc}`)
+            } else if (promedioTotalImc >= 18.5 && promedioTotalImc <= 24.9) {
+                alert(`La familia evaluada de ${cantidadFamiliares} personas
+                se encuentra en la categoria de peso Normal
+                su imc promedio fue de ${promedioTotalImc}`)
+            } else if (promedioTotalImc >= 25 && promedioTotalImc <= 28.9) {
+                alert(`La familia evaluada de ${cantidadFamiliares} personas
+                se encuentra en la categoria de Sobrepeso
+                su imc promedio fue de ${promedioTotalImc}`)
+            } else if (promedioTotalImc >= 29 && promedioTotalImc <= 34.9) {
+                alert(`La familia evaluada de ${cantidadFamiliares} personas
+                se encuentra en la categoria de Obeso I
+                su imc promedio fue de ${promedioTotalImc}`)
+            } else if (promedioTotalImc >= 35) {
+                alert(`La familia evaluada de ${cantidadFamiliares} personas
+                se encuentra en la categoria de Obeso II
+                su imc promedio fue de ${promedioTotalImc}`)
+            } else {
+                alert("ERROR DATOS INVALIDOS RECUERDE QUE DEBE REGISTRAR LA INFORMACIÓN DE 1 Y 2 ANTES.")
+            }
+            break;
+        case 4:
+            alert("programa finalizado");
+            break;
         default:
-    alert("ingrese un valor valido")
-}
+            alert("ERROR DATO INVALIDO")
+    }
 }
 
