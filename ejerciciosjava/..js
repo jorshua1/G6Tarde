@@ -1,0 +1,60 @@
+// OBJETOS
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+let usuarios = {
+    primero:"Felipe",
+    segundo:"Solanye",
+    tercero:"Pedro",
+    cuarto:"Solanye",
+}
+console.log(usuarios.primero);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+let animales = {
+    numero1:"Perro",
+    numero2:"Gato",
+    numero3:"Pato",
+    numero4:"Lobo"
+}
+console.log(animales.numero1);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+let objeto = {
+    a:{
+        b:{
+            c:{
+                nombre:"Luis"
+            }
+        }
+    }
+}
+console.log(objeto.a.b.c.nombre);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+// ARREGLOS
+
+let tiposDeCarros = ["Toyota", "Mazda", "Ferrari", "Porshe", "Renault"];
+console.log(tiposDeCarros[3]);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+let añosYmeses = ["Enero", 2000, "Febrero", 2001, "Marzo", 2002, "Abril", 2003, "Mayo",2004];
+console.log(añosYmeses[5]);
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+let numeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let cubo = [];
+for(let contador = 0; contador <= 9; contador++){
+    
+    cubo [contador] = (prompt("INGRESE UN DATO"))
+
+
+    console.log(`El dato que acabo de ingresar es ${cubo[contador]}`)
+    
+}
+console.log(cubo);
+
