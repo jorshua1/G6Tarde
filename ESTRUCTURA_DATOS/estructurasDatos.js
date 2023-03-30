@@ -52,3 +52,13 @@ let celular = {
     }
 }
 console.log(celular.precio.valor.bola)
+
+//ARREGLOS :::: > MATRICES
+let tabla = new array();
+let tabla2 = [];
+
+for(let fila = 0; fila < 4; fila++){
+    console.log(`creando fila ${fila +1}`);
+    tabla[fila] = new array();
+    for(let )
+}
