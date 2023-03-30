@@ -29,8 +29,6 @@ for (let i = 0; i <tamañoArray; i++){
 }
 alert(`El array completo es ${array}`);
 
-
-
 let primerObjeto = {
     nombre: "Nicolas",
     sexo: "Masculino",
@@ -56,3 +54,19 @@ let PingPongObjeto = {
         HaroldJuan: 12
     }
 };
+
+//Matrices
+
+let tabla = [];
+let tabla2 = [];
+
+for (let fila = 0;fila < 4 ; fila++){
+    console.log(`Creando fila ${fila}`);
+    tabla[fila] = new Array();
+    for (let columna = 0; columna < 2; columna++){
+        console.log(`Esta insertando una columna en la posicion ${columna}`);
+        tabla[fila][columna]=prompt(`Escriba un numero o lo que quiera.`);
+    console.log(`Se ingresaron los datos de la fila ${fila} y la columna ${columna}`);
+    }
+}
+console.log(tabla);
