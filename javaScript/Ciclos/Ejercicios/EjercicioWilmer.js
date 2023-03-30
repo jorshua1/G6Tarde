@@ -13,7 +13,7 @@ a ejecutar o colocar la información de manera correcta. */
 const ERROR = "PELIGRO DATOS INCORRECTOS, NO SABES LEER NI ESCRIBIR";
 const MULTA = "Lo van a multar XD";
 const EDAD_MINIMA = 16;
-let edad = Number(prompt("Introduce tu edad"));
+let edad = parseInt(prompt("Introduce tu edad"));
 while (isNaN(edad) || edad <= 0) {
     alert(ERROR);
     edad = Number(prompt("Introduce tu edad"));
