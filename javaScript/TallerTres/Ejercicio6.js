@@ -45,7 +45,7 @@ for (i = 1; i <= 5; i++){
         totalPesoViejos += pesoViejos;
     }
 }
-promedioNiños = niños === 0 ? alert("Usted no ingreso datos de niños "): alert("El promedio de los "+ niños +" niños es: "+ (totalPesoNIños / niños));
-promedioJovenes = jovenes === 0 ? alert("Usted no ingreso datos de jovenes") :alert("El promedio de peso de los "+jovenes+" es: "+(totalPesoJovenes / jovenes));
-promedioAdultos = adultos === 0 ? alert("Usted no ingreso datos de adultos "):alert("El promedio de peso de los "+ adultos+ " es: " + (totalPesoAdultos / adultos));
-promedioViejos = viejos === 0 ? alert("Usted no ingreso datos de viejos" ):alert("El promedio de peso de los "+ viejos+" viejos es " +(totalPesoViejos / viejos));
+promedioNiños = niños === 0 ? alert("Usted no ingreso datos de niños "): alert("El promedio de los "+ niños +" niños es: "+ (totalPesoNIños / niños)+ " Kg");
+promedioJovenes = jovenes === 0 ? alert("Usted no ingreso datos de jovenes") :alert("El promedio de peso de los "+jovenes+" es: "+(totalPesoJovenes / jovenes)+ " Kg");
+promedioAdultos = adultos === 0 ? alert("Usted no ingreso datos de adultos "):alert("El promedio de peso de los "+ adultos+ " es: " + (totalPesoAdultos / adultos)+ " Kg");
+promedioViejos = viejos === 0 ? alert("Usted no ingreso datos de viejos" ):alert("El promedio de peso de los "+ viejos+" viejos es " +(totalPesoViejos / viejos)+ " Kg");
