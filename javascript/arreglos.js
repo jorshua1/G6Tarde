@@ -33,3 +33,28 @@ for (let index = 0; index < 10; index++) {
 }
 
 console.log(sapo);
+
+////////matrices//////////////////
+
+var tabla = [];
+
+for (let fila = 0; fila < 4; fila++) {
+  console.log("Creando fila " + (fila + 1));
+  tabla[fila] = [];
+  for (let columna = 0; columna < 2; columna++) {
+    console.log(
+      "Esta insertando datos en la fila " +
+        (fila + 1) +
+        " y columna " +
+        (columna + 1)
+    );
+    tabla[fila][columna] = prompt("Ingrese algo");
+    console.log(
+      "Se ingresaron los datos de la fila " +
+        (fila + 1) +
+        " y columna " +
+        (columna + 1)
+    );
+  }
+}
+console.log(tabla);
