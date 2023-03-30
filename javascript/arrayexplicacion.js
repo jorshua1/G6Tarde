@@ -33,3 +33,10 @@ for(i=0;i<10;i++){
     empanada[i]=prompt("ingrese lo que quiera")
     console.log(empanada[i]);
 }
+
+let array=[];
+for(let i=0;i<3;){
+    let dato=Number(prompt("ingrese un dato"));
+    array[i]=dato;
+    console.log(array[i]);
+}
