@@ -15,6 +15,6 @@ for(let x=0;x<numeros.length;x++){
         break;
     }
 }
-if(busqueda !== numeros[0] || busqueda !== numeros[1] || busqueda !== numeros[2] || busqueda !== numeros[3] || busqueda !== numeros[4] || busqueda !== numeros[5] || busqueda !== numeros[6] || busqueda !== numeros[7] || busqueda !== numeros[8] || busqueda !== numeros[9]){
+if(busqueda !== numeros[0] && busqueda !== numeros[1] && busqueda !== numeros[2] && busqueda !== numeros[3] && busqueda !== numeros[4] && busqueda !== numeros[5] && busqueda !== numeros[6] && busqueda !== numeros[7] && busqueda !== numeros[8] && busqueda !== numeros[9]){
     alert("Valor no encontrado")
 }
