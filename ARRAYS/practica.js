@@ -6,5 +6,3 @@ for(var fila=0;fila<3;fila++){
     }
 }
 console.log(lista)
-
-
