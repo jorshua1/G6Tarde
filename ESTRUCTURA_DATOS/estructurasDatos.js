@@ -57,8 +57,14 @@ console.log(celular.precio.valor.bola)
 let tabla = new array();
 let tabla2 = [];
 
-for(let fila = 0; fila < 4; fila++){
-    console.log(`creando fila ${fila +1}`);
+for (let fila = 0; fila < 4; fila++) {
+    console.log(`creando fila ${fila + 1}`);
     tabla[fila] = new array();
-    for(let )
+    for (let columna = 0; columna < 2; columna++) {
+        console.log(`Esta insertando datos en la fila
+        ${fila + 1} y columna ${columna + 1}`);
+        tabla[fila][columna]=prompt("ingrese algo");
+        console.log(`se ingresaron los datos de la fila
+        ${fila + 1} y columna ${columna + 1}`);
+    }
 }
