@@ -70,7 +70,7 @@ Selecciona una opcion del menu:
             `),
               )
             }
-            cantidadPersonas += cantidadPersonas
+          
             break
           case 2:
             alert('Volviendo al menu anterior')
