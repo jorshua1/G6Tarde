@@ -54,7 +54,7 @@ En el siguiente ejemplo, si expresión se resuelve a "Platanos", el algoritmo co
 ejecuta la declaración asociada. Cuando se encuentra un break, el programa sale del condicional switch y ejecuta la 
 declaración que lo procede. Si se omite el break, el case "Cerezas" también es ejecutado.
 */
-
+let expr="Uvas"
 switch (expr) {
     case 'Naranjas':
         console.log('El kilogramo de naranjas cuesta $0.59.');
@@ -77,7 +77,7 @@ switch (expr) {
 }
 
 console.log("¿Hay algo más que te quisiera consultar?");
-
+///////////////////////////////////////////////////////////////////////////
 let estacion1 = "Primavera";
 
 switch (estacion1) {

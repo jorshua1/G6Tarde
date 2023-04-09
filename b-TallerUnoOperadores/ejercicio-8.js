@@ -17,19 +17,19 @@ Examen 85%
 Promedio de tareas 15%
 En esta matertia se pidieron un promedio de tres tareas.*/
 
-let examenMatematica = parseFloat(prompt("Por favor ingese nota de examen de matematica:"));
-let tareaUnoMatematica = parseFloat(prompt(" Por favor ingrese nota de tarea uno matematica"));
-let tareaUDosMatematica = parseFloat(prompt(" Por favor ingrese nota de tarea dos matematica"));
-let tareaTresMatematica = parseFloat(prompt(" Por favor ingrese nota de tarea tres matematica"));
+let examenMatematica = 4.5;/*parseFloat(prompt("Por favor ingese nota de examen de matematica:"));*/
+let tareaUnoMatematica = 4.2;/*parseFloat(prompt(" Por favor ingrese nota de tarea uno matematica"));*/
+let tareaUDosMatematica = 4.8;/*parseFloat(prompt(" Por favor ingrese nota de tarea dos matematica"));*/
+let tareaTresMatematica = 5;/*parseFloat(prompt(" Por favor ingrese nota de tarea tres matematica"));*/
 
-let examenFisica = parseFloat(prompt("Por favor ingese nota de examen de fisica:"));
-let tareaUnoFisica = parseFloat(prompt(" Por favor ingrese nota de tarea uno fisica"));
-let tareaUDosFisica = parseFloat(prompt(" Por favor ingrese nota de tarea dos fisica"));
+let examenFisica = 3.8; /*parseFloat(prompt("Por favor ingese nota de examen de fisica:"));*/
+let tareaUnoFisica = 4;/*parseFloat(prompt(" Por favor ingrese nota de tarea uno fisica"));*/
+let tareaUDosFisica = 4.9;/*parseFloat(prompt(" Por favor ingrese nota de tarea dos fisica"));*/
 
-let examenQuimica = parseFloat(prompt("Por favor ingese nota de examen de quimica:"));
-let tareaUnoQuimica = parseFloat(prompt(" Por favor ingrese nota de tarea uno quimica"));
-let tareaUDosQuimica = parseFloat(prompt(" Por favor ingrese nota de tarea dos quimica"));
-let tareaTresQuimica = parseFloat(prompt(" Por favor ingrese nota de tarea tres quimica"));
+let examenQuimica = 5;/*parseFloat(prompt("Por favor ingese nota de examen de quimica:"));*/
+let tareaUnoQuimica = 4.8;/*parseFloat(prompt(" Por favor ingrese nota de tarea uno quimica"));*/
+let tareaUDosQuimica = 4.9;/*parseFloat(prompt(" Por favor ingrese nota de tarea dos quimica"));*/
+let tareaTresQuimica = 4.6;/*parseFloat(prompt(" Por favor ingrese nota de tarea tres quimica"));*/
 
 notaExamenMatematica = (examenMatematica / 100) * 90;
 notaTareaMatematica = (((tareaUnoMatematica + tareaUDosMatematica + tareaTresMatematica) / 3) / 100) * 10;
@@ -43,7 +43,13 @@ notaExamenQuimica = (examenQuimica / 100) * 85;
 notaTareaQuimica = (((tareaUnoQuimica + tareaUDosQuimica + tareaTresQuimica) / 3) / 100) * 15;
 promedioQuimica = notaExamenQuimica + notaTareaQuimica;
 
-promedioTotal = promedioMatematica + promedioFisica + promedioQuimica;
+promedioTotal = (promedioMatematica + promedioFisica + promedioQuimica)/3;
 
-console.log(" los promedio que obtendra de las materias son : Matematicas = " + promedioMatematica + "; Fisica = " + promedioFisica + "; Quimica = " + promedioQuimica + " y un promedio total de : " + promedioTotal);
+console.log("Los promedio que obtendra de las materias son : Matematicas = " + promedioMatematica + "; Fisica = " + promedioFisica + "; Quimica = " + promedioQuimica + " y un promedio total de : " + promedioTotal);
+console.log(`
+Los promedio que obtendra de las materias son : 
+Matematicas = ${promedioMatematica}.
+Fisica = ${promedioFisica}.
+Quimica = ${promedioQuimica}
 
+Promedio total de : ${promedioTotal}`);

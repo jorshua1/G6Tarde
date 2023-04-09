@@ -32,6 +32,7 @@ La palabra ternario significa algo compuesto de tres partes.*/
 let nombre = ""/*prompt("Ingrese su nombre");*/
 let saludo = nombre === "" ? "ingrese un nombre valido" : "Hola " + nombre;
 console.log(saludo);
+
 console.log(nombre === "" || nombre === "." || typeof nombre === "Number" ?
     "ingrese un nombre valido" : nombre === "Jeff" ?
         "Bievenido " + nombre : "Bienvenido nuevo usuario" + nombre);
@@ -58,6 +59,7 @@ let ciudadanoDos;
 
 if (edadSuya >= 18) {
     ciudadanoDos = "Puede votar";
+
 } else {
     ciudadanoDos = "No puede votar";
 }
@@ -72,6 +74,7 @@ console.log(puntaje >= 6 ? 'Pasaste' : 'Fallaste');
 puntaje = 5;
 if (puntaje >= 6) {
     console.log('Aprobaste');
+    
 }
 else {
     console.log('Fallaste');

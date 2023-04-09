@@ -24,8 +24,10 @@ let objetoJefphunter ={nombre: "Jefphunter", apellido: "CrownLoved", estadoCivil
 let objetoNumerico = { numeroNegativo: -1, numeroPositivo: 1, numeroRacional: 1.5, numeroIrracional: Math.sqrt(20) };
 let objetoMixto = new Object(["Hola", 1, { nombre: objetoJefphunter.nombre }, -15, false, { numeroIrracional: objetoNumerico.numeroIrracional }, null]);
 let objetoAnidado={objetoUno:{objetoDos:{ObjetoTres:{objetoCuatro:"Hola"}}}}
+let objetoAnidadoDos={objetoJefphunter:{objetoNumerico:{ObjetoMixto:objetoMixto}}}
 
 console.log(objetoJefphunter);
 console.log(objetoJefphunter.nombre);
 console.log(objetoNumerico["numeroNegativo"]);
 console.log(objetoAnidado.objetoUno.objetoDos.ObjetoTres.objetoCuatro);
+console.log(objetoAnidadoDos.objetoJefphunter.objetoNumerico.ObjetoMixto);

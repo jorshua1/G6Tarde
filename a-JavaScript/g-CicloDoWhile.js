@@ -24,16 +24,23 @@ En el siguiente ejemplo, el bucle hacer mientras itera al menos una vez y se rei
 */
 
 let i = 0;
+
 do {
+
     i += 1;
+
     console.log(i);
+
 } while (i < 5);
+
 console.log(i);
 
 let numero = 9;
 
 do {
+
     console.log(numero);
+
     numero++
 }
 while (numero <= 10) {
@@ -42,8 +49,11 @@ console.log("XD");
 
 
 do {
+
     console.log("El valor de i es: " + i);
+
     i += 5;
+
 } while (i <= 50);
 
 
@@ -54,13 +64,22 @@ let numeroMultiplicando = 1;/*parseInt(prompt(" por favor ingrese numero de la t
 let numeroMultiplicador = 1;
 
 if (isNaN(numeroMultiplicando)) {
+
     console.log("Por favor ingrese un valor valido");
+
 } else {
+    
     do {
+
         let resultado = numeroMultiplicando * numeroMultiplicador
+
         console.log(numeroMultiplicando + " x " + numeroMultiplicador + " = " + resultado);
+
         numeroMultiplicador++;
+
     } while (numeroMultiplicador <= 10)
+
     numeroMultiplicador = 1;
+
     numeroMultiplicando++
 }

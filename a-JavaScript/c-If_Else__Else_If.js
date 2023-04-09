@@ -17,6 +17,7 @@ let compraRealizada = false;
 if (compraRealizada === true) {
     let subsidioAdicional = 10;
     console.log(subsidioAdicional);
+
 } else {
     let subsidioAdicional = 5;
     console.log(subsidioAdicional);
@@ -26,6 +27,7 @@ let edadUno = 13;/*parseInt(prompt("Ingrese su edad: "));*/
 
 if (edadUno >= 18) {
     console.log("Es mayor de edad.");
+
 } else {
     console.log("Es menor de edad.");
 }
@@ -34,6 +36,7 @@ let edadDos = 20 /*parseInt(prompt("Ingrese su edad: "));*/
 
 if (edadDos >= 18) {
     console.log("Es mayor de edad.");
+
 } else {
     console.log("Es menor de edad.");
 }
@@ -65,9 +68,11 @@ if anidado.*/
 if (condicionUno > 5) {
     condicionUno++
     console.log(condicionUno);
+
     if (condicionUno < 15) {
         condicionUno--
         console.log(condicionUno);
+
     } else { }
 } else { }
 
@@ -76,8 +81,10 @@ let condicionDos = "Hola"
 if (condicionUno > 5) {
     condicionUno++
     console.log(condicionUno);
+
     if (condicionDos === "Hola") {
         console.log(condicionDos);
+
     } else { }
 } else { }
 
@@ -86,8 +93,13 @@ if (condicionUno > 5) {
 let condicionTres = 2;
 let condicionCuatro = "Fabian";
 let CondicionCinco = "Fabian";
-if ((condicionUno > 5 || condicionDos === "Hola" || condicionTres <= 10) && (condicionCuatro && CondicionCinco === "Fabian")) {
-    console.log("Todo es true.")
+
+if ((condicionUno > 5 ||
+    condicionDos === "Hola" ||
+    condicionTres <= 10) &&
+    (condicionCuatro && CondicionCinco === "Fabian")) {
+    console.log("Todo es true.");
+
 } else {
     console.log("Uno de los valores es false.");
 }
@@ -106,14 +118,19 @@ console.log(CondicionCinco);
 
 if (condicionUno === 10) {
     console.log("Valor valido");
+
 } else if (condicionDos === "Hol") {
     console.log("Valor valido");
+
 } else if (condicionTres === 22) {
     console.log("Valor valido");
+
 } else if (condicionCuatro === "Fabi") {
     console.log("Valor valido");
+
 } else if (CondicionCinco === "Fabian") {
     console.log("Valor valido");
+
 } else {
 }
 
@@ -121,10 +138,13 @@ let edadCuatro = 35 /*parseInt(prompt("Ingrese su edad."));*/
 
 if (isNaN(edadCuatro)) {
     console.log("Error");
+
 } else if (edadCuatro >= 1 && edadCuatro >= 18) {
     console.log("Es mayor de edad.");
+
 } else if (edadCuatro >= 1 && edadCuatro <= 17) {
     console.log("Es menor de edad");
+
 } else {
     console.log("Ingrese una edad valida");
 }
@@ -141,14 +161,19 @@ const mascota = "perro";
 
 if (mascota === "lagarto") {
     console.log("Tengo un lagarto");
+
 } else if (mascota === "perro") {
     console.log("Tego un perro");
+
 } else if (mascota === "gato") {
     console.log("Tengo un gato");
+
 } else if (mascota === "serpiente") {
     console.log("Tengo una serpiente");
+
 } else if (mascota === "Loro") {
     console.log("Tengo un loro");
+
 } else {
     console.log("No tengo mascota");
 }
@@ -166,6 +191,7 @@ const tieneCarro = true;
 
 if (edad >= 16 && tieneCarro) {
     console.log("Fabian es lo suficiente mayor para conducir y tiene su propio carro.");
+
 } else {
     console.log("Fabian no conduce.");
 }
@@ -174,8 +200,10 @@ let edadTres = 35 /*parseInt(prompt("Ingrese su edad."));*/
 
 if (edadTres > 0 && edadTres >= 18) {
     console.log("Es mayor de edad");
+
 } else if (edadTres <= 0) {
     console.log("Error, ingrese valor valido");
+
 } else {
     console.log("Es menor de edad");
 }
@@ -193,6 +221,7 @@ const estaEnVenta = false;
 
 if (elNovioEstaPagando || estaEnVenta) {
     console.log("Maria ira de compras.");
+
 } else {
     console.log("Maria no ira de compras.");
 }
@@ -210,6 +239,7 @@ const EnVenta = false;
 
 if (!elNovioEstaPangando || EnVenta) {
     console.log("Maria ira de compras.");
+
 } else {
     console.log("Maria no ira de compras.");
 }
@@ -236,6 +266,7 @@ let ciudadanoDos;
 
 if (edadSuya >= 18) {
     ciudadanoDos = "Puede votar";
+
 } else {
     ciudadanoDos = "No puede votar";
 }
@@ -258,8 +289,10 @@ let edadCinco = 50 /*parseInt(prompt("Ingrese su edad."));*/
 
 if (isNaN(edadCinco) || edadCinco < 0) {
     console.log("ingrese valor valido");
+
 } else if (edadCinco > 0 && edadCinco >= 18) {
     console.log("Es mayor de edad.");
+
 } else {
     console.log("Es menor de edad.");
 }
@@ -268,6 +301,7 @@ let numero = 13;/*parseInt(prompt("Ingrese su numero."));*/
 
 if (isNaN(numero) || numero % 2 == 0) {
     console.log("Es numero par");
+
 } else {
     console.log("Es numero impar.");
 }
@@ -279,8 +313,10 @@ let temperatura = 32/*parseInt(prompt("Ingrese su lectura."));*/
 
 if (isNaN(temperatura) || temperatura >= 32) {
     console.log("Apagar calefactor del galpon.");
+
 } else if (temperatura <= 27) {
     console.log("Encender calefactor del galpon.");
+
 } else {
     console.log("Temperatura estable, tomar registro de termometros fisicos");
 }
@@ -289,8 +325,10 @@ let diametroRueda = 2;/*parseFloat(prompt("Ingrese su diametro."));*/
 
 if (isNaN(diametroRueda) || diametroRueda > 1.4) {
     console.log("La rueda es para vehiculo grande.");
+
 } else if (diametroRueda > 0.8 && diametroRueda <= 1.4) {
     console.log("Larueda es para vehiculo mediano.");
+    
 } else {
     console.log("La rueda es para vehiculo pequeño.");
 }

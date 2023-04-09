@@ -50,11 +50,6 @@ for (let i = 0; i < 10; i++) {
 }
 console.log(arregloSeis);
 
-
-
-
-
-
 //Ver cantidad de objetos de el areglo.
 console.log(arregloTres.length);
 

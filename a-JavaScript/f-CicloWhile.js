@@ -28,8 +28,11 @@ Después de completar el tercer pase, la condición n < 3 no será verdadera má
 
 n = 0;
 x = 0;
+
 while (n < 3) {
+
     n++;
+
     x += n;
 }
 console.log("n es igual a: " + n + " \nx es igual a: " + x);
@@ -37,14 +40,19 @@ console.log("n es igual a: " + n + " \nx es igual a: " + x);
 let numero = 8;
 
 while (numero <= 10) {
+
     console.log(numero);
+
     numero++
     /*break;*/
 }
 console.log("XD");
 
 var i = 1;
+
 while (i < 10) {
+
     console.log(i);
+    
     i++; // i=i+1 esto sería lo mismo 
 }
