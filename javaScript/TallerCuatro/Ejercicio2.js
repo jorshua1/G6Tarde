@@ -1,8 +1,9 @@
-let arreglo = [];
+let arreglo = new Array(100);
 let numerosPositivos = 0;
-
-for (let i = 0; i<100; i++){
-    arreglo[i]=parseInt(prompt("Ingrese un numero"));
+let signo=0;
+for (let i = 0; i<arreglo.length; i++){
+    arreglo[i] = Math.floor(Math.random()*(100-(-100)))+(-100)
+ 
     if (arreglo[i]>=0){
         numerosPositivos++
     }
