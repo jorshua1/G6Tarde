@@ -1,5 +1,5 @@
 let tabla =  [];
-let tabla2 = [];
+//let tabla2 = [];
 
 for(fila = 0; fila < 4; fila++){
     console.log(`Creando fila ${fila + 1 }`);
