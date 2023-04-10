@@ -9,8 +9,8 @@ for (let i = 0; i <100;i++){
 }
 contador=0;
 for(let x=0;x<numeros.length;x++){
-    if(numeros[x]%2==0){
+    if(numeros[x]<0){
         contador=contador+1
     }
 }
-alert("Cantidad de numeros pares:" + contador)
+alert("Cantidad de numeros positivos:" + contador)
