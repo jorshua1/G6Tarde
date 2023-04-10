@@ -58,3 +58,115 @@ for (let fila = 0; fila < 4; fila++) {
   }
 }
 console.log(tabla);
+
+
+
+///////////////////////////////taller///////////////////////////////////
+
+var vector = [];
+var sum = 0;
+
+for (let index = 0; index < 10; index++) {
+  vector[index] = parseInt(prompt("Ingrese el numero " + (index+1)));
+  while (isNaN(vector[index])) {
+    vector[index] = parseInt(prompt("Ingrese el numero " + (index+1)));
+  }
+  sum = vector[index] + sum;
+}
+
+console.log("La sumatoria de los 10 numeros es: " + sum);
+
+///////////////////////////////////////////////////////
+
+var numeros = [];
+var contador = 0;
+
+for (let index = 0; index < 10; index++) {
+  numeros[index] = parseInt(prompt("Ingrese el numero " + (index+1)));
+  while (isNaN(numeros[index])) {
+    numeros[index] = parseInt(prompt("Ingrese el numero " + (index+1)));
+  }
+  
+  if (numeros[index] > 0) {
+    contador= contador+1;
+  }
+}
+
+console.log("La cantidad de numeros positivos es: " +contador);
+
+//////////////////////////////////////////////////////
+
+var matrix = [];
+
+for (let fila = 0; fila < 3; fila++) {
+  matrix[fila]= [];
+  for (let columna = 0; columna < 3; columna++) {
+    
+    matrix[fila][columna] = parseInt(prompt("Ingrese el numero para la posicion: " +(fila+1)+ "." +(columna+1)));
+    
+  }
+  
+}
+
+console.log(matrix);
+
+////////////////////////////////////////////////////////////////
+
+var notas = [];
+promedio = 0;
+
+for (let index = 0; index < 5; index++) {
+  notas[index] = parseFloat(prompt("Ingrese la nota " + (index+1)));
+  while (isNaN(notas[index]) || notas[index] < 0 || notas[index] > 5) {
+    notas[index] = parseFloat(prompt("Ingrese la nota " + (index+1)));
+  }
+
+  promedio=notas[index]+promedio;
+}
+
+promedio=promedio/5;
+
+if (promedio >= 0 && promedio <=2.9) {
+    console.log("Su nota es de: " +promedio);
+    console.log("Su nota es Deficiente para pasar");
+} else {
+  if (promedio >= 3 && promedio <= 3.9) {
+    console.log("Su nota es de: " +promedio);
+    console.log("Su nota es Aceptable para pasar");
+  } else {
+    if (promedio >= 4 && promedio <= 4.5) {
+      console.log("Su nota es de: " +promedio);
+      console.log("Su nota es Sobresaliente para pasar");
+    } else {
+      console.log("Su nota es de: " +promedio);
+      console.log("Su nota es Excelente para pasar");
+    }
+  }
+}
+
+
+/////////////////////////////////////////////////////////////
+
+var matriz = [];
+
+for (let index = 0; index < 10; index++) {
+  matriz[index] = parseInt(prompt("Ingrese el numero " +(index+1)));
+  while (isNaN(matriz[index])) {
+    matriz[index] = parseInt(prompt("Ingrese el numero " +(index+1)));
+  }
+  
+}
+
+console.log(matriz);
+
+var adivineishon = parseInt(prompt("Ingrese el numero que desea buscar en el array"))
+
+for (let index = 0; index < 10; index++) {
+  
+  if (adivineishon === matriz[index]) {
+    console.log("El numero : " +adivineishon+ " Se encuenta en la posicion: " +index);
+  } else {
+    console.log("El numero digitado no se encuentra en la matriz");
+  }
+  
+}
