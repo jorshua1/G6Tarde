@@ -1,10 +1,47 @@
 /*
-Elabore programa que solicite por teclado dos datos, peso y estatura, 
-teniendo en cuenta los datos ingresados calcular imc. En base a los creiterios de evacion de imc, determinar el estado de salud del usuario.
-""Criterios de evalución del IMC:
- 
-• Si su IMC es inferior a 18.5, está dentro de los valores correspondientes a “delgadez o bajo peso".
-• Si su IMC es entre 18.5 y 24.9, está dentro de los valores "normales" o de peso saludable.
-• Si su IMC es entre 25.0 y 29.9, está dentro de los valores correspondientes a "sobrepeso".
-• Si su IMC es 30.0 o superior, está dentro de los valores de "obesidad".""
+Elabore un programa que le diga si paso la materia, 
+solicitando las notas que saco en las 3 evaluaciones 
+y teniendo en cuenta que la primera y la segunda evaluacion valen el 30% y la tercera el 40%
 */
+let evaluacionUno = 5;
+let evaluacionDos = 5;
+let evaluacionTres = 5;
+let calculoMateria = 0;
+let calificacion;
+
+if (isNaN(evaluacionUno) || isNaN(evaluacionDos || isNaN(evaluacionTres))) {
+    console.log("Por favor ingrese un valor correcto");
+
+} else if (
+    evaluacionUno < 0 ||
+    evaluacionDos < 0 ||
+    evaluacionTres < 0 ||
+    evaluacionUno > 5 ||
+    evaluacionDos > 5 ||
+    evaluacionTres > 5) {
+    console.log("Por favor ingrese un valor correcto.");
+
+} else if (
+    evaluacionUno >= 0 ||
+    evaluacionDos >= 0 ||
+    evaluacionTres >= 0 ||
+    evaluacionUno <= 5 ||
+    evaluacionDos <= 5 ||
+    evaluacionTres <= 5) {
+    calculoMateria = (((((evaluacionUno + evaluacionDos) / 2) / 100) * 30) + ((evaluacionTres / 100) * 40)) + 1.5;
+    console.log(calculoMateria);
+
+} else {
+    console.log("Error")
+}
+
+if (calculoMateria >= 3 || calculoMateria <=5) {
+    calificacion = "Aprobó"
+
+} else {
+    calificacion = "No Aprobó"
+    
+}
+console.log(`
+Su calificacion es de: ${calculoMateria}
+Su estado es ${calificacion}`)
