@@ -1,18 +1,12 @@
 let numerosAleatorios = new Array(100);
-let positivoONegativo = 0;
 let contadorPositivos = 0;
 
 for(let i=0;i<numerosAleatorios.length;i++){
-    numerosAleatorios[i] = parseInt((Math.random()*100)+1);
-    positivoONegativo = parseInt((Math.random()*2)+1);
-    switch (positivoONegativo){
-        case 1:
-            contadorPositivos++
-            break;
-        case 2: 
-            numerosAleatorios[i] *= -1;
-            break;
+    numerosAleatorios[i] = parseInt((Math.random()*200)+1)-100;
+    if(numerosAleatorios[i]>=0){
+        contadorPositivos++
     }
 }
 console.log(numerosAleatorios);
-console.log(contadorPositivos);
+console.log("Números positivos: " + contadorPositivos);
+
