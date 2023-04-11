@@ -132,24 +132,123 @@ if (promedioFinal <= 5 && promedioFinal >= 4.5) {
 10 POSICIONES NUMERICAS, DESPUES LAS IMPRIMA EN PANTALLA Y LUEGO PERMITA
 BUSCAR UN NUMERO ALMACENADO PREVIAMENTE, SI LO ENCUENTRA MUESTRE EN QUE POSICION
 ESTA Y SI NO, QUE MUESTRE "VALOR NO ENCONTRADO". */
-let array = [];
+var array = new Array(10);
 
-for (let i = 1; i < 11; i++) {
-    array[i] = prompt("ingrese un numero")
-    console.log(`Acaba de ingresar
-    ${array[i]} en la posicion ${i} del arreglo`);
+for (var i = 0; i < array.length; i++) {
+    array[i] = Math.floor(Math.random() * 100);
 }
+for (var i = 0; i < array.length; i++) {
+    console.log("array[" + i + "] =" + array[i]);
+}
+var numeroBuscado = prompt("Ingrese el número a buscar:");
+var encontrado = false;
+
+for (var i = 0; i < array.length; i++) {
+    if (array[i] === parseInt(numeroBuscado)) {
+        console.log("El número " + numeroBuscado + " se encuentra en la posición " + i);
+        encontrado = true;
+        break; // Sale del ciclo for si se encuentra el número
+    }
+}
+
+if (!encontrado) {
+    console.log("VALOR NO ENCONTRADO");
+}
+//FORMA 2 
+// Crear una matriz de 10 posiciones numéricas
+let matriz = new Array(10);
+
+// Llenar la matriz con valores numéricos
+for (let i = 0; i < matriz.length; i++) {
+    let numero = parseInt(prompt(`Ingresa un número en la posición ${i}`));
+    matriz[i] = numero;
+}
+
+// Imprimir la matriz en pantalla
+console.log("La matriz es:");
+for (let i = 0; i < matriz.length; i++) {
+    console.log(matriz[i]);
+}
+
+// Buscar un número en la matriz
+let encontradoDos = false;
+let buscar = parseInt(prompt("Ingresa el número a buscar"));
+for (let i = 0; i < matriz.length; i++) {
+    if (matriz[i] === buscar) {
+        encontradoDos = true;
+        console.log(`El número ${buscar} está en la posición ${i}`);
+        break;
+    }
+}
+if (!encontradoDos) {
+    console.log("Valor no encontrado")
+}
+
 
 /*HACER UN PROGRAMA QUE INICIALICE UN VECTOR DE NUMEROS CON VALORES ALEATORIOS
 Y POSTERIOR ORDENE LOS ELEMENTOS DE MENOR A MAYOR*/
-let vector = [45,12,36,89,50];
-/*let tamaño = parseInt(prompt("ingrese el tamaño del vector"));*/
-for(i=1; i<5; i++){
-    for(j=0; j<5-1; j++){
-        if(vector[j] > vector[j+1]){
-temp = vector[j];
-vector[j]= vector[j+1];
-vector[j+1]=temp;
+let vector = [];
+
+for (let i = 0; i < 10; i++) {
+    vector[i] = Math.floor(Math.random() * 100) + 1;
+}
+
+for (let i = 0; i < vector.length; i++) {
+    for (let j = i + 1; j < vector.length; j++) {
+        if (vector[j] < vector[i]) {
+            let temp = vector[j];
+            vector[j] = vector[i];
+            vector[i] = temp;
         }
     }
-}console.log(vector[j+1]);
+}
+
+for (let i = 0; i < vector.length; i++) {
+    console.log(vector[i]);
+}
+
+// METODO DE ORDENAMIENTO DE BURBUJA 
+let array = [5,10,20,11,6,3,2];
+for (let i=0; i<7; i++){ //RECORRE
+    for(j=0;j<7;j++){ //CAMBIA
+        if(array[j]>array[j+1]){
+            nu
+        }
+    }
+}
+//METODO DE ORDENAMIENTO SELECCION SORT
+let array = [1,5,3,2,7];
+let ordenamiento = array.length
+for(let i=0; i<ordenamiento; i++){
+    let min=i;
+    for(j=i+1;j<ordenamiento;j++){
+        if(array[j]<array[min]){
+            min = j
+        }
+    }
+if(min != i){
+    let auxiliar = array[i];
+    array[i] = array[min];
+    array[min] = auxiliar
+}
+}
+console.log(array);
+
+//METODO DE ORDENAMIENTO QUICKSORT
+//METODO DE ORDENAMIENTO INSERT
+let arreglo = new Array(10);
+for (let i=0;i<arreglo.length; i++){
+    arreglo[i]= Math.floor(Math.random()*100)+1;
+}
+for(let i=1; i<arreglo.length;i++){
+    let j=i-1;
+    let temp= arreglo[i];
+    while(j>=0 && arreglo[j] > temp){
+        arreglo[j+i]=arreglo[j];
+        j--;
+    }
+    arreglo[j+1]=temp;
+}
+console.log("Arreglo ordenado de menor a mayor: "+ arreglo);
+//METODO DE ORDENAMIENTO MERGE
+//METODO DE ORDENAMIENTO LINKED LIST
