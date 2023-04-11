@@ -8,14 +8,14 @@ si lo encuentra muestre en que posición esta y si no, que muestre "valor no enc
 let matrizUnidimensional = new Array(10);
 
 for (let i = 0; i < 10; i++) {
-    matrizUnidimensional[i] = Math.floor(Math.random() * 100); // Generar números aleatorios del 0 al 99
+    matrizUnidimensional[i] = Math.floor(Math.random() * 10); // Generar números aleatorios del 0 al 99
 }
 
 // Imprimir la matrizUnidimensional en pantalla
 console.log(matrizUnidimensional);
 
 // Pedir al usuario que ingrese el número a buscar y validar que sea un número
-let numeroBuscado = 25;/*prompt("Ingresa el número que deseas buscar:");*/
+let numeroBuscado = 1;/*prompt("Ingresa el número que deseas buscar:");*/
 
 while (isNaN(numeroBuscado)) {
     numeroBuscado = 0;/*prompt("Por favor, ingresa un número válido:");*/
@@ -44,25 +44,25 @@ if (encontrado) {
 
 
 // Crear una matriz de 10 posiciones numéricas
-let matriz = new Array(10);
+let matrizUnidimensionalDos = new Array(10);
 
-// Llenar la matriz con valores numéricos
-for (let i = 0; i < matriz.length; i++) {
-    let numero = 2;/*parseInt(prompt(`Ingresa un número en la posición ${i}`));*/
-    matriz[i] = numero;
+// Llenar la matrizUnidimensionalDos con valores numéricos
+for (let i = 0; i < matrizUnidimensionalDos.length; i++) {
+    let numeroBuscadoDos = parseInt(prompt(`Ingresa un número en la posición ${i}`));
+    matrizUnidimensionalDos[i] = numeroBuscadoDos;
 }
 
-// Imprimir la matriz en pantalla
-console.log("La matriz es:");
-for (let i = 0; i < matriz.length; i++) {
-    console.log(matriz[i]);
+// Imprimir la matrizUnidimensionalDos en pantalla
+console.log("La matrizUnidimensionalDos es:");
+for (let i = 0; i < matrizUnidimensionalDos.length; i++) {
+    console.log(matrizUnidimensionalDos[i]);
 }
 
-// Buscar un número en la matriz
+// Buscar un número en la matrizUnidimensionalDos
 let encontradoDos = false;
 let buscar = parseInt(prompt("Ingresa el número a buscar"));
-for (let i = 0; i < matriz.length; i++) {
-    if (matriz[i] === buscar) {
+for (let i = 0; i < matrizUnidimensionalDos.length; i++) {
+    if (matrizUnidimensionalDos[i] === buscar) {
         encontradoDos = true;
         console.log(`El número ${buscar} está en la posición ${i}`);
         break;
