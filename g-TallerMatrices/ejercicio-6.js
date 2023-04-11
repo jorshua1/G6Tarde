@@ -6,7 +6,7 @@ let vectorNumerosUno = [];
 
 //Llenar el vector con valores aleatorios:
 for (let i = 0; i < 10; i++) { // Cambia el 10 por la cantidad de números que desees
-    vectorNumerosUno.push(Math.floor(Math.random() * 100)); // Genera un número aleatorio entre 0 y 99 y lo agrega al vector
+    vectorNumerosUno.push(Math.floor(Math.random() * 10)); // Genera un número aleatorio entre 0 y 99 y lo agrega al vector
 }
 
 //Ordenar el vector de menor a mayor utilizando el método sort():
@@ -18,22 +18,22 @@ vectorNumerosUno.sort(function (a, b) {
 console.log(vectorNumerosUno);
 
 
-
-/*sin usar .push y tampoco usando el  .sort, tendriamos el siguiente codigo*/
-
+//////////////////////////////////*sin usar .push y tampoco usando el  .sort, tendriamos el siguiente codigo*//////////////////////////////////
 //Crear un vector de tamaño 10:
 let vectorNumerosDos = new Array(10);
 console.log(vectorNumerosDos);
 
-//Inicializar los elementos del vector con valores aleatorios entre 0 y 9
+//Inicializamos los elementos del vector con valores aleatorios entre 0 y 9
 for (let i = 0; i < vectorNumerosDos.length; i++) {
+
     vectorNumerosDos[i] = Math.floor(Math.random() * 10);
+
     console.log(vectorNumerosDos);
 
 }
 console.log(vectorNumerosDos)
 
-//Ordenar los elementos del vector de menor a mayor utilizando el algoritmo de ordenación por selección
+//Ordenamos los elementos del vector de menor a mayor utilizando el algoritmo de ordenación por sleccion
 for (let i = 0; i < vectorNumerosDos.length - 1; i++) {
 
     for (let j = i + 1; j < vectorNumerosDos.length; j++) {
