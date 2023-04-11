@@ -10,12 +10,13 @@ for(let i=0;i<cantidad;i++){
 }
 alert("Datos del vector: " + vector)
 let control = 0;
-for(let x=0;x<vector.length;x++){
-    for(let k=0;k<(vector.length-x);k++){
-        if(vector[x]>vector[x+1]){
-            control=vector[x]
-            vector[x]=vector[x+1]
-            vector[x+1]=control
+let largoVector = vector.length;
+for(let x=1;x<largoVector;x++){
+    for(let k=0;k<(largoVector-x);k++){
+        if(vector[k]>vector[k+1]){
+            control=vector[k]
+            vector[k]=vector[k+1]
+            vector[k+1]=control
         }
     }
 }
