@@ -139,6 +139,7 @@ console.log(arregloAnimales.length);
 //Acceder a un primer elemento de Array mediante su índice.
 let primerElemento = arregloAnimales[0]
 console.log(primerElemento);
+
 //Acceder a un ultimo elemento de Array mediante su índice.
 let ultimoElemento = arregloAnimales[arregloAnimales.length - 1]
 console.log(ultimoElemento);

@@ -6,7 +6,7 @@ let vectorNumeros = new Array(10);
 let vectorCuadrado = []
 let vectorCubico = []
 
-for (var i = 0; i < vectorNumeros.length; i++) {
+for (let i = 0; i < vectorNumeros.length; i++) {
     let numeroAleatorio = Math.floor(Math.random() * 10) + 1;
     vectorNumeros[i] = numeroAleatorio;
     console.log(vectorNumeros);
