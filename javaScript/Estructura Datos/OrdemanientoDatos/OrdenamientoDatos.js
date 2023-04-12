@@ -27,7 +27,3 @@ for (let i = 0; i < numeroMaximo; i++) {
     }
 }
 console.log(vector);
-
-//Ordenamiento usando Quick sort
-
-
