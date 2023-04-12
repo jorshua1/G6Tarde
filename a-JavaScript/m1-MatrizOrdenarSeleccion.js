@@ -1,46 +1,69 @@
-/*Primero, creamos un arreglo llamado vectorNumerosUno y lo llenamos con 10 números 
-aleatorios entre 0 y 9. Luego, imprimimos el arreglo original en la consola.
+/*Primero, creamos un vector vacío llamado vectorNumerosUno.
 
-A continuación, aplicamos el algoritmo de ordenamiento por selección. Usamos un bucle 
-for para recorrer el arreglo desde el primer elemento hasta el penúltimo elemento. En 
-cada iteración, buscamos el elemento más pequeño en el resto del arreglo (desde i+1 
-hasta el final) y lo intercambiamos con el elemento en la posición i si es necesario.
+A continuación, usamos un ciclo for para llenar el vector con números aleatorios 
+mediante el método push() y la función Math.random(). Este ciclo se ejecutará 10 
+veces, generando números aleatorios entre 0 y 9.
 
-Para encontrar el elemento más pequeño, usamos otro bucle for que comienza en i+1 
-y recorre el resto del arreglo. En cada iteración, comparamos el elemento actual con el 
-elemento en la posición indiceMenor. Si el elemento actual es más pequeño, 
-actualizamos indiceMenor para que apunte al nuevo elemento más pequeño.
+Luego, imprimimos en la consola el vector original usando console.log().
 
-Finalmente, intercambiamos el elemento más pequeño encontrado con el elemento en la 
-posición i usando una variable temporal temp.
+Comenzamos con el algoritmo de ordenamiento por selección. Usamos un ciclo for 
+para iterar sobre cada elemento del vector, excepto el último.
 
-Una vez que hemos aplicado el algoritmo de ordenamiento por selección, imprimimos el 
-arreglo ordenado en la consola.*/
+En cada iteración del ciclo for, inicializamos una variable min con el índice del 
+elemento actual. Esto se debe a que asumimos que el elemento actual es el mínimo valor 
+en el subvector restante.
+
+Luego, usamos otro ciclo for para buscar el valor mínimo en el subvector restante. 
+Este subvector comienza desde el elemento siguiente al actual y termina en el último 
+elemento del vector.
+
+Para encontrar el valor mínimo, comparamos el valor del elemento actual con el valor del 
+elemento siguiente. Si el valor del elemento siguiente es menor, entonces actualizamos el 
+índice de min con el índice del elemento siguiente.
+
+Después de recorrer todo el subvector restante, tenemos el índice del elemento mínimo 
+en el subvector restante. Ahora intercambiamos el elemento actual con el elemento 
+mínimo encontrado.
+
+Para intercambiar los elementos, usamos una variable temporal temp que almacena el 
+valor del elemento actual. Luego, asignamos el valor del elemento mínimo encontrado a 
+la posición del elemento actual y asignamos el valor de temp a la posición del elemento 
+mínimo encontrado.
+
+Después de cada iteración del primer ciclo for, imprimimos en la consola el vector 
+actualizado.
+
+Cuando el primer ciclo for ha terminado de recorrer todo el vector, el vector estará 
+ordenado de menor a mayor.
+
+Finalmente, imprimimos en la consola*/
 
 let vectorNumerosUno = [];
 
-// Llenamos el arreglo con números aleatorios
+// Llenar el vector con números aleatorios
 for (let i = 0; i < 10; i++) {
   vectorNumerosUno.push(Math.floor(Math.random() * 10));
 }
 
-console.log("Arreglo original: " + vectorNumerosUno);
+console.log("Vector original: " + vectorNumerosUno);
 
-// Aplicamos el algoritmo de ordenamiento por selección
+// Algoritmo de ordenamiento por selección
 for (let i = 0; i < vectorNumerosUno.length - 1; i++) {
-  let indiceMenor = i;
-  
-  // Buscamos el elemento más pequeño desde i+1 hasta el final del arreglo
+  let min = i; // Índice del elemento mínimo
+
+  // Encontrar el elemento mínimo en el subvector restante
   for (let j = i + 1; j < vectorNumerosUno.length; j++) {
-    if (vectorNumerosUno[j] < vectorNumerosUno[indiceMenor]) {
-      indiceMenor = j;
+    if (vectorNumerosUno[j] < vectorNumerosUno[min]) {
+      min = j;
     }
   }
-  
-  // Intercambiamos el elemento más pequeño con el elemento en la posición i
+
+  // Intercambiar el elemento actual con el elemento mínimo encontrado
   let temp = vectorNumerosUno[i];
-  vectorNumerosUno[i] = vectorNumerosUno[indiceMenor];
-  vectorNumerosUno[indiceMenor] = temp;
+  vectorNumerosUno[i] = vectorNumerosUno[min];
+  vectorNumerosUno[min] = temp;
+
+  console.log("Vector después de la iteración " + (i + 1) + ": " + vectorNumerosUno);
 }
 
-console.log("Arreglo ordenado por selección: " + vectorNumerosUno);
+console.log("Vector ordenado: " + vectorNumerosUno);

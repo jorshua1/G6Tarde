@@ -1,43 +1,55 @@
-/*Primero, creamos un arreglo llamado vectorNumerosUno y lo llenamos con 10 números 
-aleatorios entre 0 y 9. Luego, imprimimos el arreglo original en la consola.
+/*Primero, creamos un vector vacío llamado vectorNumerosUno.
 
-A continuación, aplicamos el algoritmo de ordenamiento por burbuja. Usamos dos bucles 
-for anidados para recorrer el arreglo. El primer bucle for se encarga de repetir el 
-proceso de comparación y intercambio de elementos n-1 veces, donde n es la longitud 
-del arreglo.
+A continuación, usamos un ciclo for para llenar el vector con números aleatorios 
+mediante el método push() y la función Math.random(). Este ciclo se ejecutará 10 
+veces, generando números aleatorios entre 0 y 9.
 
-El segundo bucle for recorre el arreglo desde el primer elemento hasta el penúltimo 
-elemento en cada iteración del primer bucle. En cada iteración del segundo bucle, 
-comparamos el elemento actual con el siguiente elemento. Si están en el orden equivocado 
-(el elemento actual es mayor que el siguiente elemento), intercambiamos los elementos 
-adyacentes.
+Luego, imprimimos en la consola el vector original usando console.log().
 
-Para intercambiar los elementos adyacentes, usamos una variable temporal temp. 
-Primero, guardamos el valor del elemento actual en temp. Luego, asignamos el valor del 
-siguiente elemento al elemento actual y el valor de temp al siguiente elemento.
+Comenzamos con el algoritmo de ordenamiento de burbuja. Usamos dos ciclos for. El 
+primer ciclo for se encarga de iterar sobre cada elemento del vector.
 
-Una vez que hemos aplicado el algoritmo de ordenamiento por burbuja, imprimimos el 
-arreglo ordenado en la consola..*/
+El segundo ciclo for se encarga de comparar los elementos adyacentes y de 
+intercambiarlos si están en el orden incorrecto.
+
+Para comparar los elementos adyacentes, usamos la condición if 
+(vectorNumerosUno[j] > vectorNumerosUno[j + 1]). Si el elemento en la posición 
+j es mayor que el elemento en la posición j + 1, entonces los intercambiamos. Para 
+hacer esto, creamos una variable temporal temp que almacena el valor de 
+vectorNumerosUno[j]. Luego, asignamos el valor de vectorNumerosUno[j + 1] 
+a vectorNumerosUno[j] y asignamos el valor de temp a vectorNumerosUno[j + 1].
+
+Después de cada iteración del segundo ciclo for, imprimimos en la consola el vector 
+actualizado.
+
+Cuando el segundo ciclo for ha terminado de recorrer todo el vector, el primer ciclo 
+for avanza a la siguiente iteración y repite el proceso.
+
+Después de que el primer ciclo for ha terminado de recorrer todo el vector, el vector 
+estará ordenado de menor a mayor.
+
+Finalmente, imprimimos en la consola el vector ordenado usando console.log().*/
 
 let vectorNumerosUno = [];
 
-// Llenamos el arreglo con números aleatorios
+// Llenar el vector con números aleatorios
 for (let i = 0; i < 10; i++) {
   vectorNumerosUno.push(Math.floor(Math.random() * 10));
 }
 
-console.log("Arreglo original: " + vectorNumerosUno);
+console.log("Vector original: " + vectorNumerosUno);
 
-// Aplicamos el algoritmo de ordenamiento por burbuja
-for (let i = 0; i < vectorNumerosUno.length - 1; i++) {
-  for (let j = 0; j < vectorNumerosUno.length - i - 1; j++) {
+// Algoritmo de ordenamiento de burbuja
+for (let i = 0; i < vectorNumerosUno.length; i++) {
+  for (let j = 0; j < vectorNumerosUno.length - 1; j++) {
     if (vectorNumerosUno[j] > vectorNumerosUno[j + 1]) {
-      // Intercambiamos los elementos adyacentes si están en el orden equivocado
+      // Intercambiar los valores de las posiciones j y j+1
       let temp = vectorNumerosUno[j];
       vectorNumerosUno[j] = vectorNumerosUno[j + 1];
       vectorNumerosUno[j + 1] = temp;
     }
   }
+  console.log("Vector después de la iteración " + (i + 1) + ": " + vectorNumerosUno);
 }
 
-console.log("Arreglo ordenado por burbuja: " + vectorNumerosUno);
+console.log("Vector ordenado: " + vectorNumerosUno);
