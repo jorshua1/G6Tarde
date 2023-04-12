@@ -53,20 +53,9 @@ for (let i = 0; i < cantidadNumeros; i++) {
 }
 console.log(aleatorios);
 
-let ordenamiento = aleatorios 
-    if (aleatorios.length == 0) ordenamiento = [];
-    if (aleatorios.length == 1) ordenamiento = aleatorios;
 
-    let i = Math.floor(aleatorios.length / 2);
-    let pivot = aleatorios[i];
-    aleatorios.splice(i, 1);
-    let menoresPivot = [aleatorios.filter(numeros < pivot),pivot]
-    let mayoresPivot = [aleatorios.filter(numeros >= pivot)]
 
-    ordenamiento = menoresPivot.concat(mayoresPivot)
-
-console.log(ordenamiento);
-
+console.log(quicksort(aleatorios))
 
 //--------------------------------------------------------
 //Ordenamiento por seleccion
