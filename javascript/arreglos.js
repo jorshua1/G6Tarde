@@ -200,3 +200,157 @@ for (let j = 0; j < d; j++) {
 }
 
 console.log(aleatorios);
+
+///////////////////////////////////////////////////////////
+
+var vector_numeros = [];
+var cuadrado = [];
+var cubo = [];
+
+for (let i = 0; i < 10; i++) {
+  vector_numeros[i] = Math.floor(Math.random() * 10 - 1);
+
+  cuadrado[i] = vector_numeros[i] * vector_numeros[i];
+
+  cubo[i] = vector_numeros[i] ^ 3;
+}
+console.log("Array generado: " + vector_numeros);
+console.log("Array con los cuadrados: " + cuadrado);
+console.log("Array con los cubos: " + cubo);
+
+////////////////////////////////////////////////////////77
+
+var palabras = [];
+var otrovector = [];
+c = 0;
+
+for (let i = 0; i < 5; i++) {
+  palabras[i] = prompt("Ingrese la palabra o el caracter " + (i + 1));
+  while (!isNaN(palabras[i])) {
+    palabras[i] = prompt("Ingrese la palabra o el caracter " + (i + 1));
+  }
+}
+console.log(palabras);
+
+for (let i = 4; i >= 0; i--) {
+  otrovector[c] = palabras[i];
+  c = c + 1;
+}
+
+console.log(otrovector);
+
+/////////////////////////////////////////////////////////
+
+var notas = [];
+var alta = 0;
+var baja = 11;
+var media = 0;
+
+for (let i = 0; i < 5; i++) {
+  notas[i] = parseFloat(prompt("Ingrese la nota " + (i + 1)));
+  while (isNaN(notas[i]) || notas[i] < 0 || notas[i] > 10) {
+    notas[i] = parseFloat(prompt("Ingrese la nota " + (i + 1)));
+  }
+
+  if (notas[i] > alta) {
+    alta = notas[i];
+  }
+
+  if (notas[i] < baja) {
+    baja = notas[i];
+  }
+
+  media = notas[i] + media;
+}
+
+media = media / 5;
+
+alert("La nota mas alta es: " + alta);
+alert("La nota mas baja es: " + baja);
+alert("La nota media es: " + media);
+
+////////////////////////////////////////////////////////////////////////
+
+var bector = [];
+
+contador = 0;
+
+do {
+  bector[contador] = parseInt(prompt("Ingrese el numero " + (contador + 1)));
+  while (isNaN(bector[contador])) {
+    bector[contador] = parseInt(prompt("Ingrese el numero " + (contador + 1)));
+  }
+
+  if (bector[contador] < 0) {
+    contador = 10;
+  }
+  contador = contador + 1;
+} while (contador < 10);
+
+console.log(bector);
+
+/////////////////////////////////////////////////////////////////////
+
+var mes = [
+  "ola",
+  "Enero",
+  "Febrero",
+  "Marzo",
+  "Abril",
+  "Mayo",
+  "Junio",
+  "Julio",
+  "Agosto",
+  "Septiembre",
+  "Octubre",
+  "Noviembre",
+  "Diciembre",
+];
+var dur = [0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
+var numes = parseInt(prompt("Ingrese un numero del 1 al 12 solamente"));
+while (isNaN(numes) || numes > 12 || numes < 1) {
+  var numes = parseInt(prompt("Ingrese un numero del 1 al 12 solamente"));
+}
+
+alert(
+  "El numero que digito es del mes: " +
+    mes[numes] +
+    " y tiene una duracion de: " +
+    dur[numes] +
+    " dias"
+);
+
+/////////////////////////////////////////////////////////////777
+
+vertor1 = [];
+vertor2 = [];
+vertor3 = [];
+
+for (let i = 0; i < 5; i++) {
+  vertor1[i] = parseInt(prompt("Ingrese el valor" + (i + 1) + " del vector 1"));
+  while (isNaN(vertor1[i])) {
+    vertor1[i] = parseInt(
+      prompt("Ingrese el valor " + (i + 1) + " del vector 1")
+    );
+  }
+}
+
+for (let i = 0; i < 5; i++) {
+  vertor2[i] = parseInt(
+    prompt("Ingrese el valor " + (i + 1) + " del vector 2")
+  );
+  while (isNaN(vertor2[i])) {
+    vertor2[i] = parseInt(
+      prompt("Ingrese el valor " + (i + 1) + " del vector 2")
+    );
+  }
+}
+
+for (let i = 0; i < 5; i++) {
+  vertor3[i] = vertor1[i] + vertor2[i];
+}
+
+console.log(vertor3);
+
+////////////////////////////////////////////////////////////////
