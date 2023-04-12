@@ -38,6 +38,7 @@ console.log('Vector desordenado: ', vectorNumerosUno);
 
 // Función recursiva para ordenar el vector por Quicksort
 function ordenarPorQuicksort(vector) {
+    
     // Si el vector tiene un solo elemento, ya está ordenado
     if (vector.length <= 1) {
         return vector;
