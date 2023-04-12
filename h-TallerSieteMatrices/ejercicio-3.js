@@ -10,5 +10,4 @@ for (i = 0; i < vectorNotas.length; i++) {
         console.log("Por favor ingrese un valor valido")
     }
     notaAlumno = parseInt(prompt("Por favor ingrese las notas del estudiante."));
-
 }
