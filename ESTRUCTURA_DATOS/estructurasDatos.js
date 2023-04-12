@@ -208,47 +208,89 @@ for (let i = 0; i < vector.length; i++) {
 }
 
 // METODO DE ORDENAMIENTO DE BURBUJA 
-let array = [5,10,20,11,6,3,2];
-for (let i=0; i<7; i++){ //RECORRE
-    for(j=0;j<7;j++){ //CAMBIA
-        if(array[j]>array[j+1]){
+let array = [5, 10, 20, 11, 6, 3, 2];
+for (let i = 0; i < 7; i++) { //RECORRE
+    for (j = 0; j < 7; j++) { //CAMBIA
+        if (array[j] > array[j + 1]) {
             nu
         }
     }
 }
 //METODO DE ORDENAMIENTO SELECCION SORT
-let array = [1,5,3,2,7];
+let array = [1, 5, 3, 2, 7];
 let ordenamiento = array.length
-for(let i=0; i<ordenamiento; i++){
-    let min=i;
-    for(j=i+1;j<ordenamiento;j++){
-        if(array[j]<array[min]){
+for (let i = 0; i < ordenamiento; i++) {
+    let min = i;
+    for (j = i + 1; j < ordenamiento; j++) {
+        if (array[j] < array[min]) {
             min = j
         }
     }
-if(min != i){
-    let auxiliar = array[i];
-    array[i] = array[min];
-    array[min] = auxiliar
-}
+    if (min != i) {
+        let auxiliar = array[i];
+        array[i] = array[min];
+        array[min] = auxiliar
+    }
 }
 console.log(array);
 
 //METODO DE ORDENAMIENTO QUICKSORT
+let myArr = [];
+
+maximo = parseInt(prompt(`Ingrese un numero maximo para generar un vector de numeros aleatorios.`));
+while (isNaN(maximo) || maximo <= 0) {
+    maximo = parseInt(prompt(`POR FAVOR ingrese un numero maximo para generar un vector de numeros aleatorios.`));
+}
+
+for (let i = 0; i < maximo; i++) {
+    myArr[i] = Math.floor(Math.random() * (100 - (-100))) + (-100);
+
+}
+console.log(myArr);
+
+const quickSort = (arr) => {
+
+    if (arr.length === 1) {
+        return arr;
+    }
+
+    let pivot = arr[arr.length - 1];
+    let leftArray = [];
+    let rightArray = [];
+    for (let i = 0; i < arr.length - 1; i++) {
+        if (arr[i] <= pivot) {
+            leftArray.push(arr[i]);
+        } else {
+            rightArray.push(arr[i]);
+        }
+    }
+    if (leftArray.length > 0 && rightArray.length > 0) {
+        return [...quickSort(leftArray), pivot, ...quickSort(rightArray)]
+    } else if (leftArray.length > 0) {
+        return [...quickSort(leftArray), pivot]
+    } else {
+        return [pivot, ...quickSort(rightArray)]
+    }
+}
+console.log(quickSort(myArr))
+
 //METODO DE ORDENAMIENTO INSERT
 let arreglo = new Array(10);
-for (let i=0;i<arreglo.length; i++){
-    arreglo[i]= Math.floor(Math.random()*100)+1;
+for (let i = 0; i < arreglo.length; i++) {
+    arreglo[i] = Math.floor(Math.random() * 100) + 1;
 }
-for(let i=1; i<arreglo.length;i++){
-    let j=i-1;
-    let temp= arreglo[i];
-    while(j>=0 && arreglo[j] > temp){
-        arreglo[j+i]=arreglo[j];
+for (let i = 1; i < arreglo.length; i++) {
+    let j = i - 1;
+    let temp = arreglo[i];
+    while (j >= 0 && arreglo[j] > temp) {
+        arreglo[j + i] = arreglo[j];
         j--;
     }
-    arreglo[j+1]=temp;
+    arreglo[j + 1] = temp;
 }
-console.log("Arreglo ordenado de menor a mayor: "+ arreglo);
+console.log("Arreglo ordenado de menor a mayor: " + arreglo);
 //METODO DE ORDENAMIENTO MERGE
+
+
+
 //METODO DE ORDENAMIENTO LINKED LIST
