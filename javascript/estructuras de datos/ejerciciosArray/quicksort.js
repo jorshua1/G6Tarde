@@ -1,3 +1,4 @@
+//Método burbuja
 /*let aleatorios = [];
 let cantidadNumeros = 0;
 let datoMaximo = 0;
@@ -53,7 +54,7 @@ for (let i = 0; i < cantidadNumeros; i++) {
 }
 console.log(aleatorios);
 
-const quicksort = (array) =>{
+const Ordenamiento = (array) =>{
     if(array.length == 0)return[];
     if(array.length == 0)return array;
 
@@ -62,13 +63,13 @@ const quicksort = (array) =>{
     array.splice(i,1);
 
     return[
-        ...quicksort(array.filter(y => y<pivot)),
+        ...Ordenamiento(array.filter(y => y<pivot)),
         pivot,
-        ...quicksort(array.filter(y => y>=pivot))
+        ...Ordenamiento(array.filter(y => y>=pivot))
     ]
 }
 
-console.log(quicksort(aleatorios));
+console.log(Ordenamiento(aleatorios));
 
 //--------------------------------------------------------
 //Ordenamiento por seleccion
