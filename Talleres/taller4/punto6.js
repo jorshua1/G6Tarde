@@ -53,9 +53,22 @@ for (let i = 0; i < cantidadNumeros; i++) {
 }
 console.log(aleatorios);
 
+const quicksort = (array) =>{
+    if(array.length == 0)return[];
+    if(array.length == 0)return array;
 
+    let i = Math.floor(array.length/2);
+    let pivot = array[i];
+    array.splice(i,1);
 
-console.log(quicksort(aleatorios))
+    return[
+        ...quicksort(array.filter(y => y<pivot)),
+        pivot,
+        ...quicksort(array.filter(y => y>=pivot))
+    ]
+}
+
+console.log(quicksort(aleatorios));
 
 //--------------------------------------------------------
 //Ordenamiento por seleccion
