@@ -1,7 +1,7 @@
 /*Crear un vector de 5 elementos de cadenas de caracteres, inicializa el vector con datos leídos por el teclado. Copia 
 los elementos del vector en otro vector pero en orden inverso, y muéstralo por la pantalla.*/
 
-let vectorElementos = ["miercoles", "doce", "Abril", "año", "veinte veintitres"]
+let vectorElementos = ["Miercoles", "Doce", "Abril", "Año", "Veinte veintitres"]
 console.log(vectorElementos.length);
 let vectorElementosInverso = new Array(5);
 
