@@ -25,6 +25,10 @@ while(nombre!="*"){
     edades[contador]=edad
     contador +=1
 }
+
+
+
+
 let cont=0;
 for(let x=0; x<edades.length; x++){
     if(edades[x]>=18){
