@@ -2,9 +2,9 @@
 vPromedio.toFixed(2) */
 
 let vNotas = [];
-for (let vI = 0; vI < 5; vI++) {
-    let vNota = parseFloat(prompt("Ingrese la nota " + (vI+1) + ":"));
-    vNotas.push(vNota);
+for (let i = 0; i < 5; i++) {
+    let vNota = parseFloat(prompt("Ingrese la nota " + (i+1) + ":"));
+    vNotas = [vNota];
 }
 let vPromedio = vNotas.reduce((a, b) => a + b, 0) / vNotas.length;
 console.log("Promedio: " + vPromedio);

@@ -2,11 +2,11 @@
 
 let vMatriz = []
 
-for (let vX = 0; vX < 3; vX++) {
-    vMatriz[vX] =  new Array ();
+for (let i = 0; i < 3; i++) {
+    vMatriz[i] =  new Array ();
 
-    for (let vY = 0; vY < 3; vY++) {
-        vMatriz[vX][vY] = parseInt(prompt("Ingrese los numeros"));
+    for (let j = 0; j < 3; j++) {
+        vMatriz[i][j] = parseInt(prompt("Ingrese los numeros"));
 
     }
     vMatriz.sort();

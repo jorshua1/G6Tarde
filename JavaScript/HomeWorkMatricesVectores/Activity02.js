@@ -3,7 +3,7 @@ let vNumbers = [];
 let vPositive = 0;
 let vNegative = 0;
 
-for (let vI = 0; vI < 100; vI++) {
+for (let i = 0; i < 100; i++) {
     var vNumberRange = Math.floor(Math.random() * 201) - 100;
     vNumbers.push(vNumberRange);
 
@@ -12,10 +12,9 @@ for (let vI = 0; vI < 100; vI++) {
     }else {
         vNegative++;
     }
-   
 }
-console.log(`Generated Numbers: ${vNumbers}`);
-console.log(`Positive Numbers: ${vPositive}`);
+console.log(`Numeros randon: ${vNumbers}`);
+console.log(`Numeros positivos: ${vPositive}`);
 
 //==============================================================================================
 
