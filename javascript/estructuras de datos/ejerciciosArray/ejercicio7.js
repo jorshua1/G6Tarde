@@ -4,7 +4,13 @@ let vector3 = new Array(5);
 
 for(let i = 0;i<vector1.length;i++){
     vector1[i] = Number(prompt(`Ingrese el valor Nº${i+1} del vector 1.`));
+    while((isNaN(vector1[i]))||(!Number.isInteger(vector1[i]))){
+        vector1[i] = Number(prompt(`Ingrese el valor Nº${i+1} del vector 1.`));
+    }
     vector2[i] = Number(prompt(`Ingrese el valor Nº${i+1} del vector 2.`));
+    while((isNaN(vector2[i]))||(!Number.isInteger(vector2[i]))){
+        vector2[i] = Number(prompt(`Ingrese el valor Nº${i+1} del vector 2.`));
+    }
     vector3[i] = vector1[i]+vector2[i];
 }
 console.log(vector1);
