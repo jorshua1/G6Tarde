@@ -216,9 +216,129 @@ console.log(notas)
 //Crea un programa que pida un número al usuario un número de mes (por ejemplo, el 4) y diga cuántos días tiene (por ejemplo, 30) y 
 //el nombre del mes. Debes usar un vector. Para simplificarlo vamos a suponer que febrero tiene 28 días.
 
+dato= parseInt(prompt("porfavor dijite el numero del mes"))
+while (isNaN(dato) || dato>12 || dato<=0) {
+    alert("Error")
+    dato= parseInt(prompt("recuerde que el mes dbe estar entre 1 y 12"))
+}
+
+dia=[0, 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+mes=[0, "enero", "febrero", "marzo", "abril", "mayo", "junio", "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"]
+
+alert("su numero es: "+dato+" el cual corresponde al mes "+mes[dato]+" el cual tiene "+dia[dato]+" dias")
+
+//Programa que declare tres vectores ‘vector1’, ‘vector2’ y ‘vector3’ de cinco enteros cada uno, pida valores para ‘vector1’ y ‘vector2’
+// y calcule vector3=vector1+vector2.
+
+vector1=[]
+vector2=[]
+vector3=[]
+
+alert("dijite los numeros para el primer vector")
+
+for (let i = 0; i < 5; i++) {
+    
+    dato= parseInt(prompt("porfavor dijite el numero del mes"))
+        while (isNaN(dato)) {
+            dato= parseInt(prompt("dijite un NUMERO valido"))
+        }
+
+        vector1[i]=dato
+
+}
+alert(vector1)
+alert("dijite los numeros para el segundo vector vector")
+
+for (let i = 0; i < 5; i++) {
+    
+    dato= parseInt(prompt("porfavor dijite el numero del mes"))
+        while (isNaN(dato)) {
+            dato= parseInt(prompt("dijite un NUMERO valido"))
+        }
+
+        vector2[i]=dato
+
+}
+alert(vector2)
+
+alert("generando el tercer vector")
+
+
+for (let i = 0; i < 5; i++) {
+    vector3[i]=(vector1[i]+vector2[i])
+}
+alert(vector3)
+
+
+/////////////////////////////////////////////////////////////////
+//Queremos guardar los nombres y la edades de los alumnos de un curso. Realiza un programa que introduzca el nombre y la edad de cada alumno. 
+//El proceso de lectura de datos terminará cuando se introduzca como nombre un asterisco (*) Al finalizar se mostrará los siguientes datos:
+
+//Todos lo alumnos mayores de edad.
+//Los alumnos mayores (los que tienen más edad)
+
+
+tabla=[]
+activador=true
+incrementador=0
+while(activador){
+   
+    alert("ingrese el alumno")
+
+    nombre=prompt("dijite el nombre")
+    while (!isNaN(nombre)) {
+        nombre=prompt("dijite un nombre valido")
+    }
+   
+
+
+    if (nombre === "*"){
+
+        activador=false
+
+    }else{
+        tabla[incrementador]=nombre
+        
+        for (let i = 0; i < 1; i++) {//en este for vamos a crear las columnas y vamos a proceder a llenarlo               
+            edad=parseInt(prompt("ingrese la edad del alumno"))               
+            while (isNaN(edad) || edad <=0 || edad >100) {
+                edad=parseInt(prompt("ingrese una edad valida"))
+            }
+            tabla[incrementador][i+1]= edad//aqui decimos que en la posicion 0/0 para el primer ciclo, vamos a asignar un valor para esa posicion de la matriz
+        }
+                
+        
+            
+        
+             //aqui estamos diciendo que que el la posicion de fila vamos a hacer un array, el cual correspondera a las columnas
+
+            
+    }
+incrementador++
+}
+console.log(tabla)
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+for (let i = 0; i < 1; i++) {//en este for vamos a crear las columnas y vamos a proceder a llenarlo               
+    edad=parseInt(prompt("ingrese la edad del alumno"))               
+    while (isNaN(edad) || edad <=0 || edad >100) {
+        edad=parseInt(prompt("ingrese una edad valida"))
+    }
+    tabla[incrementador][i]= edad//aqui decimos que en la posicion 0/0 para el primer ciclo, vamos a asignar un valor para esa posicion de la matriz
+}
 
