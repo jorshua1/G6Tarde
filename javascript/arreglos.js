@@ -354,3 +354,64 @@ for (let i = 0; i < 5; i++) {
 console.log(vertor3);
 
 ////////////////////////////////////////////////////////////////
+
+var nombres = [];
+var edad = [];
+var mayores = [];
+contador = 0;
+
+do {
+  nombres[contador] = prompt("Digite el nombre del estudiante");
+  while (!isNaN(nombres[contador])) {
+    nombres[contador] = prompt("Digite el nombre valido del estudiante");
+  }
+
+  edad[contador] = parseInt(prompt("Digite la edad del estudiante"));
+  while (isNaN(edad[contador] || edad <= 0)) {
+    edad[contador] = parseInt(prompt("Digite la edad valida del estudiante"));
+  }
+
+  if (edad[contador] >= 18) {
+    mayores[contador] = nombres[contador];
+
+    if (mayores[contador] > mayores[contador + 1]) {
+      mayor = mayores[contador];
+    }
+  }
+
+  contador = contador + 1;
+} while (nombres[contador - 1] != "*");
+
+alert("Los mayores de edad son: " + mayores);
+alert("El mayor del grupo es: " + mayor);
+
+///////////////////////////////////////////////////////////////////////////mamatriz
+
+var nombrecitos = [];
+c = 0;
+bandera = true;
+
+while (bandera == true) {
+  nombrecitos[c] = prompt("Digite el nombre del estudiante");
+  while (!isNaN(nombrecitos[c])) {
+    nombrecitos[c] = prompt("Digite el nombre valido del estudiante");
+  }
+
+  if (nombrecitos[c] === "*") {
+    bandera = false;
+  } else {
+    nombrecitos[c] = [];
+
+    for (let i = 0; i < 1; i++) {
+      nombrecitos[c][i] = parseInt(prompt("Digite la edad del estudiante"));
+      while (isNaN(nombrecitos[c][i]) || nombrecitos[c][i] <= 0) {
+        nombrecitos[c][i] = parseInt(
+          prompt("Digite la edad valida del estudiante")
+        );
+      }
+    }
+  }
+
+  c = c + 1;
+}
+console.log(nombrecitos);
