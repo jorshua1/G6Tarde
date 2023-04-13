@@ -11,14 +11,7 @@ let nombre = "";
 let vectorNombre = new Array();
 let edad = 0;
 let edades = new Array();
-let cantidadAlumnos = 0;
 let mayoresEdad = new Array();
-let control = 0;
-
-cantidadAlumnos = parseInt(prompt(`Ingrese la cantidad de alumnos que desea registrar.`));
-while (isNaN(cantidadAlumnos) || cantidadAlumnos <= 0) {
-    cantidadAlumnos = parseInt(prompt(`POR FAVOR ingrese la cantidad de alumnos que desea registrar.`));
-}
 
 let i = 0;
 
@@ -27,17 +20,19 @@ do {
     nombre = prompt(`Ingrese el nombre del estudiante # ${i + 1} \nPara terminar de ingresar datos ingrese un (*)`);
 
     if (nombre[nombre.length - 1] != "*") {
+
         edad = prompt(`Ingrese la edad del estudiante # ${i + 1}`);
         while (isNaN(edad) || edad <= 0 || edad > 90) {
-            edad = prompt(`UPSS, no creo que ${nombre[i + 1]} tenga esa edad \n Ingrese una edad valida`);
+            edad = prompt(`UPSS, no creo que ${nombre} tenga esa edad \n Ingrese una edad valida`);
         }
         vectorNombre[i] = nombre;
         edades[i] = edad;
     }
 
     i++;
-    control ++;
-} while ((nombre[nombre.length - 1] != "*") && (i != cantidadAlumnos))
+    
+} while (nombre[nombre.length - 1] != "*")
+
 
 for (let i = 0; i < edades.length; i++) {
     for (let j = 0; j < edades.length - 1; j++) {
@@ -53,7 +48,7 @@ for (let i = 0; i < edades.length; i++) {
 }
 
 i = 0;
-while ((i != cantidadAlumnos)) {
+while ((i != edades.length)) {
 
     if (edades[i] >= 18) {
         mayoresEdad[i] = vectorNombre[i];
@@ -62,7 +57,7 @@ while ((i != cantidadAlumnos)) {
 
 }
 
-if (control <= cantidadAlumnos ) {
+if (vectorNombre.length > 0 ) {
     alert(`El alumno con mayor edad es: ${vectorNombre[0]} `);
     alert(`Los estudiantes mayores de edad son:  ${mayoresEdad}`);
 } else {
