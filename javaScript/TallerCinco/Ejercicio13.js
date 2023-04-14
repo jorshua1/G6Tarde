@@ -18,7 +18,7 @@ let continuar = 0;
 let indice = 0;
 let totalKm = new Array();
 let sumaKm = 0;
-
+let mensaje = "";
 do {
 
     nombre[indice] = prompt(`Ingrese el nombre del conductor #${indice + 1}`);
@@ -27,9 +27,9 @@ do {
         nombre[indice] = prompt(`Ingrese el nombre del conductor #${indice + 1}`);
     }
 
-    
+
     km[indice] = new Array(7);
-   
+
 
     for (let i = 0; i < 1; i++) {
         for (let j = 0; j < km[i].length; j++) {
@@ -41,9 +41,11 @@ do {
         }
     }
 
-    continuar = parseFloat(prompt(`Desea coninuar registrando conductores? \n1. Si \n2.No`));
+    continuar = parseFloat(prompt(`Desea coninuar registrando conductores? \nSi? -> precione 1 \nNo -> presione cualquier tecla`));
     indice++;
-} while (continuar === 1)
+} while (continuar == 1)
+
+console.table(km)
 
 for (let i = 0; i < km.length; i++) {
 
@@ -52,5 +54,7 @@ for (let i = 0; i < km.length; i++) {
         sumaKm += km[i][j];
     }
     totalKm[i] = sumaKm;
+    mensaje += `- ${nombre[i]} -> ${totalKm[i]} \n`;
 }
-alert(`Los conductores ${nombre} recorieron ${totalKm} km respectivamente`)
+
+alert(`Los kilometro que recorrio cada conductor se muestran en la lista. \n ${mensaje}`);

@@ -37,7 +37,7 @@ for (let j = 0; j < matriz.length; j++){
     }
     console.log(sumaColumnas)
 } 
-
+console.table(matriz)
 console.log(sumaFilas);
 console.log(sumaColumnas);
 console.log(matriz);
