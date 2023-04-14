@@ -8,9 +8,9 @@ cero y "Cero" si el número es cero.*/
 function validadorNumerosDos(numeroDos) {
 
     if (isNaN(numeroDos)) {
-        return "No es un numeroDos";
+        return "No es un numero";
 
-    } else if (numeroDos = 0) {
+    } else if (numeroDos === 0) {
         return "Cero";
 
     } else {
@@ -18,6 +18,6 @@ function validadorNumerosDos(numeroDos) {
     }
 }
 
-let numeroDos = -1;
+let numeroDos = 1;
 
 console.log(validadorNumerosDos(numeroDos))
