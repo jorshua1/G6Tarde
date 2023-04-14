@@ -20,4 +20,4 @@ function validadorNumerosDos(numeroDos) {
 
 let numeroDos = 1;
 
-console.log(validadorNumerosDos(numeroDos))
+console.log(validadorNumerosDos(numeroDos));
