@@ -9,3 +9,4 @@ console.log("La formula da: " + rta);
 //segunda formula
 let rta2 = (((B + C) / 2) * A + 10) * 3 * B - 6;
 console.log("La formula2 da: " + rta2);
+
