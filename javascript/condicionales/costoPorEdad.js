@@ -11,3 +11,4 @@ if((edad>=0) && (edad<4)){
 }else{
     alert("Por favor, ingrese una edad válida");
 }
+

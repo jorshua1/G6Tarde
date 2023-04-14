@@ -1,4 +1,4 @@
-/*let dato = 3
+let dato = 3
 
 switch(dato){
     case 1:
@@ -10,9 +10,9 @@ switch(dato){
         default:
             console.log("Ingresó un número que no se encuentra en los casos");
             break;
-}*/
+}
 
-let mes = "NOviemBRE"
+let mes = "Noviembre"
 switch (mes.toLowerCase()) {
     case "diciembre":
     case "enero":
