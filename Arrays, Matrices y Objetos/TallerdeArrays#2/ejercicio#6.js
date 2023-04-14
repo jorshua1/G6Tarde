@@ -1,4 +1,5 @@
 let numeroMes = new Array();
+let i = 0;
 
 numeroMes[i] = Number(prompt(`Ingrese el numero del mes que quiere investigar`))
 while (isNaN(numeroMes[i]) || (numeroMes[i]) < 0) {
