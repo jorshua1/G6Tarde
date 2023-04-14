@@ -4,30 +4,33 @@ A continuación debe mostrar todas las notas, la nota media, la nota más alta q
 let notasAlumno;
 let vectorNotas = new Array(5);
 let notaAlta = 0;
-let notaMenor = 0;
+let notaMenor = 10;
 let notaMedia = 0;
 
 for (i = 0; i < vectorNotas.length; i++) {
 
     notasAlumno = "a";/*prompt(`Por favor ingrese nota del alumno:`);*/
 
-    while (isNaN(notasAlumno) || notasAlumno < 0 || notasAlumno > 5) {
+    while (isNaN(notasAlumno) || notasAlumno < 0 || notasAlumno > 10) {
         notasAlumno = 5;/*parseInt(prompt(`Por favor: debe ingresar una nota entre el rango de  0 a 10`));*/
     }
 
     vectorNotas[i] = notasAlumno;
     console.log(vectorNotas);
 
+    notaMedia += notasAlumno;
 
     if (notasAlumno >= 0) {
         notaAlta = notasAlumno;
     } else { }
+    console.log(notaAlta);
 
-    if (notasAlumno < notaAlta) {
+    if (notasAlumno < notaMenor) {
         notaMenor = notasAlumno;
-    }
+    } else { }
+    console.log(notaMenor);
 
-    notaMedia += notasAlumno;
+
 }
 
 
