@@ -5,6 +5,8 @@
 
 function validadorNumeros(numero) {
 
+    //Aplicando estructura de control if / else
+    
     if (isNaN(numero)) {
         return "No es un numero.";
 
