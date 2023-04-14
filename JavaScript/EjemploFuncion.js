@@ -37,23 +37,23 @@ console.log(fPosiNega(vN));
 //=========================================================================================================================
 numero = Number(prompt("Ingrese un numero"));
 function fParamtro(numero) {
-    for (let i = 0; i <= numero; i++) {
-        i.push()
+    for (let i = 1; i <= numero; i++) {
         console.log(i);
     }
 }
+console.log(fParamtro(numero));
 //========================================================================================================================
 function fFizz(numero) {
     for (var i = 1; i <= numero; i++) {
-      if (i % 3 === 0 && i % 5 === 0) {
-        console.log("FizzBuzz");
-      } else if (i % 3 === 0) {
-        console.log("Fizz");
-      } else if (i % 5 === 0) {
-        console.log("Buzz");
-      } else {
-        console.log(i);
-      }
+        if (i % 3 === 0 && i % 5 === 0) {
+          console.log("fFizz(");
+        } else if (i % 3 === 0) {
+          console.log("Fizz");
+        } else if (i % 5 === 0) {
+          console.log("Buzz");
+        } else {
+          console.log(i);
+          
+        }
     }
-  }
-  
+}
