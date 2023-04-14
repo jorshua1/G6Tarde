@@ -3,14 +3,19 @@
 11. Escribir una función en JavaScript que tome como parámetro un número y devuelva
 "Es par" si el número es par y "Es impar" si el número es impar.*/
 
-let numero = 2;
+let numero = "a";
 
-if (isNaN(numero)){
-    console.log("No es un numero.");
+function validadorNumeros(numero) {
 
-} else if (numero % 2 == 0) {
-    console.log("Es Par");
+    if (isNaN(numero)) {
+        return "No es un numero.";
 
-} else {
-    console.log("Es Impar");
+    } else if (numero % 2 === 0) {
+        return "Es Par";
+
+    } else {
+        return "Es Impar";
+    }
 }
+
+console.log(validadorNumeros(numero));

@@ -3,7 +3,7 @@ function validador(x) {
     if (isNaN(x)) {
         return "Error";
     } else {
-        return "Es un numero"
+        return "Es un numero";
     }
 }
 
