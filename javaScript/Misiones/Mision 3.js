@@ -69,7 +69,7 @@ do {
             if (cantidadTalentos === 0) {
                 do {
                     cantidadTalentos = Number(prompt(`Ingrese la cantidad de talentos Coex`));
-                    while (isNaN(cantidadTalentos) || cantidadTalentos < 0 || !Number.isInteger(cantidadTalentos)) {
+                    while (isNaN(cantidadTalentos) || cantidadTalentos <= 0 || !Number.isInteger(cantidadTalentos)) {
                         cantidadTalentos = Number(prompt(`Ingrese un dato valido`));
                     }
                     confirmacion = Number(prompt(`¿Desea registrar ${cantidadTalentos} talentos? \nTenga en cuenta que despues no podra cambiar la cantidad de talentos.\n1. Si.\n2. No.`));
