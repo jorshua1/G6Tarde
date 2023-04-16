@@ -1,7 +1,5 @@
 
 estudiantes = [];
-mostrarEstudiantes = [];
-mostrarNotasEstudiantes = [];
 mision1 = [];
 mision2 = [];
 mision3 = [];
@@ -15,17 +13,38 @@ mejorNotaMision1 = 0;
 mejorNotaMision2 = 0;
 mejorNotaMision3 = 0;
 bandera = 1;
+cantidadTalentos = 0;
 
 do {
     opcion = parseInt(prompt("Ingrese la opcion que desea realizar \n1. Ingresar cantidad de talentos \n2. Registrar datos de talentos \n3. Registrar nota de Misión 1 \n4. Registrar nota de Misión 2 \n5. Registrar nota de Misión 3\n6. Registrar prueba de nivel final\n7. Mostrar nombre y nota del talento con la mejor nota en la Misión 1 \n8. Mostrar nombre y nota del talento con la mejor nota en la Misión 2\n9. Mostrar nombre y nota del talento con la mejor nota en la Misión 3\n10. Mostrar nombre y promedio de cada talento \n11. Mostrar código, nombre y notas de las misiones y prueba final \n12. Mostrar nombre de los talentos que desarrollaron el ejercicio \n13. Salir"));
 
     switch (opcion) {
         case 1:
-            var cantidadTalentos = parseInt(prompt("Ingrese la cantidad de talentos"));
-            while (isNaN(cantidadTalentos) || cantidadTalentos <= 0) {
-                cantidadTalentos = parseInt(prompt("Ingrese la cantidad valida de talentos"));
+            if (cantidadTalentos === 0) {
+                cantidadTalentos = parseInt(prompt("Ingrese la cantidad de talentos"));
+                while (isNaN(cantidadTalentos) || cantidadTalentos <= 0) {
+                    cantidadTalentos = parseInt(prompt("Ingrese la cantidad valida de talentos"));
+                }
+            } else {
+                alert("Ya registró una cantidad de talentos, desea reescribir la informacion?");
+                opcion2 = parseInt(prompt("Ingrese la opcion: \n 1. Si desea volver a escribir la cantidad de talentos \n 2.Si no desea cambiar la informacion"));
+                while (isNaN(opcion2) || opcion2 <= 0 || opcion2 > 2) {
+                    opcion2 = parseInt(prompt("Ingrese la opcion: \n 1. Si desea volver a escribir la cantidad de talentos \n 2.Si no desea cambiar la informacion"));
+                }
+                switch (opcion2) {
+                    case 1:
+                        cantidadTalentos = parseInt(prompt("Ingrese la cantidad de talentos"));
+                        while (isNaN(cantidadTalentos) || cantidadTalentos <= 0) {
+                            cantidadTalentos = parseInt(prompt("Ingrese la cantidad valida de talentos"));
+                        }
+                        break;
+                    case 2:
+                        break;
+                
+                    default:
+                        break;
+                }
             }
-
             break;
 
         case 2:
@@ -43,7 +62,6 @@ do {
                                 estudiantes[filas][columnas] = prompt("Digite un nombre valido del estudiante " + (filas + 1));
                             }
                         }
-
                     }
                 }
             }
@@ -133,7 +151,7 @@ do {
                 if (mejorNotaMision1 === 0) {
                     alert("Debe ingresar primero las notas de la mision 1");
                 } else {
-                    alert("El nombre del estudiante con la mejor nota de la mision 1 es: " + estudiantes[mejorEstudianteMision1] + " y su nota es de: " + mejorNotaMision1)
+                    alert("El nombre del estudiante con la mejor nota de la mision 1 es: " + estudiantes[mejorEstudianteMision1][1] + " y su nota es de: " + mejorNotaMision1)
                 }
             }
             break;
@@ -145,7 +163,7 @@ do {
                 if (mejorNotaMision2 === 0) {
                     alert("Debe ingresar primero las notas de la mision 2");
                 } else {
-                    alert("La mejor nota de la mision 2 es de: " + estudiantes[mejorEstudianteMision2] + " y su nota es de: " + mejorNotaMision2)
+                    alert("La mejor nota de la mision 2 es de: " + estudiantes[mejorEstudianteMision2][1] + " y su nota es de: " + mejorNotaMision2)
                 }
             }
             break;
@@ -157,7 +175,7 @@ do {
                 if (mejorNotaMision3 === 0) {
                     alert("Debe ingresar primero las notas de la mision 3");
                 } else {
-                    alert("La mejor nota de la mision 3 es de: " + estudiantes[mejorEstudianteMision3] + " y su nota es de: " + mejorNotaMision3)
+                    alert("La mejor nota de la mision 3 es de: " + estudiantes[mejorEstudianteMision3][1] + " y su nota es de: " + mejorNotaMision3)
 
                 }
             }
@@ -175,22 +193,10 @@ do {
                         promedio[i] = sumatoriaNotasMision1[i] + sumatoriaNotasMision2[i] + sumatoriaNotasMision3[i] + sumatoriaNotasMisionFinal[i];
                         promedio[i] = promedio[i] / 4
                     }
-    
-                    for (let filas = 0; filas < cantidadTalentos; filas++) {
-                        mostrarEstudiantes[filas] = [];
-                        for (let columnas = 0; columnas < 3; columnas++) {
-                            if (columnas == 0) {
-                                mostrarEstudiantes[filas][columnas] = (filas + 1);
-                            } else {
-                                mostrarEstudiantes[filas][columnas] = estudiantes[filas][columnas];
-                                if (columnas == 2) {
-                                    mostrarEstudiantes[filas][columnas] = promedio[filas];
-                                }
-                            }
-    
-                        }
+
+                    for (let i = 0; i < cantidadTalentos; i++) {
+                        console.log("|Nombre de estudiante: " +estudiantes[i][1]+ " |Promedio: " +promedio[i]);
                     }
-                    console.log(mostrarEstudiantes);
                 }
 
             }
@@ -203,34 +209,13 @@ do {
                 if (mejorNotaMision1 === 0 || mejorNotaMision2 === 0 || mejorNotaMision3 === 0 || misionFinal[0] === undefined) {
                     alert("Falta alguna nota de alguna de las misiones");
                 } else {
-                    for (let filas = 0; filas < cantidadTalentos; filas++) {
-                        mostrarNotasEstudiantes[filas] = [];
-                        for (let columnas = 0; columnas < 6; columnas++) {
-                            if (columnas == 0) {
-                                mostrarNotasEstudiantes[filas][columnas] = (filas + 1);
-                            } else {
-                                if (columnas == 1) {
-                                    mostrarNotasEstudiantes[filas][columnas] = estudiantes[filas][columnas];
-                                } else {
-                                    if (columnas == 2) {
-                                        mostrarNotasEstudiantes[filas][columnas] = mision1[filas];
-                                    } else {
-                                        if (columnas == 3) {
-                                            mostrarNotasEstudiantes[filas][columnas] = mision2[filas];
-                                        } else {
-                                            if (columnas == 4) {
-                                                mostrarNotasEstudiantes[filas][columnas] = mision3[filas];
-                                            } else {
-                                                mostrarNotasEstudiantes[filas][columnas] = misionFinal[filas]
-                                            }
-                                        }
-                                    }
-                                }
-                            }
+
+                    for (let i = 0; i < cantidadTalentos; i++) {
+                        for (let j = 0; j < 1; j++) {
+                            console.log("|Codigo Estudiante: " +estudiantes[i][j]+  " |Nombre: " +estudiantes[i][j+1]+ " |Mision 1: " +mision1[i]+ " |Mision 2: " +mision2[i]+ " |Mision 3: " +mision3[i]+ " |Mision final: " +misionFinal[i]);
                         }
                     }
                 }
-                console.log(mostrarNotasEstudiantes);
             }
             break;
 
@@ -247,6 +232,7 @@ do {
             break;
 
         default:
+            alert("Ingrese un numero valido")
             break;
     }
 } while (bandera === 1);
