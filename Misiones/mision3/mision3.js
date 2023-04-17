@@ -16,6 +16,7 @@ while ((!isNaN(usuario)) || (usuario.length === 0)) {
     usuario = prompt("Por favor, ingrese un nombre válido para continuar.");
 }
 do {
+    eleccion = 0;
     menu = `Usuario ${usuario}, por favor, seleccione una de las siguientes opciones:\n1. Registrar cantidad de talentos.\n2. Registrar datos de los talentos.\n3. Registrar notas de los talentos. \n4. Mejores desempeños.\n5. Promedio talentos.\n6. Inspeccionar talentos.\n7. Ordenar talentos.\n8. Acerca del desarrollador.\n9. Salir.`;
     eleccion = Number(prompt(menu));
     while ((isNaN(eleccion)) || (!Number.isInteger(eleccion)) || (eleccion < 1) || (eleccion > 9)) {
@@ -153,6 +154,7 @@ do {
             if (codigoNombre.length > 0) {
                 let validando = 0;
                 let temp = 0
+                repetir = 0;
                 do {
                     menu = `Escriba el código del talento al que desee asignar notas (Escriba 0 para salir):`
                     validarEleccion = 1;
@@ -205,83 +207,91 @@ do {
                                     }
                                     break;
                                 case 2:
-                                    temp = codigoNombre[validando][2][1];
-                                    codigoNombre[validando][2][1] = Number(prompt(`Ingrese la nota de la misión 2 del talento ${codigoNombre[validando][1]}. (Entre 1 y 100. No se aceptan decimales).`));
-                                    while ((isNaN(codigoNombre[validando][2][1])) || (!Number.isInteger(codigoNombre[validando][2][1])) || (codigoNombre[validando][2][1] < 1) || (codigoNombre[validando][2][1] > 100)) {
-                                        alert("Por favor, ingrese una nota válida.");
+                                    if (codigoNombre[validando][2][0] > 0) {
+                                        temp = codigoNombre[validando][2][1];
                                         codigoNombre[validando][2][1] = Number(prompt(`Ingrese la nota de la misión 2 del talento ${codigoNombre[validando][1]}. (Entre 1 y 100. No se aceptan decimales).`));
-                                    }
-                                    if (temp === 0) {
-                                        alert(`Se ha registrado la nota de la misión 2 de ${codigoNombre[validando][1]}`);
-                                    } else if (temp !== 0) {
-                                        confirmacion = Number(prompt(`Ya existe una nota de misión 2 de este talento (Nota: ${temp}). ¿Deseas sobreescribirla?\n1) Sí.\n 2) No.`));
-                                        while ((confirmacion !== 1) && (confirmacion !== 2)) {
-                                            alert("Por favor seleccione una opción válida.");
-                                            confirmacion = Number(prompt(`Ya existe una nota de misión 2 de este talento (Nota: ${temp}). ¿Deseas sobreescribirla?\n1) Sí.\n2) No.`));
+                                        while ((isNaN(codigoNombre[validando][2][1])) || (!Number.isInteger(codigoNombre[validando][2][1])) || (codigoNombre[validando][2][1] < 1) || (codigoNombre[validando][2][1] > 100)) {
+                                            alert("Por favor, ingrese una nota válida.");
+                                            codigoNombre[validando][2][1] = Number(prompt(`Ingrese la nota de la misión 2 del talento ${codigoNombre[validando][1]}. (Entre 1 y 100. No se aceptan decimales).`));
                                         }
-                                        if (confirmacion === 1) {
-                                            alert("Se ha sobreescrito la nota de la misión 2 de este talento.");
-                                        } else {
-                                            codigoNombre[validando][2][1] = temp;
-                                            alert("La nota de este talento no se ha modificado.");
+                                        if (temp === 0) {
+                                            alert(`Se ha registrado la nota de la misión 2 de ${codigoNombre[validando][1]}`);
+                                        } else if (temp !== 0) {
+                                            confirmacion = Number(prompt(`Ya existe una nota de misión 2 de este talento (Nota: ${temp}). ¿Deseas sobreescribirla?\n1) Sí.\n 2) No.`));
+                                            while ((confirmacion !== 1) && (confirmacion !== 2)) {
+                                                alert("Por favor seleccione una opción válida.");
+                                                confirmacion = Number(prompt(`Ya existe una nota de misión 2 de este talento (Nota: ${temp}). ¿Deseas sobreescribirla?\n1) Sí.\n2) No.`));
+                                            }
+                                            if (confirmacion === 1) {
+                                                alert("Se ha sobreescrito la nota de la misión 2 de este talento.");
+                                            } else {
+                                                codigoNombre[validando][2][1] = temp;
+                                                alert("La nota de este talento no se ha modificado.");
+                                            }
                                         }
+                                    } else {
+                                        repetir = 1;
+                                        alert(`Por favor, ingrese la nota de misión 1 del talento ${codigoNombre[validando][1]} para poder registrar esta nota.`);
                                     }
                                     break;
                                 case 3:
-                                    temp = codigoNombre[validando][2][2];
-                                    codigoNombre[validando][2][2] = Number(prompt(`Ingrese la nota de la misión 3 del talento ${codigoNombre[validando][1]}. (Entre 1 y 100. No se aceptan decimales).`));
-                                    while ((isNaN(codigoNombre[validando][2][2])) || (!Number.isInteger(codigoNombre[validando][2][2])) || (codigoNombre[validando][2][2] < 1) || (codigoNombre[validando][2][2] > 100)) {
-                                        alert("Por favor, ingrese una nota válida.");
+                                    if (codigoNombre[validando][2][1] > 0) {
+                                        temp = codigoNombre[validando][2][2];
                                         codigoNombre[validando][2][2] = Number(prompt(`Ingrese la nota de la misión 3 del talento ${codigoNombre[validando][1]}. (Entre 1 y 100. No se aceptan decimales).`));
-                                    }
-                                    if (temp === 0) {
-                                        alert(`Se ha registrado la nota de la misión 3 de ${codigoNombre[validando][1]}`);
-                                    } else if (temp !== 0) {
-                                        confirmacion = Number(prompt(`Ya existe una nota de misión 3 de este talento (Nota: ${temp}). ¿Deseas sobreescribirla?\n1) Sí.\n 2) No.`));
-                                        while ((confirmacion !== 1) && (confirmacion !== 2)) {
-                                            alert("Por favor seleccione una opción válida.");
-                                            confirmacion = Number(prompt(`Ya existe una nota de misión 3 de este talento (Nota: ${temp}). ¿Deseas sobreescribirla?\n1) Sí.\n2) No.`));
+                                        while ((isNaN(codigoNombre[validando][2][2])) || (!Number.isInteger(codigoNombre[validando][2][2])) || (codigoNombre[validando][2][2] < 1) || (codigoNombre[validando][2][2] > 100)) {
+                                            alert("Por favor, ingrese una nota válida.");
+                                            codigoNombre[validando][2][2] = Number(prompt(`Ingrese la nota de la misión 3 del talento ${codigoNombre[validando][1]}. (Entre 1 y 100. No se aceptan decimales).`));
                                         }
-                                        if (confirmacion === 1) {
-                                            alert("Se ha sobreescrito la nota de la misión 3 de este talento.");
-                                        } else {
-                                            codigoNombre[validando][2][2] = temp;
-                                            alert("La nota de este talento no se ha modificado.");
+                                        if (temp === 0) {
+                                            alert(`Se ha registrado la nota de la misión 3 de ${codigoNombre[validando][1]}`);
+                                        } else if (temp !== 0) {
+                                            confirmacion = Number(prompt(`Ya existe una nota de misión 3 de este talento (Nota: ${temp}). ¿Deseas sobreescribirla?\n1) Sí.\n 2) No.`));
+                                            while ((confirmacion !== 1) && (confirmacion !== 2)) {
+                                                alert("Por favor seleccione una opción válida.");
+                                                confirmacion = Number(prompt(`Ya existe una nota de misión 3 de este talento (Nota: ${temp}). ¿Deseas sobreescribirla?\n1) Sí.\n2) No.`));
+                                            }
+                                            if (confirmacion === 1) {
+                                                alert("Se ha sobreescrito la nota de la misión 3 de este talento.");
+                                            } else {
+                                                codigoNombre[validando][2][2] = temp;
+                                                alert("La nota de este talento no se ha modificado.");
+                                            }
                                         }
+                                    } else {
+                                        repetir = 1;
+                                        alert(`Por favor, ingrese la nota de misión 2 del talento ${codigoNombre[validando][1]} para poder registrar esta nota.`);
                                     }
                                     break;
                                 case 4:
-                                    temp = codigoNombre[validando][2][3];
-                                    codigoNombre[validando][2][3] = Number(prompt(`Ingrese la nota de la prueba de nivel final del talento ${codigoNombre[validando][1]}. (Entre 1 y 100. No se aceptan decimales).`));
-                                    while ((isNaN(codigoNombre[validando][2][3])) || (!Number.isInteger(codigoNombre[validando][2][3])) || (codigoNombre[validando][2][3] < 1) || (codigoNombre[validando][2][3] > 100)) {
-                                        alert("Por favor, ingrese una nota válida.");
+                                    if (codigoNombre[validando][2][2] > 0) {
+                                        temp = codigoNombre[validando][2][3];
                                         codigoNombre[validando][2][3] = Number(prompt(`Ingrese la nota de la prueba de nivel final del talento ${codigoNombre[validando][1]}. (Entre 1 y 100. No se aceptan decimales).`));
-                                    }
-                                    if (temp === 0) {
-                                        alert(`Se ha registrado la nota de la prueba de nivel final de ${codigoNombre[validando][1]}`);
-                                    } else if (temp !== 0) {
-                                        confirmacion = Number(prompt(`Ya existe una nota de prueba de nivel final de este talento (Nota: ${temp}). ¿Deseas sobreescribirla?\n1) Sí.\n 2) No.`));
-                                        while ((confirmacion !== 1) && (confirmacion !== 2)) {
-                                            alert("Por favor seleccione una opción válida.");
-                                            confirmacion = Number(prompt(`Ya existe una nota de prueba de nivel final de este talento (Nota: ${temp}). ¿Deseas sobreescribirla?\n1) Sí.\n2) No.`));
+                                        while ((isNaN(codigoNombre[validando][2][3])) || (!Number.isInteger(codigoNombre[validando][2][3])) || (codigoNombre[validando][2][3] < 1) || (codigoNombre[validando][2][3] > 100)) {
+                                            alert("Por favor, ingrese una nota válida.");
+                                            codigoNombre[validando][2][3] = Number(prompt(`Ingrese la nota de la prueba de nivel final del talento ${codigoNombre[validando][1]}. (Entre 1 y 100. No se aceptan decimales).`));
                                         }
-                                        if (confirmacion === 1) {
-                                            alert("Se ha sobreescrito la nota de la prueba de nivel final de este talento.");
-                                        } else {
-                                            codigoNombre[validando][2][3] = temp;
-                                            alert("La nota de este talento no se ha modificado.");
+                                        if (temp === 0) {
+                                            alert(`Se ha registrado la nota de la prueba de nivel final de ${codigoNombre[validando][1]}`);
+                                        } else if (temp !== 0) {
+                                            confirmacion = Number(prompt(`Ya existe una nota de prueba de nivel final de este talento (Nota: ${temp}). ¿Deseas sobreescribirla?\n1) Sí.\n 2) No.`));
+                                            while ((confirmacion !== 1) && (confirmacion !== 2)) {
+                                                alert("Por favor seleccione una opción válida.");
+                                                confirmacion = Number(prompt(`Ya existe una nota de prueba de nivel final de este talento (Nota: ${temp}). ¿Deseas sobreescribirla?\n1) Sí.\n2) No.`));
+                                            }
+                                            if (confirmacion === 1) {
+                                                alert("Se ha sobreescrito la nota de la prueba de nivel final de este talento.");
+                                            } else {
+                                                codigoNombre[validando][2][3] = temp;
+                                                alert("La nota de este talento no se ha modificado.");
+                                            }
                                         }
+                                    } else {
+                                        repetir = 1;
+                                        alert(`Por favor, ingrese la nota de misión 3 del talento ${codigoNombre[validando][1]} para poder registrar esta nota.`);
                                     }
                                     break;
                                 default:
                                     repetir = 2;
-                            }
-                            if (eleccion !== 0) {
-                                repetir = Number(prompt("¿Deseas continuar asignando notas a este talento?\n1) Sí.\n2) No."));
-                                while ((repetir !== 1) && (repetir !== 2)) {
-                                    alert("Por favor seleccione una opción válida.");
-                                    repetir = Number(prompt("¿Deseas continuar asignando notas a este talento?\n1) Sí.\n2) No."));
-                                }
                             }
                         } while (repetir === 1);
                         repetir = Number(prompt("¿Deseas continuar asignando notas de talentos?\n1) Sí.\n2) No."));
@@ -396,6 +406,7 @@ do {
                             repetir = Number(prompt("¿Desea seguir inspeccionando los datos de los talentos?\n1) Sí.\n2) No."));
                         }
                         if (repetir === 2) {
+                            eleccion = 0;
                             alert("Volviendo al menú principal");
                         }
                     } else {
@@ -446,7 +457,7 @@ do {
         case 8:
             if ((codigoNombre.length > 0)) {
                 alert("Código desarrollado por Miguel Angel Pasachoa, talento de COEX.\nUsuario en GitHub: Miguelit09\nCorreo electrónico: miguel.p0908@gmail.com");
-            }else{
+            } else {
                 alert("No hay datos de talentos registrados, no se puede acceder a esta acción.");
             }
     }
