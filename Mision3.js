@@ -57,7 +57,6 @@
             matrizLlenar[i][0] = matriz[i][posicionNombre]
             matrizLlenar[i][1] = matriz[i][posicionNota]      
         }
-        console.log(matrizLlenar)
     } 
     let notaMayor = matrizLlenar[0][1]
     let estudiantesNotaMayor =[]
@@ -65,9 +64,7 @@
     for (let i = 0; i < matrizLlenar.length; i++) {
         for (let j = i + 1; j < matrizLlenar.length; j++) {
           if (matrizLlenar[i][1] === matrizLlenar[j][1]) {
-            console.log(`Se encontraron 2 notas repetidas de ${matrizLlenar[i][1]}`);
-            console.log(`Estudiantes con nota ${matrizLlenar[i][1]}: ${matrizLlenar[i][0]} y ${matrizLlenar[j][0]}`);
-            break;  
+             break;  
           }
         }
         if (matrizLlenar[i][1] > notaMayor) {
@@ -77,7 +74,6 @@
             estudiantesNotaMayor.push(matrizLlenar[i][0]);
           }
         }
-        console.log(estudiantesNotaMayor)
         if (estudiantesNotaMayor.length === 1) {
             alert(`El estudiante con la nota mayor es ${estudiantesNotaMayor} con una nota de: ${notaMayor}`);
           } else {
@@ -141,7 +137,6 @@
                 alert("No se han ingresado la cantidad de Talentos")
                 break;
         }
-         console.log(matriz);
          break;
          
          case 3: //opcion 3
@@ -167,7 +162,6 @@
             alert("No se han ingresado la cantidad de Talentos")
             break;
         }
-            console.log(matriz)
             break;
          case 4: //opcion 4
          if(cantidadTalentos >0 ){
@@ -252,9 +246,7 @@
             if(codigo>0 || nombre!=0){
                 if(notaMayorMision1>0){
            ordenamiento(matriz,notaMayorMision1,1,2) // los números son las posiciones de columna-Nombre
-           console.log(notaMayorMision1)
            llenarMatrizNotasIguales(matriz,notasRepetidasMision1,1,2)  // los números son las posiciones de columna Nombre
-           console.log(notaMayorMision1)
         }else{
              alert("No se han registrado Notas")
         }}else{
