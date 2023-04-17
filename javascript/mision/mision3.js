@@ -75,8 +75,8 @@ while (menuprincipal !== 13) {
                                             alert("error, dato invalido");
                                             codigo = Number(prompt("ingrese el codigo de " + datosdelostalentos[i][0]));
                                         }
-                                        while (datosdelostalentos.some((fila) => fila.includes(codigo))) {
-                                            alert("no puede ingresar ese codigo\n ese codigo ya fue asignado");
+                                        while (datosdelostalentos.some((fila) => fila.includes(codigo)) || isNaN(codigo) || codigo < 0) {
+                                            alert("no puede ingresar ese codigo\n ese dato es invalido o es un el codigo ya esta en uso");
                                             codigo = Number(prompt("ingrese el codigo de " + datosdelostalentos[i][0]));
                                         }
                                         datosdelostalentos[i][a] = codigo;
@@ -110,7 +110,7 @@ while (menuprincipal !== 13) {
                                     alert("error, dato invalido");
                                     codigo = Number(prompt("ingrese el codigo de " + datosdelostalentos[i][0]));
                                 }
-                                while (datosdelostalentos.some((fila) => fila.includes(codigo))) {
+                                while (datosdelostalentos.some((fila) => fila.includes(codigo))|| isNaN(codigo) || codigo < 0) {
                                     alert("no puede ingresar ese codigo\n ese codigo ya fue asignado");
                                     codigo = Number(prompt("ingrese el codigo de " + datosdelostalentos[i][0]));
                                 }
