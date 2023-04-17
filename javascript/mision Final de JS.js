@@ -125,7 +125,7 @@ do {
           );
           while (
             notaEstudiante1[i] < 0 ||
-            notaEstudiante1[i] > 5 ||
+            notaEstudiante1[i] > 100 ||
             isNaN(notaEstudiante1[i])
           ) {
            notaEstudiante1[i] = parseFloat(
