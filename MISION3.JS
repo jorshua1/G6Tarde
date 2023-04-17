@@ -4,7 +4,7 @@ let opcion=0;
 let submenu=0;
 let cont=1;
 let cantidadTalentos=0;
-let codigo=0;
+let codigo=1;
 let nombre="";
 let matriz=[];
 let nombres=[];
@@ -91,7 +91,7 @@ switch(opcion){
                 let codigos =new Array(cantidadTalentos);
                 for(let i=0;i<cantidadTalentos;i++){
                     codigo=Number(prompt("Ingrese codigo del usuario"+cont))
-                    while(isNaN(codigo)||codigo<0||!Number.isInteger(codigo)){
+                    while(isNaN(codigo)||codigo<0||!Number.isInteger(codigo)||codigo===0){
                         alert("Ingrese un codigo valido, solo se permiten enteros positivos")
                         codigo=Number(prompt("Ingrese codigo del talento"+cont))
                     }
@@ -99,6 +99,10 @@ switch(opcion){
                        while(codigos[q]===codigo){
                             alert(`El codigo ${codigo} ya ha sido digitado`)
                             codigo=Number(prompt("Ingrese codigo del talento"+cont))
+                            while(isNaN(codigo)||codigo<0||!Number.isInteger(codigo)||codigo===0){
+                                alert("Ingrese un codigo valido, solo se permiten enteros positivos")
+                                codigo=Number(prompt("Ingrese codigo del talento"+cont))
+                            }
                         }
                     }
                     codigos[i]=codigo
@@ -140,10 +144,22 @@ switch(opcion){
         if(cantidadTalentos!==0){
             if(matriz.length!==0){
          if(notaMision1===0){
+
            for(let x=0;x<cantidadTalentos;x++){
-            notaMision1=Number(prompt(`Ingrese nota Mision 1 de ${matriz[x][1]} con codigo ${matriz[x][0]}`))
+            let uno=(prompt(`Ingrese nota Mision 1 de ${matriz[x][1]} con codigo ${matriz[x][0]}`))
+            while(uno.length===0 ){
+                alert("Error, ingrese una nota valida (0 a 100)")
+                uno=(prompt(`Ingrese nota Mision 1 de ${matriz[x][1]} con codigo ${matriz[x][0]}`))
+            }
+            notaMision1=Number(uno)
             while(isNaN(notaMision1)||notaMision1<0||notaMision1>100){
-                notaMision1=Number(prompt(`Ingrese nota Mision 1 de ${matriz[x][1]} con codigo ${matriz[x][0]}`))
+                alert("Error, ingrese una nota valida (0 a 100)")
+                uno=(prompt(`Ingrese nota Mision 1 de ${matriz[x][1]} con codigo ${matriz[x][0]}`))
+                while(uno.length===0 ){
+                    alert("Error, ingrese una nota valida (0 a 100)")
+                    uno=(prompt(`Ingrese nota Mision 1 de ${matriz[x][1]} con codigo ${matriz[x][0]}`))
+                }
+                notaMision1=Number(uno);
             }
            mision1[x]=notaMision1
         }
@@ -160,20 +176,29 @@ switch(opcion){
 
 
 
-
     case 4:
         if(cantidadTalentos!==0){
             if(matriz.length!==0){
             if(notaMision2===0){
                 for(let b=0;b<cantidadTalentos;b++){
-                    notaMision2=Number(prompt(`Ingrese nota Mision 2 de ${matriz[b][1]} con codigo ${matriz[b][0]}`))
-                    while(isNaN(notaMision2)||notaMision2<0||notaMision2>100){
-                        alert("Ingrese un dato valido")
-                        notaMision2=Number(prompt(`Ingrese nota Mision 2 de ${matriz[b][1]} con codigo ${matriz[b][0]}`))
-                    }
-                   mision2[b]=notaMision2
+                    let dos=(prompt(`Ingrese nota Mision 2 de ${matriz[b][1]} con codigo ${matriz[b][0]}`))
+                    while(dos.length===0 ){
+                    alert("Error, ingrese una nota valida (0 a 100)")
+                 dos=(prompt(`Ingrese nota Mision 2 de ${matriz[b][1]} con codigo ${matriz[b][0]}`))
                 }
-                }else{
+                notaMision2=Number(dos)
+                while(isNaN(notaMision2)||notaMision2<0||notaMision2>100){
+                alert("Error, ingrese una nota valida (0 a 100)")
+                dos=(prompt(`Ingrese nota Mision 2 de ${matriz[b][1]} con codigo ${matriz[b][0]}`))
+                while(dos.length===0 ){
+                    alert("Error, ingrese una nota valida (0 a 100)")
+                    dos=(prompt(`Ingrese nota Mision 2 de ${matriz[b][1]} con codigo ${matriz[b][0]}`))
+                }
+                notaMision2=Number(dos)
+               }
+               mision2[b]=notaMision2
+                }
+            }else{
                     alert("Ya se han ingresado las notas de la mision 2")
                 }
             }else{
@@ -190,13 +215,23 @@ switch(opcion){
             if(matriz.length!==0){
             if(notaMision3===0){
                 for(let p=0;p<cantidadTalentos;p++){
-                    notaMision3=Number(prompt(`Ingrese nota Mision 3 de ${matriz[p][1]} con codigo ${matriz[p][0]}`))
-                    while(isNaN(notaMision3)||notaMision3<0||notaMision3>100){
-                        alert("Ingrese un dato valido")
-                        notaMision3=Number(prompt(`Ingrese nota Mision 3 de ${matriz[p][1]} con codigo ${matriz[p][0]}`))
-                    }
-                   mision3[p]=notaMision3
+                    let tres=(prompt(`Ingrese nota Mision 3 de ${matriz[p][1]} con codigo ${matriz[p][0]}`))
+                    while(tres.length===0 ){
+                    alert("Error, ingrese una nota valida (0 a 100)")
+                 tres=(prompt(`Ingrese nota Mision 3 de ${matriz[p][1]} con codigo ${matriz[p][0]}`))
                 }
+                notaMision3=Number(tres)
+                while(isNaN(notaMision3)||notaMision3<0||notaMision3>100){
+                alert("Error, ingrese una nota valida (0 a 100)")
+                tres=(prompt(`Ingrese nota Mision 3 de ${matriz[p][1]} con codigo ${matriz[p][0]}`))
+                while(tres.length===0 ){
+                    alert("Error, ingrese una nota valida (0 a 100)")
+                    tres=(prompt(`Ingrese nota Mision 3 de ${matriz[p][1]} con codigo ${matriz[p][0]}`))
+                }
+                notaMision3=Number(tres);
+            }
+                mision3[p]=notaMision3
+            }
                 }else{
                     alert("Ya se han ingresado las notas de la mision 3")
                 }
@@ -214,12 +249,22 @@ switch(opcion){
             if(matriz.length!==0){
             if(prueba4===0){
                 for(let r=0;r<cantidadTalentos;r++){
-                    prueba4=Number(prompt(`Ingrese nota prueba final de ${matriz[r][1]} con codigo ${matriz[r][0]}`))
-                    while(isNaN(prueba4)||prueba4<0||!Number.isInteger(prueba4)){
-                        alert("Ingrese un dato valido")
-                        prueba4=Number(prompt(`Ingrese nota prueba final de ${matriz[r][1]} con codigo ${matriz[r][0]}`))
-                    }
-                   pruebaFinal[r]=prueba4
+                    let cuatro=(prompt(`Ingrese nota prueba final de ${matriz[r][1]} con codigo ${matriz[r][0]}`))
+            while(cuatro.length===0 ){
+                alert("Error, ingrese una nota valida (0 a 100)")
+                cuatro=(prompt(`Ingrese nota prueba final de ${matriz[r][1]} con codigo ${matriz[r][0]}`))
+            }
+            prueba4=Number(cuatro)
+            while(isNaN(prueba4)||prueba4<0||prueba4>100){
+                alert("Error, ingrese una nota valida (0 a 100)")
+                cuatro=(prompt(`Ingrese nota prueba final de ${matriz[r][1]} con codigo ${matriz[r][0]}`))
+                while(cuatro.length===0 ){
+                    alert("Error, ingrese una nota valida (0 a 100)")
+                    cuatro=(prompt(`Ingrese nota prueba final de ${matriz[r][1]} con codigo ${matriz[r][0]}`))
+                }
+                prueba4=Number(cuatro);
+            }
+           pruebaFinal[r]=prueba4
                 }
                 }else{
                     alert("Ya se han ingresado las notas de la prueba final")
@@ -254,7 +299,7 @@ switch(opcion){
          alert(`Los estudiantes con maxima nota en la mision 1 fueron:
         Nombres: 
         ${nombresMayores1}
-
+        
         Nota: ${mayor1}`)
          }else{
             alert(`El estudiante con maxima nota en la mision 1 fue:
@@ -291,6 +336,7 @@ switch(opcion){
             alert(`Los estudiantes con maxima nota en la mision 2 fueron:
            Nombres: 
            ${nombresMayores2}
+
            Nota: ${mayor2}`)
         }else{
             alert(`El estudiante con maxima nota en la mision 2 fue:
