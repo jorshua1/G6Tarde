@@ -143,12 +143,14 @@
            if(cantidadTalentos>0){
             if(codigo>0 || nombre!=0){
             if(notaMision1>=0 && notaMision1<=100 ){
+                for(let i = 0 ; i <matriz.length; i++){
             notaMision1 = Number(prompt(`Ingrese la nota de la misión 1 de ${matriz[i][1]} con código: ${matriz[i][0]}`))
             while(isNaN(notaMision1) || notaMision1<0 || notaMision1 % 1!==0 || notaMision1>100){
                 alert("Ingreso valores erroneos, solo se adminten valores entre 1 y 100 para esta calificación")
                 notaMision1 = Number(prompt(`Ingrese la nota de la misión 1 de ${matriz[i][1]} con código: ${matriz[i][0]}`))
             }
             matriz[i][2] = notaMision1
+        }
         }}else{
             for(let i=0;i<matriz.length;i++){
             alert(`Ya se registraron las notas de la Misión 1\nFueron las siguientes:\n${matriz[i][1]} con código: ${matriz[i][0]} ingresó una nota de: ${matriz[i][2]}`)
