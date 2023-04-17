@@ -39,15 +39,15 @@ del talento no esté vacío */
 let cantidadTalentos = 0;
 let codigos = [];
 let menu = 0;
-let matriz = [];
-let notaMision1 = [];
-let notaMision2 = [];
-let notaMision3 = [];
-let notaFinal = [];
+let matriz = [0,0];
+let notaMision1 = [0];
+let notaMision2 = [0];
+let notaMision3 = [0];
+let notaFinal = [0];
 let mayorNota1 = 0;
 let mayorNota2 = 0;
 let mayorNota3 = 0;
-let promedioNotas =0;
+let promedioNotas = 0;
 let talentos = "";
 
 
@@ -114,189 +114,216 @@ while (menu !== 13) {
             }
             break;
         case 2:
-            if (cantidadTalentos <= 0) {
-                alert(`
+            if (matriz[0] === 0) {
+                if (cantidadTalentos <= 0) {
+                    alert(`
                     No se puede realizar el registro de los talentos COEX
                     sin antes registrar la cantidad de talentos, por favor 
                     hacer este registro en la opción 1 para continuar.`)
-            } else {
-                for (fila = 0; fila < cantidadTalentos; fila++) {
-                    console.log(`Registro del talento # ${fila + 1}`);
-                    matriz[fila] = [];
-                    for (let columna = 0; columna < 2; columna++) {
-                        console.log(`
-                            Acontinuación vas a registrar los talentos COEX
-                            los datos necesarios son codigo del talento y nombre
-                            para continuar con el proceso, por favor digite su
-                            nombre y se le asignara un codigo único.`);
-                        if (columna === 0) {
-                            matriz[fila][columna] = (fila + 1)
-                        } else {
-                            matriz[fila][columna] = prompt(`
-                            Ingrese el nombre del talento`);
-                            while (!isNaN(matriz[fila][columna]) || matriz[fila][columna] == undefined) {
+                } else {
+                    for (fila = 0; fila < cantidadTalentos; fila++) {
+                        console.log(`Registro del talento # ${fila + 1}`);
+                        matriz[fila] = [];
+                        for (let columna = 0; columna < 2; columna++) {
+
+                            if (columna === 0) {
+                                matriz[fila][columna] = (fila + 1)
+                            } else {
                                 matriz[fila][columna] = prompt(`
-                            Ingrese el nombre del talento`);
+                            Acontinuación vas a registrar los talentos COEX
+                            Digite el nombre del talento que quiere registrar
+                            el sistema ya le asigno un codigo único a este 
+                            talento.`);
+                                while (!isNaN(matriz[fila][columna]) || matriz[fila][columna] == undefined) {
+                                    matriz[fila][columna] = prompt(`
+                                Acontinuación vas a registrar los talentos COEX
+                                Digite el nombre del talento que quiere registrar
+                                el sistema ya le asigno un codigo único a este 
+                                talento.`);
+                                }
                             }
+                            console.log(`
+                        El codigo asignado para este talento es ${fila + 1} 
+                        datos del talento: ${matriz[fila]}`);
                         }
-                        console.log(`
-                            Esta ingresando los datos del talento ${fila + 1} 
-                            el dato registrado es ${matriz[fila]}`);
-                    }
-                } console.log(matriz);
+                    } console.log(matriz);
+                }
+            } else {
+                alert(`Ya tienes los talentos registrados.`)
             }
             break;
         case 3:
-            if (cantidadTalentos === 0) {
-                alert(`
+            if (notaMision1[0] === 0) {
+                if (cantidadTalentos === 0) {
+                    alert(`
                 ERROR!!! 
                 Recuerde que debe registrar la cantidad de talentos COEX primero, 
                 ingrese a la opción 1 del menú para hacer este registro`)
-            } else {
-                for (let i = 0; i < cantidadTalentos; i++){
-                    notaMision1[i]= parseFloat(prompt(`Ingrese la nota de la misión 1 para el talento con codigo ${i+1}`));
-                    while(isNaN(notaMision1[i]) || notaMision1[i]<0 || notaMision1[i]>100 || notaMision1[i] == undefined){
-                        notaMision1[i]= parseFloat(prompt(`
-                        ERROR!!! Ingrese un valor valido para la nota de la misión 1 para el talento ${i+1}`));
-                    }
-                    if(notaMision1[i]>mayorNota1){
-                        mayorNota1=notaMision1[i];
-                        mayorNota1Talento=i;
+                } else {
+                    for (let i = 0; i < cantidadTalentos; i++) {
+                        notaMision1[i] = parseFloat(prompt(`Ingrese la nota de la misión 1 para el talento con codigo ${i + 1}`));
+                        while (isNaN(notaMision1[i]) || notaMision1[i] < 0 || notaMision1[i] > 100 || notaMision1[i] == undefined) {
+                            notaMision1[i] = parseFloat(prompt(`
+                        ERROR!!! Ingrese un valor valido para la nota de la misión 1 para el talento ${i + 1}`));
+                        }
+                        if (notaMision1[i] > mayorNota1) {
+                            mayorNota1 = notaMision1[i];
+                            mayorNota1Talento = i;
+                        }
                     }
                 }
-            } break;
+            } else {
+                alert(`Ya tienes registradas las notas de la misión 1.`)
+            }
+            break;
         case 4:
-            if (cantidadTalentos === 0) {
-                alert(`
+            if (notaMision2[0] === 0) {
+                if (cantidadTalentos === 0) {
+                    alert(`
                 ERROR!!! 
                 Recuerde que debe registrar la cantidad de talentos COEX primero, 
                 ingrese a la opción 1 del menú para hacer este registro`)
-            } else {
-                for (let i = 0; i < cantidadTalentos; i++){
-                    notaMision2[i]= parseFloat(prompt(`Ingrese la nota de la misión 2 para el talento con codigo ${i+1}`));
-                    while(isNaN(notaMision2[i]) || notaMision2[i]<0 || notaMision2[i]>100 || notaMision2[i] == undefined){
-                        notaMision2[i]= parseFloat(prompt(`
-                        ERROR!!! Ingrese un valor valido para la nota de la misión 2 para el talento ${i+1}`));
-                    }
-                    if(notaMision2[i]>mayorNota2){
-                        mayorNota2=notaMision2[i];
-                        mayorNota2Talento=i;
+                } else {
+                    for (let i = 0; i < cantidadTalentos; i++) {
+                        notaMision2[i] = parseFloat(prompt(`Ingrese la nota de la misión 2 para el talento con codigo ${i + 1}`));
+                        while (isNaN(notaMision2[i]) || notaMision2[i] < 0 || notaMision2[i] > 100 || notaMision2[i] == undefined) {
+                            notaMision2[i] = parseFloat(prompt(`
+                        ERROR!!! Ingrese un valor valido para la nota de la misión 2 para el talento ${i + 1}`));
+                        }
+                        if (notaMision2[i] > mayorNota2) {
+                            mayorNota2 = notaMision2[i];
+                            mayorNota2Talento = i;
+                        }
                     }
                 }
-            } break;
+            } else {
+                alert(`Ya tienes registradas las notas de la misión 2.`)
+            }
+            break;
         case 5:
+            if (notaMision3[0] === 0) {
             if (cantidadTalentos === 0) {
                 alert(`
                 ERROR!!! 
                 Recuerde que debe registrar la cantidad de talentos COEX primero, 
                 ingrese a la opción 1 del menú para hacer este registro`)
             } else {
-                for (let i = 0; i < cantidadTalentos; i++){
-                    notaMision3[i]= parseFloat(prompt(`Ingrese la nota de la misión 3 para el talento con codigo ${i+1}`));
-                    while(isNaN(notaMision3[i]) || notaMision3[i]<0 || notaMision3[i]>100 || notaMision3[i] == undefined){
-                        notaMision3[i]= parseFloat(prompt(`
-                        ERROR!!! Ingrese un valor valido para la nota de la misión 3 para el talento ${i+1}`));
+                for (let i = 0; i < cantidadTalentos; i++) {
+                    notaMision3[i] = parseFloat(prompt(`Ingrese la nota de la misión 3 para el talento con codigo ${i + 1}`));
+                    while (isNaN(notaMision3[i]) || notaMision3[i] < 0 || notaMision3[i] > 100 || notaMision3[i] == undefined) {
+                        notaMision3[i] = parseFloat(prompt(`
+                        ERROR!!! Ingrese un valor valido para la nota de la misión 3 para el talento ${i + 1}`));
                     }
-                    if(notaMision3[i]>mayorNota3){
-                        mayorNota3=notaMision3[i];
-                        mayorNota3Talento=i;
+                    if (notaMision3[i] > mayorNota3) {
+                        mayorNota3 = notaMision3[i];
+                        mayorNota3Talento = i;
                     }
                 }
-            } break;
+            } } else {
+                alert(`Ya tienes registradas las notas de la misión 3.`)
+            }
+            break;
         case 6:
+            if (notaFinal[0] === 0) {
             if (cantidadTalentos === 0) {
                 alert(`
                 ERROR!!! 
                 Recuerde que debe registrar la cantidad de talentos COEX primero, 
                 ingrese a la opción 1 del menú para hacer este registro`)
-            }else{
-                for(let i =0; i<cantidadTalentos; i++){
-                    notaFinal[i]= parseFloat(prompt(`Ingrese la nota final para el talento ${i+1}`));
-                    while(isNaN(notaFinal[i]) || notaFinal[i]<0 || notaFinal[i]>100 || notaFinal[i] == undefined){
-                        notaFinal[i]= parseFloat(prompt(`
-                        ERROR!!! Ingrese un valor valido para la nota final para el talento ${i+1}`));
+            } else {
+                for (let i = 0; i < cantidadTalentos; i++) {
+                    notaFinal[i] = parseFloat(prompt(`Ingrese la nota final para el talento ${i + 1}`));
+                    while (isNaN(notaFinal[i]) || notaFinal[i] < 0 || notaFinal[i] > 100 || notaFinal[i] == undefined) {
+                        notaFinal[i] = parseFloat(prompt(`
+                        ERROR!!! Ingrese un valor valido para la nota final para el talento ${i + 1}`));
                     }
                 }
-            }break;
+            } } else {
+                alert(`Ya tienes registradas las notas de la misión 3.`)
+            }
+            break;
         case 7:
             if (cantidadTalentos === 0) {
                 alert(`
                 ERROR!!! 
                 Recuerde que debe registrar la cantidad de talentos COEX primero, 
                 ingrese a la opción 1 del menú para hacer este registro`)
-            }else{
-                if(mayorNota1<=0){
+            } else {
+                if (mayorNota1 <= 0) {
                     alert(`No ha registrado notas o todos sacaron 0 no hay mejor nota.`)
-                }else{
+                } else {
                     alert(`${matriz[mayorNota1Talento][1]} obtuvo la mejor nota con una calificación de : ${mayorNota1}`)
                 }
-            }break;
+            } break;
         case 8:
             if (cantidadTalentos === 0) {
                 alert(`
                 ERROR!!! 
                 Recuerde que debe registrar la cantidad de talentos COEX primero, 
                 ingrese a la opción 1 del menú para hacer este registro`)
-            }else{
-                if(mayorNota2<=0){
+            } else {
+                if (mayorNota2 <= 0) {
                     alert(`No ha registrado notas o todos sacaron 0 no hay mejor nota.`)
-                }else{
+                } else {
                     alert(`${matriz[mayorNota2Talento][1]} obtuvo la mejor nota con una calificación de : ${mayorNota2}`)
                 }
-            }break;
+            } break;
         case 9:
             if (cantidadTalentos === 0) {
                 alert(`
                 ERROR!!! 
                 Recuerde que debe registrar la cantidad de talentos COEX primero, 
                 ingrese a la opción 1 del menú para hacer este registro`)
-            }else{
-                if(mayorNota3<=0){
+            } else {
+                if (mayorNota3 <= 0) {
                     alert(`No ha registrado notas o todos sacaron 0 no hay mejor nota.`)
-                }else{
+                } else {
                     alert(`${matriz[mayorNota3Talento][1]} obtuvo la mejor nota con una calificación de : ${mayorNota3}`)
                 }
-            }break;
+            } break;
         case 10:
             if (cantidadTalentos === 0) {
                 alert(`
                 ERROR!!! 
                 Recuerde que debe registrar la cantidad de talentos COEX primero, 
                 ingrese a la opción 1 del menú para hacer este registro`)
-            }else{
-                if(notaMision1[0]!==0 && notaMision2[0]!==0 && notaMision3[0]!==0 && notaFinal[0]!==0){
+            } else {
+                if (notaMision1[0] !== 0 && notaMision2[0] !== 0 && notaMision3[0] !== 0 && notaFinal[0] !== 0) {
                     for (let i = 0; i < cantidadTalentos; i++) {
 
                         promedioNotas = (notaMision1[i] + notaMision2[i] + notaMision3[i] + notaFinal[i]) / 4
-                        talentos += `El promedio del talento ${matriz[1][i]} en las 4 notas es: ${promedioNotas}`
+                        talentos += `El promedio del talento ${matriz[i][1]} en las 4 notas es: ${promedioNotas} \n`
                     }
                     alert(`${talentos}`)
-                }else{
+                } else {
                     alert("Registre las notas de los talentos para acceder a esta opción.")
                 }
-            }break;
+            } break;
         case 11:
+
             talentos = "";
-            if (cantidadTalentos === 0) {
+            if (cantidadTalentos === 0 && promedioNotas === 0) {
                 alert(`
                 ERROR!!! 
                 Recuerde que debe registrar la cantidad de talentos COEX primero, 
-                ingrese a la opción 1 del menú para hacer este registro`)
-            }else if(promedioNotas === 0 && ((notaMision1[0] === 0 || notaMision2[0] === 0 || notaMision3[0] === 0 || notaFinal[0] === 0))) {
+                ingrese a la opción 1 del menú para hacer este registro y por 
+                último ingrese a la opción 10 para calcular el promedio.
+                `)
+            } else if (promedioNotas === 0 && ((notaMision1[0] === 0 || notaMision2[0] === 0 || notaMision3[0] === 0 || notaFinal[0] === 0))) {
                 alert(`Registre las notas de los talentos para acceder a esta opción.`)
-            }else{
-                if(promedioNotas!==0){
-                    for(let i=0; i<cantidadTalentos;i++){
-                        for(let h=0; h<1;h++){
+            } else {
+                if (promedioNotas !== 0) {
+                    for (let i = 0; i < cantidadTalentos; i++) {
+                        for (let h = 0; h < 1; h++) {
                             console.log(`
-                            Nombre: ${matriz[i][h+1]}
+                            Nombre: ${matriz[i][h + 1]}
                             codigo: ${matriz[i][h]}
                             Nota Misión 1: ${notaMision1[i]} , Nota Misión 2: ${notaMision2[i]} , Nota Misión 3: ${notaMision3[i]}
-                            Nota Final: ${notaFinal}`);
+                            Nota Final: ${notaFinal[i]}`);
                         }
                     }
                 }
-                
+
             }
             break;
         case 12:
