@@ -35,38 +35,39 @@ let talentos = [];
 let cantidadTalentosCoex = 0;
 let menuPrincipal = 0;
 
-while (menuPrincipal !== 13) {
+while (isNaN(menuPrincipal) || menuPrincipal !== 13) {
 
     menuPrincipal = parseInt(prompt(`Menú:
-  1. Ingresar cantidad de talentos.
-  2. Registrar datos de talentos.
-  3. Registrar nota de Misión 1.
-  4. Registrar nota de Misión 2.
-  5. Registrar nota de Misión 3.
-  6. Registrar prueba de nivel final.
-  7. Mostrar mejor nota en Misión 1.
-  8. Mostrar mejor nota en Misión 2.
-  9. Mostrar mejor nota en Misión 3.
-  10. Mostrar promedio de notas.
-  11. Mostrar todos los datos.
-  12. Mostrar nombres de los talentos que desarrollaron el ejercicio.
-  13. Salir.`));
+    1. Ingresar cantidad de talentos.
+    2. Registrar datos de talentos.
+    3. Registrar nota de Misión 1.
+    4. Registrar nota de Misión 2.
+    5. Registrar nota de Misión 3.
+    6. Registrar prueba de nivel final.
+    7. Mostrar mejor nota en Misión 1.
+    8. Mostrar mejor nota en Misión 2.
+    9. Mostrar mejor nota en Misión 3.
+    10. Mostrar promedio de notas.
+    11. Mostrar todos los datos.
+    12. Mostrar nombres de los talentos que desarrollaron el ejercicio.
+    13. Salir.`));
 
     while (isNaN(menuPrincipal) || menuPrincipal <= 0 || menuPrincipal > 13) {
+
         menuPrincipal = parseInt(prompt(`Menú:
-  1. Ingresar cantidad de talentos.
-  2. Registrar datos de talentos.
-  3. Registrar nota de Misión 1.
-  4. Registrar nota de Misión 2.
-  5. Registrar nota de Misión 3.
-  6. Registrar prueba de nivel final.
-  7. Mostrar mejor nota en Misión 1.
-  8. Mostrar mejor nota en Misión 2.
-  9. Mostrar mejor nota en Misión 3.
-  10. Mostrar promedio de notas.
-  11. Mostrar todos los datos.
-  12. Mostrar nombres de los talentos que desarrollaron el ejercicio.
-  13. Salir.`));
+        1. Ingresar cantidad de talentos.
+        2. Registrar datos de talentos.
+        3. Registrar nota de Misión 1.
+        4. Registrar nota de Misión 2.
+        5. Registrar nota de Misión 3.
+        6. Registrar prueba de nivel final.
+        7. Mostrar mejor nota en Misión 1.
+        8. Mostrar mejor nota en Misión 2.
+        9. Mostrar mejor nota en Misión 3.
+        10. Mostrar promedio de notas.
+        11. Mostrar todos los datos.
+        12. Mostrar nombres de los talentos que desarrollaron el ejercicio.
+        13. Salir.`));
     }
 
     switch (menuPrincipal) {
@@ -80,7 +81,12 @@ while (menuPrincipal !== 13) {
             var reiniciadorMisionTres = cantidadTalentosCoex;
             var reiniciadorPruebaNivelFinal = cantidadTalentosCoex;
 
-            alert(`Se Han habilitado ${cantidadTalentosCoex} talentos COEX.`);
+            if (cantidadTalentosCoex < 0) {
+                alert(`Por favor, solo esta permitido ingresar numeros positivos`);
+
+            } else {
+                alert(`Se habilitaron ${cantidadTalentosCoex} talentos COEX.`);
+            }
             break;
 
         case 2:
@@ -88,28 +94,41 @@ while (menuPrincipal !== 13) {
             for (i = 1; i <= reiniciadorRegistroTalentos; i++) {
                 if (reiniciadorRegistroTalentos >= i) {
 
-                    var codigoTalentoCoex = prompt(`Por favor ingrese el código del talento ${i}:`);
-                    var nombreTalentoCoex = prompt(`Por favor ingrese el nombre del talento ${i}:`);
+                    let codigoTalentoCoex = prompt(`Por favor ingrese el código del talento ${i} se puede usar numeros, letras o carácteres especiales:`);
+                    let nombreTalentoCoex = prompt(`Por favor ingrese el nombre del talento ${i} se puede usar numeros, letras o carácteres especiales:`);
                     let codigoRepetido = false;
+                    let codigoTalentoCoexNuevo = 0;
 
                     for (let j = 0; j < talentos.length; j++) {
                         if (talentos[j][0] === codigoTalentoCoex) {
                             codigoRepetido = true;
-                            break;
+                            codigoTalentoCoexNuevo = codigoTalentoCoex;
+                        } else {
                         }
                     }
-                    if (codigoRepetido) {
-                        alert(`Por favor verifique, ya existe un talento COEX con ese código.`);
-                    } else if (nombreTalentoCoex === ``) {
-                        alert(`Por favor debe ingresar un nombre para el talento, no dejar el recuadro en blanco.`);
+                    if (codigoRepetido === true) {
+                        while (codigoTalentoCoexNuevo === codigoTalentoCoex) {
+                            alert(`Por favor verifique, ya existe el registro de un talento COEX con ese código ${codigoTalentoCoex}.`);
+                            codigoTalentoCoex = prompt(`Por favor ingrese un nuevo código del talento ${i} se puede usar numeros, letras o carácteres especiales:`);
+                        }
                     } else {
-                        talentos.push([codigoTalentoCoex, nombreTalentoCoex]);
                     }
+
+                    if (nombreTalentoCoex === ``) {
+                        while (nombreTalentoCoex === ``) {
+                            alert(`Por favor debe ingresar un nombre para el talento, no dejar el recuadro en blanco.`);
+                            nombreTalentoCoex = prompt(`Por favor ingrese el nombre del talento ${i} se puede usar numeros, letras o carácteres especiales:`);
+                        }
+                    } else {
+                    }
+                    talentos.push([codigoTalentoCoex, nombreTalentoCoex]);
+
+
                 } else {
                     reiniciadorRegistroTalentos--
                 }
             }
-            alert(`No hay más registros habilitados,por favor ingrese nuevos registros en la opción 1 del menú.`);
+            alert(`No hay más registros habilitados, por favor ingrese nuevos registros en la opción 1 del menú.`);
             reiniciadorRegistroTalentos = 0;
             break;
 
