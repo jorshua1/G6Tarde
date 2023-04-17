@@ -450,6 +450,10 @@ switch(opcion){
             Mision 1
             Mision 2
             Mision 3`)
+        }else if(mision1.length!==0 && mision2.length===0 && mision3.length===0 && pruebaFinal.length!==0){
+            alert(`Error, no se puede calcular promedio porque faltan los siguientes datos:
+            Mision 2
+            Mision 3`)
         }
     }
     }else{
@@ -521,6 +525,10 @@ switch(opcion){
             }else if(mision1.length===0 && mision2.length===0 && mision3.length===0 && pruebaFinal.length!==0){
                 alert(`Error, no se puede mostrar las notas porque faltan los siguientes datos:
                 Mision 1
+                Mision 2
+                Mision 3`)
+            }else if(mision1.length!==0 && mision2.length===0 && mision3.length===0 && pruebaFinal.length!==0){
+                alert(`Error, no se puede mostrar las notas porque faltan los siguientes datos:
                 Mision 2
                 Mision 3`)
             }
