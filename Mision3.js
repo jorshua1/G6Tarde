@@ -308,7 +308,7 @@
         case 11: //opcion 11
         if(cantidadTalentos>0){
          if(codigo>0 || nombre!=0){
-          if(notaMision1 > 0 || notaMision2 > 0 || notaMision3 >0 || pruebaNivelFinal >0){
+          if(notaMision1 > 0 && notaMision2 > 0 && notaMision3 >0 && pruebaNivelFinal >0){
             for (let i = 0; i < matriz.length; i++) {
                 let contadorTalentos =i+1
                 alert(`En total se registraron ${cantidadTalentos} Talentos en el sistema\nEl talento ${contadorTalentos} con Código: ${matriz[i][0]} Nombre: ${matriz[i][1]}\nNota Misión 1: ${matriz[i][2]}\nNota Misión 2: ${matriz[i][3]}\nNota Misión 3: ${matriz[i][4]}\nNota Prueba Nivel Final: ${matriz[i][5]}`)
