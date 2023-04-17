@@ -10,3 +10,4 @@ for (linea = 0; linea < alto; linea++) {
 }
 console.log('${+cadena+}');
 }
+

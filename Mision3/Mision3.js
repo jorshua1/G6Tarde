@@ -1,27 +1,9 @@
-/*1. Solicite la cantidad N de talentos (solo se debe hacer una vez y no debe
-permitir hacer los otros hasta no haberla realizado)
-2. Registrar los datos de los talentos en una matriz 2xN (Código y Nombre)
-3. Registrar nota de Misión 1
-4. Registrar nota de Misión 2
-5. Registrar nota de Misión 3
-6. Registrar prueba de nivel final
-7. Mostrar nombre y nota del talento con la mejor nota en la Misión 1
-8. Mostrar nombre y nota del talento con la mejor nota en la Misión 2
-9. Mostrar nombre y nota del talento con la mejor nota en la Misión 3
-10.Mostrar el nombre y el promedio de cada talento (el promedio se obtiene
-de las 4 pruebas)
-11.Mostrar código, nombre, nota misión1, nota mision2 y nota misión 3, y
-prueba final
-12.Nombre de los talentos que desarrollaron el ejercicio
-13.Salir
-Se debe validar que la nota de cada talento esté entre 0 y 100, Se debe evitar
-que se repitan códigos al registrar estudiantes, Se debe validar que el nombre
-del talento no esté vacío*/
 let cant_estudiantes = null;
 let estudiantes = [];
 let mision1 = [], mision2 = [], mision3 = [], pruebafinal = [];
 let seguir = 0;
 let opcion;
+let a, b, c, d;
 
 do {
     opcion = parseInt(prompt("1. Cantidad de talentos\n" +
@@ -52,9 +34,9 @@ do {
             break;
         case 2:
             if (cant_estudiantes != null) {
-                for (var documento = 0; documento < cant_estudiantes; documento++) {
+                for (let documento = 0; documento < cant_estudiantes; documento++) {
                     estudiantes[documento] = new Array;
-                    for (var nombre = 0; nombre < 2; nombre++) {
+                    for (let nombre = 0; nombre < 2; nombre++) {
                         if (nombre == 0) {
                             estudiantes[documento][nombre] = parseInt(prompt("por favor ingresar el documento del estudiante " + (documento + 1)));
                             while (isNaN(estudiantes[documento][nombre]) || estudiantes[documento][nombre] < 0) {
@@ -84,7 +66,11 @@ do {
                         if (x == 0) {
                             mision1[i][x] = estudiantes[i][(x + 1)];
                         } else if (x == 1) {
-                            mision1[i][x] = prompt("por favor ingresar la nota de la mision 1 del estudiante: " + estudiantes[i][x]);
+                            mision1[i][x] = prompt("por favor ingresar la nota de la mision 1 (entre 0 y 100), del estudiante: " + estudiantes[i][x]);
+                            while (isNaN(mision1[i][x]) || mision1[i][x] < 0 || mision1[i][x] >= 100) {
+                                alert("Error, el dato ingresado no es de caracter numerico o supera el rango de la nota");
+                                mision1[i][x] = prompt("por favor ingresar la nota de la mision 1 (entre 0 y 100), del estudiante: " + estudiantes[i][x]);
+                            }
                         }
                     }
                 }
@@ -101,7 +87,11 @@ do {
                         if (x == 0) {
                             mision2[i][x] = estudiantes[i][(x + 1)];
                         } else if (x == 1) {
-                            mision2[i][x] = prompt("por favor ingresar la nota de la mision 2 del estudiante: " + estudiantes[i][x]);
+                            mision2[i][x] = prompt("por favor ingresar la nota de la mision 2 (entre 0 y 100), del estudiante: " + estudiantes[i][x]);
+                            while (isNaN(mision2[i][x]) || mision2[i][x] < 0 || mision2[i][x] >= 100) {
+                                alert("Error, el dato ingresado no es de caracter numerico o supera el rango de la nota");
+                                mision2[i][x] = prompt("por favor ingresar la nota de la mision 2 (entre 0 y 100), del estudiante: " + estudiantes[i][x]);
+                            }
                         }
                     }
                 }
@@ -113,12 +103,16 @@ do {
             if (cant_estudiantes != null) {
 
                 for (let i = 0; i < cant_estudiantes; i++) {
-                    mision2[i] = new Array;
+                    mision3[i] = new Array;
                     for (let x = 0; x < 2; x++) {
                         if (x == 0) {
-                            mision2[i][x] = estudiantes[temp][(x + 1)];
+                            mision3[i][x] = estudiantes[i][(x + 1)];
                         } else if (x == 1) {
-                            mision2[i][x] = prompt("por favor ingresar la nota de la mision 3 del estudiante: " + estudiantes[i][x]);
+                            mision3[i][x] = prompt("por favor ingresar la nota de la mision 3 (entre 0 y 100), del estudiante: " + estudiantes[i][x]);
+                            while (isNaN(mision3[i][x]) || mision3[i][x] < 0 || mision3[i][x] >= 100) {
+                                alert("Error, el dato ingresado no es de caracter numerico o supera el rango de la nota");
+                                mision3[i][x] = prompt("por favor ingresar la nota de la mision 3 (entre 0 y 100), del estudiante: " + estudiantes[i][x]);
+                            }
                         }
                     }
                 }
@@ -128,14 +122,18 @@ do {
             break;
         case 6:
             if (cant_estudiantes != null) {
-                
+
                 for (let i = 0; i < cant_estudiantes; i++) {
                     pruebafinal[i] = new Array;
                     for (let x = 0; x < 2; x++) {
                         if (x == 0) {
                             pruebafinal[i][x] = estudiantes[i][(x + 1)];
                         } else if (x == 1) {
-                            pruebafinal[i][x] = prompt("por favor ingresar la nota de la prueba final del estudiante: " + estudiantes[i][x]);
+                            pruebafinal[i][x] = prompt("por favor ingresar la nota de la prueba final (entre 0 y 100), del estudiante: " + estudiantes[i][x]);
+                            while (isNaN(mision1[i][x]) || mision1[i][x] < 0 || mision1[i][x] >= 100) {
+                                alert("Error, el dato ingresado no es de caracter numerico o supera el rango de la nota");
+                                pruebafinal[i][x] = prompt("por favor ingresar la nota de la prueba final (entre 0 y 100), del estudiante: " + estudiantes[i][x]);
+                            }
                         }
                     }
                 }
@@ -153,13 +151,78 @@ do {
             console.table(mision3);
             break;
         case 10:
-            
+            if (cant_estudiantes != null || mision1 == null || mision2 == null || mision3 == null) {
+                for (let i = 0; i < cant_estudiantes; i++) {
+                    console.log("--------------------------------------------------");
+                    for (let nombre = 0; nombre < 2; nombre++) {
+                        if (nombre == 1) {
+                            console.log("Nombre del estudiante: " + estudiantes[i][nombre]);
+                            a = mision1[i][nombre];
+                            b = mision2[i][nombre];
+                            c = mision3[i][nombre];
+                            d = pruebafinal[i][nombre]
+                        }
+
+                    }
+                    let promedio;
+                    promedio = (a + b + c + d) / 4;
+                    console.log("promedio: " + promedio);
+                }
+            } else {
+                alert("Lo lamento, no se han ingresado todos los datos de los estudiantes");
+            }
             break;
         case 11:
-            
+            if (cant_estudiantes != null || mision1 == null || mision2 == null || mision3 == null) {
+                for (let i = 0; i < cant_estudiantes; i++) {
+                    console.log("--------------------------------------------------");
+                    for (let nombre = 0; nombre < 2; nombre++) {
+                        if (nombre == 0) {
+                            console.log("Documento del estudiante: " + estudiantes[i][(nombre)]);
+                        } else if (nombre == 1) {
+                            console.log("Nombre del estudiante: " + estudiantes[i][nombre]);
+                        }
+
+                    }
+                    console.log("Registra las siguientes calificaciones:");
+                    for (let x = 0; x < 2; x++) {
+                        if (x == 1) {
+                            console.log("Mision 1: " + mision1[i][x]);
+                        }
+                    }
+                    for (let x = 0; x < 2; x++) {
+                        if (x == 1) {
+                            console.log("Mision 2: " + mision2[i][x]);
+                        }
+                    }
+                    for (let x = 0; x < 2; x++) {
+                        if (x == 1) {
+                            console.log("Mision 3 :" + mision3[i][x]);
+                        }
+                    }
+                    for (let x = 0; x < 2; x++) {
+                        if (x == 1) {
+                            console.log("Prueba final: " + pruebafinal[i][x]);
+                        }
+                    }
+                }
+            } else {
+                alert("Lo lamento, no se han ingresado datos de los estudiantes");
+            }
             break;
         case 12:
-                
+            if (estudiantes.leng !== null) {
+                for (let i = 0; i < cant_estudiantes; i++) {
+                    console.log("--------------------------------------------------");
+                    for (let nombre = 0; nombre < 2; nombre++) {
+                        if (nombre == 1) {
+                            console.log("Nombre del estudiante: " + estudiantes[i][nombre]);
+                        }
+                    }
+                }
+            } else {
+                alert("Lo lamento, no se han ingresado todos los datos de los estudiantes");
+            }
             break;
         case 13:
             seguir = 13;
@@ -169,6 +232,7 @@ do {
             console.log("lo lamento, el valor ingresado esta por fuera de las opciones");
             break;
     }
+
 
 } while (seguir !== 13);
 console.table(estudiantes);
