@@ -53,6 +53,7 @@ do {
                     for (let i = 0; i < matriz.length; i++) {
                         while (matriz[i][0] === codigoTalento || codigoTalento <0 || isNaN(codigoTalento)) {
                             codigoTalento = parseInt(prompt("El codigo ingresado anteriormente esta repetido o no es valido, ingrese uno valido"))
+                            i=0;
                         }
                     }
                     codigos.push(codigoTalento);
