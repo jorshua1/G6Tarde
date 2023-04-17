@@ -42,110 +42,264 @@ do {
                         break;
                 
                     default:
+                        alert("Ingrese una opcion valida");
                         break;
                 }
             }
             break;
 
         case 2:
-            if (cantidadTalentos == undefined) {
+            if (cantidadTalentos === undefined || cantidadTalentos === 0) {
                 alert("Debe digitar primero la cantidad de talentos, (opcion 1)")
             } else {
-                for (let filas = 0; filas < cantidadTalentos; filas++) {
-                    estudiantes[filas] = [];
-                    for (let columnas = 0; columnas < 2; columnas++) {
-                        if (columnas == 0) {
-                            estudiantes[filas][columnas] = (filas + 1)
-                        } else {
-                            estudiantes[filas][columnas] = prompt("Digite el nombre del estudiante " + (filas + 1));
-                            while (!isNaN(estudiantes[filas][columnas]) || estudiantes[filas][columnas] == undefined) {
-                                estudiantes[filas][columnas] = prompt("Digite un nombre valido del estudiante " + (filas + 1));
+                if (estudiantes[0] === undefined) {
+                    for (let filas = 0; filas < cantidadTalentos; filas++) {
+                        estudiantes[filas] = [];
+                        for (let columnas = 0; columnas < 2; columnas++) {
+                            if (columnas == 0) {
+                                estudiantes[filas][columnas] = (filas + 1)
+                            } else {
+                                estudiantes[filas][columnas] = prompt("Digite el nombre del estudiante " + (filas + 1));
+                                while (!isNaN(estudiantes[filas][columnas]) || estudiantes[filas][columnas] == undefined) {
+                                    estudiantes[filas][columnas] = prompt("Digite un nombre valido del estudiante " + (filas + 1));
+                                }
                             }
                         }
+                    }
+                } else {
+                    alert("Ya hay registro de datos de talentos");
+                    opcion3 = parseInt(prompt("Desea volver a llenar los datos de los talentos? Ingrese la opcion: \n 1. Si desea volver a escribir los datos de los talentos \n 2. Si no desea cambiar la informacion"));
+                    while (isNaN(opcion3) || opcion3 <= 0 || opcion3 > 2) {
+                        opcion3 = parseInt(prompt("Desea volver a llenar los datos de los talentos? Ingrese la opcion: \n 1. Si desea volver a escribir los datos de los talentos \n 2. Si no desea cambiar la informacion"));
+                    }
+                    switch (opcion3) {
+                        case 1:
+                            for (let filas = 0; filas < cantidadTalentos; filas++) {
+                                estudiantes[filas] = [];
+                                for (let columnas = 0; columnas < 2; columnas++) {
+                                    if (columnas == 0) {
+                                        estudiantes[filas][columnas] = (filas + 1)
+                                    } else {
+                                        estudiantes[filas][columnas] = prompt("Digite el nombre del estudiante " + (filas + 1));
+                                        while (!isNaN(estudiantes[filas][columnas]) || estudiantes[filas][columnas] == undefined) {
+                                            estudiantes[filas][columnas] = prompt("Digite un nombre valido del estudiante " + (filas + 1));
+                                        }
+                                    }
+                                }
+                            }
+                            break;
+                        case 2:
+                            break;
+                    
+                        default:
+                            alert("Ingrese una opcion valida");
+                            break;
                     }
                 }
             }
             break;
 
         case 3:
-            if (cantidadTalentos == undefined) {
+            if (cantidadTalentos === undefined || cantidadTalentos === 0) {
                 alert("Debe digitar primero la cantidad de talentos, (opcion 1)")
             } else {
-                for (let i = 0; i < cantidadTalentos; i++) {
-                    mision1[i] = parseFloat(prompt("Ingrese la nota de la mision 1 para el estudiante con codigo: " + (i + 1)));
-                    while (isNaN(mision1[i]) || mision1[i] < 0 || mision1[i] > 100 || mision1[i] == undefined) {
-                        mision1[i] = parseFloat(prompt("Ingrese una nota valida de la mision 1 para el estudiante con codigo: " + (i + 1)));
+                if (mision1[0] === undefined) {
+                    for (let i = 0; i < cantidadTalentos; i++) {
+                        mision1[i] = parseFloat(prompt("Ingrese la nota de la mision 1 para el estudiante con codigo: " + (i + 1)));
+                        while (isNaN(mision1[i]) || mision1[i] < 0 || mision1[i] > 100 || mision1[i] == undefined) {
+                            mision1[i] = parseFloat(prompt("Ingrese una nota valida de la mision 1 para el estudiante con codigo: " + (i + 1)));
+                        }
+                        if (mision1[i] > mejorNotaMision1) {
+                            mejorNotaMision1 = mision1[i];
+                            mejorEstudianteMision1 = i;
+                        }
+                        sumatoriaNotasMision1[i] = 0;
+                        sumatoriaNotasMision1[i] = mision1[i] + sumatoriaNotasMision1[i];
                     }
-                    if (mision1[i] > mejorNotaMision1) {
-                        mejorNotaMision1 = mision1[i];
-                        mejorEstudianteMision1 = i;
+                } else {
+                    alert("Ya digito las notas de la mision 1");
+                    opcion4 = parseInt(prompt("Desea volver a llenar las notas de la mision 1? Ingrese la opcion: \n 1. Si desea volver a escribir las notas de la mision 1 \n 2. Si no desea cambiar la informacion"));
+                    while (isNaN(opcion4) || opcion4 <= 0 || opcion4 > 2) {
+                        opcion4 = parseInt(prompt("Desea volver a llenar las notas de la mision 1? Ingrese la opcion: \n 1. Si desea volver a escribir las notas de la mision 1 \n 2. Si no desea cambiar la informacion"));
                     }
-                    sumatoriaNotasMision1[i] = 0;
-                    sumatoriaNotasMision1[i] = mision1[i] + sumatoriaNotasMision1[i];
+                    switch (opcion4) {
+                        case 1:
+                            for (let i = 0; i < cantidadTalentos; i++) {
+                                mision1[i] = parseFloat(prompt("Ingrese la nota de la mision 1 para el estudiante con codigo: " + (i + 1)));
+                                while (isNaN(mision1[i]) || mision1[i] < 0 || mision1[i] > 100 || mision1[i] == undefined) {
+                                    mision1[i] = parseFloat(prompt("Ingrese una nota valida de la mision 1 para el estudiante con codigo: " + (i + 1)));
+                                }
+                                if (mision1[i] > mejorNotaMision1) {
+                                    mejorNotaMision1 = mision1[i];
+                                    mejorEstudianteMision1 = i;
+                                }
+                                sumatoriaNotasMision1[i] = 0;
+                                sumatoriaNotasMision1[i] = mision1[i] + sumatoriaNotasMision1[i];
+                            }
+                            break;
+                        case 2:
+                            
+                            break;
+                    
+                        default:
+                            alert("Ingrese un valor valido");
+                            break;
+                    }
                 }
             }
             break;
 
         case 4:
-            if (cantidadTalentos == undefined) {
+            if (cantidadTalentos === undefined || cantidadTalentos === 0) {
                 alert("Debe digitar primero la cantidad de talentos, (opcion 1)")
             } else {
-                for (let i = 0; i < cantidadTalentos; i++) {
-                    mision2[i] = parseFloat(prompt("Ingrese la nota de la mision 2 para el estudiante con codigo: " + (i + 1)));
-                    while (isNaN(mision2[i]) || mision2[i] < 0 || mision2[i] > 100 || mision2[i] == undefined) {
-                        mision2[i] = parseFloat(prompt("Ingrese una nota valida de la mision 2 para el estudiante con codigo: " + (i + 1)));
+                if (mision2[0] === undefined) {
+                    for (let i = 0; i < cantidadTalentos; i++) {
+                        mision2[i] = parseFloat(prompt("Ingrese la nota de la mision 2 para el estudiante con codigo: " + (i + 1)));
+                        while (isNaN(mision2[i]) || mision2[i] < 0 || mision2[i] > 100 || mision2[i] == undefined) {
+                            mision2[i] = parseFloat(prompt("Ingrese una nota valida de la mision 2 para el estudiante con codigo: " + (i + 1)));
+                        }
+                        if (mision2[i] > mejorNotaMision2) {
+                            mejorNotaMision2 = mision2[i];
+                            mejorEstudianteMision2 = i;
+                        }
+    
+                        sumatoriaNotasMision2[i] = 0;
+                        sumatoriaNotasMision2[i] = mision2[i] + sumatoriaNotasMision2[i];
                     }
-                    if (mision2[i] > mejorNotaMision2) {
-                        mejorNotaMision2 = mision2[i];
-                        mejorEstudianteMision2 = i;
+                } else {
+                    alert("Ya digito las notas de la mision 2");
+                    opcion5 = parseInt(prompt("Desea volver a llenar las notas de la mision 2? Ingrese la opcion: \n 1. Si desea volver a escribir las notas de la mision 2 \n 2. Si no desea cambiar la informacion"));
+                    while (isNaN(opcion5) || opcion5 <= 0 || opcion5 > 2) {
+                        opcion5 = parseInt(prompt("Desea volver a llenar las notas de la mision 2? Ingrese la opcion: \n 1. Si desea volver a escribir las notas de la mision 2 \n 2. Si no desea cambiar la informacion"));
                     }
-
-                    sumatoriaNotasMision2[i] = 0;
-                    sumatoriaNotasMision2[i] = mision2[i] + sumatoriaNotasMision2[i];
+                    switch (opcion5) {
+                        case 1:
+                            for (let i = 0; i < cantidadTalentos; i++) {
+                                mision2[i] = parseFloat(prompt("Ingrese la nota de la mision 2 para el estudiante con codigo: " + (i + 1)));
+                                while (isNaN(mision2[i]) || mision2[i] < 0 || mision2[i] > 100 || mision2[i] == undefined) {
+                                    mision2[i] = parseFloat(prompt("Ingrese una nota valida de la mision 2 para el estudiante con codigo: " + (i + 1)));
+                                }
+                                if (mision2[i] > mejorNotaMision2) {
+                                    mejorNotaMision2 = mision2[i];
+                                    mejorEstudianteMision2 = i;
+                                }
+            
+                                sumatoriaNotasMision2[i] = 0;
+                                sumatoriaNotasMision2[i] = mision2[i] + sumatoriaNotasMision2[i];
+                            }
+                            break;
+                        case 2:
+                            
+                            break;
+                    
+                        default:
+                            break;
+                    }
                 }
+                
 
             }
             break;
 
         case 5:
-            if (cantidadTalentos == undefined) {
+            if (cantidadTalentos === undefined || cantidadTalentos === 0) {
                 alert("Debe digitar primero la cantidad de talentos, (opcion 1)")
             } else {
-                for (let i = 0; i < cantidadTalentos; i++) {
-                    mision3[i] = parseFloat(prompt("Ingrese la nota de la mision 3 para el estudiante con codigo: " + (i + 1)));
-                    while(isNaN(mision3[i]) || mision3[i] < 0 || mision3[i] > 100 || mision3[i] == undefined) {
-                        mision3[i] = parseFloat(prompt("Ingrese una nota valida de la mision 3 para el estudiante con codigo: " + (i + 1)));
+                if (mision3[0] === undefined) {
+                    for (let i = 0; i < cantidadTalentos; i++) {
+                        mision3[i] = parseFloat(prompt("Ingrese la nota de la mision 3 para el estudiante con codigo: " + (i + 1)));
+                        while(isNaN(mision3[i]) || mision3[i] < 0 || mision3[i] > 100 || mision3[i] == undefined) {
+                            mision3[i] = parseFloat(prompt("Ingrese una nota valida de la mision 3 para el estudiante con codigo: " + (i + 1)));
+                        }
+                        if (mision3[i] > mejorNotaMision3) {
+                            mejorNotaMision3 = mision3[i];
+                            mejorEstudianteMision3 = i;
+                        }
+    
+                        sumatoriaNotasMision3[i] = 0;
+                        sumatoriaNotasMision3[i] = mision3[i] + sumatoriaNotasMision3[i];
                     }
-                    if (mision3[i] > mejorNotaMision3) {
-                        mejorNotaMision3 = mision3[i];
-                        mejorEstudianteMision3 = i;
+                } else {
+                    alert("Ya digito las notas de la mision 3");
+                    opcion6 = parseInt(prompt("Desea volver a llenar las notas de la mision 3? Ingrese la opcion: \n 1. Si desea volver a escribir las notas de la mision 3 \n 2. Si no desea cambiar la informacion"));
+                    while (isNaN(opcion6) || opcion6 <= 0 || opcion6 > 2) {
+                        opcion6 = parseInt(prompt("Desea volver a llenar las notas de la mision 3? Ingrese la opcion: \n 1. Si desea volver a escribir las notas de la mision 3 \n 2. Si no desea cambiar la informacion"));
                     }
-
-                    sumatoriaNotasMision3[i] = 0;
-                    sumatoriaNotasMision3[i] = mision3[i] + sumatoriaNotasMision3[i];
+                    switch (opcion6) {
+                        case 1:
+                            for (let i = 0; i < cantidadTalentos; i++) {
+                                mision3[i] = parseFloat(prompt("Ingrese la nota de la mision 3 para el estudiante con codigo: " + (i + 1)));
+                                while(isNaN(mision3[i]) || mision3[i] < 0 || mision3[i] > 100 || mision3[i] == undefined) {
+                                    mision3[i] = parseFloat(prompt("Ingrese una nota valida de la mision 3 para el estudiante con codigo: " + (i + 1)));
+                                }
+                                if (mision3[i] > mejorNotaMision3) {
+                                    mejorNotaMision3 = mision3[i];
+                                    mejorEstudianteMision3 = i;
+                                }
+            
+                                sumatoriaNotasMision3[i] = 0;
+                                sumatoriaNotasMision3[i] = mision3[i] + sumatoriaNotasMision3[i];
+                            }
+                            break;
+                        case 2:
+                            
+                            break;
+                    
+                        default:
+                            break;
+                    }
                 }
+                
 
             }
             break;
 
         case 6:
-            if (cantidadTalentos == undefined) {
+            if (cantidadTalentos === undefined || cantidadTalentos === 0) {
                 alert("Debe digitar primero la cantidad de talentos, (opcion 1)")
             } else {
-                for (let i = 0; i < cantidadTalentos; i++) {
-                    misionFinal[i] = parseFloat(prompt("Ingrese la nota de la mision final para el estudiante con codigo: " + (i + 1)));
-                    while (isNaN(misionFinal[i] || misionFinal[i] < 0 || misionFinal[i] > 100 || misionFinal[i] == undefined)) {
-                        misionFinal[i] = parseFloat(prompt("Ingrese una nota valida de la mision final para el estudiante con codigo: " + (i + 1)));
+                if (misionFinal[0] === undefined) {
+                    for (let i = 0; i < cantidadTalentos; i++) {
+                        misionFinal[i] = parseFloat(prompt("Ingrese la nota de la mision final para el estudiante con codigo: " + (i + 1)));
+                        while (isNaN(misionFinal[i] || misionFinal[i] < 0 || misionFinal[i] > 100 || misionFinal[i] == undefined)) {
+                            misionFinal[i] = parseFloat(prompt("Ingrese una nota valida de la mision final para el estudiante con codigo: " + (i + 1)));
+                        }
+    
+                        sumatoriaNotasMisionFinal[i] = 0;
+                        sumatoriaNotasMisionFinal[i] = misionFinal[i] + sumatoriaNotasMisionFinal[i];
                     }
-
-                    sumatoriaNotasMisionFinal[i] = 0;
-                    sumatoriaNotasMisionFinal[i] = misionFinal[i] + sumatoriaNotasMisionFinal[i];
+                } else {
+                    alert("Ya digito las notas de la mision final");
+                    opcion7 = parseInt(prompt("Desea volver a llenar las notas de la mision final? Ingrese la opcion: \n 1. Si desea volver a escribir las notas de la mision final \n 2. Si no desea cambiar la informacion"));
+                    while (isNaN(opcion7) || opcion7 <= 0 || opcion7 > 2) {
+                        opcion7 = parseInt(prompt("Desea volver a llenar las notas de la mision final? Ingrese la opcion: \n 1. Si desea volver a escribir las notas de la mision final \n 2. Si no desea cambiar la informacion"));
+                    }
+                    switch (opcion7) {
+                        case 1:
+                            for (let i = 0; i < cantidadTalentos; i++) {
+                                misionFinal[i] = parseFloat(prompt("Ingrese la nota de la mision final para el estudiante con codigo: " + (i + 1)));
+                                while (isNaN(misionFinal[i] || misionFinal[i] < 0 || misionFinal[i] > 100 || misionFinal[i] == undefined)) {
+                                    misionFinal[i] = parseFloat(prompt("Ingrese una nota valida de la mision final para el estudiante con codigo: " + (i + 1)));
+                                }
+            
+                                sumatoriaNotasMisionFinal[i] = 0;
+                                sumatoriaNotasMisionFinal[i] = misionFinal[i] + sumatoriaNotasMisionFinal[i];
+                            }
+                            break;
+                        case 2:
+                            
+                            break;
+                    
+                        default:
+                            break;
+                    }
                 }
             }
             break;
 
         case 7:
-            if (cantidadTalentos == undefined) {
+            if (cantidadTalentos === undefined || cantidadTalentos === 0) {
                 alert("Debe digitar primero la cantidad de talentos, (opcion 1)")
             } else {
                 if (mejorNotaMision1 === 0) {
@@ -157,7 +311,7 @@ do {
             break;
 
         case 8:
-            if (cantidadTalentos == undefined) {
+            if (cantidadTalentos === undefined || cantidadTalentos === 0) {
                 alert("Debe digitar primero la cantidad de talentos, (opcion 1)")
             } else {
                 if (mejorNotaMision2 === 0) {
@@ -169,7 +323,7 @@ do {
             break;
 
         case 9:
-            if (cantidadTalentos == undefined) {
+            if (cantidadTalentos === undefined || cantidadTalentos === 0) {
                 alert("Debe digitar primero la cantidad de talentos, (opcion 1)")
             } else {
                 if (mejorNotaMision3 === 0) {
@@ -182,7 +336,7 @@ do {
             break;
 
         case 10:
-            if (cantidadTalentos == undefined) {
+            if (cantidadTalentos === undefined || cantidadTalentos === 0) {
                 alert("Debe digitar primero la cantidad de talentos, (opcion 1)")
             } else {
 
@@ -203,7 +357,7 @@ do {
             break;
 
         case 11:
-            if (cantidadTalentos == undefined) {
+            if (cantidadTalentos === undefined || cantidadTalentos === 0) {
                 alert("Debe digitar primero la cantidad de talentos, (opcion 1)")
             } else {
                 if (mejorNotaMision1 === 0 || mejorNotaMision2 === 0 || mejorNotaMision3 === 0 || misionFinal[0] === undefined) {
@@ -220,11 +374,7 @@ do {
             break;
 
         case 12:
-            if (cantidadTalentos == undefined) {
-                alert("Debe digitar primero la cantidad de talentos, (opcion 1)")
-            } else {
-                alert("Diego Tarazona Pedraza");
-            }
+                alert("Diego Tarazona Pedraza 💪(◡̀_◡́҂)");
             break;
 
         case 13:
