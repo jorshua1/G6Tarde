@@ -79,9 +79,9 @@ do {
                             }
 
                         }
-                        
+
                     }
-                    
+
                 }
             }
         break;
@@ -150,7 +150,7 @@ do {
             } 
         break;
 
-        case 6:    
+        case 6:
             if (vNumeroTalentos == undefined || vDatosTalentos == undefined || vNotaMision01 == undefined || vNotaMision02 == undefined || vNotaMision03 == undefined) {
                 alert("ERROR NO HA INGRESADO EL DATO ANTERIOR, \nIngrese para proceder");
                 console.log("ERROR NO HA INGRESADO EL DATO ANTERIOR, \nIngrese para proceder");
@@ -167,7 +167,7 @@ do {
             }
         break;
 
-        case 7:    
+        case 7:
             if (vNumeroTalentos == undefined || vDatosTalentos == undefined || vNotaMision01 == undefined || vNotaMision02 == undefined || vNotaMision03 == undefined || vNotaMisionFinal == undefined || vNotaMisionFinal == undefined) {
                 alert("ERROR NO HA INGRESADO EL DATO ANTERIOR, \nIngrese para proceder");
                 console.log("ERROR NO HA INGRESADO EL DATO ANTERIOR, \nIngrese para proceder");
@@ -184,7 +184,7 @@ do {
             }
         break;
 
-        case 8:  
+        case 8:
             if (vNumeroTalentos == undefined || vDatosTalentos == undefined || vNotaMision01 == undefined || vNotaMision02 == undefined || vNotaMision03 == undefined || vNotaMisionFinal == undefined || vNotaMisionFinal == undefined) {
                 alert("ERROR NO HA INGRESADO EL DATO ANTERIOR, \nIngrese para proceder");
                 console.log("ERROR NO HA INGRESADO EL DATO ANTERIOR, \nIngrese para proceder");
@@ -201,7 +201,7 @@ do {
             }
         break;
 
-        case 9:    
+        case 9:
             if (vNumeroTalentos == undefined || vDatosTalentos == undefined || vNotaMision01 == undefined || vNotaMision02 == undefined || vNotaMision03 == undefined || vNotaMisionFinal == undefined || vNotaMisionFinal == undefined) {
                 alert("ERROR NO HA INGRESADO EL DATO ANTERIOR, \nIngrese para proceder");
                 console.log("ERROR NO HA INGRESADO EL DATO ANTERIOR, \nIngrese para proceder");
@@ -218,7 +218,7 @@ do {
             }
         break;
 
-        case 10:    
+        case 10:
             if (vNumeroTalentos == undefined || vDatosTalentos == undefined || vNotaMision01 == undefined || vNotaMision02 == undefined || vNotaMision03 == undefined || vNotaMisionFinal == undefined || vNotaMisionFinal == undefined) {
                 alert("ERROR NO HA INGRESADO EL DATO ANTERIOR, \nIngrese para proceder");
                 console.log("ERROR NO HA INGRESADO EL DATO ANTERIOR, \nIngrese para proceder");
@@ -231,14 +231,14 @@ do {
                 } else {
                     for (let i = 0; i < vNumeroTalentos; i++) {
                         vPromedioNotaMision[i] = (vSumaNotaMision01[i] + vSumaNotaMision02[i] + vSumaNotaMision03[i] + vSumaMisionFinal[i]) / 4;
-                        
+
                     } for (let i = 0; i < vNumeroTalentos; i++) {
                         vNombreTalento[i] = new Array();
 
                         for (let j = 0; j < 3; j++) {
 
                             if (j == 0) {
-                                vNombreTalento[i][j] = (i+1);
+                                vNombreTalento[i][j] = ("T00"+(i+1));
 
                             } else {
                                 vNombreTalento[i][j] = vDatosTalentos[i][j];
@@ -272,24 +272,23 @@ do {
                         
                         for (let j = 0; j < 6; j++) {
                             if (j == 0) {
-                                vNotaTalento[i][j] = (i+1);
+                                vNotaTalento[i][j] = ("T00"+(i+1));
 
                             } else if(j == 1) {
                                 vNotaTalento[i][j] = vDatosTalentos[i][j];
 
                             } else if(j == 2) {
                                 vNotaTalento[i][j] = vNotaMision01[i];
-                                
+
                             } else if(j == 3) {
                                 vNotaTalento[i][j] = vNotaMision02[i];
-                                
+
                             } else if(j == 4) {
                                 vNotaTalento[i][j] = vNotaMision03[i];
-                                
+
                             } else {
                                 vNotaTalento[i][j] = vNotaMisionFinal[i];
                             }
-                            
                         }
                     }
                 }
@@ -298,7 +297,7 @@ do {
             }
         break;
 
-        case 12:    
+        case 12:
             alert("El nombre del Talento de la prueba es: \nWILMER MARTINEZ");
             console.log("El nombre del Talento de la prueba es: \nWILMER MARTINEZ");
         break;
@@ -306,5 +305,4 @@ do {
         default:
         break;
     }
-    
 } while (vMenu != 0);
