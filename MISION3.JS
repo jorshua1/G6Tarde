@@ -556,4 +556,5 @@ switch(opcion){
         break;
 }
 }
+
 alert("Gracias por preferirnos")
