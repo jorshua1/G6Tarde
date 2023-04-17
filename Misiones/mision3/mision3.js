@@ -205,6 +205,7 @@ do {
                                             alert("La nota de este talento no se ha modificado.");
                                         }
                                     }
+                                    repetir =1;
                                     break;
                                 case 2:
                                     if (codigoNombre[validando][2][0] > 0) {
@@ -230,9 +231,9 @@ do {
                                             }
                                         }
                                     } else {
-                                        repetir = 1;
                                         alert(`Por favor, ingrese la nota de misión 1 del talento ${codigoNombre[validando][1]} para poder registrar esta nota.`);
                                     }
+                                    repetir =1;
                                     break;
                                 case 3:
                                     if (codigoNombre[validando][2][1] > 0) {
@@ -258,9 +259,9 @@ do {
                                             }
                                         }
                                     } else {
-                                        repetir = 1;
                                         alert(`Por favor, ingrese la nota de misión 2 del talento ${codigoNombre[validando][1]} para poder registrar esta nota.`);
                                     }
+                                    repetir =1;
                                     break;
                                 case 4:
                                     if (codigoNombre[validando][2][2] > 0) {
@@ -286,9 +287,9 @@ do {
                                             }
                                         }
                                     } else {
-                                        repetir = 1;
                                         alert(`Por favor, ingrese la nota de misión 3 del talento ${codigoNombre[validando][1]} para poder registrar esta nota.`);
                                     }
+                                    repetir =1;
                                     break;
                                 default:
                                     repetir = 2;
