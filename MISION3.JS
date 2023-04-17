@@ -336,7 +336,6 @@ switch(opcion){
             alert(`Los estudiantes con maxima nota en la mision 2 fueron:
            Nombres: 
            ${nombresMayores2}
-
            Nota: ${mayor2}`)
         }else{
             alert(`El estudiante con maxima nota en la mision 2 fue:
@@ -372,7 +371,6 @@ switch(opcion){
             alert(`Los estudiantes con maxima nota en la mision 3 fueron:
            Nombres:
            ${nombresMayores3}
-
            Nota: ${mayor3}`)
         }else{
             alert(`El estudiante con maxima nota en la mision 3 fue:
@@ -462,6 +460,7 @@ switch(opcion){
     break;
 
 
+    
 
     case 11:
         if(cantidadTalentos!==0){ 
@@ -478,7 +477,7 @@ switch(opcion){
             }
         }else{
             if(mision1.length===0 && mision2.length===0 && mision3.length===0 && pruebaFinal.length===0){
-                alert(`Error, no se puede calcular promedio porque faltan los siguientes datos:
+                alert(`Error, no se puede mostrar las notas porque faltan los siguientes datos:
                 Mision 1
                 Mision 2
                 Mision 3
@@ -538,6 +537,7 @@ switch(opcion){
             alert("Error, digite primero la cantidad de talentos")
         }
         break;
+
 
 
     case 12:
