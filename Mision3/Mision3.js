@@ -12,9 +12,9 @@ do {
         "4. Registrar nota de Misión 2\n" +
         "5. Registrar nota de Misión 3\n" +
         "6. Registrar prueba de nivel final\n" +
-        "7. Mostrar nombre y nota del talento con la mejor nota en la Misión 1\n" +
-        "8. Mostrar nombre y nota del talento con la mejor nota en la Misión 2\n" +
-        "9. Mostrar nombre y nota del talento con la mejor nota en la Misión 3\n" +
+        "7. nombre y nota del talento con la mejor nota en la Misión 1\n" +
+        "8. nombre y nota del talento con la mejor nota en la Misión 2\n" +
+        "9. nombre y nota del talento con la mejor nota en la Misión 3\n" +
         "10.Mostrar el nombre y el promedio de cada talento\n" +
         "11.Mostrar código, nombre, nota misión1, nota mision2 y nota misión 3, y prueba final\n" +
         "12.Nombre de los talentos que desarrollaron el ejercicio\n" +
@@ -66,10 +66,10 @@ do {
                         if (x == 0) {
                             mision1[i][x] = estudiantes[i][(x + 1)];
                         } else if (x == 1) {
-                            mision1[i][x] = prompt("por favor ingresar la nota de la mision 1 (entre 0 y 100), del estudiante: " + estudiantes[i][x]);
+                            mision1[i][x] = parseInt(prompt("por favor ingresar la nota de la mision 1 (entre 0 y 100), del estudiante: " + estudiantes[i][x]));
                             while (isNaN(mision1[i][x]) || mision1[i][x] < 0 || mision1[i][x] >= 100) {
                                 alert("Error, el dato ingresado no es de caracter numerico o supera el rango de la nota");
-                                mision1[i][x] = prompt("por favor ingresar la nota de la mision 1 (entre 0 y 100), del estudiante: " + estudiantes[i][x]);
+                                mision1[i][x] = parseInt(prompt("por favor ingresar la nota de la mision 1 (entre 0 y 100), del estudiante: " + estudiantes[i][x]));
                             }
                         }
                     }
@@ -87,10 +87,10 @@ do {
                         if (x == 0) {
                             mision2[i][x] = estudiantes[i][(x + 1)];
                         } else if (x == 1) {
-                            mision2[i][x] = prompt("por favor ingresar la nota de la mision 2 (entre 0 y 100), del estudiante: " + estudiantes[i][x]);
+                            mision2[i][x] = parseInt(prompt("por favor ingresar la nota de la mision 2 (entre 0 y 100), del estudiante: " + estudiantes[i][x]));
                             while (isNaN(mision2[i][x]) || mision2[i][x] < 0 || mision2[i][x] >= 100) {
                                 alert("Error, el dato ingresado no es de caracter numerico o supera el rango de la nota");
-                                mision2[i][x] = prompt("por favor ingresar la nota de la mision 2 (entre 0 y 100), del estudiante: " + estudiantes[i][x]);
+                                mision2[i][x] = parseInt(prompt("por favor ingresar la nota de la mision 2 (entre 0 y 100), del estudiante: " + estudiantes[i][x]));
                             }
                         }
                     }
@@ -108,10 +108,10 @@ do {
                         if (x == 0) {
                             mision3[i][x] = estudiantes[i][(x + 1)];
                         } else if (x == 1) {
-                            mision3[i][x] = prompt("por favor ingresar la nota de la mision 3 (entre 0 y 100), del estudiante: " + estudiantes[i][x]);
+                            mision3[i][x] = parseInt(prompt("por favor ingresar la nota de la mision 3 (entre 0 y 100), del estudiante: " + estudiantes[i][x]));
                             while (isNaN(mision3[i][x]) || mision3[i][x] < 0 || mision3[i][x] >= 100) {
                                 alert("Error, el dato ingresado no es de caracter numerico o supera el rango de la nota");
-                                mision3[i][x] = prompt("por favor ingresar la nota de la mision 3 (entre 0 y 100), del estudiante: " + estudiantes[i][x]);
+                                mision3[i][x] = parseInt(prompt("por favor ingresar la nota de la mision 3 (entre 0 y 100), del estudiante: " + estudiantes[i][x]));
                             }
                         }
                     }
@@ -129,10 +129,10 @@ do {
                         if (x == 0) {
                             pruebafinal[i][x] = estudiantes[i][(x + 1)];
                         } else if (x == 1) {
-                            pruebafinal[i][x] = prompt("por favor ingresar la nota de la prueba final (entre 0 y 100), del estudiante: " + estudiantes[i][x]);
-                            while (isNaN(mision1[i][x]) || mision1[i][x] < 0 || mision1[i][x] >= 100) {
+                            pruebafinal[i][x] = parseInt(prompt("por favor ingresar la nota de la prueba final (entre 0 y 100), del estudiante: " + estudiantes[i][x]));
+                            while (isNaN(pruebafinal[i][x]) || pruebafinal[i][x] < 0 || pruebafinal[i][x] >= 100) {
                                 alert("Error, el dato ingresado no es de caracter numerico o supera el rango de la nota");
-                                pruebafinal[i][x] = prompt("por favor ingresar la nota de la prueba final (entre 0 y 100), del estudiante: " + estudiantes[i][x]);
+                                pruebafinal[i][x] = parseInt(prompt("por favor ingresar la nota de la prueba final (entre 0 y 100), del estudiante: " + estudiantes[i][x]));
                             }
                         }
                     }
@@ -142,13 +142,61 @@ do {
             }
             break;
         case 7:
-            console.table(mision1);
+            if (estudiantes.length > 0) {
+                let mejorNota = 0;
+                for (let i = 0; i < cant_estudiantes; i++) {
+                    if (mejorNota === 0) {
+                        mejorNota = mision1[i][1];
+                    } else if (mision1[i][1] > mejorNota) {
+                        mejorNota = mision1[i][1];
+                    }
+                }
+                for (let i = 0; i < cant_estudiantes; i++) {
+                    if (mision1[i][1] === mejorNota) {
+                        alert("El estudiante con mejor nota en misión 1 es: " + mision1[i][0] + "\nNota: " + mision1[i][1]);
+                    }
+                }
+            } else {
+                alert("No hay datos de talentos registrados, no se puede acceder a esta acción.");
+            }
             break;
         case 8:
-            console.table(mision2);
+            if (estudiantes.length > 0) {
+                let mejorNota = 0;
+                for (let i = 0; i < cant_estudiantes; i++) {
+                    if (mejorNota === 0) {
+                        mejorNota = mision2[i][1];
+                    } else if (mision2[i][1] > mejorNota) {
+                        mejorNota = mision2[i][1];
+                    }
+                }
+                for (let i = 0; i < cant_estudiantes; i++) {
+                    if (mision2[i][1] === mejorNota) {
+                        alert("El estudiante con mejor nota en misión 2 es: " + mision2[i][0] + "\nNota: " + mision2[i][1]);
+                    }
+                }
+            } else {
+                alert("No hay datos de talentos registrados, no se puede acceder a esta acción.");
+            }
             break;
         case 9:
-            console.table(mision3);
+            if (estudiantes.length > 0) {
+                let mejorNota = 0;
+                for (let i = 0; i < cant_estudiantes; i++) {
+                    if (mejorNota === 0) {
+                        mejorNota = mision3[i][1];
+                    } else if (mision3[i][1] > mejorNota) {
+                        mejorNota = mision3[i][1];
+                    }
+                }
+                for (let i = 0; i < cant_estudiantes; i++) {
+                    if (mision3[i][1] === mejorNota) {
+                        alert("El estudiante con mejor nota en misión 3 es: " + mision3[i][0] + "\nNota: " + mision3[i][1]);
+                    }
+                }
+            } else {
+                alert("No hay datos de talentos registrados, no se puede acceder a esta acción.");
+            }
             break;
         case 10:
             if (cant_estudiantes != null || mision1 == null || mision2 == null || mision3 == null) {
