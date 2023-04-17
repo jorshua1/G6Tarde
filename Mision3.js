@@ -78,7 +78,7 @@
             alert(`El estudiante con la nota mayor es ${estudiantesNotaMayor} con una nota de: ${notaMayor}`);
           } else {
             for (let i = 0; i < estudiantesNotaMayor.length; i++) {
-                alert(`Los estudiantes con la nota mayor (${notaMayor}) son: ${estudiantesNotaMayor[i]}`);
+                alert(`Los estudiantes con la nota mayor (${notaMayor}) son: ${estudiantesNotaMayor}`);
             }
           }
   
