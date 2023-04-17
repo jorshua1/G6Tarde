@@ -91,20 +91,17 @@ do {
                     datosTalentos[i] = new Array(cantidadTalentos)
                 }
                 for (let i = 0; i < cantidadTalentos; i++) {
-
                     let nuevoCodigo = "";
                     let codigoRepetido = false;
-
                     while (true) {
                         let j = 0;
-                        nuevoCodigo = prompt(`Ingrese el codigo para el talento ${i + 1}\nCodigos registrados: ${datosTalentos[0]}`);
-                        while (nuevoCodigo < 0) {
-                            alert(`Por favor ingrese numeros positivos`)
-                            nuevoCodigo = prompt(`Ingrese el codigo para el talento ${i + 1}\nCodigos registrados: ${datosTalentos[0]}`);
+                        nuevoCodigo = parseFloat(prompt(`Ingrese el codigo para el talento ${i + 1}\nCodigos registrados: ${datosTalentos[0]}`));
+                        while (isNaN(nuevoCodigo) || nuevoCodigo < 0) {
+                            alert(`Por favor ingrese numeros positivos y datos numericos`)
+                            nuevoCodigo = parseFloat(prompt(`Ingrese el codigo para el talento ${i + 1}\nCodigos registrados: ${datosTalentos[0]}`));
                         }
                         codigoRepetido = false;
                         for (let j = 0; j < codigosRegistrados.length; j++) {
-
                             if (nuevoCodigo === codigosRegistrados[j]) {
                                 codigoRepetido = true;
                                 break;
@@ -115,14 +112,10 @@ do {
                         }
                         alert("Este código ya ha sido registrado. Por favor, ingrese otro código.");
                         j++;
-
                     }
                     codigosRegistrados[i] = nuevoCodigo;
                     datosTalentos[0][i] = codigosRegistrados[i];
-                }
-                for (let i = 0; i < cantidadTalentos; i++) {
-
-                    datosTalentos[1][i] = prompt(`Ingrese el nombre del talento Coex ${i + 1}`);
+                    datosTalentos[1][i] = prompt(`Ingrese el nombre del talento Coex identificado con el codigo ${codigosRegistrados[i]}`);
                     while (!isNaN(datosTalentos[1][i])) {
                         datosTalentos[1][i] = prompt(`Dato invalido \nPor favor vuelva a ingresar el nombre del talento Coex${i + 1}`);
                     }
@@ -139,7 +132,6 @@ do {
                 mensajeLista = "";
                 seleccion = 0;
                 for (let i = 0; i < cantidadTalentos; i++) {
-
                     mision1[i] = parseFloat(prompt(`Ingrese la nota de la mision 1 del Talento Coex ${datosTalentos[1][i]}`))
                     while (isNaN(mision1[i]) || mision1[i] < 0 || mision1[i] > 100) {
                         mision1[i] = parseFloat(prompt(`Recuerde que la nota va de 0 a 100, no puede ingresar datos fuera de ese rango, ni datos de tipo caracter. Por favor vuelva a ingresar la nota de la mision 1 del talento Coex ${datosTalentos[1][i]}`));
@@ -193,11 +185,10 @@ do {
             break;
         case 4:
             //pido la nota de la mision 2
-            if (datosTalentos[0] !== 0 && mision2[0] === 0) {
+            if (datosTalentos[0] !== 0 && mision2[0] === 0 && mision1[0] !== 0) {
                 mensajeLista = "";
                 seleccion = 0;
                 for (let i = 0; i < cantidadTalentos; i++) {
-
                     mision2[i] = parseInt(prompt(`Ingrese la nota de la mision 2 del Talento Coex ${datosTalentos[1][i]}`))
                     while (isNaN(mision2[i]) || mision2[i] < 0 || mision2[i] > 100) {
                         mision2[i] = parseFloat(prompt(`Recuerde que la nota va de 0 a 100, no puede ingresar datos fuera de ese rango, ni datos de tipo caracter Por favor vuelva a ingresar la nota de la mision 2 del talento Coex ${datosTalentos[1][i]}`));
@@ -244,17 +235,16 @@ do {
                 }
             } else if (mision2[0] !== 0) {
                 alert(`Ya se registo la nota de la mision 2 y no se puede cambiar`)
-            } else if ((cantidadTalentos !== 0 && datosTalentos[0] === 0) || cantidadTalentos === 0) {
-                alert(`Para registrar las notas primero debe registrar los datos de los talentos`)
+            } else {
+                alert(`Para registrar las notas primero debe registrar los datos de los talentos y registrar las notas de las misiones anteriores`)
             }
             break;
         case 5:
             //Pido nota mision 3
-            if (datosTalentos[0] !== 0 && mision3[0] === 0) {
+            if (datosTalentos[0] !== 0 && mision3[0] === 0 && mision2[0] !== 0 && mision1[0] !== 0) {
                 mensajeLista = "";
                 seleccion = 0;
                 for (let i = 0; i < cantidadTalentos; i++) {
-
                     mision3[i] = parseInt(prompt(`Ingrese la nota de la mision 3 del Talento Coex ${datosTalentos[1][i]}`))
                     while (isNaN(mision3[i]) || mision3[i] < 0 || mision3[i] > 100) {
                         mision3[i] = parseInt(prompt(`Recuerde que la nota va de 0 a 100, no puede ingresar datos fuera de ese rango, ni datos de tipo caracter Por favor vuelva a ingresar la nota de la mision 3 del talento Coex ${datosTalentos[1][i]}`));
@@ -302,17 +292,16 @@ do {
                 }
             } else if (mision3[0] !== 0) {
                 alert(`Ya se registo la nota de la mision 3 y no se puede cambiar`)
-            } else if ((cantidadTalentos !== 0 && datosTalentos[0] === 0) || cantidadTalentos === 0) {
-                alert(`Para registrar las notas primero debe registrar los datos de los talentos`)
+            } else {
+                alert(`Para registrar las notas primero debe registrar los datos de los talentos y registrar las notas de las misiones anteriores`)
             }
             break;
         case 6:
             //Pido nota prueva de nivel final
-            if (datosTalentos[0] !== 0 && pruebaNivelFianl[0] === 0) {
+            if (datosTalentos[0] !== 0 && pruebaNivelFianl[0] === 0 && mision2[0] !== 0 && mision1[0] !== 0 && mision3[0] !== 0) {
                 mensajeLista = "";
                 seleccion = 0;
                 for (let i = 0; i < cantidadTalentos; i++) {
-
                     pruebaNivelFianl[i] = parseInt(prompt(`Ingrese la nota de la prueba de nivel final del Talento Coex ${datosTalentos[1][i]}`))
                     while (isNaN(pruebaNivelFianl[i]) || pruebaNivelFianl[i] < 0 || pruebaNivelFianl[i] > 100) {
                         pruebaNivelFianl[i] = parseInt(prompt(`Recuerde que la nota va de 0 a 100, no puede ingresar datos fuera de ese rango, ni datos de tipo caracter Por favor vuelva a ingresar la nota de la prueba de nivel final del talento Coex ${datosTalentos[1][i]}`));
@@ -360,26 +349,30 @@ do {
                 }
             } else if (pruebaNivelFianl[0] !== 0) {
                 alert(`Ya se registo la nota de la prueba final y no se puede cambiar`)
-            } else if ((cantidadTalentos !== 0 && datosTalentos[0] === 0) || cantidadTalentos === 0) {
-                alert(`Para registrar las notas primero debe registrar los datos de los talentos`)
+            } else {
+                alert(`Para registrar las notas primero debe registrar los datos de los talentos y registrar las notas de las misiones anteriores`)
             }
             break;
         case 7:
             //Muestro el nombre y la nota del talento Coex con mayor nota en la mision 1
             if (mision1[0] !== 0) {
-
-                for (let i = 0; i < mision1.length; i++) {
-
-                    for (let j = 0; j < mision1.length - 1; j++) {
-
-                        if (mision1[j] < mision1[j + 1]) {
-
-                            [mision1[j], mision1[j + 1]] = [mision1[j + 1], mision1[j]];
-                            [datosTalentos[1][j], datosTalentos[1][j + 1]] = [datosTalentos[1][j + 1], datosTalentos[1][j]];
+                mensajeLista = "";
+                mejorNota = 0;
+                for (let i = 0; i < cantidadTalentos; i++) {
+                    if (mejorNota === 0) {
+                        mejorNota = mision1[i];
+                    } else if (mision1[i] > mejorNota) {
+                        mejorNota = mision1[i];
+                    }
+                }
+                if (mejorNota !== 0) {
+                    for (let i = 0; i < cantidadTalentos; i++) {
+                        if (mejorNota === mision1[i]) {
+                            mensajeLista += `Talento ${datosTalentos[1][i]}, nota: ${mision1[i]}\n`
                         }
                     }
                 }
-                alert(`El estudiante que tiene la mayor nota en la mision 1 es ${datosTalentos[1][0]} con una nota de: ${mision1[0]}`)
+                alert(`Mejores notas de la mision 1\n${mensajeLista} `)
             } else if ((cantidadTalentos === 0) || (mision1[0] === 0)) {
                 alert(`No puede visualizar datos que no ha ingresado`)
             }
@@ -387,19 +380,23 @@ do {
         case 8:
             //Muestro el nombre y la nota del talento Coex con mayor nota en la mision 2
             if (mision2[0] !== 0) {
-
-                for (let i = 0; i < mision2.length; i++) {
-
-                    for (let j = 0; j < mision2.length - 1; j++) {
-
-                        if (mision2[j] < mision2[j + 1]) {
-
-                            [mision2[j], mision2[j + 1]] = [mision2[j + 1], mision2[j]];
-                            [datosTalentos[1][j], datosTalentos[1][j + 1]] = [datosTalentos[1][j + 1], datosTalentos[1][j]];
+                mensajeLista = "";
+                mejorNota = 0;
+                for (let i = 0; i < cantidadTalentos; i++) {
+                    if (mejorNota === 0) {
+                        mejorNota = mision2[i];
+                    } else if (mision2[i] > mejorNota) {
+                        mejorNota = mision2[i];
+                    }
+                }
+                if (mejorNota !== 0) {
+                    for (let i = 0; i < cantidadTalentos; i++) {
+                        if (mejorNota === mision2[i]) {
+                            mensajeLista += `Talento ${datosTalentos[1][i]}, nota: ${mision2[i]}\n`
                         }
                     }
                 }
-                alert(`El estudiante que tiene la mayor nota en la mision 2 es ${datosTalentos[1][0]} con una nota de: ${mision2[0]}`)
+                alert(`Mejores notas de la mision 2 \n${mensajeLista} `)
             } else if ((cantidadTalentos === 0) || (mision2[0] === 0)) {
                 alert(`No puede visualizar datos que no ha ingresado`)
             }
@@ -407,19 +404,23 @@ do {
         case 9:
             //Muestro el nombre y la nota del talento Coex con mayor nota en la mision 3
             if (mision3[0] !== 0) {
-
-                for (let i = 0; i < mision3.length; i++) {
-
-                    for (let j = 0; j < mision3.length - 1; j++) {
-
-                        if (mision3[j] < mision3[j + 1]) {
-
-                            [mision3[j], mision3[j + 1]] = [mision3[j + 1], mision3[j]];
-                            [datosTalentos[1][j], datosTalentos[1][j + 1]] = [datosTalentos[1][j + 1], datosTalentos[1][j]];
+                mensajeLista = "";
+                mejorNota = 0;
+                for (let i = 0; i < cantidadTalentos; i++) {
+                    if (mejorNota === 0) {
+                        mejorNota = mision3[i];
+                    } else if (mision3[i] > mejorNota) {
+                        mejorNota = mision3[i];
+                    }
+                }
+                if (mejorNota !== 0) {
+                    for (let i = 0; i < cantidadTalentos; i++) {
+                        if (mejorNota === mision3[i]) {
+                            mensajeLista += `Talento ${datosTalentos[1][i]}, nota: ${mision3[i]}\n`
                         }
                     }
                 }
-                alert(`El estudiante que tiene la mayor nota en la mision 3 es ${datosTalentos[1][0]} con una nota de: ${mision3[0]}`)
+                alert(`Mejores notas de la mision 3: \n${mensajeLista} `)
             } else if ((cantidadTalentos === 0) || (mision3[0] === 0)) {
                 alert(`No puede visualizar datos que no ha ingresado`)
             }
@@ -444,8 +445,7 @@ do {
             //Mostrar código, nombre, nota misión1, nota mision2 y nota misión 3, y prueba final
             if (promedio !== 0) {
                 for (let i = 0; i < cantidadTalentos; i++) {
-
-                    mensajeLista += `---------------------------------------------- \n--Codigo:  ${datosTalentos[0][i]}  --Nombre: ${datosTalentos[1][i]} --Nota mision 1: ${mision1[i]}  --Nota mision 2: ${mision2[i]}  --Nota mision 3: ${mision3[i]}  --Nota prueba final: ${pruebaNivelFianl[i]} \n`
+                    mensajeLista += `---\n|Codigo:  ${datosTalentos[0][i]}\n|Nombre: ${datosTalentos[1][i]} \n|Nota mision 1: ${mision1[i]} \n|Nota mision 2: ${mision2[i]} \n|Nota mision 3: ${mision3[i]} \n|Nota prueba final: ${pruebaNivelFianl[i]} \n`
                 }
                 alert(mensajeLista);
             } else if (promedio === 0 && ((mision1[0] === 0 || mision2[0] === 0 || mision3[0] === 0 || pruebaNivelFianl[0] === 0))) {
