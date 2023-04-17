@@ -61,7 +61,7 @@ let seleccion = 0;
 do {
     //Pido el menu **********************************************************************************************************
     menu = parseInt(prompt(textoMenu));
-    while (isNaN(menu) || menu < 0 || menu > 13) {
+    while (isNaN(menu) || menu <= 0 || menu > 13) {
         menu = parseInt(prompt(`POR FAVOR revise el menu e ingrese una opcion valida ${textoMenu}`));
     }
     switch (menu) {
@@ -98,6 +98,10 @@ do {
                     while (true) {
                         let j = 0;
                         nuevoCodigo = prompt(`Ingrese el codigo para el talento ${i + 1}\nCodigos registrados: ${datosTalentos[0]}`);
+                        while (nuevoCodigo < 0) {
+                            alert(`Por favor ingrese numeros positivos`)
+                            nuevoCodigo = prompt(`Ingrese el codigo para el talento ${i + 1}\nCodigos registrados: ${datosTalentos[0]}`);
+                        }
                         codigoRepetido = false;
                         for (let j = 0; j < codigosRegistrados.length; j++) {
 
@@ -152,14 +156,22 @@ do {
                 } else {
                     confirmacion = 0;
                     do {
-                        seleccion = parseInt(prompt(`Seleccione la opcion que desea cambiar \n${mensajeLista}`))
-                        while (isNaN(seleccion) || seleccion > cantidadTalentos || seleccion <= 0) {
+                        seleccion = parseInt(prompt(`Seleccione la opcion que desea: \n${mensajeLista}0. para volver al menu principal`))
+                        while (isNaN(seleccion) || seleccion > cantidadTalentos || seleccion < 0) {
                             alert(`Seleccione una opcion valida`)
-                            seleccion = parseInt(prompt(`Seleccione la opcion que desea cambiar \n${mensajeLista}`))
+                            seleccion = parseInt(prompt(`Seleccione la opcion que desea: \n${mensajeLista}0. para volver al menu principal`))
+                        }
+                        if (seleccion === 0) {
+                            confirmacion = 0;
+                            break;
                         }
                         mision1[seleccion - 1] = parseInt(prompt(`Ingrese la nota correcta de la mision 1 del Talento ${datosTalentos[1][seleccion - 1]} `))
                         while (isNaN(mision1[seleccion - 1]) || mision1[seleccion - 1] < 0 || mision1[seleccion - 1] > 100) {
                             mision1[seleccion - 1] = parseFloat(prompt(`Recuerde que la nota va de 0 a 100, no puede ingresar datos fuera de ese rango, ni datos de tipo caracter Por favor vuelva a ingresar la nota de la mision 1 del talento Coex `));
+                        }
+                        mensajeLista = "";
+                        for (let i = 0; i < cantidadTalentos; i++) {
+                            mensajeLista += `${i + 1}. Nota del talento ${datosTalentos[1][i]}: ${mision1[i]} \n`
                         }
                         confirmacion = parseInt(prompt(`Desea cambiar otra nota? \n1. Si\n2. No`));
                         while ((confirmacion !== 1) && (confirmacion !== 2)) {
@@ -201,14 +213,22 @@ do {
                 } else {
                     confirmacion = 0;
                     do {
-                        seleccion = parseInt(prompt(`Seleccione la opcion que desea cambiar \n${mensajeLista}`))
-                        while (isNaN(seleccion) || seleccion > cantidadTalentos || seleccion <= 0) {
+                        seleccion = parseInt(prompt(`Seleccione la opcion que desea: \n${mensajeLista}0. para volver al menu principal`))
+                        while (isNaN(seleccion) || seleccion > cantidadTalentos || seleccion < 0) {
                             alert(`Seleccione una opcion valida`)
-                            seleccion = parseInt(prompt(`Seleccione la opcion que desea cambiar \n${mensajeLista}`))
+                            seleccion = parseInt(prompt(`Seleccione la opcion que desea: \n${mensajeLista}0. para volver al menu principal`))
+                        }
+                        if (seleccion === 0) {
+                            confirmacion = 0;
+                            break;
                         }
                         mision2[seleccion - 1] = parseInt(prompt(`Ingrese la nota correcta de la mision 1 del Talento ${datosTalentos[1][seleccion - 1]} `))
                         while (isNaN(mision2[seleccion - 1]) || mision2[seleccion - 1] < 0 || mision2[seleccion - 1] > 100) {
                             mision2[seleccion - 1] = parseFloat(prompt(`Recuerde que la nota va de 0 a 100, no puede ingresar datos fuera de ese rango, ni datos de tipo caracter Por favor vuelva a ingresar la nota de la mision 1 del talento Coex `));
+                        }
+                        mensajeLista = "";
+                        for (let i = 0; i < cantidadTalentos; i++) {
+                            mensajeLista += `${i + 1}. Nota del talento ${datosTalentos[1][i]}: ${mision2[i]} \n`
                         }
                         confirmacion = parseInt(prompt(`Desea cambiar otra nota? \n1. Si\n2. No`));
                         while ((confirmacion !== 1) && (confirmacion !== 2)) {
@@ -251,14 +271,22 @@ do {
                 } else {
                     confirmacion = 0;
                     do {
-                        seleccion = parseInt(prompt(`Seleccione la opcion que desea cambiar \n${mensajeLista}`))
-                        while (isNaN(seleccion) || seleccion > cantidadTalentos || seleccion <= 0) {
+                        seleccion = parseInt(prompt(`Seleccione la opcion que desea: \n${mensajeLista}0. para volver al menu principal`))
+                        while (isNaN(seleccion) || seleccion > cantidadTalentos || seleccion < 0) {
                             alert(`Seleccione una opcion valida`)
-                            seleccion = parseInt(prompt(`Seleccione la opcion que desea cambiar \n${mensajeLista}`))
+                            seleccion = parseInt(prompt(`Seleccione la opcion que desea: \n${mensajeLista}0. para volver al menu principal`))
+                        }
+                        if (seleccion === 0) {
+                            confirmacion = 0;
+                            break;
                         }
                         mision3[seleccion - 1] = parseInt(prompt(`Ingrese la nota correcta de la mision 1 del Talento ${datosTalentos[1][seleccion - 1]} `))
                         while (isNaN(mision3[seleccion - 1]) || mision3[seleccion - 1] < 0 || mision3[seleccion - 1] > 100) {
                             mision3[seleccion - 1] = parseInt(prompt(`Recuerde que la nota va de 0 a 100, no puede ingresar datos fuera de ese rango, ni datos de tipo caracter Por favor vuelva a ingresar la nota de la mision 1 del talento Coex `));
+                        }
+                        mensajeLista = "";
+                        for (let i = 0; i < cantidadTalentos; i++) {
+                            mensajeLista += `${i + 1}. Nota del talento ${datosTalentos[1][i]}: ${mision3[i]} \n`
                         }
                         confirmacion = parseInt(prompt(`Desea cambiar otra nota? \n1. Si\n2. No`));
                         while ((confirmacion !== 1) && (confirmacion !== 2)) {
@@ -301,14 +329,22 @@ do {
                 } else {
                     confirmacion = 0;
                     do {
-                        seleccion = parseInt(prompt(`Seleccione la opcion que desea cambiar \n${mensajeLista}`))
-                        while (isNaN(seleccion) || seleccion > cantidadTalentos || seleccion <= 0) {
+                        seleccion = parseInt(prompt(`Seleccione la opcion que desea: \n${mensajeLista}0. para volver al menu principal`))
+                        while (isNaN(seleccion) || seleccion > cantidadTalentos || seleccion < 0) {
                             alert(`Seleccione una opcion valida`)
-                            seleccion = parseInt(prompt(`Seleccione la opcion que desea cambiar \n${mensajeLista}`))
+                            seleccion = parseInt(prompt(`Seleccione la opcion que desea: \n${mensajeLista}0. para volver al menu principal`))
+                        }
+                        if (seleccion === 0) {
+                            confirmacion = 0;
+                            break;
                         }
                         pruebaNivelFianl[seleccion - 1] = parseInt(prompt(`Ingrese la nota correcta de la mision 1 del Talento ${datosTalentos[1][seleccion - 1]} `))
                         while (isNaN(pruebaNivelFianl[seleccion - 1]) || pruebaNivelFianl[seleccion - 1] < 0 || pruebaNivelFianl[seleccion - 1] > 100) {
                             pruebaNivelFianl[seleccion - 1] = parseInt(prompt(`Recuerde que la nota va de 0 a 100, no puede ingresar datos fuera de ese rango, ni datos de tipo caracter Por favor vuelva a ingresar la nota de la mision 1 del talento Coex `));
+                        }
+                        mensajeLista = "";
+                        for (let i = 0; i < cantidadTalentos; i++) {
+                            mensajeLista += `${i + 1}. Nota del talento ${datosTalentos[1][i]}: ${pruebaNivelFianl[i]} \n`
                         }
                         confirmacion = parseInt(prompt(`Desea cambiar otra nota? \n1. Si\n2. No`));
                         while ((confirmacion !== 1) && (confirmacion !== 2)) {
@@ -396,7 +432,7 @@ do {
                 for (let i = 0; i < cantidadTalentos; i++) {
 
                     promedio = (mision1[i] + mision2[i] + mision3[i] + pruebaNivelFianl[i]) / 4
-                    mensajeLista += `El promedio del talento ${datosTalentos[1][i]} en las 4 purebas es: ${promedio} \n`
+                    mensajeLista += `El promedio del talento ${datosTalentos[1][i]} en las 4 pruebas es: ${promedio} \n`
                 }
                 alert(`${mensajeLista}`)
             } else {
@@ -409,7 +445,7 @@ do {
             if (promedio !== 0) {
                 for (let i = 0; i < cantidadTalentos; i++) {
 
-                    mensajeLista += `---------------------------------------------- \n--Codigo:  ${datosTalentos[0][i]}  --Nombre: ${datosTalentos[1][i]} --Nota mision 1: ${mision1[i]}  --Nota mision 2: ${mision2[i]}  --Nota mision 3: ${mision3[i]}  --Nota prueba fial: ${pruebaNivelFianl[i]} \n`
+                    mensajeLista += `---------------------------------------------- \n--Codigo:  ${datosTalentos[0][i]}  --Nombre: ${datosTalentos[1][i]} --Nota mision 1: ${mision1[i]}  --Nota mision 2: ${mision2[i]}  --Nota mision 3: ${mision3[i]}  --Nota prueba final: ${pruebaNivelFianl[i]} \n`
                 }
                 alert(mensajeLista);
             } else if (promedio === 0 && ((mision1[0] === 0 || mision2[0] === 0 || mision3[0] === 0 || pruebaNivelFianl[0] === 0))) {
