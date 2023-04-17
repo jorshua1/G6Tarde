@@ -22,7 +22,7 @@ while (menuprincipal !== 13) {
         alert("error dato invalido");
         menuprincipal = Number(prompt("bienvenido\n elige una de las siguientes opciones\n 1.Ingresar cantidad de talentos \n 2.registar datos de los talentos\n 3.Registrar nota de Misión 1\n 4.Registrar nota de Misión 2\n 5.Registrar nota de Misión 3\n 6.Registrar prueba de nivel final\n 7.Mostrar quien obtuvo la mejor nota en la Misión 1\n 8.Mostrar quien obtuvo la mejor nota en la Misión 2\n 9.Mostrar quien obtuvo la mejor nota en la Misión 3\n 10. promedio de cada talento\n 11. Mostrar todos los datos y notas de los talentos\n 12.Nombre del talento que desarrollo el ejercicio\n 13.salir"));
     }
-    while (cantidaddetalentos == 0 && menuprincipal != 1) {
+    while (cantidaddetalentos == 0 && menuprincipal != 1 && menuprincipal!=13) {
         alert("primero tiene que ingresar la cantidad de talentos");
         menuprincipal = Number(prompt("bienvenido\n elige una de las siguientes opciones\n 1.Ingresar cantidad de talentos \n 2.registar datos de los talentos\n 3.Registrar nota de Misión 1\n 4.Registrar nota de Misión 2\n 5.Registrar nota de Misión 3\n 6.Registrar prueba de nivel final\n 7.Mostrar quien obtuvo la mejor nota en la Misión 1\n 8.Mostrar quien obtuvo la mejor nota en la Misión 2\n 9.Mostrar quien obtuvo la mejor nota en la Misión 3\n 10. promedio de cada talento\n 11. Mostrar todos los datos y notas de los talentos\n 12.Nombre del talento que desarrollo el ejercicio\n 13.salir"));
     }
