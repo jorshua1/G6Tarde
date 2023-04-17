@@ -103,6 +103,17 @@ switch(opcion){
                                 alert("Ingrese un codigo valido, solo se permiten enteros positivos")
                                 codigo=Number(prompt("Ingrese codigo del talento"+cont))
                             }
+                            for(let omega=0;omega<codigos.length;omega++){
+                            while(codigos[omega]===codigo){
+                                alert(`El codigo ${codigo} ya ha sido digitado`)
+                                codigo=Number(prompt("Ingrese codigo del talento"+cont))
+                                while(isNaN(codigo)||codigo<0||!Number.isInteger(codigo)||codigo===0){
+                                alert("Ingrese un codigo valido, solo se permiten enteros positivos")
+                                codigo=Number(prompt("Ingrese codigo del talento"+cont))
+                            }
+                            }
+                        }
+
                         }
                     }
                     codigos[i]=codigo
@@ -460,7 +471,7 @@ switch(opcion){
     break;
 
 
-    
+
 
     case 11:
         if(cantidadTalentos!==0){ 
