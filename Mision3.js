@@ -24,7 +24,7 @@
         for (let i = 0; i < matriz.length; i++) {
             matrizOrdenar[i]=[]
         for (let j = 0; j < matriz.length; j++) {
-            matrizOrdenar[i][j] = matriz[i][posicionNombre]
+            matrizOrdenar[i][0] = matriz[i][posicionNombre]
             matrizOrdenar[i][1] = matriz[i][posicionNota]               
           }
         }
