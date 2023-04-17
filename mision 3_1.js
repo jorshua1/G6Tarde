@@ -46,12 +46,14 @@ do {
                         for (let i = 0; i < matriz.length; i++) {
                             while (matriz[i][0] === codigo||isNaN(codigo)||codigo<1) {
                                 codigo = parseInt(prompt("Ingrese un codigo valido para el talento "+contadorDeTalentos))
+                                i=0;
                         }
                     }
                     }
                     for (let i = 0; i < matriz.length; i++) {
                         while (matriz[i][0] === codigo||isNaN(codigo)||codigo<1) {
                             codigo = parseInt(prompt("Ingrese un codigo valido para el talento "+contadorDeTalentos))
+                            i=0
                         }
                     }
                     matriz[i][0]=codigo
