@@ -1,4 +1,3 @@
-
 let opcion = 0;
 let datosTalentos = [0, 0];
 let cantidadDeTalentos = 0;
@@ -48,6 +47,7 @@ do {
         case 2:
             a=0
             if (cantidadDeTalentos > 0) {
+                if(codigosRegistrados.length===0){
                 for (i = 0; i < datosTalentos.length; i++) {
                     datosTalentos[i] = []
                 }
@@ -77,6 +77,9 @@ do {
                         datosTalentos[1][i] = prompt("ERROR, Ingrese el nombre del talento " + i);
                     }
                 }
+            }else{
+                alert("Ya se registraron los nombres y codigos")
+            }
             }
             else {
                 alert("No hay Talentos registrados")
@@ -85,14 +88,19 @@ do {
             break;
         case 3:
             if (cantidadDeTalentos > 0) {
-                if (a===1) {
+                if (codigosRegistrados.length!==0) {
+                    if(notaMisionUno.length===0){
                     for (i = 0; i < cantidadDeTalentos; i++) {
                         notaMisionUno[i] = parseFloat(prompt("Ingrese la nota de la Mision 1 del Talento " + datosTalentos[1][i]))
                         while (isNaN(notaMisionUno[i]) || notaMisionUno[i] < 0 || notaMisionUno[i] > 100) {
                             notaMisionUno[i] = parseFloat(prompt("ERROR, Ingrese la nota de la Mision 1 del Talento " + i))
                         }
                     }
+                }else{
+                    alert("Ya se registraron las notas de la Mision 1")
                 }
+                }
+            
                 else {
                     alert("No hay datos en la matriz")
                 }
@@ -104,13 +112,17 @@ do {
             break;
         case 4:
             if (cantidadDeTalentos > 0) {
-                if (a===1) {
+                if (codigosRegistrados.length!==0) {
+                    if(notaMisionDos.length===0){
                 for (i = 0; i < cantidadDeTalentos; i++) {
                     notaMisionDos[i] = parseFloat(prompt("Ingrese la nota de la Mision 2 del Talento " + datosTalentos[1][i]))
                     while (isNaN(notaMisionDos[i]) || notaMisionDos[i] < 0 || notaMisionDos[i] > 100) {
                         notaMisionDos[i] = parseFloat(prompt("ERROR, Ingrese la nota de la Mision 2 del Talento " + i))
                     }
                 }
+            }else{
+                alert("Ya se registraron las notas de la Mision 2")
+            }
             }
             else{
                 alert("No hay datos en la matriz")
@@ -123,13 +135,17 @@ do {
             break;
         case 5:
             if (cantidadDeTalentos > 0) {
-                if (a===1) {
+                if (codigosRegistrados.length!==0) {
+                    if(notaMisionTres.length===0){
                 for (i = 0; i < cantidadDeTalentos; i++) {
                     notaMisionTres[i] = parseFloat(prompt("Ingrese la nota de la Mision 3 del Talento " + datosTalentos[1][i]))
                     while (isNaN(notaMisionTres[i]) || notaMisionTres[i] < 0 || notaMisionTres[i] > 100) {
                         notaMisionTres[i] = parseFloat(prompt("ERROR, Ingrese la nota de la Mision 3 del Talento " + i))
                     }
                 }
+            }else{
+                alert("Ya se registraron las notas de la Mision 3")
+            }
             }
             else{
                 alert("No hay datos en la matriz")
@@ -142,13 +158,17 @@ do {
             break;
         case 6:
             if (cantidadDeTalentos > 0) {
-                if (a===1) {
+                if (codigosRegistrados.length!==0) {
+                    if(notaPruebaFinal.length===0){
                 for (i = 0; i < cantidadDeTalentos; i++) {
                     notaPruebaFinal[i] = parseFloat(prompt("Ingrese la nota de la Prueba Final del Talento " + datosTalentos[1][i]))
                     while (isNaN(notaPruebaFinal[i]) || notaPruebaFinal[i] < 0 || notaPruebaFinal[i] > 100) {
                         notaPruebaFinal[i] = parseFloat(prompt("ERROR, Ingrese la nota de la Mision 2 del Talento " + i))
                     }
                 }
+            }else{
+                alert("Ya se registraron las notas de la Prueba Final")
+            }
             }
             else{
                 alert("No hay datos en la matriz")
