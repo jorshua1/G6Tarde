@@ -244,7 +244,7 @@
          case 7: //opcion 7
          if(cantidadTalentos>0){
             if(codigo>0 || nombre!=0){
-                if(notaMayorMision1>0){
+                if(notaMision1>0){
            ordenamiento(matriz,notaMayorMision1,1,2) // los números son las posiciones de columna-Nombre
            llenarMatrizNotasIguales(matriz,notasRepetidasMision1,1,2)  // los números son las posiciones de columna Nombre
         }else{
