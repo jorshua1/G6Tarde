@@ -116,7 +116,7 @@ while (isNaN(menuPrincipal) || menuPrincipal !== 13) {
 
                     if (nombreTalentoCoex === ``) {
                         while (nombreTalentoCoex === ``) {
-                            alert(`Por favor debe ingresar un nombre para el talento, no dejar el recuadro en blanco.`);
+                            alert(`Por favor debe ingresar un nombre para el talento ${i}, no dejar el recuadro en blanco.`);
                             nombreTalentoCoex = prompt(`Por favor ingrese el nombre del talento ${i} se puede usar numeros, letras o carácteres especiales:`);
                         }
                     } else {
