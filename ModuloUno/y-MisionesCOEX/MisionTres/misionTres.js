@@ -281,7 +281,9 @@ while (isNaN(menuPrincipal) || menuPrincipal !== 13) {
         case 12:
 
             let nombreTalento = `Jefferson Fabian Coronado Amado
-            Jefphunter CrownLoved`;
+            Jefphunter CrownLoved
+            
+            "Be the change that you can to see in the world"`;
 
             alert(`
             El talento COEX que desarrolló la Mision 3 Es:
