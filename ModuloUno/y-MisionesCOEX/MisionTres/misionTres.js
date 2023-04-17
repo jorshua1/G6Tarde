@@ -101,7 +101,7 @@ while (menuPrincipal !== 13) {
                     if (codigoRepetido) {
                         alert(`Por favor verifique, ya existe un talento COEX con ese código.`);
                     } else if (nombreTalentoCoex === ``) {
-                        alert(`Por favor deebe ingresar un nombre para el talento, no dejar el recuadro en blanco.`);
+                        alert(`Por favor debe ingresar un nombre para el talento, no dejar el recuadro en blanco.`);
                     } else {
                         talentos.push([codigoTalentoCoex, nombreTalentoCoex]);
                     }
@@ -109,7 +109,7 @@ while (menuPrincipal !== 13) {
                     reiniciadorRegistroTalentos--
                 }
             }
-            alert(`No hay mas registros habilitados, ya ha registrado todos los talentos.`);
+            alert(`No hay más registros habilitados,por favor ingrese nuevos registros en la opción 1 del menú.`);
             reiniciadorRegistroTalentos = 0;
             break;
 
@@ -118,16 +118,15 @@ while (menuPrincipal !== 13) {
             var misionUno = ("Mision Uno");
 
             for (let i = 0; i < reiniciadorMisionUno; i++) {
-                let notaUno = parseInt(prompt(`Por favor ingrese la notaUno de la ${misionUno} del talento ${talentos[i][1]}:`));
+                let notaUno = parseInt(prompt(`Por favor ingrese la nota de la ${misionUno} del talento ${talentos[i][1]}:`));
                 while (notaUno < 0 || notaUno > 100 || isNaN(notaUno)) {
-                    notaUno = parseInt(prompt(`
-                    Tener en cuenta que la notaUno debe estar en tre 0 y 100. 
-                    Por favor ingrese la notaUno de la ${misionUno} del talento ${talentos[i][1]}:`));
+                    notaUno = parseInt(prompt(`Tener en cuenta que la nota debe estar en tre 0 y 100.
+                    Por favor ingrese la nota de la ${misionUno} del talento ${talentos[i][1]}:`));
                 }
                 talentos[i][misionUno] = notaUno;
                 alert(`Nota de la ${misionUno} del talento ${talentos[i][1]}, agregada. `)
             }
-            alert(`Ya has registrado todos los registros habilitados de la ${misionUno}.`)
+            alert(`Ya registraste todos los talentos habilitados de la ${misionUno}.`)
             reiniciadorMisionUno = 0;
             break;
 
@@ -136,16 +135,15 @@ while (menuPrincipal !== 13) {
             var misionDos = ("Mision Dos");
 
             for (let i = 0; i < reiniciadorMisionDos; i++) {
-                let notaDos = parseInt(prompt(`Por favor ingrese la notaDos de la ${misionDos} del talento ${talentos[i][1]}:`));
+                let notaDos = parseInt(prompt(`Por favor ingrese la nota de la ${misionDos} del talento ${talentos[i][1]}:`));
                 while (notaDos < 0 || notaDos > 100 || isNaN(notaDos)) {
-                    notaDos = parseInt(prompt(`
-                    Tener en cuenta que la notaDos debe estar en tre 0 y 100. 
-                    Por favor ingrese la notaDos de la ${misionDos} del talento ${talentos[i][1]}:`));
+                    notaDos = parseInt(prompt(`Tener en cuenta que la nota debe estar en tre 0 y 100. 
+                    Por favor ingrese la nota de la ${misionDos} del talento ${talentos[i][1]}:`));
                 }
                 talentos[i][misionDos] = notaDos;
                 alert(`Nota de la ${misionDos} del talento ${talentos[i][1]}, agregada. `)
             }
-            alert(`Ya has registrado todos los registros habilitados de la ${misionDos}.`)
+            alert(`Ya registraste todos los talentos habilitados de la ${misionDos}.`)
             reiniciadorMisionDos = 0;
             break;
 
@@ -154,16 +152,15 @@ while (menuPrincipal !== 13) {
             var misionTres = ("Mision Tres");
 
             for (let i = 0; i < reiniciadorMisionTres; i++) {
-                let notaTres = parseInt(prompt(`Por favor ingrese la notaTres de la ${misionTres} del talento ${talentos[i][1]}:`));
+                let notaTres = parseInt(prompt(`Por favor ingrese la nota de la ${misionTres} del talento ${talentos[i][1]}:`));
                 while (notaTres < 0 || notaTres > 100 || isNaN(notaTres)) {
-                    notaTres = parseInt(prompt(`
-                    Tener en cuenta que la notaTres debe estar en tre 0 y 100. 
-                    Por favor ingrese la notaTres de la ${misionTres} del talento ${talentos[i][1]}:`));
+                    notaTres = parseInt(prompt(`Tener en cuenta que la nota debe estar en tre 0 y 100. 
+                    Por favor ingrese la nota de la ${misionTres} del talento ${talentos[i][1]}:`));
                 }
                 talentos[i][misionTres] = notaTres;
                 alert(`Nota de la ${misionTres} del talento ${talentos[i][1]}, agregada. `)
             }
-            alert(`Ya has registrado todos los registros habilitados de la ${misionTres}.`)
+            alert(`Ya registraste todos los talentos habilitados de la ${misionTres}.`)
             reiniciadorMisionTres = 0;
             break;
 
@@ -267,7 +264,8 @@ while (menuPrincipal !== 13) {
 
         case 12:
 
-            let nombreTalento = `Jefferson Fabian Coronado Amado`;
+            let nombreTalento = `Jefferson Fabian Coronado Amado
+            Jefphunter CrownLoved`;
 
             alert(`
             El talento COEX que desarrolló la Mision 3 Es: 
@@ -277,7 +275,7 @@ while (menuPrincipal !== 13) {
         case 13:
 
             alert(`
-            FINAL DEL MODULO
+            FINAL DEL MODULO.
             
             ¡¡GRACIAS POR SU TIEMPO Y DEDICACIÓN!!`);
             break;
