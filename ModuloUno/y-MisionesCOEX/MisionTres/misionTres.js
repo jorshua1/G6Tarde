@@ -243,28 +243,38 @@ while (isNaN(menuPrincipal) || menuPrincipal !== 13) {
 
         case 10:
 
-            for (let i = 0; i < talentos.length; i++) {
-                if (talentos[i]["Mision Uno"] !== undefined && talentos[i]["Mision Dos"] !== undefined && talentos[i]["Mision Tres"] !== undefined && talentos[i]["Prueba Nivel Final"] !== undefined) {
-                    let sumaTotalNotasTalentos = talentos[i]["Mision Uno"] + talentos[i]["Mision Dos"] + talentos[i]["Mision Tres"] + talentos[i]["Prueba Nivel Final"];
-                    let promedioNotasTalentos = sumaTotalNotasTalentos / 4;
-                    alert(`El promedio del talento Coex ${talentos[i][1]} es de ${promedioNotasTalentos.toFixed(2)}`);
-                } else {
-                    alert(`El talento COEX ${talentos[i][1]} aun tiene pendiente notas de misiones y/o de la prueba de nivel final.`);
+            if (talentos.length === 0) {
+                alert(`Aun no se han ingresado notas, por favor inicie en la opcion 1 del menu.`)
+            } else {
+
+                for (let i = 0; i < talentos.length; i++) {
+                    if (talentos[i]["Mision Uno"] !== undefined && talentos[i]["Mision Dos"] !== undefined && talentos[i]["Mision Tres"] !== undefined && talentos[i]["Prueba Nivel Final"] !== undefined) {
+                        let sumaTotalNotasTalentos = talentos[i]["Mision Uno"] + talentos[i]["Mision Dos"] + talentos[i]["Mision Tres"] + talentos[i]["Prueba Nivel Final"];
+                        let promedioNotasTalentos = sumaTotalNotasTalentos / 4;
+                        alert(`El promedio del talento Coex ${talentos[i][1]} es de ${promedioNotasTalentos.toFixed(2)}`);
+                    } else {
+                        alert(`El talento COEX ${talentos[i][1]} aun tiene pendiente notas de misiones y/o de la prueba de nivel final.`);
+                    }
                 }
             }
             break;
 
         case 11:
 
-            console.log("Mostrando datos de Talentos COEX.");
-            for (let i = 0; i < talentos.length; i++) {
-                alert(`Talento COEX ${i + 1}: 
+            if (talentos.length === 0) {
+                alert(`Aun no se han ingresado notas, por favor inicie en la opcion 1 del menu.`)
+            } else {
+
+                console.log("Mostrando datos de Talentos COEX.");
+                for (let i = 0; i < talentos.length; i++) {
+                    alert(`Talento COEX ${i + 1}: 
                 Código: ${talentos[i][0]}
                 Nombre: ${talentos[i][1]}
                 Nota Misión 1: ${talentos[i]["Mision Uno"]}
                 Nota Misión 2: ${talentos[i]["Mision Dos"]}
                 Nota Misión 3: ${talentos[i]["Mision Tres"]}
                 Prueba Nivel Final: ${talentos[i]["Prueba Nivel Final"]}`);
+                }
             }
             break;
 
@@ -274,7 +284,8 @@ while (isNaN(menuPrincipal) || menuPrincipal !== 13) {
             Jefphunter CrownLoved`;
 
             alert(`
-            El talento COEX que desarrolló la Mision 3 Es: 
+            El talento COEX que desarrolló la Mision 3 Es:
+
             ${nombreTalento}.`);
             break;
 
