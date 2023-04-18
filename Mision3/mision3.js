@@ -79,7 +79,7 @@ while (opcionMenu != 13) {
 
         case 2:
             let codigoValido=0;
-
+            let codigoTalento=0;
             if (cantidadTalentos === 0) {
                 alert("Debes seleccionar primero la opción 1 y digitar la cantidad de talentos. ")
                 alert("Devolviendo al menú principal.")
@@ -89,28 +89,31 @@ while (opcionMenu != 13) {
                 alert("Devolviendo al menú principal.")
             } else {
                 alert("Registro de los talentos.")
-                let codigoTalento=0;
                 for (let i = 0; i < cantidadTalentos;) {
+                    codigoValido= 0;
                     arregloDatosTalentos[i] = new Array();
-                    codigoTalento = Number(prompt("ingrese el codigo del estudiante"));
+                    codigoTalento = Number(prompt(`ingrese el codigo del talento ${i+1}`));
                     while (isNaN(codigoTalento) || codigoTalento <= 0) {
-                        codigoTalento = Number(prompt("ingrese el codigo del estudiante correctamente"));
+                        codigoTalento = Number(prompt(`Ingrese un codigo válido para el talento ${i+1}`));
                     }
                     if (i === 0) {
                         arregloDatosTalentos[i][0] = codigoTalento;
                         arregloDatosTalentos[i][1] = prompt("ingrese el nombre del talento");
-
+                        codigoTalento=0;
                         i++;
                     } else {
                         for (let codigo = 0; codigo < arregloDatosTalentos.length; codigo++) {
                             if (arregloDatosTalentos[codigo][0] === codigoTalento) {
+                                alert("El codigo digitado ya está asignado a un talento")
                                 codigoValido=1;
+                                codigoTalento=0;
                                 break;                                
                             }
-                        }if(codigoValido=0){
+                        }if(codigoValido===0){
                             arregloDatosTalentos[i][0]=codigoTalento;
                             arregloDatosTalentos[i][1] = prompt("ingrese el nombre del talento");
                             i++;
+                            codigoTalento=0;
                         }
                     }
                 }
@@ -279,8 +282,8 @@ while (opcionMenu != 13) {
                 let mejorNotaMision3 = 0;
                 let guardaPosicionMision3 = 0;
                 for (let i = 0; i < cantidadTalentos; i++) {
-                    if (arregloNotasMision2[i] > mejorNotaMision3) {
-                        mejorNotaMision3 = arregloNotasMision2[i];
+                    if (arregloNotasMision3[i] > mejorNotaMision3) {
+                        mejorNotaMision3 = arregloNotasMision3[i];
                         guardaPosicionMision3 = i;
                     }
                 }
