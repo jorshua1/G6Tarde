@@ -174,7 +174,36 @@ while (menu !== 13) {
                     }
                 }
             } else {
-                alert(`Ya tienes registradas las notas de la misión 1.`)
+                if (notaMision1[0] !== 0) {
+                    confirmacion = parseInt(prompt(`
+                    Desea sobreescribir la nota de la misión 1?
+                    -Digite 1 para Si.
+                    -Digite 2 para No.`));
+                    while (isNaN(confirmacion) || confirmacion < 1 || confirmacion > 2) {
+                        confirmacion = parseInt(prompt(`
+                    ERROR DIGITE UN NUMERO VALIDO!!!
+                    Desea sobreescribir la nota de la misión 1?
+                    -Digite 1 para Si.
+                    -Digite 2 para No.`));
+                    }
+                    if (confirmacion === 1) {
+                        for (let i = 0; i < cantidadTalentos; i++) {
+                            notaMision1[i] = parseFloat(prompt(`Ingrese la nota de la misión 1 para el talento con codigo ${i + 1}`));
+                            while (isNaN(notaMision1[i]) || notaMision1[i] < 0 || notaMision1[i] > 100 || notaMision1[i] == undefined) {
+                                notaMision1[i] = parseFloat(prompt(`
+                            ERROR!!! Ingrese un valor valido para la nota de la misión 1 para el talento ${i + 1}`));
+                            }
+                            if (notaMision1[i] > mayorNota1) {
+                                mayorNota1 = notaMision1[i];
+                                mayorNota1Talento = i;
+                            }
+                        }
+                    } else {
+                        alert(`Regresando al menú principal.`)
+                    }
+                }
+
+
             }
             break;
         case 4:
@@ -198,19 +227,19 @@ while (menu !== 13) {
                     }
                 }
             } else {
-                if(notaMision2[0]!==0){
-                        confirmacion = parseInt(prompt(`
+                if (notaMision2[0] !== 0) {
+                    confirmacion = parseInt(prompt(`
                     Desea sobreescribir la nota de la misión 2?
                     -Digite 1 para Si.
                     -Digite 2 para No.`));
-                    while(isNaN(confirmacion) || confirmacion < 1 ||confirmacion > 2){
+                    while (isNaN(confirmacion) || confirmacion < 1 || confirmacion > 2) {
                         confirmacion = parseInt(prompt(`
                     ERROR DIGITE UN NUMERO VALIDO!!!
                     Desea sobreescribir la nota de la misión 2?
                     -Digite 1 para Si.
                     -Digite 2 para No.`));
                     }
-                    if(confirmacion===1){
+                    if (confirmacion === 1) {
                         for (let i = 0; i < cantidadTalentos; i++) {
                             notaMision2[i] = parseFloat(prompt(`Ingrese la nota de la misión 2 para el talento con codigo ${i + 1}`));
                             while (isNaN(notaMision2[i]) || notaMision2[i] < 0 || notaMision2[i] > 100 || notaMision2[i] == undefined) {
@@ -222,11 +251,11 @@ while (menu !== 13) {
                                 mayorNota2Talento = i;
                             }
                         }
-                    }else{
+                    } else {
                         alert(`Regresando al menú principal.`)
                     }
                 }
-                
+
 
             }
             break;
@@ -251,7 +280,36 @@ while (menu !== 13) {
                     }
                 }
             } else {
-                alert(`Ya tienes registradas las notas de la misión 3.`)
+                if (notaMision3[0] !== 0) {
+                    confirmacion = parseInt(prompt(`
+                    Desea sobreescribir la nota de la misión 3?
+                    -Digite 1 para Si.
+                    -Digite 2 para No.`));
+                    while (isNaN(confirmacion) || confirmacion < 1 || confirmacion > 2) {
+                        confirmacion = parseInt(prompt(`
+                    ERROR DIGITE UN NUMERO VALIDO!!!
+                    Desea sobreescribir la nota de la misión 3?
+                    -Digite 1 para Si.
+                    -Digite 2 para No.`));
+                    }
+                    if (confirmacion === 1) {
+                        for (let i = 0; i < cantidadTalentos; i++) {
+                            notaMision3[i] = parseFloat(prompt(`Ingrese la nota de la misión 3 para el talento con codigo ${i + 1}`));
+                            while (isNaN(notaMision3[i]) || notaMision3[i] < 0 || notaMision3[i] > 100 || notaMision3[i] == undefined) {
+                                notaMision3[i] = parseFloat(prompt(`
+                            ERROR!!! Ingrese un valor valido para la nota de la misión 3 para el talento ${i + 1}`));
+                            }
+                            if (notaMision3[i] > mayorNota3) {
+                                mayorNota3 = notaMision3[i];
+                                mayorNota3Talento = i;
+                            }
+                        }
+                    } else {
+                        alert(`Regresando al menú principal.`)
+                    }
+                }
+
+
             }
             break;
         case 6:
@@ -271,7 +329,33 @@ while (menu !== 13) {
                     }
                 }
             } else {
-                alert(`Ya tienes registradas las notas de la misión 3.`)
+                if (notaFinal[0] !== 0) {
+                    confirmacion = parseInt(prompt(`
+                    Desea sobreescribir la nota final?
+                    -Digite 1 para Si.
+                    -Digite 2 para No.`));
+                    while (isNaN(confirmacion) || confirmacion < 1 || confirmacion > 2) {
+                        confirmacion = parseInt(prompt(`
+                    ERROR DIGITE UN NUMERO VALIDO!!!
+                    Desea sobreescribir la nota final?
+                    -Digite 1 para Si.
+                    -Digite 2 para No.`));
+                    }
+                    if (confirmacion === 1) {
+                        for (let i = 0; i < cantidadTalentos; i++) {
+                            notaFinal[i] = parseFloat(prompt(`Ingrese la nota final para el talento con codigo ${i + 1}`));
+                            while (isNaN(notaFinal[i]) || notaFinal[i] < 0 || notaFinal[i] > 100 || notaFinal[i] == undefined) {
+                                notaFinal[i] = parseFloat(prompt(`
+                            ERROR!!! Ingrese un valor valido para la nota final del talento ${i + 1}`));
+                            }
+
+                        }
+                    } else {
+                        alert(`Regresando al menú principal.`)
+                    }
+                }
+
+
             }
             break;
         case 7:
@@ -369,9 +453,6 @@ while (menu !== 13) {
             alert("ERROR DATO INVALIDO")
     }
 }
-
-
-
 
 
 
