@@ -95,23 +95,24 @@ while (menu !== 13) {
     alert(menu);
     switch (menu) {
         case 1:
-            if (cantidadTalentos === 0) {
-                cantidadTalentos = parseInt(prompt(`
+            if (cantidadTalentos > 0) {
+                alert(`
+            Ya tiene una cantidad de talentos registrada,
+            si quiere realizar un nuevo registro vuelva a 
+            ejecutar el programa.`)
+            } else {
+                while (cantidadTalentos <= 0 || isNaN(cantidadTalentos) || !Number.isInteger(cantidadTalentos)) {
+                    cantidadTalentos = Number(prompt(`
                 Ingrese la cantidad total de 
                 talentos COEX que quiere registrar,
                 recuerde que este dato es necesario
                 para continuar con el registro.`))
-                if (isNaN(cantidadTalentos) || cantidadTalentos <= 0) {
-                    alert("ERROR INGRESE UN DATO VALIDO")
-                } else {
-                    alert("Dato registrado correctamente.")
+                    if (isNaN(cantidadTalentos) || cantidadTalentos <= 0) {
+                        alert("ERROR INGRESE UN DATO VALIDO")
+                    } else {
+                        alert("Dato registrado correctamente.")
+                    }
                 }
-            } else {
-                alert(`
-                Ya tiene una cantidad de talentos registrada,
-                si quiere realizar un nuevo registro vuelva a 
-                ejecutar el programa.`)
-                break;
             }
             break;
         case 2:
