@@ -175,5 +175,3 @@ _Por ejemplo, un stack de web suele tener el siguiente aspecto:_
 19. ¿Cuáles son los roles en el desarrollo de software?
 20. ¿Cuál es el camino que deseas seguir? ¿Desarrollador FrontEnd o Desarrollador BackEnd?
 
-
-
