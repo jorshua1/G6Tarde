@@ -70,7 +70,7 @@ do {
 
                 estaturaDelFamiliar = Number(prompt("INGRESE SU ESTATURA EN (METROS)"))
                 while(isNaN(estaturaDelFamiliar) || estaturaDelFamiliar < 0 || estaturaDelFamiliar > 4){
-                    estaturaDelFamiliar = Number(prompt("INGRESE UNA ESTATURA VALIDA"))
+                    estaturaDelFamiliar = Number(prompt("INGRESE UNA ESTATURA VALIDA"))         
                 }
 
                 sumaEstaturas = sumaEstaturas + estaturaDelFamiliar

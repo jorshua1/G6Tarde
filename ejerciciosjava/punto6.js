@@ -1,4 +1,4 @@
-/* crear un algoritmo que compruebe la estacion en la que se encuentra un mes,
+/*crear un algoritmo que compruebe la estacion en la que se encuentra un mes,
 para saber si el mes esta en verano,otoño,primavera,invierno.*/
 let periodoaño = parseInt(prompt("Ingrese el numero del mes"));
 if(isNaN(periodoaño)){
