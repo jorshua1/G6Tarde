@@ -96,17 +96,10 @@ while (menu !== 13) {
     switch (menu) {
         case 1:
             if (cantidadTalentos > 0) {
-                alert(`
-            Ya tiene una cantidad de talentos registrada,
-            si quiere realizar un nuevo registro vuelva a 
-            ejecutar el programa.`)
+                alert(`Ya tiene una cantidad de talentos registrada, si quiere realizar un nuevo registro vuelva a ejecutar el programa.`)
             } else {
                 while (cantidadTalentos <= 0 || isNaN(cantidadTalentos) || !Number.isInteger(cantidadTalentos)) {
-                    cantidadTalentos = Number(prompt(`
-                Ingrese la cantidad total de 
-                talentos COEX que quiere registrar,
-                recuerde que este dato es necesario
-                para continuar con el registro.`))
+                    cantidadTalentos = Number(prompt(`Ingrese la cantidad total de talentos COEX que quiere registrar, recuerde que este dato es necesario para continuar con el registro.`))
                     if (isNaN(cantidadTalentos) || cantidadTalentos <= 0) {
                         alert("ERROR INGRESE UN DATO VALIDO")
                     } else {
@@ -118,10 +111,7 @@ while (menu !== 13) {
         case 2:
             if (matriz[0] === 0) {
                 if (cantidadTalentos <= 0) {
-                    alert(`
-                    No se puede realizar el registro de los talentos COEX
-                    sin antes registrar la cantidad de talentos, por favor 
-                    hacer este registro en la opción 1 para continuar.`)
+                    alert(`No se puede realizar el registro de los talentos COEX sin antes registrar la cantidad de talentos, por favor hacer este registro en la opción 1 para continuar.`)
                 } else {
                     for (fila = 0; fila < cantidadTalentos; fila++) {
                         console.log(`Registro del talento # ${fila + 1}`);
@@ -131,17 +121,9 @@ while (menu !== 13) {
                             if (columna === 0) {
                                 matriz[fila][columna] = (fila + 1)
                             } else {
-                                matriz[fila][columna] = prompt(`
-                            Acontinuación vas a registrar los talentos COEX
-                            Digite el nombre del talento que quiere registrar
-                            el sistema ya le asigno un codigo único a este 
-                            talento.`);
+                                matriz[fila][columna] = prompt(`Acontinuación vas a registrar los talentos COEX. Digite el nombre del talento que quiere registrar. El sistema ya le asigno un codigo único a este talento.`);
                                 while (!isNaN(matriz[fila][columna]) || matriz[fila][columna] == undefined) {
-                                    matriz[fila][columna] = prompt(`
-                                Acontinuación vas a registrar los talentos COEX
-                                Digite el nombre del talento que quiere registrar
-                                el sistema ya le asigno un codigo único a este 
-                                talento.`);
+                                    matriz[fila][columna] = prompt(`Acontinuación vas a registrar los talentos COEX. Digite el nombre del talento que quiere registrar. El sistema ya le asigno un codigo único a este talento.`);
                                 }
                             }
                             console.log(`
@@ -151,7 +133,38 @@ while (menu !== 13) {
                     } console.log(matriz);
                 }
             } else {
-                alert(`Ya tienes los talentos registrados.`)
+                if (matriz[0] !== 0) {
+                    confirmacion = parseInt(prompt(`
+                    Desea sobreescribir los talentos COEX registrados?
+                    -Digite 1 para Si.
+                    -Digite 2 para No.`));
+                    while (isNaN(confirmacion) || confirmacion < 1 || confirmacion > 2) {
+                        confirmacion = parseInt(prompt(`
+                    ERROR DIGITE UN NUMERO VALIDO!!!
+                    Desea sobreescribir los talentos COEX registrados?
+                    -Digite 1 para Si.
+                    -Digite 2 para No.`));
+                    }
+                    if (confirmacion === 1) {for (fila = 0; fila < cantidadTalentos; fila++) {
+                        console.log(`Registro del talento # ${fila + 1}`);
+                        matriz[fila] = [];
+                        for (let columna = 0; columna < 2; columna++) {
+                
+                            if (columna === 0) {
+                                matriz[fila][columna] = (fila + 1)
+                            } else {
+                                matriz[fila][columna] = prompt(`Acontinuación vas a registrar los talentos COEX. Digite el nombre del talento que quiere registrar. El sistema ya le asigno un codigo único a este talento.`);
+                                while (!isNaN(matriz[fila][columna]) || matriz[fila][columna] == undefined) {
+                                    matriz[fila][columna] = prompt(`Acontinuación vas a registrar los talentos COEX. Digite el nombre del talento que quiere registrar. El sistema ya le asigno un codigo único a este talento.`);
+                                }
+                            }
+                            console.log(`
+                        El codigo asignado para este talento es ${fila + 1} 
+                        datos del talento: ${matriz[fila]}`);
+                        }
+                    } console.log(matriz);
+                }
+                }
             }
             break;
         case 3:
@@ -413,7 +426,11 @@ while (menu !== 13) {
                     }
                     alert(`${talentos}`)
                 } else {
-                    alert("Registre las notas de los talentos para acceder a esta opción.")
+                    alert(`
+                    ERROR!!!
+                    Registre las notas de los talentos para acceder a esta opción.
+                    Esto lo hace en las opciones 3,4,5 y 6, recuerde que todas las notas
+                    son necesarias para realizar el promedio.`)
                 }
             } break;
         case 11:
@@ -427,7 +444,11 @@ while (menu !== 13) {
                 último ingrese a la opción 10 para calcular el promedio.
                 `)
             } else if (promedioNotas === 0 && ((notaMision1[0] === 0 || notaMision2[0] === 0 || notaMision3[0] === 0 || notaFinal[0] === 0))) {
-                alert(`Registre las notas de los talentos para acceder a esta opción.`)
+                alert(`
+                ERROR!!!
+                Registre las notas de los talentos para acceder a esta opción.
+                Esto lo hace en las opciones 3,4,5 y 6, recuerde que todas las notas
+                son necesarias para mostrar el registro total de notas.`)
             } else {
                 if (promedioNotas !== 0) {
                     for (let i = 0; i < cantidadTalentos; i++) {
