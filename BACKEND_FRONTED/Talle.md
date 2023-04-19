@@ -85,7 +85,7 @@ Con todos estos componentes agrupador se hace mas facil descargar e implementar 
 
 ## Tipos de stacks de desarrollo
 
-[tecnologias-informacion](https://www.tecnologias-informacion.com/stacksdesarrollo.html)
+![tecnologias-informacion](https://www.syntonize.com/wp-content/uploads/2022/04/Stack-web.png)
 
 11. **¿Cuáles son los lenguajes de programación más demandados en el mercado colombiano?**
 
