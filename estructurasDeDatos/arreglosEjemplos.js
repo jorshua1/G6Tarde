@@ -68,25 +68,5 @@ console.log(arreglo)
 
 }
 
-//////////////////
 
-
-for (let fila=0;fila<4;fila++){
-
-console.log("Creando la fila"${fila+1})}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
 
