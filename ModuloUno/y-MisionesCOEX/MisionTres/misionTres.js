@@ -92,24 +92,28 @@ while (isNaN(menuPrincipal) || menuPrincipal !== 13) {
         case 2:
 
             for (i = 1; i <= reiniciadorRegistroTalentos; i++) {
+
                 if (reiniciadorRegistroTalentos >= i) {
 
-                    let codigoTalentoCoex = prompt(`Por favor ingrese el código del talento ${i} se puede usar numeros, letras o carácteres especiales:`);
-                    let nombreTalentoCoex = prompt(`Por favor ingrese el nombre del talento ${i} se puede usar numeros, letras o carácteres especiales:`);
+                    let codigoTalentoCoex = prompt(`Por favor ingrese el código del talento ${i} se puede usar numeros, letras y/ carácteres especiales:`);
+                    let nombreTalentoCoex = prompt(`Por favor ingrese el nombre del talento ${i} se puede usar numeros, letras y/o carácteres especiales:`);
                     let codigoRepetido = false;
                     let codigoTalentoCoexNuevo = 0;
 
                     for (let j = 0; j < talentos.length; j++) {
+
                         if (talentos[j][0] === codigoTalentoCoex) {
                             codigoRepetido = true;
                             codigoTalentoCoexNuevo = codigoTalentoCoex;
+
                         } else {
                         }
                     }
                     if (codigoRepetido === true) {
+
                         while (codigoTalentoCoexNuevo === codigoTalentoCoex) {
-                            alert(`Por favor verifique, ya existe el registro de un talento COEX con ese código ${codigoTalentoCoex}.`);
-                            codigoTalentoCoex = prompt(`Por favor ingrese un nuevo código del talento ${i} se puede usar numeros, letras o carácteres especiales:`);
+                            alert(`Por favor verifique, ya existe el registro de un talento COEX con el código ${codigoTalentoCoex}.`);
+                            codigoTalentoCoex = prompt(`Por favor ingrese un nuevo código del talento ${i} se puede usar numeros, letras y/o carácteres especiales:`);
                         }
                     } else {
                     }
@@ -117,7 +121,7 @@ while (isNaN(menuPrincipal) || menuPrincipal !== 13) {
                     if (nombreTalentoCoex === ``) {
                         while (nombreTalentoCoex === ``) {
                             alert(`Por favor debe ingresar un nombre para el talento ${i}, no dejar el recuadro en blanco.`);
-                            nombreTalentoCoex = prompt(`Por favor ingrese el nombre del talento ${i} se puede usar numeros, letras o carácteres especiales:`);
+                            nombreTalentoCoex = prompt(`Por favor ingrese el nombre del talento ${i} se puede usar numeros, letras y/o carácteres especiales:`);
                         }
                     } else {
                     }
@@ -134,7 +138,7 @@ while (isNaN(menuPrincipal) || menuPrincipal !== 13) {
 
         case 3:
 
-            var misionUno = ("Mision Uno");
+            var misionUno = ("Misión Uno");
 
             for (let i = 0; i < reiniciadorMisionUno; i++) {
                 let notaUno = parseInt(prompt(`Por favor ingrese la nota de la ${misionUno} del talento ${talentos[i][1]}:`));
@@ -150,7 +154,7 @@ while (isNaN(menuPrincipal) || menuPrincipal !== 13) {
 
         case 4:
 
-            var misionDos = ("Mision Dos");
+            var misionDos = ("Misión Dos");
 
             for (let i = 0; i < reiniciadorMisionDos; i++) {
                 let notaDos = parseInt(prompt(`Por favor ingrese la nota de la ${misionDos} del talento ${talentos[i][1]}:`));
@@ -166,7 +170,7 @@ while (isNaN(menuPrincipal) || menuPrincipal !== 13) {
 
         case 5:
 
-            var misionTres = ("Mision Tres");
+            var misionTres = ("Misión Tres");
 
             for (let i = 0; i < reiniciadorMisionTres; i++) {
                 let notaTres = parseInt(prompt(`Por favor ingrese la nota de la ${misionTres} del talento ${talentos[i][1]}:`));
@@ -208,7 +212,7 @@ while (isNaN(menuPrincipal) || menuPrincipal !== 13) {
                     mejorTalentoMisionUno = talentos[i][1];
                 }
             }
-            alert(`El talento con la mejor nota en la Misión ${misionUnoNotaMaxima} es: ${mejorTalentoMisionUno} con una nota de ${misionUnoMejorNota}.`);
+            alert(`El talento con la mejor nota en la ${misionUnoNotaMaxima} es: ${mejorTalentoMisionUno} con una nota de ${misionUnoMejorNota}.`);
             break;
 
         case 8:
@@ -223,7 +227,7 @@ while (isNaN(menuPrincipal) || menuPrincipal !== 13) {
                     mejorTalentoMisionDos = talentos[i][1];
                 }
             }
-            alert(`El talento con la mejor nota en la Misión ${misionDosNotaMaxima} es: ${mejorTalentoMisionDos} con una nota de ${misionDosMejorNota}.`);
+            alert(`El talento con la mejor nota en la ${misionDosNotaMaxima} es: ${mejorTalentoMisionDos} con una nota de ${misionDosMejorNota}.`);
             break;
 
         case 9:
@@ -238,7 +242,7 @@ while (isNaN(menuPrincipal) || menuPrincipal !== 13) {
                     mejorTalentoMisionTres = talentos[i][1];
                 }
             }
-            alert(`El talento con la mejor nota en la Misión ${misionTresNotaMaxima} es: ${mejorTalentoMisionTres} con una nota de ${misionTresMejorNota}.`);
+            alert(`El talento con la mejor nota en la ${misionTresNotaMaxima} es: ${mejorTalentoMisionTres} con una nota de ${misionTresMejorNota}.`);
             break;
 
         case 10:
