@@ -134,8 +134,7 @@ while (menu !== 13) {
                 }
             } else {
                 if (matriz[0] !== 0) {
-                    confirmacion = parseInt(prompt(`
-                    Desea sobreescribir los talentos COEX registrados?
+                    confirmacion = parseInt(prompt(`Desea sobreescribir los talentos COEX registrados?
                     -Digite 1 para Si.
                     -Digite 2 para No.`));
                     while (isNaN(confirmacion) || confirmacion < 1 || confirmacion > 2) {
