@@ -11,7 +11,7 @@
     let notasRepetidasMision1 =[];
     let notasRepetidasMision2 = [];
     let notasRepetidasMision3 = [];
-    //Notas
+    //NotasQ
     let notaMision1=0;
     let notaMision2=0;
     let notaMision3=0;
@@ -77,9 +77,7 @@
         if (estudiantesNotaMayor.length === 1) {
             alert(`El estudiante con la nota mayor es ${estudiantesNotaMayor} con una nota de: ${notaMayor}`);
           } else {
-            for (let i = 0; i < estudiantesNotaMayor.length; i++) {
-                alert(`Los estudiantes con la nota mayor (${notaMayor}) son: ${estudiantesNotaMayor[i]}`);
-            }
+                alert(`Los estudiantes con la nota mayor (${notaMayor}) son: ${estudiantesNotaMayor}`);
           }
   
             }
@@ -89,10 +87,10 @@
     switch(opcionMenu){
         case 1://opcion 1 
         if(cantidadTalentos==0){
-            cantidadTalentos = parseInt(prompt("Ingrese la cantidad de talentos a registrar"))
-            while(isNaN(cantidadTalentos) || cantidadTalentos<0 || cantidadTalentos% 1!==0 || cantidadTalentos>0){
+            cantidadTalentos = Number(prompt("Ingrese la cantidad de talentos a registrar"))
+            while(isNaN(cantidadTalentos) || cantidadTalentos<0 || cantidadTalentos% 1!==0){
                 alert("Ingreso valores invalidos, solo se admiten números positivos")
-                cantidadTalentos = parseInt(prompt("Ingrese la cantidad de talentos a registrar"))
+                cantidadTalentos = Number(prompt("Ingrese la cantidad de talentos a registrar"))
             }
             }else{
             alert("Ya se registrarón los talentos")
@@ -103,10 +101,10 @@
             if(codigo == 0 && nombre == ""){
          for (let i = 0; i < cantidadTalentos; i++) {//for de Filas
             let encontrado = false;
-            codigo = parseInt(prompt("Ingrese el código del talento"))
+            codigo = Number(prompt("Ingrese el código del talento"))
             while(isNaN(codigo) || codigo<0 || codigo % 1 !== 0 || codigo == 0){
                 alert("Ingreso valores erroneos, solo se admiten valores positivos y enteros")
-                codigo = parseInt(prompt("Ingrese el código del talento"))
+                codigo = Number(prompt("Ingrese el código del talento"))
             }
             nombre = prompt("Ingrese el nombre del Talento")
             while(nombre == 0 || !isNaN(nombre)){
@@ -145,7 +143,7 @@
             if(notaMision1==0){
             for(let i = 0 ; i <matriz.length; i++){
             notaMision1 = Number(prompt(`Ingrese la nota de la misión 1 de ${matriz[i][1]} con código: ${matriz[i][0]}`))
-            while(isNaN(notaMision1) || notaMision1<0 || notaMision1 % 1!==0 || notaMision1>100){
+            while(isNaN(notaMision1) || notaMision1<=0 || notaMision1 % 1!==0 || notaMision1>100){
                 alert("Ingreso valores erroneos, solo se adminten valores entre 1 y 100 para esta calificación")
                 notaMision1 = Number(prompt(`Ingrese la nota de la misión 1 de ${matriz[i][1]} con código: ${matriz[i][0]}`))
             }
@@ -169,7 +167,7 @@
             if(notaMision2==0){
          for(let i = 0 ; i <matriz.length; i++){
             notaMision2 = Number(prompt(`Ingrese la nota de la misión 2 de ${matriz[i][1]} con código: ${matriz[i][0]}`))
-            while(isNaN(notaMision2) || notaMision2<0 || notaMision2 % 1!==0 || notaMision2>100){
+            while(isNaN(notaMision2) || notaMision2<=0 || notaMision2 % 1!==0 || notaMision2>100){
                 alert("Ingreso valores erroneos, solo se adminten valores entre 1 y 100 para esta calificación")
                 notaMision2 = Number(prompt(`Ingrese la nota de la misión 2 de ${matriz[i][1]} con código: ${matriz[i][0]}`))
             }
@@ -195,7 +193,7 @@
             if(notaMision3==0){
          for(let i = 0 ; i <matriz.length; i++){
          notaMision3 = Number(prompt(`Ingrese la nota de la misión 3 de ${matriz[i][1]} con código: ${matriz[i][0]}`))
-         while(isNaN(notaMision3) || notaMision3<0 || notaMision3 % 1!==0 ||  notaMision3>100 ){
+         while(isNaN(notaMision3) || notaMision3<=0 || notaMision3 % 1!==0 ||  notaMision3>100 ){
              alert("Ingreso valores erroneos, solo se adminten valores entre 1 y 100 para esta calificación")
              notaMision3 = Number(prompt(`Ingrese la nota de la misión 3 de ${matriz[i][1]} con código: ${matriz[i][0]}`))
          }
@@ -221,7 +219,7 @@
             if(pruebaNivelFinal==0){
          for(let i = 0 ; i <matriz.length; i++){
          pruebaNivelFinal = Number(prompt(`Ingrese nota de la prueba nivel Final de ${matriz[i][1]} con código: ${matriz[i][0]}`))
-         while(isNaN(pruebaNivelFinal) || pruebaNivelFinal<0 || pruebaNivelFinal % 1!==0 || pruebaNivelFinal>100){
+         while(isNaN(pruebaNivelFinal) || pruebaNivelFinal<=0 || pruebaNivelFinal % 1!==0 || pruebaNivelFinal>100){
              alert("Ingreso valores erroneos, solo se adminten valores entre 1 y 100 para esta calificación")
              pruebaNivelFinal = Number(prompt(`Ingrese nota de la prueba nivel Final de ${matriz[i][1]} con código: ${matriz[i][0]}`))
 
@@ -244,7 +242,7 @@
          case 7: //opcion 7
          if(cantidadTalentos>0){
             if(codigo>0 || nombre!=0){
-                if(notaMayorMision1>0){
+                if(notaMision1>0){
            ordenamiento(matriz,notaMayorMision1,1,2) // los números son las posiciones de columna-Nombre
            llenarMatrizNotasIguales(matriz,notasRepetidasMision1,1,2)  // los números son las posiciones de columna Nombre
         }else{
