@@ -63,11 +63,10 @@
     ---
 1. ## **¿Cuanto puede ganar un desarollador FrontEnd?**
     ### Un desarollador de FrontEnd en colombia gana en promedio alrededor de $4.098.910 pesos mensuales
-    [FrontEnd](https://co.indeed.com/career/programador-front-end/salaries#:~:text=Sueldo%20promedio%20de%20%24%204.048.910%20por%20mes)
+    ---
 1. ## **¿Cuanto puede ganar un desarollador BackEnd?**
     ### Un desarollador de BackEnd en colombia gana en promedio alrededor de $2.932.132 pesos mensuales
     ---
-    [BackEnd](https://co.indeed.com/career/backend-developer/salaries#:~:text=Sueldo%20promedio%20de%20%24%202.932.132%20por%20mes,-%C2%BFFue%20%C3%BAtil%20la)
 1. ## **¿Cuales con los requisitos para ser desarollador FrontEnd?**
     1. ### Conocer perfectamente el    lenguaje HTML y CSS.
     
@@ -95,7 +94,18 @@
 1. ## **¿Cuales son los roles en el desarollo de software?**
     1. ### Dueño del prodcto.
     2. ### Project manajer
-    3. ## analista comercial.
-    4. ## Desarollador de software
-    5. ## Scrum Master
-1. ## **¿Cual es el camino que deseas seguir?¿Desarikkadir FrontEnd o desarollador BackEnd?**
+    3. ### analista comercial.
+    4. ### Desarollador de software
+    5. ### Scrum Master
+    ---
+1. ## **¿Cual es el camino que deseas seguir?¿Desarollador FrontEnd o desarollador BackEnd?**
+    ###
+    ---
+1. ## **Bibliografia:**
+    ### [FrontEnd](https://co.indeed.com/career/programador-front-end/salaries#:~:text=Sueldo%20promedio%20de%20%24%204.048.910%20por%20mes)
+    ###  [BackEnd](https://co.indeed.com/career/backend-developer/salaries#:~:text=Sueldo%20promedio%20de%20%24%202.932.132%20por%20mes,-%C2%BFFue%20%C3%BAtil%20la)
+    ### [Scrum](https://proyectosagiles.org/que-es-scrum/)
+    ### [Agile](https://www.bbva.com/es/innovacion/metodologia-agile-la-revolucion-las-formas-trabajo/)
+    ### [Frameworks](https://www.bbva.com/es/innovacion/metodologia-agile-la-revolucion-las-formas-trabajo/)
+    ### [Stacks](https://keepcoding.io/blog/que-es-stack-tecnologico/)
+    ### [Precios salarios](https://co.indeed.com/?from=gnav-title-webapp)
