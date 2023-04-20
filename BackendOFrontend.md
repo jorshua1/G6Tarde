@@ -198,12 +198,214 @@
 
 1. ## **¿Cuáles son los lenguajes de programación más demandados en el mercado colombiano?**
 
+    Cada año los lenguajes de programación con mayor salario van cambiando, de acuerdo al movimiento de la industria, la demanda que existe y la cantidad de expertos que hay en esas tecnologías.
+
+    Este año, el Reporte del Mercado Laboral de TI de Colombia muestra los datos que la industria de la tecnología de este país debe conocer.
+
+    Al igual que el informe de México, el reporte de Colombia muestra la recopilación de datos obtenidos con los expertos en tecnologías y las vacantes publicadas en la plataforma de Hireline.
+
+    Cabe destacar que el salario de un programador también se ve afectado por el expertise que tenga, así como el conocimiento en otros idiomas.
+
+    La industria TI cuenta con una gran cantidad de expertos en tecnología que aspiran a tener los siguientes salarios, y en este artículo te mostraremos cuales son lenguajes de programación con mayor salario para que sepas hacia donde dirigir tu carrera profesional.
+
+    **1-Scala**
+
+    El lenguaje de programación con mayor salario en Colombia es Scala, con una remuneración de $10,995,971 pesos colombianos (COP) mensuales y libres de impuestos. Esto equivale a $2,566 dólares estadounidenses aproximadamente.
+
+    Esta cantidad es un promedio, lo que significa que hay profesionales percibiendo remuneraciones mucho más altas, y más bajas también.
+
+    Este lenguaje de programación se basa en el paradigma de Programación Orientada a Objetos (POO), es escalable, multiparadigma, es funcional y se ejecuta en la JVM (Java Virtual Machine).
+
+    Se utiliza para expresar patrones comunes de programación en forma concisa y segura.
+
+    Te recomendamos leer: Reporte del Mercado Laboral de TI: una iniciativa de Hireline
+
+    **2-Swift**
+
+    El lenguaje de programación Swift tiene un salario promedio de $9,321,709 pesos colombianos, lo que equivale a $2,175 dólares estadounidenses aproximadamente.
+
+    Swift se ha mantenido entre los lenguajes de programación mejor pagados de la Latam, estando en tercer lugar en el mercado de México.
+
+    Esta tecnología intuitiva fue creada por Apple, y con ella se desarrollan las apps de iOS, Mac, Apple TV, y Apple Watch.
+
+    **3-Kotlin**
+
+    El tercer lenguaje de programación mejor pagado en Colombia 2022 es Kotlin, con una remuneración promedio de $8,204,469 pesos colombianos. Esta cantidad corresponde aproximadamente a $1,914 dólares estadounidenses libres de impuestos.
+
+    Kotlin es un lenguaje de programación de código abierto que se implementa para el desarrollo de aplicaciones Android. 
+
+    Se destaca por la interoperatividad con el código de Java, la sencillez de su sintaxis, opera bajo el paradigma POO, es multi plataforma, entre otras características.
+
+    **4-Go**
+
+    El cuarto lenguaje de programación mejor pagado en Colombia es Go (Golang), cuyo salario promedio es de $7,410,075 pesos colombianos mensuales y libres de impuestos. Esta cantidad es el equivalente a $1,729 dólares estadounidenses.
+
+    Go figura en el top de lenguajes mejor pagados y con mayor demanda en otros países como en México, donde es el lenguaje de programación mejor pagado de la industria.
+
+    Este lenguaje de programación es de código abierto y se caracteriza por ser fácil de aprender. Se usa para propósitos de servicios de red y nube, interfaces de línea de comandos, desarrollo web, DevOps y más. Fue desarrollado por Google.
+
+    Deberías leer: ¿Cuáles son los frameworks mejor pagados en Colombia 2022?
+
+    **5-Ruby**
+
+    Ruby se posiciona en el quinto lugar de los lenguajes de programación mejor remunerados en Colombia con $6,501,681 pesos colombianos, que en dólares estadounidenses equivalen a $1,517 aproximadamente.
+
+    Ruby es un lenguaje de programación de código abierto, y se utiliza principalmente para el desarrollo de aplicaciones web, aunque también se implementa en el desarrollo de otros softwares.
+
+    Está disponible en plataformas como Windows y Linux. Está basado en el paradigma de la Programación Orientada a Objetos (POO) y es muy dinámico.
+
 1. ## **¿Cuáles son los lenguajes de programación más demandados en el mercado Internacional?**
+
+    **1. Python**
+
+    Ocupando la primera posición en el índice Tiobe y la cuarta en Stackoverflow, Python es, sin sorpresas, uno de los lenguajes de programación más demandados en este momento. Su ámbito de aplicación es, además, bastante amplio, lo que justifica su popularidad tanto para iniciar a principiantes como para el desarrollo de proyectos complejos.
+
+    Multiparadigma e intuitivo, Python es el lenguaje que pone de acuerdo a la mayoría de los expertos. Su carácter pragmático y dinámico, que prioriza la sencillez y la legibilidad de su código, lo convierte en la herramienta ideal para aprender a programar, al igual que se adapta perfectamente a las exigencias de áreas como el desarrollo de aplicaciones móviles, la Inteligencia Artificial y el Machine Learning.
+
+    **2. JavaScript**
+
+    JavaScript es otro de los lenguajes de programación más utilizados, en concreto, por los desarrolladores web. Junto a HTML y CSS, se trata de uno de los pilares de la creación de páginas web.
+
+    Fue creado a mitades de los años 90 para mejorar la funcionalidad de los sitios web y las interfaces de usuario. Por ello, utilizan este lenguaje los que buscan optimizar la interactividad de una página web. No obstante, las aplicaciones actuales de JavaScript van más allá de sus funciones en el navegador, pudiendo usarse del lado del servidor y de la red.
+
+    **3. HTML/CSS**
+
+    Cualquiera que tenga algún conocimiento, por muy superficial que sea, del mundo del desarrollo web, sabe que la combinación HTML y CSS es uno de los fundamentos de la programación. De hecho, entre los lenguajes de programación más demandados, este combo es probablemente de los más importantes a nivel histórico.
+
+    HTML es un lenguaje de marcado para el desarrollo de páginas web y herramienta esencial en la creación de la World Wide Web. Paralelamente, CSS es el lenguaje que da forma visualmente al código creado en HTML. Son igualmente una opción ideal para los que quieran dar sus primeros pasos en el mundo de la programación, ya que la sencillez de su código hace que su curva de aprendizaje sea bastante amigable.
+
+    **4. Java**
+
+    A pesar de la similitud en el nombre con el ya mencionado JavaScript, se trata de un lenguaje distinto con un rango de aplicaciones diferente. Java destaca principalmente por su omnipresencia, ya que Internet no sería lo que conocemos hoy en día si no fuera por este, y por ser uno de los lenguajes preferidos para el desarrollo de apps para el sistema operativo Android.
+
+    Forma parte del grupo de lenguajes multiparadigma, orientado a objetos, para el desarrollo de aplicaciones cliente-servidor. Esto, junto a su fiabilidad, fácil portabilidad y las funcionalidades de su entorno desarrollo, lo convierte en una de las tecnologías más demandadas a nivel empresarial.
+
+    **5. C**
+
+    En segunda posición en el índice de popularidad de Tiobe, C también forma parte del catálogo de lenguajes de programación más demandados por las empresas. Su amplio rango de aplicaciones incluye la programación de software de sistemas, codificación de bases de datos, desarrollo de aplicaciones, etc.
+
+    Al haber sido diseñado especialmente para optimizar el tiempo y el trabajo de los desarrolladores de software, es, sin lugar a duda, uno de los favoritos de esta comunidad. Gracias a este lenguaje, los programadores pueden escribir código y ejecutarlo de manera más eficiente y rápida.
+
+    Asimismo, merece la pena destacar la influencia que ha tenido en otros dos lenguajes muy populares: C++ y C#. El primero ha sido diseñado como mejora de C, para la inclusión de la manipulación de objetos. La aparición del segundo ha sido más reciente, lanzado por Microsoft para crear programas en su plataforma .Net. [KeepCoding.io](https://keepcoding.io/blog/lenguajes-de-programacion-mas-demandados/)
 1. ## **¿Cuánto puede ganar un desarrollador FrontEnd?**
+    El salario desarrollador front end promedio en Colombia es de $48.000.000 al año o $21.978 por hora. Los cargos de nivel inicial comienzan con un ingreso de $30.000.000 al año, mientras que profesionales más experimentados perciben hasta $70.500.004 al año. [CO.talent.com](https://co.talent.com/salary?job=desarrollador+front+end)
 1. ## **Cuánto puede ganar un desarrollador BackEnd?**
+    El salario desarrollador backend promedio en Colombia es de $54.000.000 al año o $24.725 por hora. Los cargos de nivel inicial comienzan con un ingreso de $36.000.000 al año, mientras que profesionales más experimentados perciben hasta $78.000.000 al año. [Co.talent.com](https://co.talent.com/salary?job=desarrollador+backend)
 1. ## **¿Cuáles son los requisitos para ser desarrollador FrontEnd?**
+
+     **1-Habilidades de un Front end Developer.**
+
+    Todo aquel profesional que sea un Front end Developer tendrá que tener unas habilidades y conocimientos necesarios, te nombramos algunos a continuación: 
+
+    **2-Conocer HTML5 y CSS.**
+    
+     HyperText Markup Language, es el componente estructural clave de todas las páginas webs que se encuentran en internet. Y el Cascading Style Sheets es lo que le proporciona estilo a HTML.
+
+    **3-Conocimientos en Javascript.**
+
+    Gracias a JS se podrá conseguir una página web interactiva.
+
+    **4-Saber utilizar un CMS**, por ejemplo podría utilizar WordPress.
+
+    **5-Ser creativo.**
+
+    **6-Tener conocimientos de diseño.**
+
+    **7-Conocer el trabajo de un diseñador web y de un desarrollador back-end.**
+    [Iebschool.com](https://www.iebschool.com/blog/funciones-front-end-developer-analitica-usabilidad/)
+
 1. ## **¿Cuáles son los requisitos para ser desarrollador BackEnd?**
+    **Conocer los lenguajes de programación más usados**
+
+    Existen miles de lenguajes de programación, pero manejar los más usados es algo que todo programador BackEnd debe hacer. Conocer varios lenguajes te permitirá ser un profesional del código más competitivo.
+
+    **Tener un enfoque sistémico**
+
+    Un programador BackEnd debe ser capaz de comprender la interacción de cada elemento con el todo, de analizar cómo afecta una pieza el conjunto global de un programa. Con este enfoque de pensamiento es capaz de prever cualquier error en el sistema y así evitarlo.
+
+    **Crear CMS desde cero o depurar y añadir nuevas funciones a uno ya existente**
+
+    Los desarrolladores BackEnd conocen al pelo cómo funcionan las plataformas CMS (como WordPress) y son capaces de añadir nuevas funciones, así como modificar los contenidos existentes.
+
+    **Conocimiento sobre estructuras de datos**
+
+    ¿Qué se necesita para ser un desarrollador BackEnd? Obviamente debe comprender los procesos y estructuras implementadas para mostrar datos. Un programador de este tipo es capaz de integrar las bases de datos al sitio web de la empresa. Su papel es garantizar que los usuarios obtengan los datos correctos cuando los solicitan.
+
+    Las bases de datos más comunes con las que un programador BackEnd debe estar familiarizado son Postgresql, AWS DynamoDB y Oracle.
+
+    **Dominio de algoritmos**
+
+    Los algoritmos son las reglas del juego y es el programador el que las diseña a través de instrucciones ordenadas y precisas de cada acción que ejecutará un sitio web o una app.
+
+    **Saber usar la memoria caché**
+
+    Debe ser capaz de usar la memoria caché para extraer datos pequeños de los usuarios individuales.
+
+    **Detección de errores**
+
+    En programación se considera un error o bug cuando no hay correspondencia entre la información de salida y la ingresada por el usuario. Para corregir esta falla el programador debe rehacer las líneas de código que dan origen al bug.
+
+    Además, un programador backend es capaz de implementar códigos que detecten los errores para verificar que todo funcione bien.
+
+    **Conocer los servidores**
+
+    El programador BackEnd debe conocer cómo funcionan los servidores (Microsoft, Apache, NGINX) como proveen los datos, recursos y
+    sus servicios de seguridad y almacenamiento. Después de todo, el servidor será como su sala de trabajo.
+
+    **Capacidad de resolución de problemas**
+
+    Ser programador backEnd prácticamente es sinónimo de “resolvedor de problemas”. Un profesional de la programación debe estar pensando cómo dar respuesta ante cualquier inconveniente que se presente en una web. Es por ello que es compatible las características de personalidad afines a esta habilidad blanda como ser curioso, creativo, proactivo y espontáneo.
+
+    **Saber comunicarse y trabajar en equipo**
+
+    Comunicarse con el resto del equipo es fundamental. Por ejemplo, un desarrollador BackEnd debe comunicarse con el programador FrontEnd para estar en sinergia durante cada proceso de trabajo. Saber resolver problemas en conjunto y comunicarse asertivamente son skills compatibles con este cargo (y con muchos otros).
+
+    **Conocer las API (Interfaz del programa de aplicación)**
+
+    Las API se encargan de establecer conexiones entre las diferentes aplicaciones y que de esta manera exista comunicación e interacción fluida y estable entre ellas. JSON y XML son las dos posiciones más populares para la información de la API.
+
+    **Manejar el Sistema de Control de Versiones**
+
+    Los programadores backEnd editan, corrigen y restauran constantemente los códigos de webs y apps, y la manera para hacer seguimiento de los cambios realizados es manejar el sistema de control de versiones. Esto ayuda para múltiples funciones, las más populares son: revertir errores de código, rastrear cambios de código, devolver los cambios. Los sistemas más usados son Git, Mercurial, SVN y AWS Code Commit.
+    [Talently.tech](https://talently.tech/blog/skills-para-ser-desarrollador-backend/)
 1. ## **¿Qué es la metodología SCRUM y AGILE?**
+    **¿Que es la metodologia AGILE?**
+
+    El Desarrollo de Software Ágil  también conocido simplemente como Agile es un tipo de metodología de desarrollo que anticipa la necesidad de flexibilidad y aplica un nivel de pragmatismo a la entrega del producto terminado. El desarrollo de software ágil requiere un cambio cultural en muchas empresas porque se centra en la entrega limpia de piezas individuales o partes del software y no en la aplicación completa.
+
+
+    Los beneficios de Agile incluyen su capacidad para ayudar a los equipos en un panorama en evolución mientras se mantiene un enfoque en la entrega eficiente de valor comercial. La cultura colaborativa facilitada por Agile también mejora la eficiencia en toda la organización a medida que los equipos trabajan juntos y comprenden sus roles específicos en el proceso. Por último, las empresas que utilizan el desarrollo de software ágil pueden estar seguras de que están lanzando un producto de alta calidad, ya que las pruebas se realizan durante todo el desarrollo, lo que brinda la oportunidad de realizar cambios según sea necesario y alertar a los equipos sobre cualquier problema potencial.
+    [ComputerWeeklys.com](https://www.computerweekly.com/es/definicion/Desarrollo-de-software-agil-o-Agile#:~:text=El%20Desarrollo%20de%20Software%20%C3%81gil,la%20entrega%20del%20producto%20terminado.)
+
+    **¿Que es la metodologia SCRUM?**
+
+    Scrum es un proceso en el que se aplican de manera regular un conjunto de buenas prácticas para trabajar colaborativamente, en equipo, y obtener el mejor resultado posible de un proyecto. Estas prácticas se apoyan unas a otras y su selección tiene origen en un estudio de la manera de trabajar de equipos altamente productivos.
+
+    En Scrum se realizan entregas parciales y regulares del producto final, priorizadas por el beneficio que aportan al receptor del proyecto. Por ello, Scrum está especialmente indicado para proyectos en entornos complejos, donde se necesita obtener resultados pronto, donde los requisitos son cambiantes o poco definidos, donde la innovación, la competitividad, la flexibilidad y la productividad son fundamentales.
+
+    Scrum también se utiliza para resolver situaciones en que no se está entregando al cliente lo que necesita, cuando las entregas se alargan demasiado, los costes se disparan o la calidad no es aceptable, cuando se necesita capacidad de reacción ante la competencia, cuando la moral de los equipos es baja y la rotación alta, cuando es necesario identificar y solucionar ineficiencias sistemáticamente o cuando se quiere trabajar utilizando un proceso especializado en el desarrollo de producto.
+    [ProyectosAgiles.com](https://proyectosagiles.org/que-es-scrum/)
 1. ## **¿Qué es TESTING?**
+    El testing en programación es una de las metodologías utilizadas para verificar y validar cada etapa de desarrollo sobre la que avanzamos en nuestro código fuente. Esto nos permitirá conocer en estadios tempranos de desarrollo si cada etapa del programa se comporta como esperamos o su funcionamiento es deficiente.
+
+    Es decir que el testing de software es un conjunto de pruebas basadas en técnicas sistemáticas, consistentes, rigurosas y muchas veces formales, con las cuales se verifica el comportamiento de una aplicación.
 1. ## **¿Cuáles son los roles en el desarrollo de software?**
+
+    Se necesitan más que desarrolladores e ingenieros para formar un equipo de desarrollo de software eficaz. Se necesitan muchos roles en el ciclo de vida del desarrollo de software, y el equipo ideal está formado por los siguientes roles:
+
+    -Dueño del producto
+
+    -Project manager
+
+    -Diseñadores UX y UI
+
+    -Analista comercial
+
+    -Desarrolladores de software
+
+    -Líder de equipo y de tecnología (o team lead y tech lead)
+
+    -Scrum master
 1. ## **¿Cuál es el camino que deseas seguir? ¿Desarrollador FrontEnd o Desarrollador Backend?**
+
+    Desarrollador Backend
