@@ -75,18 +75,18 @@ while (isNaN(menuPrincipal) || menuPrincipal !== 13) {
         case 1:
 
             cantidadTalentosCoex = parseInt(prompt(`Por favor ingrese la cantidad de talentos COEX:`));
+
             var reiniciadorRegistroTalentos = cantidadTalentosCoex;
             var reiniciadorMisionUno = cantidadTalentosCoex;
             var reiniciadorMisionDos = cantidadTalentosCoex;
             var reiniciadorMisionTres = cantidadTalentosCoex;
             var reiniciadorPruebaNivelFinal = cantidadTalentosCoex;
 
-            if (cantidadTalentosCoex < 0) {
+            while (isNaN(cantidadTalentosCoex) || cantidadTalentosCoex < 0) {
                 alert(`Por favor, solo esta permitido ingresar numeros positivos`);
-
-            } else {
-                alert(`Se habilitaron ${cantidadTalentosCoex} talentos COEX.`);
+                cantidadTalentosCoex = parseInt(prompt(`Por favor ingrese la cantidad de talentos COEX:`));
             }
+            alert(`Se habilitaron ${cantidadTalentosCoex} talentos COEX.`);
             break;
 
         case 2:
@@ -141,7 +141,7 @@ while (isNaN(menuPrincipal) || menuPrincipal !== 13) {
             var misionUno = ("Misión Uno");
 
             for (let i = 0; i < reiniciadorMisionUno; i++) {
-                var notaUno = parseInt(prompt(`Por favor ingrese la nota de la ${misionUno} del talento ${talentos[i][1]}:`));
+                let notaUno = parseInt(prompt(`Por favor ingrese la nota de la ${misionUno} del talento ${talentos[i][1]}:`));
                 while (notaUno < 0 || notaUno > 100 || isNaN(notaUno)) {
                     notaUno = parseInt(prompt(`Tener en cuenta que la nota debe estar en tre 0 y 100. Por favor ingrese la nota de la ${misionUno} del talento ${talentos[i][1]}:`));
                 }
@@ -157,7 +157,7 @@ while (isNaN(menuPrincipal) || menuPrincipal !== 13) {
             var misionDos = ("Misión Dos");
 
             for (let i = 0; i < reiniciadorMisionDos; i++) {
-                var notaDos = parseInt(prompt(`Por favor ingrese la nota de la ${misionDos} del talento ${talentos[i][1]}:`));
+                let notaDos = parseInt(prompt(`Por favor ingrese la nota de la ${misionDos} del talento ${talentos[i][1]}:`));
                 while (notaDos < 0 || notaDos > 100 || isNaN(notaDos)) {
                     notaDos = parseInt(prompt(`Tener en cuenta que la nota debe estar en tre 0 y 100. Por favor ingrese la nota de la ${misionDos} del talento ${talentos[i][1]}:`));
                 }
@@ -173,7 +173,7 @@ while (isNaN(menuPrincipal) || menuPrincipal !== 13) {
             var misionTres = ("Misión Tres");
 
             for (let i = 0; i < reiniciadorMisionTres; i++) {
-                var notaTres = parseInt(prompt(`Por favor ingrese la nota de la ${misionTres} del talento ${talentos[i][1]}:`));
+                let notaTres = parseInt(prompt(`Por favor ingrese la nota de la ${misionTres} del talento ${talentos[i][1]}:`));
                 while (notaTres < 0 || notaTres > 100 || isNaN(notaTres)) {
                     notaTres = parseInt(prompt(`Tener en cuenta que la nota debe estar en tre 0 y 100. Por favor ingrese la nota de la ${misionTres} del talento ${talentos[i][1]}:`));
                 }
@@ -189,7 +189,7 @@ while (isNaN(menuPrincipal) || menuPrincipal !== 13) {
             var pruebaNivelFinal = ("Prueba Nivel Final");
 
             for (let i = 0; i < reiniciadorPruebaNivelFinal; i++) {
-                var notaCuatro = parseInt(prompt(`Por favor ingrese la notaCuatro de la ${pruebaNivelFinal} del talento ${talentos[i][1]}:`));
+                let notaCuatro = parseInt(prompt(`Por favor ingrese la notaCuatro de la ${pruebaNivelFinal} del talento ${talentos[i][1]}:`));
                 while (notaCuatro < 0 || notaCuatro > 100 || isNaN(notaCuatro)) {
                     notaCuatro = parseInt(prompt(`Tener en cuenta que la notaCuatro debe estar en tre 0 y 100. Por favor ingrese la notaCuatro de la ${pruebaNivelFinal} del talento ${talentos[i][1]}:`));
                 }
@@ -247,28 +247,38 @@ while (isNaN(menuPrincipal) || menuPrincipal !== 13) {
 
         case 10:
 
-            for (let i = 0; i < talentos.length; i++) {
-                if (talentos[i]["Mision Uno"] !== undefined && talentos[i]["Mision Dos"] !== undefined && talentos[i]["Mision Tres"] !== undefined && talentos[i]["Prueba Nivel Final"] !== undefined) {
-                    let sumaTotalNotasTalentos = talentos[i]["Mision Uno"] + talentos[i]["Mision Dos"] + talentos[i]["Mision Tres"] + talentos[i]["Prueba Nivel Final"];
-                    let promedioNotasTalentos = sumaTotalNotasTalentos / 4;
-                    alert(`El promedio del talento Coex ${talentos[i][1]} es de ${promedioNotasTalentos.toFixed(2)}`);
-                } else {
-                    alert(`El talento COEX ${talentos[i][1]} aun tiene pendiente notas de misiones y/o de la prueba de nivel final.`);
+            if (talentos.length === 0) {
+                alert(`Aun no se han ingresado notas, por favor inicie en la opcion 1 del menu.`)
+            } else {
+
+                for (let i = 0; i < talentos.length; i++) {
+                    if (talentos[i]["Misión Uno"] !== undefined && talentos[i]["Misión Dos"] !== undefined && talentos[i]["Misión Tres"] !== undefined && talentos[i]["Prueba Nivel Final"] !== undefined) {
+                        let sumaTotalNotasTalentos = talentos[i]["Misión Uno"] + talentos[i]["Misión Dos"] + talentos[i]["Misión Tres"] + talentos[i]["Prueba Nivel Final"];
+                        let promedioNotasTalentos = sumaTotalNotasTalentos / 4;
+                        alert(`El promedio del talento Coex ${talentos[i][1]} es de ${promedioNotasTalentos.toFixed(2)}`);
+                    } else {
+                        alert(`El talento COEX ${talentos[i][1]} aun tiene pendiente notas de misiones y/o de la prueba de nivel final.`);
+                    }
                 }
             }
             break;
 
         case 11:
 
-            console.log("Mostrando datos de Talentos COEX.");
-            for (let i = 0; i < talentos.length; i++) {
-                alert(`Talento COEX ${i + 1}: 
+            if (talentos.length === 0) {
+                alert(`Aun no se han ingresado notas, por favor inicie en la opcion 1 del menu.`)
+            } else {
+
+                console.log("Mostrando datos de Talentos COEX.");
+                for (let i = 0; i < talentos.length; i++) {
+                    alert(`Talento COEX ${i + 1}: 
                 Código: ${talentos[i][0]}
                 Nombre: ${talentos[i][1]}
-                Nota Misión 1: ${talentos[i]["Mision Uno"]}
-                Nota Misión 2: ${talentos[i]["Mision Dos"]}
-                Nota Misión 3: ${talentos[i]["Mision Tres"]}
+                Nota Misión 1: ${talentos[i]["Misión Uno"]}
+                Nota Misión 2: ${talentos[i]["Misión Dos"]}
+                Nota Misión 3: ${talentos[i]["Misión Tres"]}
                 Prueba Nivel Final: ${talentos[i]["Prueba Nivel Final"]}`);
+                }
             }
             break;
 
