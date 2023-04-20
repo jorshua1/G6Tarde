@@ -1,12 +1,8 @@
 var nombre = "sergio";
-
-
-
 console.log(nombre);
 console.log(typeof(nombre));
 
-
-var pi = 3.141592
+const pi = 3.141592
 console.log(pi);
 console.log(typeof(pi));
 

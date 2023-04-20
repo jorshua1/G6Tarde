@@ -18,3 +18,17 @@ La creacion de este repo esta enfocado a que los talentos del grupo G6 puedan su
     | [w3schools javascript](https://www.w3schools.com/js/js_statements.asp)     | Documentacion / sandbox  | Super completa y facil de usar 🤓 (ingles)
     | [video: Aprende javascript](https://youtu.be/ivdTnPl1ND0) | videotutorial/curso     | Facil de seguir pero largo (~10H) 🥶
         
+let cantidad = prompt("Ingresa la cantidad de estudiantes a ingresar:");
+let estudiantes = [];
+for (let i = 0; i < cantidad; i++) {
+  let codigo = prompt("Ingresa el código del estudiante:");
+  let nombre = prompt("Ingresa el nombre del estudiante:");
+
+  // Validar que el código no se repita
+  if (estudiantes.some(estudiante => estudiante.codigo === codigo)) {
+    alert("El código ingresado ya existe. Ingresa uno nuevo.");
+    i--;
+  } else {
+    estudiantes.push({ codigo, nombre });
+  }
+}
