@@ -138,13 +138,35 @@ Elaborar trabajos prácticos.
 
 #### 15. **¿Cuáles son los requisitos para ser desarrollador FrontEnd?**
 
-*   Rta:
+*   Rta: Como Front End Developer, serás la persona responsable del código orientado a la inmersión de los usuarios en el sitio. Para lograrlo, deberás tener conocimiento en lenguajes de programación, estar familiarizado con frameworks, conocer lo esencial del diseño, ser creativo y contar con herramientas que permitan crear las interfaces de usuario adecuadas para nuestro proyecto. También es clave conocer el trabajo que realizan los desarrolladores web y las tareas que se llevan a cabo en el back-end.
 
 #### 16. **¿Cuáles son los requisitos para ser desarrollador BackEnd?**
+
+*   Rta: Como Back End Developer, serás la persona responsable de procesar toda la información y de relacionar los datos en el interior del sitio web o aplicación web, con las capas visuales que ha creado el desarrollador Front End. Para lograrlo, deberás contar con la capacidad de lidiar con conceptos abstractos y lógica compleja, formación constante en lenguajes como PHP, Ruby, Python, Perl y JavaScript, manejo de CMS y frameworks, y conocimientos básicos de configuraciones de servidores web.
+
 #### 17. **¿Qué es la metodología SCRUM y AGILE?**
+
+*   Rta:Scrum es un marco de gestión de proyectos de metodología ágil que ayuda a los equipos a estructurar y gestionar el trabajo mediante un conjunto de valores, principios y prácticas. Al igual que un equipo de rugby (de donde proviene su nombre) cuando entrena para un gran partido, scrum anima a los equipos a aprender a través de las experiencias, a autoorganizarse mientras aborda un problema y a reflexionar sobre sus victorias y derrotas para mejorar continuamente.
+
+    Aunque son los equipos de desarrollo de software los que utilizan con mayor frecuencia este tipo de scrum, sus principios y lecciones se pueden aplicar a todo tipo de trabajo en equipo. Esta es una de las razones por las que es tan popular. Aunque se considera a menudo un marco de gestión de proyectos ágil, scrum incluye un conjunto de reuniones, herramientas y funciones que, de forma coordinada, ayudan a los equipos a estructurar y gestionar su trabajo.
+
 #### 18. **¿Qué es TESTING?**
+
+*   Rta: En el proceso de desarrollo de software es normal encontrar errores. Cuando esto sucede en la etapa de prueba de software, no supone un gran inconveniente. Continuar sin abordarlos puede generar problemas graves para todas las partes involucradas en el proceso de desarrollo del proyecto. El testing de software juega un papel fundamental y supone una garantía de calidad de suma importancia para cualquier empresa.
+
 #### 19. **¿Cuáles son los roles en el desarrollo de software?**
+
+    *   Dueño del producto
+    *   Project manager
+    *   Diseñadores UX y UI
+    *   Analista comercial
+    *   Desarrolladores de software
+    *   Líder de equipo y de tecnología (o team lead y  tech lead)
+    *   Scrum master
+
 #### 20. **¿Cuál es el camino que deseas seguir?** **¿Desarrollador FrontEnd o Desarrollador BackEnd?**
+
+*   Rta: lo que yo deseo es profundizar como FrontEnd.
 
 ## **Glosario** :
 
@@ -194,4 +216,15 @@ Salario para Desarrollador Front End en Colombia - Salario Medio. (2023). Retrie
 14. Salario para Desarrollador Backend en Colombia - Salario Medio
 Salario para Desarrollador Backend en Colombia - Salario Medio. (2023). Retrieved 19 April 2023, from https://co.talent.com/salary?job=desarrollador+backend
 
-15. 
+15. https://www.soyhenry.com/front-end-developer
+
+16. https://www.soyhenry.com/back-end-developer
+
+17. Scrum: qué es, cómo funciona y por qué es excelente
+Scrum: qué es, cómo funciona y por qué es excelente. (2023). Retrieved 20 April 2023, from https://www.atlassian.com/es/agile/scrum
+
+18. Canelo, M. Canelo, M. (2021). Qué es el testing de software - Profile Software Services. Retrieved 20 April 2023, from https://profile.es/blog/que-es-el-testing-de-software/
+
+19. Roles Fundamentales en un Equipo de Desarrollo de Software - COR
+Roles Fundamentales en un Equipo de Desarrollo de Software - COR. (2023). Retrieved 20 April 2023, from https://projectcor.com/es/blog/roles-fundamentales-en-un-equipo-de-desarrollo-de-software/
+
