@@ -48,7 +48,6 @@
     
     
 1. ## **¿Cuales son los lenguajes de programacion mas demandados en el mercado colombiano?**
-    ### Segun la recopilacion de informacion de Tiobe y Stackoverflow los lenguajes de programacion mas solicitados son:
     ### 1.PHP
     ### 2.Java
     ### 4.JavaScript
