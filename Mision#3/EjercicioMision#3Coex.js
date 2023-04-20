@@ -257,20 +257,20 @@ while (opcionesMenu !== 13) {
             } else {
                 for (i = 1; i < cantidadTalentos; i++) {
                     promedioGeneral[i] = (notas1[i] + notas2[i] + notas3[i] + notasFinales[i]) / 4;
-                    alert("El nombre del estudiante es: " + nombresEstudiantes[i] + "El Promedio general del Talento es de : " + promedioGeneral[i]);
+                    alert("El nombre del estudiante es: " + nombresEstudiantes[i] + " El Promedio general del Talento es de : " + promedioGeneral[i]);
                 }
             }
             break;
         case 11:
             if (cantidadTalentos <= 0) {
                 alert("Usted no ha registrado la cantidad de Talentos, por favor devuelvase a la Opcion #1 e ingrese datos");
-            } else if ((nombresEstudiantes < 1) || (nombresEstudiantes === 0)) {
+            } else if ((nombresEstudiantes.length < 1) || (nombresEstudiantes.length  === 0)) {
                 alert("Usted no ha registrado los nombres y codigo de los Talentos por favor realizelo de inmediato");
-            } else if (notas1 < 1 || notas2 < 1 || notas3 < 1) {
+            } else if (notas1.length < 1 || notas2.length  < 1 || notas3.length  < 1) {
                 alert("NO hay resultados aun porque NO ha llenado la totalidad de las notas, por favor realizar el ingreso de las notas, Gracias.");
-            } else {
+            } else if (notasFinales.length>0){
                 let i = 1;
-                for (i = 1; i < cantidadTalentos; i++) {
+                for (i = 1; i < cantidadTalentos+1; i++) {
                     alert(`
                     Codigo Talento `+ codigosEstudiantes[i] + `
                     Nombre: `+ nombresEstudiantes[i] + ` 
@@ -288,7 +288,7 @@ while (opcionesMenu !== 13) {
             } else if ((nombresEstudiantes < 1) || (nombresEstudiantes === 0)) {
                 alert("Usted no ha registrado los nombres y codigo de los Talentos por favor realizelo de inmediato");
             } else {
-                alert("El nombre de los estudiantes que realizaron la prueba son: " + nombresEstudiantes);
+                alert("Sergio Andres Ardila Gonzalez \n Telf: 3172481428");
             }
             break;
         case 13:
