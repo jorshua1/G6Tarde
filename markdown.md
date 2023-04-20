@@ -43,7 +43,7 @@
     ### El tiempo de aprendizaje puede variar dependiendo de la persona y la intensidad con la que se practica, un tiempo estimado son de 6 a 12 meses, pero en lo personal creo que con 9 meses es un tiempo suficiente de aprendizaje.
     ---
 1. ## **¿Que es un STACK en desarollo ?**
-    ### Son los  conjuntos de servicios de software que se utilizan para el desarollo de programas.
+    ### Conjunto de conocimientos en desarollo de sotware, Normalmente, un Stack está formada por lenguajes de programación, Frameworks, bibliotecas, herramientas de desarrollo y enfoques de programación.
     ![stacks](https://www.syntonize.com/wp-content/uploads/2019/06/full-stack.png)
     
     
