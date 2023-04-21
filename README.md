@@ -1,4 +1,4 @@
-# **¿BACKEND O FRONTEND ESA ES LA CUESTIÓN?** #
+# **¿BACKEND O FRONTEND? ESA ES LA CUESTIÓN** #
 ## 1. **¿Qué es la programación?** ##
 <div style="text-align: justify">La programación es el proceso mediante el cual se le indica a la computadora los procesos que debe realizar, haciendo uso de lenguajes que contienen las instrucciones necesarias para que el equipo interpréte y ejecute las acciones que deseemos. Estos lenguajes se expresan en algoritmos, que son la serie sucesiva de instrucciones que ingresamos para que, paso a paso, la computadora realice los distintos procesos indicados. El objetivo principal de la programación es la creación de software.
 
@@ -307,5 +307,118 @@ En Colombia, el sueldo base promedio es de $4.500.000 pesos/Mes para un desarrol
 [Salario promedio base Colombia.](https://co.talent.com/salary?job=desarrollador+backend)
 
 ## 15. **¿Cuáles son los requisitos para ser desarrollador FrontEnd?** ##
+
+- Conocer HTML5 y CSS. HyperText Markup Language, es el componente estructural clave de todas las páginas webs que se encuentran en internet. Y el Cascading Style Sheets es lo que le proporciona estilo a HTML.
+
+- Conocimientos en Javascript. Gracias a JS se podrá conseguir una página web interactiva.
+
+- Saber utilizar un [CMS](https://rockcontent.com/es/blog/cms/), por ejemplo, podría utilizar WordPress. 
+
+- Ser creativo.
+
+- Tener conocimientos de diseño.
+
+- Conocer el trabajo de un diseñador web y de un desarrollador back-end. 
+
+[Requisitos para ser desarrollador Frontend.](https://www.iebschool.com/blog/funciones-front-end-developer-analitica-usabilidad/)
+
+## 16. **¿Cuáles son los requisitos para ser desarrollador BackEnd?** ##
+
+En resumen, un programador BackEnd debe saber resolver problemas complejos, estar actualizándose de manera constante, comprender conceptos abstractos y manejar lenguajes de programación como Python, JavaScript, PHP, Ruby, Perl, saber manejar CMS y frameworks, así como ser capaz de configurar servidores.
+
+Ser el responsable de procesar toda la información interna de un sitio o aplicación web requiere dominio de algoritmo y pensamiento sistémico.
+
+### **Listado de conocimientos que se necesita para ser un desarrollador Backend** ###
+
+- Conocer los lenguajes de programación más usados.
+
+- Tener un enfoque sistémico.
+
+- Crear CMS desde cero o depurar y añadir nuevas funciones a uno ya existente.
+
+- Conocimiento sobre estructuras de datos.
+
+- Dominio de algoritmos.
+
+- Saber usar la memoria caché.
+
+- Detección de errores.
+
+- Conocer los servidores.
+
+- Capacidad de resolución de problemas.
+
+- Saber comunicarse y trabajar en equipo.
+
+- Conocer las API (Interfaz del programa de aplicación).
+
+- Manejar el Sistema de Control de Versiones.
+
+[Requisitos para ser desarrollador Backend.](https://talently.tech/blog/skills-para-ser-desarrollador-backend/)
+
+## 17. **¿Qué es la metodología SCRUM y AGILE?** ##
+
+- **Scrum:** Scrum es un proceso en el que se aplican de manera regular un conjunto de buenas prácticas para trabajar colaborativamente, en equipo, y obtener el mejor resultado posible de un proyecto. Estas prácticas se apoyan unas a otras y su selección tiene origen en un estudio de la manera de trabajar de equipos altamente productivos.
+
+    En Scrum se realizan entregas parciales y regulares del producto final, priorizadas por el beneficio que aportan al receptor del proyecto. Por ello, Scrum está especialmente indicado para proyectos en entornos complejos, donde se necesita obtener resultados pronto, donde los requisitos son cambiantes o poco definidos, donde la innovación, la competitividad, la flexibilidad y la productividad son fundamentales.
+
+    Scrum también se utiliza para resolver situaciones en que no se está entregando al cliente lo que necesita, cuando las entregas se alargan demasiado, los costes se disparan o la calidad no es aceptable, cuando se necesita capacidad de reacción ante la competencia, cuando la moral de los equipos es baja y la rotación alta, cuando es necesario identificar y solucionar ineficiencias sistemáticamente o cuando se quiere trabajar utilizando un proceso especializado en el desarrollo de producto.
+    ![SCRUM](https://www.sinnaps.com/wp-content/uploads/2017/05/scrum-min.png)
+    [¿Qué es SCRUM?](https://proyectosagiles.org/que-es-scrum/)
+
+- **Agile:** La metodología Agile se usa en el desarrollo de software y otros proyectos de alto rendimiento; se centra en la implementación rápida de un equipo eficiente y flexible para planear el flujo de trabajo. Agile brinda la capacidad de elegir la mejor opción en cada situación sin comprometer el proyecto.
+
+    Las iteraciones se basan en un flujo continuo de comentarios, pero en lugar de tratar de resolver todo en unas pocas actualizaciones, un equipo ejecuta fases más cortas en el ciclo de desarrollo para cubrir solo unas pocas actualizaciones. Esto con el fin de alcanzar un nivel elevado y constante de mejoras incrementales de calidad.
+
+### **Las diferencias entre la metodología Agile y Scrum** ###
+
+Agile es una serie de principios que deben aplicarse a un proyecto. Su enfoque es general y, como ya dijimos, está basado en las iteraciones de pequeños trozos de un proyecto que ayudan a incrementar la cantidad de avance. 
+
+Scrum, por su parte, es uno de los tantos marcos de trabajo que pueden surgir dentro de la metodología Agile. Tiene una serie de reglas y roles definidos que ayudan a llevar a cabo el proyecto. Otros marcos de trabajo, como Kanban o Extreme Programming, también parten de los principios Agile. 
+
+[¿Qué es AGILE?](https://blog.hubspot.es/marketing/metodologia-agile)
+
+![AGILE](https://blog.hubspot.es/hubfs/media/metodologiaagile.png)
+
+## 18. **¿Qué es TESTING?** ##
+
+El testing de software o software QA, es un proceso para verificar y validar la funcionalidad de un programa o una aplicación de software con el objetivo de garantizar que el producto de software esté libre de defectos. La intención final es que coincida con los requisitos esperados para entregar un  producto de calidad. Implica la ejecución de componentes de software o sistema utilizando herramientas manuales o automatizadas para evaluar una o más propiedades de interés.
+
+El testing de software es un proceso paralelo al desarrollo de software cuyas tareas deben ir realizándose a medida que se construye el producto para evitar problemas en la funcionalidad de manera previa a su lanzamiento.
+
+### **¿Por qué es importante el software testing?** ###
+
+Las pruebas de software son importantes porque permiten identificar de manera temprana si hay algún problema en el software, facilitando su resolución antes de la entrega del producto. Un producto de software debidamente probado garantiza calidad, seguridad, confiabilidad y alto rendimiento, además de otros beneficios como ahorro de tiempo, seguridad y satisfacción del cliente.
+
+[Acerca del Testing de Software.](https://profile.es/blog/que-es-el-testing-de-software/#:~:text=El%20testing%20de%20software%20o,software%20est%C3%A9%20libre%20de%20defectos.)
+
+## 19. **¿Cuáles son los roles en el desarrollo de software?** ##
+
+**Los roles que hay en un equipo para el desarrollo de software son:**
+
+- Jefe de proyecto.
+
+- Analista de negocio.
+
+- Jefe de Equipo.
+
+- Desarrolladores Full-Stack.
+
+- Desarrolladores Frontend.
+
+- Desarrolladores Backend.
+
+- Diseñadores UI/UX.
+
+- Ingenieros de control de calidad.
+
+- Arquitecto de Software.
+
+- El Scrum Master.
+
+[Roles en el desarrollo de Software.](https://www.startechup.com/es/blog/roles-in-software-development-teams/)
+
+## 20. **¿Cuál es el camino que deseas seguir? ¿Desarrollador FrontEnd o Desarrollador BackEnd?** ##
+
 
 <div/>
