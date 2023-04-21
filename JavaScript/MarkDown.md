@@ -4,7 +4,7 @@ ___
 
 > La programación es la creación de código de ordenador para resolver un problema o llevar a cabo una ejecución lo cual se hace por el lenguaje de computadora, existen muchas variantes de esta y varios tipos de lenguaje de programación.
 
-> Información buscada en [mozilla.org](https://developer.mozilla.org/es/docs/Glossary/Computer_Programming)
+> Información buscada en [mozilla.org](https://developer.mozilla.org/es/docs/Glossary/Computer_Programming).
 
 ### **2. Qué es el desarrollo web?**
 
@@ -21,13 +21,13 @@ ___
 - Conocimientos avanzados de sistemas operativos.
 - Elaborar trabajos prácticos.
 
-> Información buscada en [euroinnova.edu](https://www.euroinnova.edu.es/blog/que-se-necesita-para-ser-programador)
+> Información buscada en [euroinnova.edu](https://www.euroinnova.edu.es/blog/que-se-necesita-para-ser-programador).
 
 ### 4.**¿Qué clase de trabajos realiza un programador?**
 
 > Los programadores se dedican a elaborar, crear y optimizar software informático, así como a adaptarlos para su uso en distintas plataformas y sistemas operativos, además de equipos informativos para distintas actividades y ejecuciones de estas mismas.
 
-> Información buscada en [unir.net](https://mexico.unir.net/ingenieria/noticias/que-hace-programador/#:~:text=Los%20programadores%20se%20dedican%20a,demandados%20por%20las%20empresas%20mexicanas.)
+> Información buscada en [unir.net](https://mexico.unir.net/ingenieria/noticias/que-hace-programador/#:~:text=Los%20programadores%20se%20dedican%20a,demandados%20por%20las%20empresas%20mexicanas.).
 
 ### 5.**¿Qué es FRONTEND y BACKEND?**
 
@@ -39,7 +39,7 @@ ___
 > Backend es la capa de acceso a datos de un software o cualquier dispositivo, que no es directamente accesible por los usuarios. Además, contiene la lógica de la aplicación que maneja dichos datos. El Backend también accede al servidor, que es una aplicación especializada que entiende la forma en la que el navegador hace solicitudes.
 > Los desarrolladores backend se encargan de hacer que la lógica del sitio funcione correctamente, la información se transmita de manera segura y el desempeño de la aplicación no entorpezca la experiencia del usuario.
 
-> Información buscada en [platzi.com](https://platzi.com/blog/que-es-frontend-y-backend/)
+> Información buscada en [platzi.com](https://platzi.com/blog/que-es-frontend-y-backend/).
 
 ### 6.**¿Qué son los niveles de desarrollo Junior, semi-Senior y Senior**
 
@@ -50,7 +50,7 @@ ___
 - **Semi-senior:** Se refiere a un desarrollador con cierta experiencia y habilidades en el campo de la tecnología, generalmente con uno o más años de experiencia laboral, "de 2 a 9 años de experiencia"
 - **Senior:** Se refiere a un desarrollador con una amplia experiencia y habilidades en el campo de la tecnología, generalmente con varios años de experiencia laboral. Los desarrolladores senior pueden ser responsables de liderar proyectos y equipos, y tienen la capacidad de trabajar en tareas muy complejas y desafiantes. También pueden tener habilidades especializadas en áreas específicas de la tecnología, "a partir de 9 años de experiencia".
 
-> Información buscada en [Freelancermap](https://www.freelancermap.com/blog/es/diferencias-programador-junior-y-senior/#:~:text=Programador%20junior%3A%20Menos%20de%20dos,de%209%20a%C3%B1os%20de%20experiencia)
+> Información buscada en [Freelancermap](https://www.freelancermap.com/blog/es/diferencias-programador-junior-y-senior/#:~:text=Programador%20junior%3A%20Menos%20de%20dos,de%209%20a%C3%B1os%20de%20experiencia).
 
 ### 7.**¿Qué es un framework?**
 
@@ -66,7 +66,7 @@ ___
 - **Frameworks de desarrollo de juegos:** Como *Unity o Unreal Engine*, se utilizan para crear videojuegos.
 - **Frameworks de desarrollo móvil:** Como *Flutter o React Native*, se utilizan para crear aplicaciones móviles.
 
-> Información buscada en [assemblerinstitute.com](https://assemblerinstitute.com/blog/framework-programacion/#:~:text=En%20programaci%C3%B3n%2C%20un%20framework%20es,de%20un%20proyecto%2C%20por%20ejemplo.)
+> Información buscada en [assemblerinstitute.com](https://assemblerinstitute.com/blog/framework-programacion/#:~:text=En%20programaci%C3%B3n%2C%20un%20framework%20es,de%20un%20proyecto%2C%20por%20ejemplo.).
 
 ### 8.**¿Qué es una librería?**
 
@@ -74,7 +74,7 @@ ___
 > Una biblioteca es un conjunto de código fuente que se ha compilado y se ha puesto a disposición para ser reutilizado por otros programas.
 > Los programadores utilizan bibliotecas para ahorrar tiempo y esfuerzo en la creación de sus programas y para mejorar la calidad y la funcionalidad de sus proyectos.
 
-> Información buscada en [datos.gob.es](https://datos.gob.es/es/blog/11-librerias-para-crear-visualizaciones-de-datos#:~:text=Las%20librer%C3%ADas%20de%20programaci%C3%B3n%20son,resueltas%20previamente%20por%20otros%20programadores.)
+> Información buscada en [datos.gob.es](https://datos.gob.es/es/blog/11-librerias-para-crear-visualizaciones-de-datos#:~:text=Las%20librer%C3%ADas%20de%20programaci%C3%B3n%20son,resueltas%20previamente%20por%20otros%20programadores.).
 
 ### 9.**¿Cuánto tiempo tarda una persona en aprender un lenguaje de programación?**
 
@@ -86,7 +86,7 @@ ___
 
 > En general, se puede decir que aprender los conceptos básicos de un lenguaje de programación puede llevar desde unas pocas semanas hasta algunos meses, dependiendo de los factores mencionados anteriormente. Pero para llegar a ser experto en un lenguaje de programación, puede llevar años de práctica y dedicación constante.
 
-> Información buscada en [hackaboss](https://www.hackaboss.com/blog/cuanto-se-tarda-en-aprender-a-programar#:~:text=Si%20quieres%20una%20respuesta%20m%C3%A1s,unos%208%20y%2012%20meses.)
+> Información buscada en [hackaboss](https://www.hackaboss.com/blog/cuanto-se-tarda-en-aprender-a-programar#:~:text=Si%20quieres%20una%20respuesta%20m%C3%A1s,unos%208%20y%2012%20meses.).
 
 ### 10.**¿Qué es un STACK en desarrollo, agregue una imagen con diferentes STACK?**
 
@@ -121,6 +121,62 @@ ___
     6. ***Kotlin***
     7. ***Swift***
 
-> Información buscada en [hipertextual.com](https://hipertextual.com/2022/07/lenguajes-programacion-mas-demandados-2022#:~:text=La%20lista%20la%20encabeza%20JavaScript,programaci%C3%B3n%20de%20UNIX%20y%20Linux.)
+> Información buscada en [hipertextual.com](https://hipertextual.com/2022/07/lenguajes-programacion-mas-demandados-2022#:~:text=La%20lista%20la%20encabeza%20JavaScript,programaci%C3%B3n%20de%20UNIX%20y%20Linux.).
 
 ### 12.**¿Cuáles son los lenguajes de programación más demandados en el mercado Internacional?**
+
+> Igual que en la pregunta anterior, solo que abarcando el campo a *internacional*, lo cual la demanda cambia debido al lenguaje que este de *"moda"* en esos momentos, por eso vamos a listar algunos de los más demandados en estos momentos:
+    1. ***JavaScript***
+    2. ***Python***
+    3. ***Java***
+    4. ***C++***
+    5. ***C#***
+    6. ***PHP***
+    7. ***TypeScript***
+
+> Información buscada en [keepcoding.io](https://keepcoding.io/blog/lenguajes-de-programacion-mas-demandados/).
+
+### 13.**¿Cuánto puede ganar un desarrollador FrontEnd?**
+
+> El salario de un desarrollador *FrontEnd* puede variar según su experiencia, habilidades, ubicación geográfica y la empresa en la que trabaje. En general, los desarrolladores FrontEnd ganan un salario muy competitivo en la industria de la tecnología, puedes ganar desde **USD$96,881** hasta **USD$102,120** por año.
+![DreamHost](https://www.dreamhost.com/blog/wp-content/uploads/2022/07/cuanto-gana-un-desarrollador-DreamHost-3.jpg)
+![DreamHost](https://www.dreamhost.com/blog/wp-content/uploads/2022/07/cuanto-gana-un-desarrollador-DreamHost-7.jpg)
+> Es importante tener en cuenta que estos salarios son promedios y que pueden variar en función de varios factores. Además, el salario también puede **aumentar** a medida que el desarrollador *FrontEnd* adquiere más experiencia y habilidades en su carrera.
+
+> En el mercado *internacional*, de acuerdo con **Glassdoor**, el salario promedio para un desarrollador *FrontEnd* en los *Estados Unidos* es de alrededor de **$80,000** a **$120,000 dólares** al año, mientras que en *Europa* puede variar entre **30.000** a **70.000 euros** al año, dependiendo de la *ubicación*.
+
+> En *Colombia*, según el portal de empleo **Indeed**, el salario promedio para un desarrollador *FrontEnd* es de alrededor de **2.500.000 COP** a **4.500.000 COP al mes**, *dependiendo de la ciudad y la empresa*.
+
+> Información buscada en [dreamhost](https://www.dreamhost.com/blog/es/salario-desarrollador-front-end/#:~:text=El%20salario%20de%20desarrollador%20front,hasta%20%24102%2C120%20USD%20por%20a%C3%B1o.),
+
+### 14.**¿Cuánto puede ganar un desarrollador BackEnd?**
+
+> El salario de un desarrollador *BackEnd* puede variar ampliamente según varios factores, como la ubicación geográfica, la experiencia laboral, el tamaño y la industria de la empresa y la tecnología utilizada. Sin embargo, en general, un desarrollador *BackEnd* puede ganar un salario *anual* promedio de entre **50.000** y **150.000 dólares**.
+
+> El sueldo promedio de *Backend Developer* es **COP$6,000,000 por mes** en *Bogota, Colombia*. La remuneración promedio de efectivo adicional para un *Backend Developer* en *Bogota, Colombia* es de **COP$6,124,597**, con un rango de entre **COP$1,427,570** y **COP 21,631,596**.
+
+> Además, la experiencia laboral también es un factor importante en la determinación del salario de un desarrollador *BackEnd*. Los desarrolladores con más experiencia y habilidades especializadas, como en tecnologías de big data, pueden ganar salarios más altos que los desarrolladores menos experimentados.
+
+> En resumen, el salario de un desarrollador *BackEnd* puede variar ampliamente según varios factores, pero es una carrera que generalmente ofrece un salario decente y oportunidades de crecimiento profesional.
+
+> Información buscada en [glassdoor.com.mx](https://www.glassdoor.com.mx/Salaries/bogota-backend-developer-salary-SRCH_IL.0,6_IM1064_KO7,24.htm#:~:text=El%20sueldo%20promedio%20de%20Backend,COP%201%2C427%2C570%20y%20COP%2021%2C631%2C596.).
+
+## 15.**¿Cuáles son los requisitos para ser desarrollador FrontEnd?**
+
+> Para ser un desarrollador *FrontEnd*, es necesario tener conocimientos sólidos en lenguajes de programación, tecnologías y herramientas específicas. Para convertirse en un desarrollador FrontEnd, es necesario tener un conjunto de habilidades sólidas y experiencia en lenguajes de programación y tecnologías específicas. A continuación se presentan algunos de los requisitos comunes que se necesitan para convertirse en un desarrollador *FrontEnd*:
+- **HTML, CSS y JavaScript:** Estos son los lenguajes de programación fundamentales que todo desarrollador *FrontEnd* debe conocer. 
+    - ***HTML*** se utiliza para estructurar y definir el contenido de una página web, ***CSS*** se utiliza para darle estilo y diseño, y ***JavaScript*** se utiliza para agregar interactividad y dinamismo a la página web.
+
+- **Frameworks FrontEnd:** Es importante tener experiencia en al menos uno de los principales *frameworks FrontEnd*, como ***React, Angular o Vue***. Estos *frameworks* facilitan la construcción de aplicaciones web complejas y escalables.
+
+- **Conocimiento de diseño y UX:** El desarrollo *FrontEnd* también requiere una comprensión de los principios de diseño web y experiencia de usuario (**UX**), para poder crear aplicaciones web con una interfaz atractiva y fácil de usar.
+
+- **Control de versiones:** Un desarrollador *FrontEnd* debe saber cómo trabajar con sistemas de control de versiones como ***Git***, que se utilizan para rastrear los cambios en el código y colaborar con otros desarrolladores.
+
+- **Herramientas de construcción y automatización:** Un desarrollador *FrontEnd* también debe estar familiarizado con herramientas como ***Webpack*** o ***Gulp***, que se utilizan para construir, compilar y automatizar tareas repetitivas en el proceso de desarrollo.
+
+- **Habilidades de resolución de problemas:** Ser capaz de solucionar problemas y encontrar soluciones creativas a desafíos técnicos es una habilidad clave para cualquier desarrollador *FrontEnd*.
+
+- **Habilidades de comunicación y trabajo en equipo:** Un desarrollador *FrontEnd* debe ser capaz de comunicarse con otros miembros del equipo, como **diseñadores, desarrolladores BackEnd y gerentes de proyecto**, para trabajar juntos en la creación de una aplicación web exitosa.
+
+> Información buscada en [iebschool.com](https://www.iebschool.com/blog/funciones-front-end-developer-analitica-usabilidad/), [maestralia.com](https://maestralia.com/blog/orientacion-academica/que-es-un-programador-front-end-y-que-estudiar-para-serlo#:~:text=Antes%20de%20decantarte%20por%20el,te%20llama%20m%C3%A1s%20la%20atenci%C3%B3n.), [hostinger.mx](https://www.hostinger.mx/tutoriales/como-ser-programador-web).
