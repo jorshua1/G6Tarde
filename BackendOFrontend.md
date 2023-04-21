@@ -244,15 +244,15 @@
 
     Este lenguaje de programación es de código abierto y se caracteriza por ser fácil de aprender. Se usa para propósitos de servicios de red y nube, interfaces de línea de comandos, desarrollo web, DevOps y más. Fue desarrollado por Google.
 
-    Deberías leer: ¿Cuáles son los frameworks mejor pagados en Colombia 2022?
-
     **5-Ruby**
 
     Ruby se posiciona en el quinto lugar de los lenguajes de programación mejor remunerados en Colombia con $6,501,681 pesos colombianos, que en dólares estadounidenses equivalen a $1,517 aproximadamente.
 
     Ruby es un lenguaje de programación de código abierto, y se utiliza principalmente para el desarrollo de aplicaciones web, aunque también se implementa en el desarrollo de otros softwares.
 
-    Está disponible en plataformas como Windows y Linux. Está basado en el paradigma de la Programación Orientada a Objetos (POO) y es muy dinámico.
+    Está disponible en plataformas como Windows y Linux. Está basado en el paradigma de la Programación Orientada a Objetos (POO) y es muy dinámico. 
+    
+    [Hireline.io](https://hireline.io/blog/lenguajes-de-programacion-con-mayor-salario-en-colombia-2022/)
 
 1. ## **¿Cuáles son los lenguajes de programación más demandados en el mercado Internacional?**
 
@@ -288,9 +288,13 @@
 
     Asimismo, merece la pena destacar la influencia que ha tenido en otros dos lenguajes muy populares: C++ y C#. El primero ha sido diseñado como mejora de C, para la inclusión de la manipulación de objetos. La aparición del segundo ha sido más reciente, lanzado por Microsoft para crear programas en su plataforma .Net. [KeepCoding.io](https://keepcoding.io/blog/lenguajes-de-programacion-mas-demandados/)
 1. ## **¿Cuánto puede ganar un desarrollador FrontEnd?**
-    El salario desarrollador front end promedio en Colombia es de $48.000.000 al año o $21.978 por hora. Los cargos de nivel inicial comienzan con un ingreso de $30.000.000 al año, mientras que profesionales más experimentados perciben hasta $70.500.004 al año. [CO.talent.com](https://co.talent.com/salary?job=desarrollador+front+end)
+    El salario desarrollador front end promedio en Colombia es de $48.000.000 al año o $21.978 por hora. Los cargos de nivel inicial comienzan con un ingreso de $30.000.000 al año, mientras que profesionales más experimentados perciben hasta $70.500.004 al año.
+    
+     [CO.talent.com](https://co.talent.com/salary?job=desarrollador+front+end)
 1. ## **Cuánto puede ganar un desarrollador BackEnd?**
-    El salario desarrollador backend promedio en Colombia es de $54.000.000 al año o $24.725 por hora. Los cargos de nivel inicial comienzan con un ingreso de $36.000.000 al año, mientras que profesionales más experimentados perciben hasta $78.000.000 al año. [Co.talent.com](https://co.talent.com/salary?job=desarrollador+backend)
+    El salario desarrollador backend promedio en Colombia es de $54.000.000 al año o $24.725 por hora. Los cargos de nivel inicial comienzan con un ingreso de $36.000.000 al año, mientras que profesionales más experimentados perciben hasta $78.000.000 al año.
+
+     [Co.talent.com](https://co.talent.com/salary?job=desarrollador+backend)
 1. ## **¿Cuáles son los requisitos para ser desarrollador FrontEnd?**
 
      **1-Habilidades de un Front end Developer.**
@@ -312,6 +316,7 @@
     **6-Tener conocimientos de diseño.**
 
     **7-Conocer el trabajo de un diseñador web y de un desarrollador back-end.**
+
     [Iebschool.com](https://www.iebschool.com/blog/funciones-front-end-developer-analitica-usabilidad/)
 
 1. ## **¿Cuáles son los requisitos para ser desarrollador BackEnd?**
@@ -367,6 +372,7 @@
     **Manejar el Sistema de Control de Versiones**
 
     Los programadores backEnd editan, corrigen y restauran constantemente los códigos de webs y apps, y la manera para hacer seguimiento de los cambios realizados es manejar el sistema de control de versiones. Esto ayuda para múltiples funciones, las más populares son: revertir errores de código, rastrear cambios de código, devolver los cambios. Los sistemas más usados son Git, Mercurial, SVN y AWS Code Commit.
+
     [Talently.tech](https://talently.tech/blog/skills-para-ser-desarrollador-backend/)
 1. ## **¿Qué es la metodología SCRUM y AGILE?**
     **¿Que es la metodologia AGILE?**
@@ -375,6 +381,7 @@
 
 
     Los beneficios de Agile incluyen su capacidad para ayudar a los equipos en un panorama en evolución mientras se mantiene un enfoque en la entrega eficiente de valor comercial. La cultura colaborativa facilitada por Agile también mejora la eficiencia en toda la organización a medida que los equipos trabajan juntos y comprenden sus roles específicos en el proceso. Por último, las empresas que utilizan el desarrollo de software ágil pueden estar seguras de que están lanzando un producto de alta calidad, ya que las pruebas se realizan durante todo el desarrollo, lo que brinda la oportunidad de realizar cambios según sea necesario y alertar a los equipos sobre cualquier problema potencial.
+
     [ComputerWeeklys.com](https://www.computerweekly.com/es/definicion/Desarrollo-de-software-agil-o-Agile#:~:text=El%20Desarrollo%20de%20Software%20%C3%81gil,la%20entrega%20del%20producto%20terminado.)
 
     **¿Que es la metodologia SCRUM?**
@@ -384,11 +391,14 @@
     En Scrum se realizan entregas parciales y regulares del producto final, priorizadas por el beneficio que aportan al receptor del proyecto. Por ello, Scrum está especialmente indicado para proyectos en entornos complejos, donde se necesita obtener resultados pronto, donde los requisitos son cambiantes o poco definidos, donde la innovación, la competitividad, la flexibilidad y la productividad son fundamentales.
 
     Scrum también se utiliza para resolver situaciones en que no se está entregando al cliente lo que necesita, cuando las entregas se alargan demasiado, los costes se disparan o la calidad no es aceptable, cuando se necesita capacidad de reacción ante la competencia, cuando la moral de los equipos es baja y la rotación alta, cuando es necesario identificar y solucionar ineficiencias sistemáticamente o cuando se quiere trabajar utilizando un proceso especializado en el desarrollo de producto.
+
     [ProyectosAgiles.com](https://proyectosagiles.org/que-es-scrum/)
 1. ## **¿Qué es TESTING?**
     El testing en programación es una de las metodologías utilizadas para verificar y validar cada etapa de desarrollo sobre la que avanzamos en nuestro código fuente. Esto nos permitirá conocer en estadios tempranos de desarrollo si cada etapa del programa se comporta como esperamos o su funcionamiento es deficiente.
 
     Es decir que el testing de software es un conjunto de pruebas basadas en técnicas sistemáticas, consistentes, rigurosas y muchas veces formales, con las cuales se verifica el comportamiento de una aplicación.
+
+    [Craft-Code.com](https://craft-code.com/que-es-el-testing-de-software/)
 1. ## **¿Cuáles son los roles en el desarrollo de software?**
 
     Se necesitan más que desarrolladores e ingenieros para formar un equipo de desarrollo de software eficaz. Se necesitan muchos roles en el ciclo de vida del desarrollo de software, y el equipo ideal está formado por los siguientes roles:
@@ -406,6 +416,8 @@
     -Líder de equipo y de tecnología (o team lead y tech lead)
 
     -Scrum master
+    
+    [ProjectCor.com](https://projectcor.com/es/blog/roles-fundamentales-en-un-equipo-de-desarrollo-de-software/)
 1. ## **¿Cuál es el camino que deseas seguir? ¿Desarrollador FrontEnd o Desarrollador Backend?**
 
     Desarrollador Backend
