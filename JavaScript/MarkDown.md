@@ -161,7 +161,7 @@ ___
 
 > Información buscada en [glassdoor.com.mx](https://www.glassdoor.com.mx/Salaries/bogota-backend-developer-salary-SRCH_IL.0,6_IM1064_KO7,24.htm#:~:text=El%20sueldo%20promedio%20de%20Backend,COP%201%2C427%2C570%20y%20COP%2021%2C631%2C596.).
 
-## 15.**¿Cuáles son los requisitos para ser desarrollador FrontEnd?**
+### 15.**¿Cuáles son los requisitos para ser desarrollador FrontEnd?**
 
 > Para ser un desarrollador *FrontEnd*, es necesario tener conocimientos sólidos en lenguajes de programación, tecnologías y herramientas específicas. Para convertirse en un desarrollador FrontEnd, es necesario tener un conjunto de habilidades sólidas y experiencia en lenguajes de programación y tecnologías específicas. A continuación se presentan algunos de los requisitos comunes que se necesitan para convertirse en un desarrollador *FrontEnd*:
 - **HTML, CSS y JavaScript:** Estos son los lenguajes de programación fundamentales que todo desarrollador *FrontEnd* debe conocer. 
@@ -180,3 +180,46 @@ ___
 - **Habilidades de comunicación y trabajo en equipo:** Un desarrollador *FrontEnd* debe ser capaz de comunicarse con otros miembros del equipo, como **diseñadores, desarrolladores BackEnd y gerentes de proyecto**, para trabajar juntos en la creación de una aplicación web exitosa.
 
 > Información buscada en [iebschool.com](https://www.iebschool.com/blog/funciones-front-end-developer-analitica-usabilidad/), [maestralia.com](https://maestralia.com/blog/orientacion-academica/que-es-un-programador-front-end-y-que-estudiar-para-serlo#:~:text=Antes%20de%20decantarte%20por%20el,te%20llama%20m%C3%A1s%20la%20atenci%C3%B3n.), [hostinger.mx](https://www.hostinger.mx/tutoriales/como-ser-programador-web).
+
+### 16.**¿Cuáles son los requisitos para ser desarrollador BackEnd?**
+
+> Para ser un desarrollador *BackEnd*, generalmente se requieren habilidades técnicas en programación y conocimientos específicos en áreas como *bases de datos, servidores, sistemas operativos, redes y arquitecturas de software*. 
+> Estos son algunos de los requisitos básicos para ser un desarrollador *BackEnd*, pero es importante tener en cuenta que los requisitos específicos pueden variar según la empresa, el proyecto y la industria.
+> Aquí hay algunos requisitos comunes para ser un desarrollador *BackEnd*:
+- **Habilidades de programación:** Los desarrolladores *BackEnd* deben tener habilidades sólidas en al menos un lenguaje de programación, como ***Java, Python, Ruby, PHP, Node.js, C#*** o ***Go***. Además, deben tener experiencia en el uso de *frameworks* de desarrollo, como ***Flask, Express, Django, Spring*** o ***.NET***.
+
+- **Conocimientos de bases de datos:** Los desarrolladores *BackEnd* deben comprender cómo funcionan las bases de datos, cómo interactúan con las aplicaciones y cómo diseñar y optimizar esquemas de bases de datos. Deben tener experiencia en al menos un sistema de gestión de ***bases de datos (DBMS)*** como ***MySQL, MongoDB, PostgreSQL*** o ***SQL Server***.
+
+- **Conocimientos de servidores y sistemas operativos:** Los desarrolladores *BackEnd* deben tener experiencia en el uso de sistemas operativos como ***Linux*** o ***Windows*** y comprender cómo funcionan los *servidores web y de aplicaciones*. También deben estar familiarizados con herramientas y tecnologías de gestión de servidores como ***Apache, Nginx*** o ***Docker***.
+
+- **Conocimientos de arquitectura de software:** Los desarrolladores *BackEnd* deben comprender los patrones y prácticas comunes de diseño de *software*, como la arquitectura de *microservicios, el patrón MVC o la arquitectura en capas*. También deben tener experiencia en el uso de herramientas y tecnologías de integración continua y entrega continua ***(CI/CD)***, como ***Jenkins*** o ***GitLab***.
+
+- **Habilidades de resolución de problemas:** Los desarrolladores *BackEnd* deben ser capaces de analizar y solucionar problemas técnicos complejos en el *software*. Deben tener habilidades de *depuración, pruebas y optimización de código*.
+
+- **Habilidades de comunicación y colaboración:** Los desarrolladores *BackEnd* a menudo trabajan en equipo, por lo que deben tener habilidades de comunicación efectiva y colaboración para trabajar con otros *desarrolladores, diseñadores y stakeholders del proyecto*.
+
+> Información buscada en [iebschool.com](https://www.iebschool.com/blog/funciones-front-end-developer-analitica-usabilidad/), [kinsta.com](https://kinsta.com/es/blog/desarrollador-de-frontend/)
+
+### 17.**¿Qué es la metodología SCRUM y AGILE?**
+
+> Scrum es un proceso de Agile que permite enfocarse en entregar el valor del negocio en el menor tiempo posible, e inspecciona rápida y repetidamente el software de trabajo real. También enfatiza la responsabilidad, el trabajo en equipo y el progreso iterativo hacia una meta bien definida.
+
+> SCRUM y AGILE son dos metodologías de desarrollo de software muy populares y ampliamente utilizadas en la industria.
+
+> SCRUM es un enfoque ágil para la gestión de proyectos de software, que se enfoca en la entrega rápida y constante de software funcional. En la metodología SCRUM, el equipo de desarrollo trabaja en sprints (iteraciones de trabajo), que suelen tener una duración de dos a cuatro semanas. Durante cada sprint, el equipo de desarrollo trabaja en un conjunto de tareas definidas en una lista de pendientes (backlog) priorizada por el Product Owner. Al final de cada sprint, se revisa y se presenta el trabajo completado en una reunión de revisión de sprint, y se planifica el próximo sprint en una reunión de planificación de sprint.
+
+![robertotouza.com](https://blog.wearedrew.co/hubfs/metodolog%C3%ADa%20scrum.png)
+
+> La metodología SCRUM se basa en roles claros y definidos, como el Scrum Master, el Product Owner y el Equipo de Desarrollo, y en prácticas como las reuniones diarias de Scrum (stand-ups), las retrospectivas de sprint y la colaboración continua con el cliente y los stakeholders.
+
+> Por otro lado, AGILE es un enfoque de desarrollo de software que se centra en la entrega de valor al cliente a través de la colaboración y la retroalimentación continua. La metodología AGILE se basa en cuatro valores principales: "Individuos e interacciones por encima de procesos y herramientas", "Software funcional por encima de documentación exhaustiva", "Colaboración con el cliente por encima de la negociación contractual" y "Respuesta al cambio por encima del seguimiento de un plan".
+
+![smartgecko.info](https://www.smartgecko.info/wp-content/uploads/2016/07/Scrum-Values-1.jpg)
+
+> En la metodología AGILE, el equipo de desarrollo trabaja en ciclos cortos de entrega de software (iteraciones), con un enfoque en la entrega constante de valor al cliente. La metodología AGILE también se basa en roles y prácticas claras, como la colaboración continua con el cliente, la retroalimentación frecuente, la entrega continua de software y la mejora continua del proceso.
+
+> En resumen, SCRUM y AGILE son metodologías de desarrollo de software que se enfocan en la entrega rápida y constante de software funcional, la colaboración y la retroalimentación continua con el cliente, y la mejora continua del proceso de desarrollo. SCRUM se centra en la gestión del proyecto y el trabajo en sprints, mientras que AGILE se centra en los valores y principios fundamentales del desarrollo ágil.
+
+![scrumevolution.com](https://scrumevolution.com/wp-content/uploads/2022/06/AdobeStock_415561625-600x400.jpeg)
+
+> Información buscada en [robertotouza.com](https://robertotouza.com/agile/agile-vs-scrum/#:~:text=Scrum%20es%20un%20proceso%20de,hacia%20una%20meta%20bien%20definida.)
