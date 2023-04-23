@@ -202,24 +202,67 @@ ___
 
 ### 17.**¿Qué es la metodología SCRUM y AGILE?**
 
-> Scrum es un proceso de Agile que permite enfocarse en entregar el valor del negocio en el menor tiempo posible, e inspecciona rápida y repetidamente el software de trabajo real. También enfatiza la responsabilidad, el trabajo en equipo y el progreso iterativo hacia una meta bien definida.
+> *Scrum* es un proceso de Agile que permite enfocarse en entregar el valor del negocio en el menor tiempo posible, e inspecciona rápida y repetidamente el software de trabajo real. También enfatiza la responsabilidad, el trabajo en equipo y el progreso iterativo hacia una meta bien definida.
 
-> SCRUM y AGILE son dos metodologías de desarrollo de software muy populares y ampliamente utilizadas en la industria.
+> ***SCRUM*** y ***AGILE*** son dos metodologías de desarrollo de *software* muy populares y ampliamente utilizadas en la industria.
 
-> SCRUM es un enfoque ágil para la gestión de proyectos de software, que se enfoca en la entrega rápida y constante de software funcional. En la metodología SCRUM, el equipo de desarrollo trabaja en sprints (iteraciones de trabajo), que suelen tener una duración de dos a cuatro semanas. Durante cada sprint, el equipo de desarrollo trabaja en un conjunto de tareas definidas en una lista de pendientes (backlog) priorizada por el Product Owner. Al final de cada sprint, se revisa y se presenta el trabajo completado en una reunión de revisión de sprint, y se planifica el próximo sprint en una reunión de planificación de sprint.
+> **SCRUM** es un enfoque ágil para la gestión de proyectos de software, que se enfoca en la entrega rápida y constante de software funcional. En la metodología *SCRUM*, el equipo de desarrollo trabaja en sprints (iteraciones de trabajo), que suelen tener una duración de dos a cuatro semanas. Durante cada sprint, el equipo de desarrollo trabaja en un conjunto de tareas definidas en una lista de pendientes (backlog) priorizada por el *Product Owner*. Al final de cada sprint, se revisa y se presenta el trabajo completado en una reunión de revisión de sprint, y se planifica el próximo sprint en una reunión de planificación de sprint.
 
 ![robertotouza.com](https://blog.wearedrew.co/hubfs/metodolog%C3%ADa%20scrum.png)
 
-> La metodología SCRUM se basa en roles claros y definidos, como el Scrum Master, el Product Owner y el Equipo de Desarrollo, y en prácticas como las reuniones diarias de Scrum (stand-ups), las retrospectivas de sprint y la colaboración continua con el cliente y los stakeholders.
+> La metodología *SCRUM* se basa en roles claros y definidos, como el *Scrum Master, el Product Owner y el Equipo de Desarrollo, y en prácticas como las reuniones diarias de Scrum (stand-ups), las retrospectivas de sprint y la colaboración continua con el cliente y los stakeholders*.
 
-> Por otro lado, AGILE es un enfoque de desarrollo de software que se centra en la entrega de valor al cliente a través de la colaboración y la retroalimentación continua. La metodología AGILE se basa en cuatro valores principales: "Individuos e interacciones por encima de procesos y herramientas", "Software funcional por encima de documentación exhaustiva", "Colaboración con el cliente por encima de la negociación contractual" y "Respuesta al cambio por encima del seguimiento de un plan".
+> Por otro lado, **AGILE** es un enfoque de desarrollo de *software* que se centra en la entrega de valor al cliente a través de la colaboración y la retroalimentación continua. La metodología *AGILE* se basa en cuatro valores principales: *"Individuos e interacciones por encima de procesos y herramientas", "Software funcional por encima de documentación exhaustiva", "Colaboración con el cliente por encima de la negociación contractual" y "Respuesta al cambio por encima del seguimiento de un plan"*.
 
 ![smartgecko.info](https://www.smartgecko.info/wp-content/uploads/2016/07/Scrum-Values-1.jpg)
 
-> En la metodología AGILE, el equipo de desarrollo trabaja en ciclos cortos de entrega de software (iteraciones), con un enfoque en la entrega constante de valor al cliente. La metodología AGILE también se basa en roles y prácticas claras, como la colaboración continua con el cliente, la retroalimentación frecuente, la entrega continua de software y la mejora continua del proceso.
+> En la metodología *AGILE*, el equipo de desarrollo trabaja en ciclos cortos de entrega de software (iteraciones), con un enfoque en la entrega constante de valor al cliente. La metodología *AGILE* también se basa en roles y prácticas claras, como la colaboración continua con el cliente, la retroalimentación frecuente, la entrega continua de software y la mejora continua del proceso.
 
-> En resumen, SCRUM y AGILE son metodologías de desarrollo de software que se enfocan en la entrega rápida y constante de software funcional, la colaboración y la retroalimentación continua con el cliente, y la mejora continua del proceso de desarrollo. SCRUM se centra en la gestión del proyecto y el trabajo en sprints, mientras que AGILE se centra en los valores y principios fundamentales del desarrollo ágil.
+> En resumen, ***SCRUM*** y ***AGILE*** son metodologías de desarrollo de software que se enfocan en la entrega rápida y constante de software funcional, la colaboración y la retroalimentación continua con el cliente, y la mejora continua del proceso de desarrollo. *SCRUM* se centra en la gestión del proyecto y el trabajo en sprints, mientras que AGILE se centra en los valores y principios fundamentales del desarrollo ágil.
 
 ![scrumevolution.com](https://scrumevolution.com/wp-content/uploads/2022/06/AdobeStock_415561625-600x400.jpeg)
 
 > Información buscada en [robertotouza.com](https://robertotouza.com/agile/agile-vs-scrum/#:~:text=Scrum%20es%20un%20proceso%20de,hacia%20una%20meta%20bien%20definida.)
+
+### 18.**¿Qué es TESTING?**
+
+> El testing (o pruebas de software) es el proceso de evaluar un sistema o aplicación informática para detectar posibles errores, fallos o defectos antes de su lanzamiento o puesta en producción. El testing es una parte importante del ciclo de vida del software, ya que ayuda a mejorar la calidad del software y a reducir los costos y riesgos asociados con los errores y fallos en el software.
+
+> El testing puede ser realizado de forma manual o automatizada, y puede incluir pruebas funcionales (para comprobar si el software hace lo que se espera), pruebas de rendimiento (para medir su velocidad y capacidad), pruebas de seguridad (para evaluar su vulnerabilidad a ataques), pruebas de usabilidad (para evaluar su facilidad de uso) y pruebas de compatibilidad (para verificar si funciona en diferentes sistemas operativos, navegadores y dispositivos).
+
+> El objetivo del testing es asegurar que el software funciona correctamente, es seguro, confiable, fácil de usar y cumple con los requisitos del usuario y del negocio.
+
+> Información buscada en [profile.es](https://profile.es/blog/que-es-el-testing-de-software/)
+
+### 19.**¿Cuáles son los roles en el desarrollo de software?**
+
+> En el desarrollo de software, hay varios roles que desempeñan diferentes personas en el equipo de trabajo. La estructura del equipo puede variar según el proyecto y la metodología utilizada. Estos roles pueden variar según la metodología de desarrollo utilizada, el tamaño y la complejidad del proyecto.
+> A continuación, describo algunos de los roles comunes en el desarrollo de software:
+
+- **Desarrollador de software:** es responsable de diseñar, escribir, probar y mantener el código del software. Trabaja en estrecha colaboración con otros miembros del equipo para asegurarse de que el software cumpla con los requisitos del cliente y se ajuste a las mejores prácticas de programación.
+
+- **Analista de negocios:** es responsable de recopilar, analizar y definir los requisitos del software. Trabaja con los clientes y otros miembros del equipo para identificar las necesidades del usuario, las funcionalidades requeridas y los casos de uso.
+
+- **Arquitecto de software:** es responsable de diseñar la estructura y la organización del software. Trabaja con los desarrolladores para definir las mejores prácticas de diseño y desarrollo, y garantizar que el software sea escalable, modular y fácil de mantener.
+
+- **Gerente de proyecto:** es responsable de planificar, organizar y supervisar el desarrollo del software. Trabaja con los miembros del equipo para establecer los objetivos, los plazos y el presupuesto del proyecto, y para garantizar que el proyecto se entregue a tiempo y dentro del presupuesto. 
+
+- **Especialista en calidad de software:** es responsable de garantizar que el software cumpla con los estándares de calidad y funcione correctamente. Realiza pruebas de software, verifica la funcionalidad, identifica los errores y trabaja con los desarrolladores para solucionarlos.
+
+- **Diseñador de interfaz de usuario:** es responsable de diseñar la interfaz de usuario del software. Trabaja con los analistas de negocios y los desarrolladores para crear una interfaz fácil de usar y atractiva para el usuario.
+
+- **Administrador de base de datos:** es responsable de diseñar y mantener la base de datos que utiliza el software. Trabaja con los desarrolladores para garantizar que la base de datos sea eficiente, escalable y segura.
+
+> Estos son solo algunos de los roles comunes en el desarrollo de software.
+
+> Información buscada en [projectcor.com](https://projectcor.com/es/blog/roles-fundamentales-en-un-equipo-de-desarrollo-de-software/)
+
+### 20.**¿Cuál es el camino que deseas seguir? ¿Desarrollador FrontEnd o Desarrollador BackEnd?**
+
+- ***¿Cuál es el camino que deseas seguir?***
+
+> De todos los puntos vistos e investigaciones veo que el metodo de SCRUM es muy bueno y el camino que deseo realizar es intentar aprender el mayor codigo posible por varias ramas lo mas parecido un *FullStacks*, esto con la idea de tener conocimiento en todo y poder abacar varias ramas.
+
+- ***¿Desarrollador FrontEnd o Desarrollador BackEnd?***
+
+> Empezar por el *BackEnd*, esto debido a que es mas dificil de aprender y es interno, ya que el FronrEnd es un poco mas facil y teniendo un poco mas de conocimiento es esta rama me parece mejor, por eso quiero abarcar en el BackEnd que no tengo nada de conocmiento sobre esta y me gusta la idea de aprender esta rama.
