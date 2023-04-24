@@ -377,5 +377,6 @@ Se necesitan más que desarrolladores e ingenieros para formar un equipo de desa
   - Scrum master 
 [**Roles de un equipo de desarrollo de software**](https://projectcor.com/es/blog/roles-fundamentales-en-un-equipo-de-desarrollo-de-software/)
 ## 20. ¿Cuál es el camino que deseas seguir? ¿Desarrollador FrontEnd o Desarrollador BackEnd?
-
+    
+**Desarrollador BackEn**
 <div/>
