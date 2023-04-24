@@ -997,7 +997,7 @@ Aquí te compartimos el top 10 de lenguajes de programación más solicitados en
 * Typescript:  2% | 1.607 ofertas de trabajo.
 * R:  1% | 989 ofertas de trabajo.
 * 
-![Lemguaje](https://global-uploads.webflow.com/5f5a53e153805db840dae2db/627a553ba0d7611718a98946_Lenguajes%20de%20programacion%202022.png)
+![Lenguaje](https://global-uploads.webflow.com/5f5a53e153805db840dae2db/627a553ba0d7611718a98946_Lenguajes%20de%20programacion%202022.png)
 
 
 Ahora te presentamos el top de los 10 lenguajes de programación más populares según Stack Overflow, la comunidad más grande y confiable de programadores, donde se comparten conocimientos y aprendizajes para ayudarse entre todos a construir sus carreras. Fue creado en el año 2008 y actualmente tiene más de 100 millones de visitas cada mes, convirtiéndose así en uno de los portales webs más visitados del mundo.
@@ -1005,13 +1005,65 @@ Ahora te presentamos el top de los 10 lenguajes de programación más populares 
 ![overFlow](https://global-uploads.webflow.com/5f5a53e153805db840dae2db/627b882b7442f45faaf45ca6_stack%20overflow.png)
 
 
-13.  ¿Cuánto puede ganar un desarrollador FrontEnd?
+## **13.  ¿Cuánto puede ganar un desarrollador FrontEnd?**
 
-14.  ¿Cuánto puede ganar un desarrollador BackEnd?
-15. ¿Cuáles son los requisitos para ser desarrollador FrontEnd?
+El salario de desarrollador front end promedio puede variar debido a una variedad de factores. Dependiendo de tu ubicación, años de experiencia y empleador, puedes ganar desde $96,881 USD hasta $102,120 USD por año.
+
+De acuerdo con Indeed, el salario base promedio actual para los desarrolladores front end en los Estados Unidos es de $102,000 USD. Esta es una base estimada en 5,028 entradas anónimas de empleados que son desarrolladores front end.
+
+![front](https://www.dreamhost.com/blog/wp-content/uploads/2022/07/cuanto-gana-un-desarrollador-DreamHost-6.jpg)
+
+Los beneficios más comunes para esta posición son seguro médico, tiempo pago de incapacidades y tiempo libre remunerado ilimitado. Estos desarrolladores front end también dijeron que recibían un bono de $5.000 USD cada año.  
+
+Sin embargo, otros sitios web de bolsas de trabajo reportan salarios con poca diferencia en los salarios de desarrolladores front end. En Glassdoor, el pago base está reportado en $82.669 USD por año. Con pagos adicionales, esto llega a un total de $101.092 USD. 
+
+![Image](https://www.dreamhost.com/blog/wp-content/uploads/2022/07/cuanto-gana-un-desarrollador-DreamHost-7.jpg)
+
+Mientras tanto, ZipRecruiter lista un salario promedio de $96.881 USD para desarrolladores front end. Esto es un promedio de $46.58 USD por hora, o $8,073 USD al mes. 
+
+![image](https://www.dreamhost.com/blog/wp-content/uploads/2022/07/cuanto-gana-un-desarrollador-DreamHost-3.jpg)
+
+Como desarrollador freelance front end, tu salario dependerá del número de clientes con los que trabajes. Sin embargo, los freelancers pueden ganar un promedio de $85.940 USD.
+
+![image](https://www.dreamhost.com/blog/wp-content/uploads/2022/07/cuanto-gana-un-desarrollador-DreamHost-1.jpg)
+
+
+## **14.  ¿Cuánto puede ganar un desarrollador BackEnd?**
+
+Como mencionamos anteriormente, los desarrolladores back end trabajan del lado del servidor de un sitio web. Ya que deben estar familiarizados con tecnologías como MySQL, estos desarrolladores a menudo tienden a tener salarios más altos. 
+
+En los Estados Unidos, el salario básico promedio para un empleo de desarrollo back end es de $116,605 USD. Esto es un incremento de alrededor de $14,000 USD del salario de un desarrollador front end.
+
+![image](https://www.dreamhost.com/blog/wp-content/uploads/2022/07/cuanto-gana-un-desarrollador-DreamHost-12.jpg)
+
+Glassdoor reporta un promedio nacional similar, listando los salarios de desarrollo back-end en $116,267 USD al año. Esto incluye el promedio adicional de compensación en efectivo, comisiones y reparto de utilidades.
+
+![Image](https://www.dreamhost.com/blog/wp-content/uploads/2022/07/cuanto-gana-un-desarrollador-DreamHost-10.jpg)
+
+Por otro lado, ZipRecruiter nota que la mayoría de desarrolladores back end solo ganan $102.750 USD al año. Sin embargo, aún es más alto que el salario registrado de $96,881 USD de los desarrolladores front end. 
+
+![Image](https://www.dreamhost.com/blog/wp-content/uploads/2022/07/cuanto-gana-un-desarrollador-DreamHost-4.jpg)
+
+En general, los desarrolladores back end pueden ganar más que los desarrolladores front end. Esto se debe mayormente a las habilidades avanzadas de programación y experiencia.
+
+
+## **5. ¿Cuáles son los requisitos para ser desarrollador FrontEnd?**
+
+![Image](https://i.ytimg.com/vi/N8mFHB7JDkw/maxresdefault.jpg)
+
+Un desarrollador frontend construye y mantiene el frontend de un sitio web o aplicación. Algunos ejemplos de las partes de un sitio web en las que trabajan son
+
+Diseño
+Funciones de navegación
+Imágenes
+Vídeos
+Botones
+Cajas de búsqueda
+Páginas de inicio de sesión
+Integración con las redes sociales
 16. ¿Cuáles son los requisitos para ser desarrollador BackEnd?
 17. ¿Qué es la metodología SCRUM y AGILE?
 18. ¿Qué es TESTING?
-20. ¿Cuáles son los roles en el desarrollo de software?
-21. ¿Cuál es el camino que deseas seguir? ¿Desarrollador FrontEnd o Desarrollador
+19. ¿Cuáles son los roles en el desarrollo de software?
+20. ¿Cuál es el camino que deseas seguir? ¿Desarrollador FrontEnd o Desarrollador
     BackEnd?
