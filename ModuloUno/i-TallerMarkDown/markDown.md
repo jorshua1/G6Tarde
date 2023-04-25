@@ -1414,7 +1414,8 @@ Agile no se entiende bien. Si tu equipo y tu empresa no tienen formación en Agi
 Las partes interesadas clave son reticentes. Ya sea el patrocinador de tu proyecto o un miembro clave del equipo, si alguien se resiste a adoptar Agile, tendrás que resolver el problema antes de poder adoptar con éxito la metodología. 
 Tu organización no puede respaldar la colaboración diaria. Si existen barreras importantes para la comunicación diaria y la colaboración abierta entre los miembros del equipo, puede que Agile no sea el mejor enfoque. 
 La estructura de la empresa no puede respaldar equipos interfuncionales. En un proyecto Agile, las personas de muchas funciones diferentes necesitan reunirse, comunicarse y colaborar durante todo el ciclo de vida del proyecto. Si en tu empresa las funciones están aisladas, puede que esto no sea realista.  
-Tu organización requiere grandes cantidades de documentación. Si tu empresa requiere mucha documentación e informes de prueba, puede que adoptar Agile sea demasiado costoso. Uno de los 12 principios de Agile se basa en la reducción de informes de proyectos, matrices de trazabilidad de requisitos
+Tu organización requiere grandes cantidades de documentación. Si tu empresa requiere mucha documentación e informes de prueba, puede que adoptar Agile sea demasiado costoso. Uno de los 12 principios de Agile se basa en la reducción de informes de proyectos, matrices de trazabilidad de requisitos.
+
 1.  ¿Qué es TESTING?
 2.  ¿Cuáles son los roles en el desarrollo de software?
 3.  ¿Cuál es el camino que deseas seguir? ¿Desarrollador FrontEnd o Desarrollador
