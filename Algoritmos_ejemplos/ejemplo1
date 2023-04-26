@@ -1,0 +1,17 @@
+let valorCompras = parseInt(prompt("ingrese el monto total de la compra"))
+if (isNaN(valorCompras)){alert("error")
+}else if(valorCompras>=250000){
+    descuentoCompras = valorCompras*0.3
+    total1= valorCompras-descuentoCompras
+    alert("su descuento es de "+descuentoCompras+ " total a pagar con el descuento "+total1)
+}else if(valorCompras>=200000 && valorCompras<=250000){
+    descuentoCompras2 = valorCompras*0.2
+    total2= valorCompras-descuentoCompras2
+    alert("su descuento es de "+descuentoCompras2+ " total a pagar con el descuento "+total2)
+}
+else if(valorCompras< 200000 && valorCompras >= 50000) 
+{alert("No hay descuento")
+}else if(valorCompras< 50000){
+    valorTotal=valorCompras+2000
+    alert("se ha adicionado 2000 a su compra,total a pagar "+ valorTotal)
+}
