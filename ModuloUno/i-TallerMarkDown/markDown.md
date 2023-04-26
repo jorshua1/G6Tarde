@@ -8,16 +8,17 @@
 
 ###### _Debe colocar enlaces de las referencias bibliográficas para el contenido._
 
-## **1. ¿Qué es la programación?**
+# **_1. ¿Qué es la programación?_**
 
 ![Programación](https://concepto.de/wp-content/uploads/2014/08/programacion-2-e1551291144973.jpg)
 La **programación** es el proceso de creación de **programas informáticos**. Esta definición se puede interpretar de la siguiente manera. La programación no es más que una explicación a la computadora de qué, en qué forma y cómo llegar al usuario. En otras palabras, es una especie de arte de traducir los deseos de una persona al lenguaje de la máquina.
 
-- ### **La esencia de la programación**
-  - La idea principal es crear un **algoritmo** y traducirlo a un [lenguaje de programación](https://openwebinars.net/blog/que-es-un-lenguaje-de-programacion/ " Conceptos de lenguajes de programación"). Al guía de desarrollo se le suele aconsejar que empiece a desarrollar un programa respondiendo a la pregunta: _¿Es posible implementar esta tarea de forma programada?_ Por ejemplo, incluso hoy en día no se puede hacer que una computadora prediga lo que sucederá en unos días. E incluso si este ejemplo no es del todo correcto, porque esta tarea es imposible en principio. Sin embargo, si se limita la tarea a predecir el comportamiento de alguna divisa en el intercambio, tal tarea se resuelve con la ayuda de un algoritmo suficientemente complejo y una gran base de datos experimental.
-- ### **Algoritmos**
+* ## **La esencia de la programación**
 
-  - Una vez que se haya tomado la decisión sobre la posibilidad de implementar el software en una tarea, es necesario construir un [algoritmo](https://ude.edu.uy/que-son-algoritmos/#:~:text=Desde%20el%20punto%20de%20vista,produciendo%20una%20salida%20o%20soluci%C3%B3n. "Enfoque básico de qué es un algoritmo") para su solución. Es decir, es necesario describir la secuencia de pasos para resolver la tarea con el máximo detalle teniendo en cuenta todas las posibles ramas, ciclos y errores. De hecho, se puede construir un algoritmo para las operaciones diarias más simples. Por ejemplo, se puede describir el algoritmo de la preparación del té:
+  * La idea principal es crear un **algoritmo** y traducirlo a un [lenguaje de programación](https://openwebinars.net/blog/que-es-un-lenguaje-de-programacion/ " Conceptos de lenguajes de programación"). Al guía de desarrollo se le suele aconsejar que empiece a desarrollar un programa respondiendo a la pregunta: _¿Es posible implementar esta tarea de forma programada?_ Por ejemplo, incluso hoy en día no se puede hacer que una computadora prediga lo que sucederá en unos días. E incluso si este ejemplo no es del todo correcto, porque esta tarea es imposible en principio. Sin embargo, si se limita la tarea a predecir el comportamiento de alguna divisa en el intercambio, tal tarea se resuelve con la ayuda de un algoritmo suficientemente complejo y una gran base de datos experimental.
+* ## **Algoritmos**
+
+  * Una vez que se haya tomado la decisión sobre la posibilidad de implementar el software en una tarea, es necesario construir un [algoritmo](https://ude.edu.uy/que-son-algoritmos/#:~:text=Desde%20el%20punto%20de%20vista,produciendo%20una%20salida%20o%20soluci%C3%B3n. "Enfoque básico de qué es un algoritmo") para su solución. Es decir, es necesario describir la secuencia de pasos para resolver la tarea con el máximo detalle teniendo en cuenta todas las posibles ramas, ciclos y errores. De hecho, se puede construir un algoritmo para las operaciones diarias más simples. Por ejemplo, se puede describir el algoritmo de la preparación del té:
 
     1. Abrir la tetera.
     2. Si no hay agua en la tetera, se le debe echar.
@@ -28,32 +29,31 @@ La **programación** es el proceso de creación de **programas informáticos**. 
     7. Colocar el sobre de té en la taza.
     8. Echar el agua caliente de la tetera a la taza.
 
-  Este algoritmo no es universal, pero para una persona que se prepara una taza de té porque cuenta con una estufa de gas, es válido todo este proceso.
+    Este algoritmo no es universal, pero para una persona que se prepara una taza de té porque cuenta con una estufa de gas, es válido todo este proceso.
 
-  Hay varias formas de describir el algoritmo:
+    Hay varias formas de describir el algoritmo:
 
-  - Gráfico (esquemas).
-  - Verbal.
-  - Pseudocódigo.
-  - Código del programa.
+    * Gráfico (esquemas).
+    * Verbal.
+    * Pseudocódigo.
+    * Código del programa.
+* ## **Lenguajes de programación**
 
-- ### **Lenguajes de programación**
+  * De hecho, un lenguaje de programación es un conjunto de reglas para describir comandos y funciones predefinidas. Cada lenguaje de programación limita al desarrollador a un conjunto estrictamente predeterminado de palabras clave y comandos que pueden ser utilizados en el desarrollo. Hay varios niveles de lenguajes entre los cuales se distinguen:
 
-  - De hecho, un lenguaje de programación es un conjunto de reglas para describir comandos y funciones predefinidas. Cada lenguaje de programación limita al desarrollador a un conjunto estrictamente predeterminado de palabras clave y comandos que pueden ser utilizados en el desarrollo. Hay varios niveles de lenguajes entre los cuales se distinguen:
-
-    - **De bajo nivel (ensamblador)**: trabaja directamente con los comandos del procesador.
-    - **De alto nivel (C++, C#, Java, etc.)**: es más como un lenguaje ordinario.
+    * **De bajo nivel (ensamblador)**: trabaja directamente con los comandos del procesador.
+    * **De alto nivel (C++, C#, Java, etc.)**: es más como un lenguaje ordinario.
 
     Durante el desarrollo de un producto de software se pueden distinguir diferentes niveles de abstracción. Es decir, los objetos del mundo real pueden ser representados de manera diferente. Dependiendo de ello, los lenguajes de programación se dividen en los siguientes tipos:
 
-    - **Procedimiento**: se determina la solución de la tarea paso a paso, todo el sistema se divide en una serie de procedimientos relacionados.
-    - **Orientado a objetos**: el programa se desarrolla como un conjunto de objetos interrelacionados, cada uno de los cuales puede generar una gran cantidad de implementaciones concretas.
-    - **Declarativo**: son los lenguajes de la descripción del problema y el resultado esperado.
+    * **Procedimiento**: se determina la solución de la tarea paso a paso, todo el sistema se divide en una serie de procedimientos relacionados.
+    * **Orientado a objetos**: el programa se desarrolla como un conjunto de objetos interrelacionados, cada uno de los cuales puede generar una gran cantidad de implementaciones concretas.
+    * **Declarativo**: son los lenguajes de la descripción del problema y el resultado esperado.
 
-- ### **Programación orientada a objetos**
+* ## **Programación orientada a objetos**
   - Este enfoque implica **desarrollar un programa** como un sistema de objetos, cada uno de los cuales refleja uno u otro objeto del mundo real. Los objetos del mundo real se corresponden con las clases. Y de cada clase, a su vez, se pueden generar innumerables objetos. Por ejemplo, si se desarrolla un programa para un taller de coches, las clases serán: coche, motor, suspensión, carrocería, sistema de frenos y otras piezas de repuesto. Y los objetos de la clase son los modelos específicos de estas partes, que se utilizan en el proceso.
 
-## **2. ¿Qué es el desarrollo web?**
+# **_2. ¿Qué es el desarrollo web?_**
 
 ![DesarrolloWeb](https://blog.openclassrooms.com/es/wp-content/uploads/sites/5/2017/09/AdobeStock_126016889apaisado-710x367.jpg)
 
@@ -61,72 +61,70 @@ El desarrollo web **es el proceso de creación y mantenimiento de sitios web**. 
 
 Asimismo, el desarrollo web consiste en utilizar **lenguajes de programación** como: HTML/CSS, PHP, JavaScript, y muchos otros, todo con el fin de escribir programas que harán que tu sitio sea práctico, dinámico y ágil. Además, la codificación forma parte de la vida diaria de un desarrollador. También, el papel del desarrollador como diseñador lo convierte en una pieza esencial en el futuro del [óptimo desarrollo web](https://tekla.io/blog/caracteristicas-de-una-pagina-web/).
 
-## **3. ¿Qué cosas debe aprender un programador?**
+# **_3. ¿Qué cosas debe aprender un programador?_**
 
 ![Programador](https://global-uploads.webflow.com/5f5a53e153805db840dae2db/6073fbc8ece768495cc698ca_programador-senior.jpeg)
 
-### 0. **Ir al grano.**
+## **0. Ir al grano.**
 
 El deber de un buen programador es reducir el riesgo tecnológico, eso implica ir a la parte más compleja del proyecto primero, en otras ocasiones la más importante (no siempre coinciden).
 
-### 1. **Debe conocer varios lenguajes de programación.**
+## **1. Debe conocer varios lenguajes de programación.**
 
 Un buen programador debe conocer las diferencias de los diversos lenguajes de programación sus puntos fuertes, o sea cuando (y cuando no) se debe ocupar alguno de ellos. De un buen programador al menos se espera que sea fuerte en algún lenguaje, los generalistas (unicornios) son siempre bienvenidos pero sólo saber muchas cosas a medias no te hace un buen programador.
 
-### 2. **Debe conocer y saber aplicar patrones de diseño.**
+## **2. Debe conocer y saber aplicar patrones de diseño.**
 
 Un programador no crear todo desde cero, debe estudiar y conocer soluciones tipo para los problemas frecuentes, ningún programador decente que se aprecie de hacerlo puede darse el lujo de no conocer los patrones básicos de diseño de su lenguaje fuerte, un programador de javascript que no sabe lo que es un closure simplemente no conoce javascript.
 
-### 3. **Debe realizar control de cambios sobre sus códigos.**
+## **3. Debe realizar control de cambios sobre sus códigos.**
 
 Todo buen programador trabaja con algún sistema de control de cambios, ya sea con GIT, SVN u otro, además sabe trabajar de acuerdo a algún branching model que le permite implementar set de cambios con tranquilidad y seguridad de no romper su código ni la versión que está en producción.
 
-### 4. **Debe realizar tests automatizados sobre su código.**
+## **4. Debe realizar tests automatizados sobre su código.**
 
 Antes de implementar un función X, ¿estamos seguros de que no romperemos la función Y? ¿Antes de actualizar la versión de alguna componente, plugin, plataforma, sistema operativo, estamos seguros de que todo seguirá funcionando como antes? ¿Antes de publicar un nuevo set de cambios estamos seguros de que no romperemos algo?
 Con tests automatizados es posible saber inmediatamente si un cambio rompió alguna funcionalidad, y, si además es implementado junto al control de cambio es posible saber con exactitud que parte del código y en que commit fue que una determinado cambio rompió o hizo dejar de funcionar alguna funcionalidad.
 
-### 5. **Debe respetar las convenciones sobre el lenguaje que trabaja.**
+## **5. Debe respetar las convenciones sobre el lenguaje que trabaja.**
 
 Todo lenguaje tiene sus convenciones, como la forma de nombrar variables y la forma de poner paréntesis. Las convenciones no siempre son cosa de estilo, así que es importante respetarlas.
 
-### 6. **Debe ser consistente.**
+## **6. Debe ser consistente.**
 
 Los nombres de las variables deben ser consistentes a lo largo del código, si usamos notación camel case que toda la notación a lo largo del código sea camel case, además hay que respetar las convenciones del lenguaje, y no olvidar que si contamos los índices desde cero, que todos los índices partan desde cero.
 
-### 7. **Debe exponer su trabajo y aceptar críticas (mejoras) sobre el.**
+## **7. Debe exponer su trabajo y aceptar críticas (mejoras) sobre el.**
 
 Si una persona no comparte su trabajo tiene pocas posibilidades de recibir feedback de personas que sepan más que el y por lo mismo tiene pocas posiblidades de mejorar. Uno aprende a través de compartir, Quora y StackOverflow son muy buenas fuentes, seguir en github proyectos de interés también es muy buena fuente de aprendizaje, uno aprende mucho de las correcciones que otras personas te hacen y además aprende revisando el trabajo de otras personas.
 
-### 8. **Debe refactorizar y documentar su código.**
+## **8. Debe refactorizar y documentar su código.**
 
 Primero los problemas se resuelven para un caso, luego para diez y luego para cien. Los programadores primero escriben el código para resolver un problema pero luego lo arreglan para que el código quede ordenado, entendible por humanos y reutilizable para otras ocasiones.
 Además es deber del buen programador documentar ya sea con comentarios, diagramas y buenos commits.
 
-### 9. **Debe saber que la optimización prematura es la madre de todos los males.**
+## **9. Debe saber que la optimización prematura es la madre de todos los males.**
 
 Si un programador pasa cuarenta horas optimizando una parte de su código y por lo mismo deja de hacer cientos de otras cosas pendientes, no es un buen programador, es un obsesivo y aunque todos los programadores somos un poco obsesivos, hacemos un esfuerzo constante por enfocarnos en las cosas que son importantes, como por ejemplo terminar nuestro producto a tiempo.
 Este punto a primera vista se contradice con el anterior, pero son cosas bien distintas,
 
-### 10. **Debe llevar un blog, o un cuaderno con lo aprendido.**
+## **10. Debe llevar un blog, o un cuaderno con lo aprendido.**
 
 A lo largo de una vida de programador vas a olvidar casi tantas cosas como las que vas a aprender, por lo mismo es necesario que todo buen programador lleve un cuaderno, o mejor aún, un blog, con sus apuntes.
 
-### 11. **Debe saber que las personas no leen las instrucciones.**
+## **11. Debe saber que las personas no leen las instrucciones.**
 
 Es la regla de oro de la usabilidad, las personas nunca leen las instrucciones, aunque estén en letra gigante y en un marco rojo, los usuarios usarán y abusarán de tu programa a su antojo. A veces maliciosamente y a veces romperán cosas por ignorancia, pero hagan lo que hagan no leerán las instrucciones. Cuando un programador entiendo esto bien el programa debe ser probado para que haga lo que tiene que hacer y que no haga lo que no tiene que hacer.
 
-### 12. **Humildad**
+## **12. Humildad**
 
 Un buen programador sabe que siempre hay algo nuevo que aprender, y por más bueno que sea no lo sabe todo, cualquier persona puede enseñarte algo nuevo, no importa si es más viejo o más joven que tu, por lo mismo todo buen programador debe ser humilde.
 
-### 13. **Buscar en google (RTFM)**
+## **13. Buscar en google (RTFM)**
 
 Todo buen programador sabe buscar información en google, sabe que no toda información es fiable y muchas veces está desactualizada, el buen programador sabe seleccionar la información que necesita, no se limita al copy paste y puede entender como aplicar lo leído a otros contextos.
 
-#
-
-## **4. ¿Qué clase de trabajos realiza un programador?**
+# **_4. ¿Qué clase de trabajos realiza un programador?_**
 
 ![Los trabajos](https://www.pragma.com.co/hubfs/FONDO%20BLOG%20H%20GRANDE-Aug-06-2021-10-46-02-39-PM.jpg)
 
@@ -136,34 +134,48 @@ Durante cada formación, incluso dentro de lo que es la trayectoria profesional,
 
 A continuación, te presentamos algunas salidas laborales que se pueden seguir como programador informático:
 
-- **Desarrollador de videojuegos**: es el encargado de diseñar y programar videojuegos, ya sea para consolas, celulares u ordenadores.
+* ### **Desarrollador de videojuegos**: 
+es el encargado de diseñar y programar videojuegos, ya sea para consolas, celulares u ordenadores.
 
-- ### **Desarrollador de inteligencia artificial**: es aquel que crea programas basados ​​en inteligencia humana optimizados para la inteligencia informática. La inteligencia artificial se puede utilizar para crear objetos, software, para que respondan automáticamente a ciertas cuestiones, entre otros muchísimos usos que se les puede dar. Es una rama tecnológica que cada vez pisa más fuerte en todo el mundo.
+* ### **Desarrollador de inteligencia artificial**:
+ es aquel que crea programas basados ​​en inteligencia humana optimizados para la inteligencia informática. La inteligencia artificial se puede utilizar para crear objetos, software, para que respondan automáticamente a ciertas cuestiones, entre otros muchísimos usos que se les puede dar. Es una rama tecnológica que cada vez pisa más fuerte en todo el mundo.
 
-- **Desarrollador de aprendizaje automático**: se basa en la inteligencia artificial para desarrollar una máquina o software y hacer que la máquina aprenda por sí sola a partir de los datos que acumula.
-- **Desarrollador de ciberseguridad**: garantiza que los datos en línea de las empresas u otras infraestructuras no sean pirateados. Implementa programas de protección informática y es un puesto muy buscado hoy en día por las grandes empresas.
+* ### **Desarrollador de aprendizaje automático**:
+ se basa en la inteligencia artificial para desarrollar una máquina o software y hacer que la máquina aprenda por sí sola a partir de los datos que acumula.
 
-- **Desarrollador de realidad virtual**: desarrolla herramientas de realidad virtual como las gafas de realidad virtual y otras herramientas que permiten vivir una experiencia lo más cercana posible a la realidad. Esta especialidad se puede combinar con videojuegos y con la publicidad, para citar tan solo unos ejemplos.
+*  ### **Desarrollador de ciberseguridad**:
+garantiza que los datos en línea de las empresas u otras infraestructuras no sean pirateados. Implementa programas de protección informática y es un puesto muy buscado hoy en día por las grandes empresas.
 
-- **Desarrollador de realidad aumentada**: crea imágenes para programas y aplicaciones que parecen estar presentes en la vida real; tal es el caso de la aplicación Pokémon Go, por lo que también se la relaciona con el mundo de los videojuegos.
+* ### **Desarrollador de realidad virtual**:
+ desarrolla herramientas de realidad virtual como las gafas de realidad virtual y otras herramientas que permiten vivir una experiencia lo más cercana posible a la realidad. Esta especialidad se puede combinar con videojuegos y con la publicidad, para citar tan solo unos ejemplos.
 
-- **Desarrollador de sistemas embebidos**: programa el funcionamiento de máquinas y dispositivos que operan mediante programas informáticos como lavadoras, lavavajillas, determinados frigoríficos, entre otros. Es lo que hoy se conoce como Internet de las cosas.
+* ### **Desarrollador de realidad aumentada**:
+ crea imágenes para programas y aplicaciones que parecen estar presentes en la vida real; tal es el caso de la aplicación Pokémon Go, por lo que también se la relaciona con el mundo de los videojuegos.
 
-- **Desarrollador web**: diseña sitios web y programas informáticos en línea a partir del uso de diferentes lenguajes de programación, tales como JavaScript, HTML y CSS.
+* ### **Desarrollador de sistemas embebidos**:
+ programa el funcionamiento de máquinas y dispositivos que operan mediante programas informáticos como lavadoras, lavavajillas, determinados frigoríficos, entre otros. Es lo que hoy se conoce como Internet de las cosas.
 
-Dentro de esta última categoría, encontramos varias especialidades como el:
+* ### **Desarrollador web**:
+ diseña sitios web y programas informáticos en línea a partir del uso de diferentes lenguajes de programación, tales como JavaScript, HTML y CSS.
 
-- **desarrollador front-end**, que se encarga de desarrollar la interfaz de un sitio web. Este último, una vez que el diseñador web ha esbozado y creado el diseño del sitio, debe crear este diseño a través de la codificación haciendo toda la estructura necesaria. Desarrolla todos los elementos y sistemas de navegación entre cada página, entre muchas otras cosas. Este desarrollador suele utilizar los lenguajes HTML, CSS y JavaScript.
+### **Dentro de esta última categoría, encontramos varias especialidades como el:**
 
-### **¡Acordate que no son las únicas, por lo que te invitamos a que investigues y descubras tu favorita!**
+* ### **desarrollador front-end**:
+se encarga de desarrollar la interfaz de un sitio web. Este último, una vez que el diseñador web ha esbozado y creado el diseño del sitio, debe crear este diseño a través de la codificación haciendo toda la estructura necesaria. Desarrolla todos los elementos y sistemas de navegación entre cada página, entre muchas otras cosas. Este desarrollador suele utilizar los lenguajes HTML, CSS y JavaScript.
 
-Por otra parte, el **desarrollador de back-end** también se encarga de los sitios web, pero de la parte oculta, aquella que los usuarios no ven, como el almacenamiento, la administración y la seguridad de datos.
+## **¡Acuerdate que no son las únicas, por lo que te invitamos a que investigues y descubras tu favorita!**
+
+* ### **desarrollador de back-end**:
+se encarga de los sitios web, pero de la parte oculta, aquella que los usuarios no ven, como el almacenamiento, la administración y la seguridad de datos.
 
 Después, encontramos el rol del integrador web que interactúa con el diseñador web y el desarrollador front-end y que se encarga de configurar el sitio web e integrarlo en línea. Posteriormente, se asegurará de que toda la navegación responda adecuadamente y de que todo funcione para su uso. A veces se da el caso de que el desarrollador de front-end se encarga de este paso, pero es importante saber que existe este tipo de puesto. Además, el integrador web debe conocer las herramientas necesarias para configurar la tipografía y tener noción de la compatibilidad de diferentes navegadores. Se puede resumir en que es un experto en el uso de la web y todas sus herramientas.
 
-También es posible combinar las cualidades de un desarrollador front-end y back-end en una sola profesión: el desarrollador full-stack. Puede construir la interfaz del sitio y todas sus operaciones internas. Por lo tanto, puede gestionar un proyecto de sitio web de forma completa en asociación con un diseñador web. El desarrollador full-stack suele ser el cabecilla de un equipo de programación, ya que tiene conocimientos de todos los pasos a seguir, por lo que suele ser el encargado de guiar al team.
+### **También es posible combinar las cualidades de un desarrollador front-end y back-end en una sola profesión:**
 
-## **5. ¿Qué es FRONTEND y BACKEND?**
+* ### **el desarrollador full-stack.**
+Puede construir la interfaz del sitio y todas sus operaciones internas. Por lo tanto, puede gestionar un proyecto de sitio web de forma completa en asociación con un diseñador web. El desarrollador full-stack suele ser el cabecilla de un equipo de programación, ya que tiene conocimientos de todos los pasos a seguir, por lo que suele ser el encargado de guiar al team.
+
+# **_5. ¿Qué es FRONTEND y BACKEND?_**
 
 ![The End](https://pygmalion.tech/wp-content/uploads/2020/06/Qu%C3%A9-es-fullstack-Pygmalion-Tech-2.png)
 
@@ -250,7 +262,7 @@ En su nivel más elemental, **JavaScript es usado para crear y controlar cosas c
 
 ## **5.a. Colaboración Efectiva FrontEnd/BackEnd: Flujo de Trabajo Adecuado y Responsabilidades en el Desarrollo de Aplicaciones Web**
 
-![Back-Front](/ModuloUno/i-TallerMarkDown/Back-Front.png)
+![Back-Front](/ModuloUno/i-TallerMarkDown/Imagenes/Back-Front.png)
 
 En ocasiones, la colaboración entre el FrontEnd y el BackEnd puede ser desafiante debido a la falta de definición clara de roles y responsabilidades entre ambos desarrolladores.
 
@@ -370,7 +382,7 @@ El BackEnd también es responsable de la implementación de las validaciones de 
 
 La colaboración entre el FrontEnd y el BackEnd en la definición y creación de modelos de datos es esencial para asegurar que ambos equipos tengan una comprensión clara de los datos requeridos y su estructura, lo que facilita la comunicación y coordinación durante el proceso de desarrollo.
 
-## **Colaboración en la Creación de EndPoints para el Consumo de Recursos**
+### **Colaboración en la Creación de EndPoints para el Consumo de Recursos**
 
 La colaboración entre el FrontEnd y el BackEnd en la creación de los EndPoints para el consumo de un recurso puede variar dependiendo del enfoque y las prácticas de desarrollo del equipo.
 
@@ -403,7 +415,7 @@ No es común que el FrontEnd proporcione los modelos de datos al BackEnd, ya que
 
 La colaboración entre el FrontEnd y el BackEnd en la creación de EndPoints puede funcionar de diferentes maneras, dependiendo de las prácticas de desarrollo del equipo. Puede ser del BackEnd al FrontEnd o viceversa, o incluso en paralelo. Lo importante es que ambos equipos trabajen juntos y se comuniquen de manera efectiva para asegurar una implementación exitosa del sistema.
 
-## **Flujo de Trabajo Recomendado en la Colaboración entre FrontEnd y BackEnd**
+### **Flujo de Trabajo Recomendado en la Colaboración entre FrontEnd y BackEnd**
 
 El flujo de trabajo en la colaboración entre FrontEnd y BackEnd es un aspecto clave para asegurar un desarrollo eficiente y exitoso de un proyecto.
 
@@ -433,7 +445,7 @@ En el proceso de desarrollo, pueden surgir problemas y desafíos que requieran l
 
 La colaboración entre el FrontEnd y el BackEnd no se limita al desarrollo inicial de la aplicación, sino que debe mantenerse a lo largo del tiempo en la actualización y mejora continua de la misma. Ambos deben trabajar juntos en la identificación de oportunidades de mejora, la implementación de actualizaciones y la optimización de la aplicación en su conjunto.
 
-## **Desafíos Comunes en la Colaboración entre FrontEnd y BackEnd**
+### **Desafíos Comunes en la Colaboración entre FrontEnd y BackEnd**
 
 En la colaboración entre el FrontEnd y el BackEnd en el desarrollo de aplicaciones web puede presentar algunos desafíos.
 
@@ -541,7 +553,7 @@ También ayuda a mantener la consistencia en el código, las pruebas y la integr
 5. **Monitorear y medir el progreso**: Se debe monitorear y medir el progreso de la colaboración entre FrontEnd y BackEnd. Esto implica evaluar el cumplimiento de las normas y procedimientos establecidos, medir la calidad del código y la entrega de funcionalidades, y realizar seguimiento de los indicadores de desempeño. La monitorización y medición del progreso permite identificar áreas de mejora y realizar ajustes necesarios para mejorar la colaboración entre FrontEnd y BackEnd.
 6. **Resolver conflictos y problemas**: Es importante estar preparado para resolver conflictos y problemas que puedan surgir en la colaboración entre FrontEnd y BackEnd. Esto puede incluir diferencias de opinión sobre enfoques técnicos, desacuerdos en la definición de tareas o responsabilidades, o problemas de comunicación.
 
-## **NOTA: Es importante abordar estos conflictos de manera adecuada, escuchando a ambas partes, buscando soluciones constructivas y promoviendo un ambiente de trabajo colaborativo y armonioso.**
+### **NOTA: Es importante abordar estos conflictos de manera adecuada, escuchando a ambas partes, buscando soluciones constructivas y promoviendo un ambiente de trabajo colaborativo y armonioso.**
 
 7. **Facilitar la formación y capacitación**: Se debe facilitar la formación y capacitación de los equipos de FrontEnd y BackEnd en las tecnologías, herramientas y metodologías que se utilizan en el desarrollo de la aplicación web. Esto incluye proporcionar recursos de aprendizaje, organizar sesiones de capacitación y promover la adquisición de nuevas habilidades técnicas. Facilitar la formación y capacitación asegura que ambos equipos estén actualizados en las últimas tendencias y mejores prácticas, lo que contribuye a una colaboración más efectiva y a un desarrollo de aplicaciones de mayor calidad.
 
@@ -1416,7 +1428,243 @@ Tu organización no puede respaldar la colaboración diaria. Si existen barreras
 La estructura de la empresa no puede respaldar equipos interfuncionales. En un proyecto Agile, las personas de muchas funciones diferentes necesitan reunirse, comunicarse y colaborar durante todo el ciclo de vida del proyecto. Si en tu empresa las funciones están aisladas, puede que esto no sea realista.  
 Tu organización requiere grandes cantidades de documentación. Si tu empresa requiere mucha documentación e informes de prueba, puede que adoptar Agile sea demasiado costoso. Uno de los 12 principios de Agile se basa en la reducción de informes de proyectos, matrices de trazabilidad de requisitos.
 
-1.  ¿Qué es TESTING?
-2.  ¿Cuáles son los roles en el desarrollo de software?
-3.  ¿Cuál es el camino que deseas seguir? ¿Desarrollador FrontEnd o Desarrollador
-    BackEnd?
+## **18.  ¿Qué es TESTING?**
+![Image](https://www.adictosaltrabajo.com/wp-content/uploads/2019/12/testing-en-un-mundo-agile.png)
+
+El testing de [software o software QA](https://profile.es/blog/qa-en-el-desarrollo-de-software/), **es un proceso para verificar y validar la funcionalidad de un programa o una aplicación de software** con el objetivo de garantizar que el producto de software esté libre de defectos. La intención final es que coincida con los requisitos esperados para entregar un  producto de calidad. Implica la ejecución de componentes de software o sistema utilizando herramientas manuales o automatizadas para evaluar una o más propiedades de interés.
+
+El testing de **software es un proceso paralelo al [desarrollo de software](https://profile.es/creamos-soluciones-digitales/custom-development/)** cuyas tareas deben ir realizándose a medida que se construye el producto para evitar problemas en la funcionalidad de manera previa a su lanzamiento.
+
+### **¿Por qué es importante el software testing?**
+Las pruebas de software son importantes porque **permiten identificar** de manera temprana si hay **algún problema** en el software, facilitando su resolución antes de la entrega del producto. Un producto de software debidamente probado garantiza calidad, seguridad, confiabilidad y alto rendimiento, además de otros beneficios como ahorro de tiempo, seguridad y satisfacción del cliente.
+
+### **Objetivos del testing de software**
+* Detectar y corregir errores.
+* Proporcionar calidad y confiabilidad del software.
+* Asegurar la correcta funcionalidad del producto.
+* Evitar futuros errores.
+* Facilitar  la toma de decisiones para pasar a producción los desarrollos que no contengan errores.
+* Cumplir con los requisitos del negocio y satisfacción del usuario.
+* Evitar la aparición de nuevos defectos en el futuro que puedan afectar al software.
+### **Tipos de pruebas**
+Las pruebas de software se clasifican generalmente en dos categorías principales: **pruebas funcionales y pruebas no funcionales**. También, existe un tercer tipo de prueba llamada prueba de mantenimiento.
+
+* **Pruebas funcionales**: Verifican cada función de una aplicación o software, su funcionalidad con un conjunto específico de requisitos.
+* **Pruebas no funcionales o pruebas de rendimiento**: Consideran parámetros como la confiabilidad, la usabilidad y el rendimiento.
+* Mantenimiento (regresión y mantenimiento).
+
+![Image](https://profile.es/wp-content/media/Tipos-de-Pruebas-de-software-1-1024x578.png)
+
+### **Pruebas funcionales**:
+* **[Pruebas unitarias (Unit testing)](https://profile.es/blog/pruebas-unitarias-con-junit/)**: Es una forma de probar una unidad o fragmento de código más pequeño que se puede aislar lógicamente en un sistema.
+
+* **Pruebas de integración (Integration testing)**: Prueban la integración o interfaces entre componentes, interacciones con diferentes partes del sistema, como sistema de archivos y hardware, sistema operativo,o interfaces entre sistemas.
+
+* **Pruebas de sistema (System testing)**: Se evalúa cómo los diferentes componentes de una aplicación interactúan juntos en el sistema o aplicación completa e integrada.
+
+* **Pruebas de sanidad (Sanity testing)**: Se trata de una prueba rápida y básica para determinar si se comporta correctamente una aplicación o componente en particular.
+
+* **Pruebas de humo (Smoke testing)**: Es el proceso de prueba inicial que verifica la funcionalidad principal de un programa para garantizar que esté listo para más pruebas. 
+
+* **Pruebas de interfaz (Interface testing)**: Verifica la comunicación entre dos sistemas de software diferentes comprobando la autenticación de la conexión establecida.
+
+* **Pruebas de regresión (Regression testing)**: Garantiza que una aplicación siga funcionando según lo esperado después de producirse alguna actualización, cambio o mejora de código.
+
+* **Pruebas de aceptación (Beta/acceptance testing)**: se realiza en un producto o prototipo antes de su comercialización o entrega, para decidir si se han cumplido las especificaciones o el contrato. Se asegura de que la calidad y el diseño del producto cumplan con los requisitos en términos de funcionalidad, usabilidad, durabilidad y seguridad.
+
+### **Pruebas no funcionales**:
+
+* **Pruebas de rendimiento (Permormance testing)**: Evalúa el rendimiento, la velocidad o capacidad de respuesta de la aplicación que se prueba bajo la carga de trabajo requerida.
+
+* **Prueba de carga (Load testing)**: Prueba el comportamiento de una aplicación bajo una gran carga de trabajo. 
+
+* **Pruebas de estrés (Stress Testing)**: Las pruebas de estrés determinan la solidez del software al evaluar el funcionamiento normal en condiciones de carga extremadamente pesada, garantizando así que el software no se bloquea en situaciones críticas.
+
+* **Pruebas de volumen (Volume Testing)**: Prueba el rendimiento del software cargando cuando procesa grandes volúmenes de datos.
+
+* **Pruebas de seguridad (Security Testing)**: Verifican si el sistema está protegido contra ataques repentinos o deliberados de fuentes internas y externas.
+
+* **Pruebas de compatibilidad (Compatibility Testing)**: Comprueban si la aplicación es compatible con diferentes entornos.
+
+* **Pruebas de instalación (Install Testing)**: Verifica si un software funciona según las expectativas después de la instalación.
+
+* **Pruebas de recuperación (Recovery Testing)**: Determina si un sistema puede recuperarse de fallas o no. 
+
+* **Pruebas de confiabilidad (Reliability Testing)**: Garantiza que el software funciona de manera consistente realizando una tarea sin fallar dentro un período específico.
+
+* **Pruebas de usabilidad (Usability Testing)**: Testean la facilidad de uso del usuario en términos de operación, aprendizaje y preparación de entradas y salidas.
+
+* **Pruebas de conformidad (Compliance Testing)**: Determina si un programa o sistema de software cumple con un conjunto definido de estándares internos o externos antes de su lanzamiento a producción.
+
+* **Pruebas de localización (Localization Testing)**: Verifican el comportamiento de un producto de acuerdo con los entornos locales o culturales específicos.
+
+## **19.  ¿Cuáles son los roles en el desarrollo de software?**
+
+Al igual que la construcción de una casa, un equipo de desarrollo de software tiene su propio conjunto de funciones que ayudan a que funcione sin problemas. Normalmente, estas funciones están ocupadas por profesionales experimentados con las habilidades y la personalidad necesarias para sobresalir en sus puestos.
+
+A continuación, identificaremos y describiremos las funciones más demandadas en los equipos de desarrollo de software para que pueda comprender mejor la dinámica en juego.
+
+He aquí las diez funciones de un equipo de desarrollo y sus principales responsabilidades:
+
+### **1. Jefe de proyecto**
+A veces llamado el "policía de tráfico", el gestor de proyectos se asegura de que el proyecto siga su curso y cumpla los plazos. Además, son ellos quienes distribuyen las tareas, organizan las funciones y actualizan el estado del proyecto para el cliente.
+
+Si busca un gestor de proyectos para su equipo, debe tener las siguientes aptitudes:
+
+* excelente comunicador
+* excelente capacidad de organización
+* manejar bien el estrés
+* preparado para retos inesperados
+### **2. Analista de negocio**
+El analista de negocio es responsable de entender las necesidades del cliente y traducir los requisitos de negocio para el equipo de desarrollo de software. En cierto modo, son el puente entre el cliente y el equipo.
+
+Algunas de las competencias que deben tener los analistas de negocio son:
+
+* comunicación clara
+* redacción técnica
+* análisis de datos
+* modelado
+
+### **3. Jefe de equipo**
+Antes de identificar a los miembros que construyen la arquitectura técnica y funcional de su software, hay que conocer primero al jefe del equipo.
+
+A veces llamado director técnico o director de desarrollo de software, esta función se asigna a uno de los desarrolladores, no necesariamente el mejor ni el más experimentado. Ayuda a reunir al equipo, ofrece orientación y garantiza la calidad del producto final.
+
+Esta persona debería incluirlas en su currículum:
+
+* dotes de liderazgo
+* experiencia en desarrollo de software
+* experiencia sobre el terreno
+### **4. Desarrolladores Full-stack**
+Ahora, llegamos al corazón de cualquier equipo de desarrollo de software: los desarrolladores de software. Empezaremos con desarrolladores full-stack porque son los que tienen un conocimiento exhaustivo del desarrollo tanto del front-end como del back-end.
+
+Hoy en día, se accede a la mayoría de las aplicaciones a través de dos métodos: el lado del cliente y el lado del servidor. Los desarrolladores Fullstack pueden codificar para ambos aspectos del software.
+
+Conocen la arquitectura del software, como bases de datos, servidores e integración en la nube para aplicaciones basadas en web y aplicaciones móviles.
+
+Además, deben saber lo siguiente:
+
+* lenguajes de programación back-end como Python, NodeJS, PHP
+* crear un servidor
+* optimizar las bases de datos
+* aprovechar las bibliotecas externas
+
+Básicamente, un desarrollador full-stack es un desarrollador integral. Pero si buscas a alguien con habilidades más especializadas, otros roles de desarrollador pueden satisfacer tus necesidades.
+
+### **5. Desarrolladores frontales**
+El miembro del equipo responsable de la apariencia del solución digital empresarial es el desarrollador del front-end. Todo con lo que el usuario interactúa en la pantalla, como los botones, enlaces, menús desplegables, texto e imágenes, lo aportan estos desarrolladores.
+
+Tus desarrolladores de front-end son los que crean el aspecto de tu software, así que es importante que colabores con ellos para conseguir las especificaciones que deseas. Con un solo vistazo, pueden identificar posibles problemas para los usuarios.
+
+En relación con esto, hacen recomendaciones firmes y soluciones codificadas para resolver probables problemas en el diseño. Poseen las siguientes competencias:
+
+* dominio de la programación HTML, CSS y Javascript
+* colaboración con analistas y diseñadores de experiencia de usuario
+* capacidad de codificar para distintos navegadores y dispositivos
+* producir imágenes de alta calidad
+
+Un desarrollador front-end es como un diseñador de interiores para un proyecto de desarrollo de software. Y si no estás satisfecho con el aspecto de tu software, probablemente sea el momento de consultar con un desarrollador front-end.
+
+### **6. Desarrolladores de back-end**
+Si los desarrolladores de front-end se encargan del diseño interior, los desarrolladores de back-end son los que construyen la casa. Son los programadores responsables de unir todas las piezas del proyecto y desarrollar la lógica empresarial y las capas de datos.
+
+Sin duda los querrá en su equipo de desarrollo, ya que garantizan que su soluciones de software para Startups pueden gestionar todas las solicitudes y datos de los usuarios. Además, mantienen tu tecnología en línea, se encargan de su mantenimiento y comprueban periódicamente las bases de datos en busca de errores.
+
+En comparación con otros miembros del equipo, utilizan lenguajes informáticos, herramientas y cualidades diferentes. Estas son las cualidades de un desarrollador back-end ideal:
+
+* dominio de lenguajes de programación del lado del servidor como PHP, Python, Java, Ruby y .NET (cualquiera que se aplique a un determinado producto digital)
+* dominio de bases de datos como MySQL, MongoDB y Cassandra
+* capacidad de codificar para distintas plataformas
+* una comprensión clara de los problemas de escalabilidad
+
+Poco a poco te vas acercando a la meta. La casa está casi terminada y lo único que necesita es que alguien se asegure de que sus ventanas, puertas y electrodomésticos funcionan bien.
+
+### **7. Diseñadores UI/UX**
+Un proyecto de desarrollo no sería nada sin los diseñadores de UI y UX. Son los miembros del equipo que se aseguran de que su producto digital no solo sea funcional, sino también fácil y agradable de usar.
+
+Los miembros del equipo de esta categoría suelen equivocarse al pensar que su papel se limita al diseño. Si bien es cierto que se encargan de la estética, la descripción de su trabajo es mucho más que eso. Han estudiado para entender cómo interactúan las personas con tecnología y qué hace que un producto sea fácil de usar.
+
+Aunque ambos forman parte integral de un producto digital, existe una diferencia significativa entre un diseñador de interfaz de usuario y un diseñador de experiencia del usuario.
+
+Un diseñador de interfaces de usuario (UI) se ocupa de:
+
+* el diseño gráfico de un sitio web o una aplicación
+* los tipos de letra, colores y botones
+* el aspecto general
+
+Un papel de diseñador de experiencia de usuario (UX) incluye:
+
+* la experiencia general de una persona al interactuar con su empresa
+* estudiar y comprender el comportamiento de los usuarios
+* analizar los datos para identificar áreas de mejora
+* encontrar soluciones para mejorar la experiencia del usuario
+### **8. Ingenieros de control de calidad**
+Como su nombre indica, un ingeniero de control de calidad es responsable de la calidad del software. Se asegura de que el producto no contenga errores ni fallos. Para ello, crean planes y casos de prueba, los ejecutan e informan de cualquier fallo al equipo de desarrollo.
+
+Se trata de un papel fundamental, ya que son ellos quienes pueden identificar los problemas que pueden encontrar los usuarios. Un proyecto de software no está completo hasta que Miembros del equipo de control de calidad aprobar el producto final.
+
+Para realizar pruebas de software, un ingeniero de control de calidad debe tener lo siguiente:
+
+* paciencia y atención al detalle
+* capacidad de análisis
+* un profundo conocimiento del proceso de desarrollo
+* familiaridad con los distintos tipos de pruebas (funcionales, no funcionales, de regresión, etc.)
+### **9. Arquitecto de software**
+Un arquitecto de software es la persona responsable de describir todo el sistema de arquitectura de un proyecto. Son como el plano de un proyecto de construcción porque dictan normas de codificación con herramientas y plataformas.
+
+Un perfecto arquitecto de software debe tener las siguientes responsabilidades:
+
+* crear un sistema de arquitectura completo
+* preparación de herramientas y plataformas
+* definición de normas de codificación
+* garantizar la escalabilidad del sistema
+* supervisar el proceso de desarrollo
+### **10. El Scrum Master**
+El Scrum Master es una de las funciones clave de la metodología Agile. Es el responsable de garantizar que el equipo se adhiere a los principios y prácticas Agile.
+
+El Scrum Master no es un jefe de proyecto en los equipos ágiles. Son más como un entrenador que facilita los equipos. No le dice al equipo qué hacer y cuándo hacerlo. En su lugar, facilitan la comunicación y la colaboración entre los miembros del equipo.
+
+## **Pasos para iniciar el proceso de desarrollo de software**
+Aunque no existe un equipo ni un flujo de trabajo perfectos que garanticen el éxito de un proyecto de desarrollo de software, hay ciertas medidas que pueden tomarse para aumentar las posibilidades de éxito.
+
+A continuación le indicamos cómo puede iniciar su proceso de desarrollo:
+### **1. Defina su proyecto**
+Tanto si quiere desarrollar un nuevo producto como mejorar uno ya existente, es importante tener una idea clara de lo que quiere conseguir. En la medida de lo posible, debe ponerlo por escrito.
+
+Debe responder a las preguntas:
+
+* ¿Cuál es el problema que intenta resolver?
+* ¿Quiénes son sus usuarios objetivo?
+* ¿Cuáles son sus objetivos empresariales?
+* ¿Qué características quiere incluir en el producto?
+### **2. Crear un prototipo**
+Una vez que tenga una idea clara de su producto de software, es hora de crear un prototipo. Esto le ayudará a visualizar cómo funcionará. La creación de prototipos también es una forma estupenda de obtener opiniones de los usuarios potenciales.
+
+### **3. Reúna a su equipo de desarrollo de software**
+Ahora que ya tiene un prototipo, es hora de encontrar personas cualificadas que desempeñen las funciones del equipo de desarrollo de software que hemos comentado antes. Normalmente, no se necesitan los 10 miembros de un equipo. Dependiendo del tamaño y el alcance de su proyecto, puede tener un equipo más pequeño con sólo las funciones esenciales.
+
+Estos son los tipos de equipos de desarrollo de software que puede reunir:
+
+* Equipo dedicado: se trata de un equipo de empleados a tiempo completo que se dedican a su proyecto.
+* Equipo ampliado: este equipo es una mezcla de sus empleados a tiempo completo y trabajadores a tiempo parcial o autónomos.
+* Equipo virtual: este equipo está compuesto por trabajadores a distancia.
+### **3 consejos para encontrar un equipo de desarrollo de software**
+Entonces, ¿cómo encontrar el equipo de desarrollo de software adecuado para su proyecto? Aquí tiene algunos consejos que pueden ayudarle:
+
+**Comience en su red**
+
+Nunca está de más empezar por su red personal y profesional. Si conoces a alguien que haya trabajado con un gran equipo de desarrollo de software, es un buen punto de partida.
+
+**Considere su cartera**
+
+Comprueba los proyectos complejos, las herramientas, los lenguajes de programación y los marcos de trabajo que han utilizado en sus antiguos proyectos. Esto te dará una idea de sus conocimientos técnicos y te permitirá saber si también pueden encargarse del tuyo.
+
+**Consultar directorios en línea**
+
+Si aún no sabe qué equipo de desarrollo contratar, puede consultar directorios en línea como Clutch y GoodFirms. En ellos encontrarás valoraciones y reseñas de clientes anteriores.
+
+## **20.  ¿Cuál es el camino que deseas seguir ¿Desarrollador FrontEnd o Desarrollador BackEnd?**
+
+## ***Deseo tomar el camino BackEnd.***
+
+![Imagen](https://ih1.redbubble.net/image.2918066447.7566/mp,504x498,matte,f8f8f8,t-pad,600x600,f8f8f8.jpg)

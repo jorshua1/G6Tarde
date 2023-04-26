@@ -8,16 +8,17 @@
 
 ###### _Debe colocar enlaces de las referencias bibliográficas para el contenido._
 
-## **1. ¿Qué es la programación?**
+# **_1. ¿Qué es la programación?_**
 
 ![Programación](https://concepto.de/wp-content/uploads/2014/08/programacion-2-e1551291144973.jpg)
 La **programación** es el proceso de creación de **programas informáticos**. Esta definición se puede interpretar de la siguiente manera. La programación no es más que una explicación a la computadora de qué, en qué forma y cómo llegar al usuario. En otras palabras, es una especie de arte de traducir los deseos de una persona al lenguaje de la máquina.
 
-- ### **La esencia de la programación**
-  - La idea principal es crear un **algoritmo** y traducirlo a un [lenguaje de programación](https://openwebinars.net/blog/que-es-un-lenguaje-de-programacion/ " Conceptos de lenguajes de programación"). Al guía de desarrollo se le suele aconsejar que empiece a desarrollar un programa respondiendo a la pregunta: _¿Es posible implementar esta tarea de forma programada?_ Por ejemplo, incluso hoy en día no se puede hacer que una computadora prediga lo que sucederá en unos días. E incluso si este ejemplo no es del todo correcto, porque esta tarea es imposible en principio. Sin embargo, si se limita la tarea a predecir el comportamiento de alguna divisa en el intercambio, tal tarea se resuelve con la ayuda de un algoritmo suficientemente complejo y una gran base de datos experimental.
-- ### **Algoritmos**
+* ## **La esencia de la programación**
 
-  - Una vez que se haya tomado la decisión sobre la posibilidad de implementar el software en una tarea, es necesario construir un [algoritmo](https://ude.edu.uy/que-son-algoritmos/#:~:text=Desde%20el%20punto%20de%20vista,produciendo%20una%20salida%20o%20soluci%C3%B3n. "Enfoque básico de qué es un algoritmo") para su solución. Es decir, es necesario describir la secuencia de pasos para resolver la tarea con el máximo detalle teniendo en cuenta todas las posibles ramas, ciclos y errores. De hecho, se puede construir un algoritmo para las operaciones diarias más simples. Por ejemplo, se puede describir el algoritmo de la preparación del té:
+  * La idea principal es crear un **algoritmo** y traducirlo a un [lenguaje de programación](https://openwebinars.net/blog/que-es-un-lenguaje-de-programacion/ " Conceptos de lenguajes de programación"). Al guía de desarrollo se le suele aconsejar que empiece a desarrollar un programa respondiendo a la pregunta: _¿Es posible implementar esta tarea de forma programada?_ Por ejemplo, incluso hoy en día no se puede hacer que una computadora prediga lo que sucederá en unos días. E incluso si este ejemplo no es del todo correcto, porque esta tarea es imposible en principio. Sin embargo, si se limita la tarea a predecir el comportamiento de alguna divisa en el intercambio, tal tarea se resuelve con la ayuda de un algoritmo suficientemente complejo y una gran base de datos experimental.
+* ## **Algoritmos**
+
+  * Una vez que se haya tomado la decisión sobre la posibilidad de implementar el software en una tarea, es necesario construir un [algoritmo](https://ude.edu.uy/que-son-algoritmos/#:~:text=Desde%20el%20punto%20de%20vista,produciendo%20una%20salida%20o%20soluci%C3%B3n. "Enfoque básico de qué es un algoritmo") para su solución. Es decir, es necesario describir la secuencia de pasos para resolver la tarea con el máximo detalle teniendo en cuenta todas las posibles ramas, ciclos y errores. De hecho, se puede construir un algoritmo para las operaciones diarias más simples. Por ejemplo, se puede describir el algoritmo de la preparación del té:
 
     1. Abrir la tetera.
     2. Si no hay agua en la tetera, se le debe echar.
@@ -28,32 +29,31 @@ La **programación** es el proceso de creación de **programas informáticos**. 
     7. Colocar el sobre de té en la taza.
     8. Echar el agua caliente de la tetera a la taza.
 
-  Este algoritmo no es universal, pero para una persona que se prepara una taza de té porque cuenta con una estufa de gas, es válido todo este proceso.
+    Este algoritmo no es universal, pero para una persona que se prepara una taza de té porque cuenta con una estufa de gas, es válido todo este proceso.
 
-  Hay varias formas de describir el algoritmo:
+    Hay varias formas de describir el algoritmo:
 
-  - Gráfico (esquemas).
-  - Verbal.
-  - Pseudocódigo.
-  - Código del programa.
+    * Gráfico (esquemas).
+    * Verbal.
+    * Pseudocódigo.
+    * Código del programa.
+* ## **Lenguajes de programación**
 
-- ### **Lenguajes de programación**
+  * De hecho, un lenguaje de programación es un conjunto de reglas para describir comandos y funciones predefinidas. Cada lenguaje de programación limita al desarrollador a un conjunto estrictamente predeterminado de palabras clave y comandos que pueden ser utilizados en el desarrollo. Hay varios niveles de lenguajes entre los cuales se distinguen:
 
-  - De hecho, un lenguaje de programación es un conjunto de reglas para describir comandos y funciones predefinidas. Cada lenguaje de programación limita al desarrollador a un conjunto estrictamente predeterminado de palabras clave y comandos que pueden ser utilizados en el desarrollo. Hay varios niveles de lenguajes entre los cuales se distinguen:
-
-    - **De bajo nivel (ensamblador)**: trabaja directamente con los comandos del procesador.
-    - **De alto nivel (C++, C#, Java, etc.)**: es más como un lenguaje ordinario.
+    * **De bajo nivel (ensamblador)**: trabaja directamente con los comandos del procesador.
+    * **De alto nivel (C++, C#, Java, etc.)**: es más como un lenguaje ordinario.
 
     Durante el desarrollo de un producto de software se pueden distinguir diferentes niveles de abstracción. Es decir, los objetos del mundo real pueden ser representados de manera diferente. Dependiendo de ello, los lenguajes de programación se dividen en los siguientes tipos:
 
-    - **Procedimiento**: se determina la solución de la tarea paso a paso, todo el sistema se divide en una serie de procedimientos relacionados.
-    - **Orientado a objetos**: el programa se desarrolla como un conjunto de objetos interrelacionados, cada uno de los cuales puede generar una gran cantidad de implementaciones concretas.
-    - **Declarativo**: son los lenguajes de la descripción del problema y el resultado esperado.
+    * **Procedimiento**: se determina la solución de la tarea paso a paso, todo el sistema se divide en una serie de procedimientos relacionados.
+    * **Orientado a objetos**: el programa se desarrolla como un conjunto de objetos interrelacionados, cada uno de los cuales puede generar una gran cantidad de implementaciones concretas.
+    * **Declarativo**: son los lenguajes de la descripción del problema y el resultado esperado.
 
-- ### **Programación orientada a objetos**
+* ## **Programación orientada a objetos**
   - Este enfoque implica **desarrollar un programa** como un sistema de objetos, cada uno de los cuales refleja uno u otro objeto del mundo real. Los objetos del mundo real se corresponden con las clases. Y de cada clase, a su vez, se pueden generar innumerables objetos. Por ejemplo, si se desarrolla un programa para un taller de coches, las clases serán: coche, motor, suspensión, carrocería, sistema de frenos y otras piezas de repuesto. Y los objetos de la clase son los modelos específicos de estas partes, que se utilizan en el proceso.
 
-## **2. ¿Qué es el desarrollo web?**
+# **_2. ¿Qué es el desarrollo web?_**
 
 ![DesarrolloWeb](https://blog.openclassrooms.com/es/wp-content/uploads/sites/5/2017/09/AdobeStock_126016889apaisado-710x367.jpg)
 
@@ -61,72 +61,70 @@ El desarrollo web **es el proceso de creación y mantenimiento de sitios web**. 
 
 Asimismo, el desarrollo web consiste en utilizar **lenguajes de programación** como: HTML/CSS, PHP, JavaScript, y muchos otros, todo con el fin de escribir programas que harán que tu sitio sea práctico, dinámico y ágil. Además, la codificación forma parte de la vida diaria de un desarrollador. También, el papel del desarrollador como diseñador lo convierte en una pieza esencial en el futuro del [óptimo desarrollo web](https://tekla.io/blog/caracteristicas-de-una-pagina-web/).
 
-## **3. ¿Qué cosas debe aprender un programador?**
+# **_3. ¿Qué cosas debe aprender un programador?_**
 
 ![Programador](https://global-uploads.webflow.com/5f5a53e153805db840dae2db/6073fbc8ece768495cc698ca_programador-senior.jpeg)
 
-### 0. **Ir al grano.**
+## **0. Ir al grano.**
 
 El deber de un buen programador es reducir el riesgo tecnológico, eso implica ir a la parte más compleja del proyecto primero, en otras ocasiones la más importante (no siempre coinciden).
 
-### 1. **Debe conocer varios lenguajes de programación.**
+## **1. Debe conocer varios lenguajes de programación.**
 
 Un buen programador debe conocer las diferencias de los diversos lenguajes de programación sus puntos fuertes, o sea cuando (y cuando no) se debe ocupar alguno de ellos. De un buen programador al menos se espera que sea fuerte en algún lenguaje, los generalistas (unicornios) son siempre bienvenidos pero sólo saber muchas cosas a medias no te hace un buen programador.
 
-### 2. **Debe conocer y saber aplicar patrones de diseño.**
+## **2. Debe conocer y saber aplicar patrones de diseño.**
 
 Un programador no crear todo desde cero, debe estudiar y conocer soluciones tipo para los problemas frecuentes, ningún programador decente que se aprecie de hacerlo puede darse el lujo de no conocer los patrones básicos de diseño de su lenguaje fuerte, un programador de javascript que no sabe lo que es un closure simplemente no conoce javascript.
 
-### 3. **Debe realizar control de cambios sobre sus códigos.**
+## **3. Debe realizar control de cambios sobre sus códigos.**
 
 Todo buen programador trabaja con algún sistema de control de cambios, ya sea con GIT, SVN u otro, además sabe trabajar de acuerdo a algún branching model que le permite implementar set de cambios con tranquilidad y seguridad de no romper su código ni la versión que está en producción.
 
-### 4. **Debe realizar tests automatizados sobre su código.**
+## **4. Debe realizar tests automatizados sobre su código.**
 
 Antes de implementar un función X, ¿estamos seguros de que no romperemos la función Y? ¿Antes de actualizar la versión de alguna componente, plugin, plataforma, sistema operativo, estamos seguros de que todo seguirá funcionando como antes? ¿Antes de publicar un nuevo set de cambios estamos seguros de que no romperemos algo?
 Con tests automatizados es posible saber inmediatamente si un cambio rompió alguna funcionalidad, y, si además es implementado junto al control de cambio es posible saber con exactitud que parte del código y en que commit fue que una determinado cambio rompió o hizo dejar de funcionar alguna funcionalidad.
 
-### 5. **Debe respetar las convenciones sobre el lenguaje que trabaja.**
+## **5. Debe respetar las convenciones sobre el lenguaje que trabaja.**
 
 Todo lenguaje tiene sus convenciones, como la forma de nombrar variables y la forma de poner paréntesis. Las convenciones no siempre son cosa de estilo, así que es importante respetarlas.
 
-### 6. **Debe ser consistente.**
+## **6. Debe ser consistente.**
 
 Los nombres de las variables deben ser consistentes a lo largo del código, si usamos notación camel case que toda la notación a lo largo del código sea camel case, además hay que respetar las convenciones del lenguaje, y no olvidar que si contamos los índices desde cero, que todos los índices partan desde cero.
 
-### 7. **Debe exponer su trabajo y aceptar críticas (mejoras) sobre el.**
+## **7. Debe exponer su trabajo y aceptar críticas (mejoras) sobre el.**
 
 Si una persona no comparte su trabajo tiene pocas posibilidades de recibir feedback de personas que sepan más que el y por lo mismo tiene pocas posiblidades de mejorar. Uno aprende a través de compartir, Quora y StackOverflow son muy buenas fuentes, seguir en github proyectos de interés también es muy buena fuente de aprendizaje, uno aprende mucho de las correcciones que otras personas te hacen y además aprende revisando el trabajo de otras personas.
 
-### 8. **Debe refactorizar y documentar su código.**
+## **8. Debe refactorizar y documentar su código.**
 
 Primero los problemas se resuelven para un caso, luego para diez y luego para cien. Los programadores primero escriben el código para resolver un problema pero luego lo arreglan para que el código quede ordenado, entendible por humanos y reutilizable para otras ocasiones.
 Además es deber del buen programador documentar ya sea con comentarios, diagramas y buenos commits.
 
-### 9. **Debe saber que la optimización prematura es la madre de todos los males.**
+## **9. Debe saber que la optimización prematura es la madre de todos los males.**
 
 Si un programador pasa cuarenta horas optimizando una parte de su código y por lo mismo deja de hacer cientos de otras cosas pendientes, no es un buen programador, es un obsesivo y aunque todos los programadores somos un poco obsesivos, hacemos un esfuerzo constante por enfocarnos en las cosas que son importantes, como por ejemplo terminar nuestro producto a tiempo.
 Este punto a primera vista se contradice con el anterior, pero son cosas bien distintas,
 
-### 10. **Debe llevar un blog, o un cuaderno con lo aprendido.**
+## **10. Debe llevar un blog, o un cuaderno con lo aprendido.**
 
 A lo largo de una vida de programador vas a olvidar casi tantas cosas como las que vas a aprender, por lo mismo es necesario que todo buen programador lleve un cuaderno, o mejor aún, un blog, con sus apuntes.
 
-### 11. **Debe saber que las personas no leen las instrucciones.**
+## **11. Debe saber que las personas no leen las instrucciones.**
 
 Es la regla de oro de la usabilidad, las personas nunca leen las instrucciones, aunque estén en letra gigante y en un marco rojo, los usuarios usarán y abusarán de tu programa a su antojo. A veces maliciosamente y a veces romperán cosas por ignorancia, pero hagan lo que hagan no leerán las instrucciones. Cuando un programador entiendo esto bien el programa debe ser probado para que haga lo que tiene que hacer y que no haga lo que no tiene que hacer.
 
-### 12. **Humildad**
+## **12. Humildad**
 
 Un buen programador sabe que siempre hay algo nuevo que aprender, y por más bueno que sea no lo sabe todo, cualquier persona puede enseñarte algo nuevo, no importa si es más viejo o más joven que tu, por lo mismo todo buen programador debe ser humilde.
 
-### 13. **Buscar en google (RTFM)**
+## **13. Buscar en google (RTFM)**
 
 Todo buen programador sabe buscar información en google, sabe que no toda información es fiable y muchas veces está desactualizada, el buen programador sabe seleccionar la información que necesita, no se limita al copy paste y puede entender como aplicar lo leído a otros contextos.
 
-#
-
-## **4. ¿Qué clase de trabajos realiza un programador?**
+# **_4. ¿Qué clase de trabajos realiza un programador?_**
 
 ![Los trabajos](https://www.pragma.com.co/hubfs/FONDO%20BLOG%20H%20GRANDE-Aug-06-2021-10-46-02-39-PM.jpg)
 
@@ -136,34 +134,48 @@ Durante cada formación, incluso dentro de lo que es la trayectoria profesional,
 
 A continuación, te presentamos algunas salidas laborales que se pueden seguir como programador informático:
 
-- **Desarrollador de videojuegos**: es el encargado de diseñar y programar videojuegos, ya sea para consolas, celulares u ordenadores.
+* ### **Desarrollador de videojuegos**: 
+es el encargado de diseñar y programar videojuegos, ya sea para consolas, celulares u ordenadores.
 
-- ### **Desarrollador de inteligencia artificial**: es aquel que crea programas basados ​​en inteligencia humana optimizados para la inteligencia informática. La inteligencia artificial se puede utilizar para crear objetos, software, para que respondan automáticamente a ciertas cuestiones, entre otros muchísimos usos que se les puede dar. Es una rama tecnológica que cada vez pisa más fuerte en todo el mundo.
+* ### **Desarrollador de inteligencia artificial**:
+ es aquel que crea programas basados ​​en inteligencia humana optimizados para la inteligencia informática. La inteligencia artificial se puede utilizar para crear objetos, software, para que respondan automáticamente a ciertas cuestiones, entre otros muchísimos usos que se les puede dar. Es una rama tecnológica que cada vez pisa más fuerte en todo el mundo.
 
-- **Desarrollador de aprendizaje automático**: se basa en la inteligencia artificial para desarrollar una máquina o software y hacer que la máquina aprenda por sí sola a partir de los datos que acumula.
-- **Desarrollador de ciberseguridad**: garantiza que los datos en línea de las empresas u otras infraestructuras no sean pirateados. Implementa programas de protección informática y es un puesto muy buscado hoy en día por las grandes empresas.
+* ### **Desarrollador de aprendizaje automático**:
+ se basa en la inteligencia artificial para desarrollar una máquina o software y hacer que la máquina aprenda por sí sola a partir de los datos que acumula.
 
-- **Desarrollador de realidad virtual**: desarrolla herramientas de realidad virtual como las gafas de realidad virtual y otras herramientas que permiten vivir una experiencia lo más cercana posible a la realidad. Esta especialidad se puede combinar con videojuegos y con la publicidad, para citar tan solo unos ejemplos.
+*  ### **Desarrollador de ciberseguridad**:
+garantiza que los datos en línea de las empresas u otras infraestructuras no sean pirateados. Implementa programas de protección informática y es un puesto muy buscado hoy en día por las grandes empresas.
 
-- **Desarrollador de realidad aumentada**: crea imágenes para programas y aplicaciones que parecen estar presentes en la vida real; tal es el caso de la aplicación Pokémon Go, por lo que también se la relaciona con el mundo de los videojuegos.
+* ### **Desarrollador de realidad virtual**:
+ desarrolla herramientas de realidad virtual como las gafas de realidad virtual y otras herramientas que permiten vivir una experiencia lo más cercana posible a la realidad. Esta especialidad se puede combinar con videojuegos y con la publicidad, para citar tan solo unos ejemplos.
 
-- **Desarrollador de sistemas embebidos**: programa el funcionamiento de máquinas y dispositivos que operan mediante programas informáticos como lavadoras, lavavajillas, determinados frigoríficos, entre otros. Es lo que hoy se conoce como Internet de las cosas.
+* ### **Desarrollador de realidad aumentada**:
+ crea imágenes para programas y aplicaciones que parecen estar presentes en la vida real; tal es el caso de la aplicación Pokémon Go, por lo que también se la relaciona con el mundo de los videojuegos.
 
-- **Desarrollador web**: diseña sitios web y programas informáticos en línea a partir del uso de diferentes lenguajes de programación, tales como JavaScript, HTML y CSS.
+* ### **Desarrollador de sistemas embebidos**:
+ programa el funcionamiento de máquinas y dispositivos que operan mediante programas informáticos como lavadoras, lavavajillas, determinados frigoríficos, entre otros. Es lo que hoy se conoce como Internet de las cosas.
 
-Dentro de esta última categoría, encontramos varias especialidades como el:
+* ### **Desarrollador web**:
+ diseña sitios web y programas informáticos en línea a partir del uso de diferentes lenguajes de programación, tales como JavaScript, HTML y CSS.
 
-- **desarrollador front-end**, que se encarga de desarrollar la interfaz de un sitio web. Este último, una vez que el diseñador web ha esbozado y creado el diseño del sitio, debe crear este diseño a través de la codificación haciendo toda la estructura necesaria. Desarrolla todos los elementos y sistemas de navegación entre cada página, entre muchas otras cosas. Este desarrollador suele utilizar los lenguajes HTML, CSS y JavaScript.
+### **Dentro de esta última categoría, encontramos varias especialidades como el:**
 
-### **¡Acordate que no son las únicas, por lo que te invitamos a que investigues y descubras tu favorita!**
+* ### **desarrollador front-end**:
+se encarga de desarrollar la interfaz de un sitio web. Este último, una vez que el diseñador web ha esbozado y creado el diseño del sitio, debe crear este diseño a través de la codificación haciendo toda la estructura necesaria. Desarrolla todos los elementos y sistemas de navegación entre cada página, entre muchas otras cosas. Este desarrollador suele utilizar los lenguajes HTML, CSS y JavaScript.
 
-Por otra parte, el **desarrollador de back-end** también se encarga de los sitios web, pero de la parte oculta, aquella que los usuarios no ven, como el almacenamiento, la administración y la seguridad de datos.
+## **¡Acuerdate que no son las únicas, por lo que te invitamos a que investigues y descubras tu favorita!**
+
+* ### **desarrollador de back-end**:
+se encarga de los sitios web, pero de la parte oculta, aquella que los usuarios no ven, como el almacenamiento, la administración y la seguridad de datos.
 
 Después, encontramos el rol del integrador web que interactúa con el diseñador web y el desarrollador front-end y que se encarga de configurar el sitio web e integrarlo en línea. Posteriormente, se asegurará de que toda la navegación responda adecuadamente y de que todo funcione para su uso. A veces se da el caso de que el desarrollador de front-end se encarga de este paso, pero es importante saber que existe este tipo de puesto. Además, el integrador web debe conocer las herramientas necesarias para configurar la tipografía y tener noción de la compatibilidad de diferentes navegadores. Se puede resumir en que es un experto en el uso de la web y todas sus herramientas.
 
-También es posible combinar las cualidades de un desarrollador front-end y back-end en una sola profesión: el desarrollador full-stack. Puede construir la interfaz del sitio y todas sus operaciones internas. Por lo tanto, puede gestionar un proyecto de sitio web de forma completa en asociación con un diseñador web. El desarrollador full-stack suele ser el cabecilla de un equipo de programación, ya que tiene conocimientos de todos los pasos a seguir, por lo que suele ser el encargado de guiar al team.
+### **También es posible combinar las cualidades de un desarrollador front-end y back-end en una sola profesión:**
 
-## **5. ¿Qué es FRONTEND y BACKEND?**
+* ### **el desarrollador full-stack.**
+Puede construir la interfaz del sitio y todas sus operaciones internas. Por lo tanto, puede gestionar un proyecto de sitio web de forma completa en asociación con un diseñador web. El desarrollador full-stack suele ser el cabecilla de un equipo de programación, ya que tiene conocimientos de todos los pasos a seguir, por lo que suele ser el encargado de guiar al team.
+
+# **_5. ¿Qué es FRONTEND y BACKEND?_**
 
 ![The End](https://pygmalion.tech/wp-content/uploads/2020/06/Qu%C3%A9-es-fullstack-Pygmalion-Tech-2.png)
 
@@ -250,7 +262,7 @@ En su nivel más elemental, **JavaScript es usado para crear y controlar cosas c
 
 ## **5.a. Colaboración Efectiva FrontEnd/BackEnd: Flujo de Trabajo Adecuado y Responsabilidades en el Desarrollo de Aplicaciones Web**
 
-![Back-Front](/ModuloUno/i-TallerMarkDown/Back-Front.png)
+![Back-Front](/ModuloUno/i-TallerMarkDown/Imagenes/Back-Front.png)
 
 En ocasiones, la colaboración entre el FrontEnd y el BackEnd puede ser desafiante debido a la falta de definición clara de roles y responsabilidades entre ambos desarrolladores.
 
@@ -370,7 +382,7 @@ El BackEnd también es responsable de la implementación de las validaciones de 
 
 La colaboración entre el FrontEnd y el BackEnd en la definición y creación de modelos de datos es esencial para asegurar que ambos equipos tengan una comprensión clara de los datos requeridos y su estructura, lo que facilita la comunicación y coordinación durante el proceso de desarrollo.
 
-## **Colaboración en la Creación de EndPoints para el Consumo de Recursos**
+### **Colaboración en la Creación de EndPoints para el Consumo de Recursos**
 
 La colaboración entre el FrontEnd y el BackEnd en la creación de los EndPoints para el consumo de un recurso puede variar dependiendo del enfoque y las prácticas de desarrollo del equipo.
 
@@ -403,7 +415,7 @@ No es común que el FrontEnd proporcione los modelos de datos al BackEnd, ya que
 
 La colaboración entre el FrontEnd y el BackEnd en la creación de EndPoints puede funcionar de diferentes maneras, dependiendo de las prácticas de desarrollo del equipo. Puede ser del BackEnd al FrontEnd o viceversa, o incluso en paralelo. Lo importante es que ambos equipos trabajen juntos y se comuniquen de manera efectiva para asegurar una implementación exitosa del sistema.
 
-## **Flujo de Trabajo Recomendado en la Colaboración entre FrontEnd y BackEnd**
+### **Flujo de Trabajo Recomendado en la Colaboración entre FrontEnd y BackEnd**
 
 El flujo de trabajo en la colaboración entre FrontEnd y BackEnd es un aspecto clave para asegurar un desarrollo eficiente y exitoso de un proyecto.
 
@@ -433,7 +445,7 @@ En el proceso de desarrollo, pueden surgir problemas y desafíos que requieran l
 
 La colaboración entre el FrontEnd y el BackEnd no se limita al desarrollo inicial de la aplicación, sino que debe mantenerse a lo largo del tiempo en la actualización y mejora continua de la misma. Ambos deben trabajar juntos en la identificación de oportunidades de mejora, la implementación de actualizaciones y la optimización de la aplicación en su conjunto.
 
-## **Desafíos Comunes en la Colaboración entre FrontEnd y BackEnd**
+### **Desafíos Comunes en la Colaboración entre FrontEnd y BackEnd**
 
 En la colaboración entre el FrontEnd y el BackEnd en el desarrollo de aplicaciones web puede presentar algunos desafíos.
 
@@ -541,7 +553,7 @@ También ayuda a mantener la consistencia en el código, las pruebas y la integr
 5. **Monitorear y medir el progreso**: Se debe monitorear y medir el progreso de la colaboración entre FrontEnd y BackEnd. Esto implica evaluar el cumplimiento de las normas y procedimientos establecidos, medir la calidad del código y la entrega de funcionalidades, y realizar seguimiento de los indicadores de desempeño. La monitorización y medición del progreso permite identificar áreas de mejora y realizar ajustes necesarios para mejorar la colaboración entre FrontEnd y BackEnd.
 6. **Resolver conflictos y problemas**: Es importante estar preparado para resolver conflictos y problemas que puedan surgir en la colaboración entre FrontEnd y BackEnd. Esto puede incluir diferencias de opinión sobre enfoques técnicos, desacuerdos en la definición de tareas o responsabilidades, o problemas de comunicación.
 
-## **NOTA: Es importante abordar estos conflictos de manera adecuada, escuchando a ambas partes, buscando soluciones constructivas y promoviendo un ambiente de trabajo colaborativo y armonioso.**
+### **NOTA: Es importante abordar estos conflictos de manera adecuada, escuchando a ambas partes, buscando soluciones constructivas y promoviendo un ambiente de trabajo colaborativo y armonioso.**
 
 7. **Facilitar la formación y capacitación**: Se debe facilitar la formación y capacitación de los equipos de FrontEnd y BackEnd en las tecnologías, herramientas y metodologías que se utilizan en el desarrollo de la aplicación web. Esto incluye proporcionar recursos de aprendizaje, organizar sesiones de capacitación y promover la adquisición de nuevas habilidades técnicas. Facilitar la formación y capacitación asegura que ambos equipos estén actualizados en las últimas tendencias y mejores prácticas, lo que contribuye a una colaboración más efectiva y a un desarrollo de aplicaciones de mayor calidad.
 
@@ -997,7 +1009,7 @@ Aquí te compartimos el top 10 de lenguajes de programación más solicitados en
 * Typescript:  2% | 1.607 ofertas de trabajo.
 * R:  1% | 989 ofertas de trabajo.
 * 
-![Lemguaje](https://global-uploads.webflow.com/5f5a53e153805db840dae2db/627a553ba0d7611718a98946_Lenguajes%20de%20programacion%202022.png)
+![Lenguaje](https://global-uploads.webflow.com/5f5a53e153805db840dae2db/627a553ba0d7611718a98946_Lenguajes%20de%20programacion%202022.png)
 
 
 Ahora te presentamos el top de los 10 lenguajes de programación más populares según Stack Overflow, la comunidad más grande y confiable de programadores, donde se comparten conocimientos y aprendizajes para ayudarse entre todos a construir sus carreras. Fue creado en el año 2008 y actualmente tiene más de 100 millones de visitas cada mes, convirtiéndose así en uno de los portales webs más visitados del mundo.
@@ -1005,13 +1017,654 @@ Ahora te presentamos el top de los 10 lenguajes de programación más populares 
 ![overFlow](https://global-uploads.webflow.com/5f5a53e153805db840dae2db/627b882b7442f45faaf45ca6_stack%20overflow.png)
 
 
-13.  ¿Cuánto puede ganar un desarrollador FrontEnd?
+## **13.  ¿Cuánto puede ganar un desarrollador FrontEnd?**
 
-14.  ¿Cuánto puede ganar un desarrollador BackEnd?
-15. ¿Cuáles son los requisitos para ser desarrollador FrontEnd?
-16. ¿Cuáles son los requisitos para ser desarrollador BackEnd?
-17. ¿Qué es la metodología SCRUM y AGILE?
-18. ¿Qué es TESTING?
-20. ¿Cuáles son los roles en el desarrollo de software?
-21. ¿Cuál es el camino que deseas seguir? ¿Desarrollador FrontEnd o Desarrollador
-    BackEnd?
+El salario de desarrollador front end promedio puede variar debido a una variedad de factores. Dependiendo de tu ubicación, años de experiencia y empleador, puedes ganar desde $96,881 USD hasta $102,120 USD por año.
+
+De acuerdo con Indeed, el salario base promedio actual para los desarrolladores front end en los Estados Unidos es de $102,000 USD. Esta es una base estimada en 5,028 entradas anónimas de empleados que son desarrolladores front end.
+
+![front](https://www.dreamhost.com/blog/wp-content/uploads/2022/07/cuanto-gana-un-desarrollador-DreamHost-6.jpg)
+
+Los beneficios más comunes para esta posición son seguro médico, tiempo pago de incapacidades y tiempo libre remunerado ilimitado. Estos desarrolladores front end también dijeron que recibían un bono de $5.000 USD cada año.  
+
+Sin embargo, otros sitios web de bolsas de trabajo reportan salarios con poca diferencia en los salarios de desarrolladores front end. En Glassdoor, el pago base está reportado en $82.669 USD por año. Con pagos adicionales, esto llega a un total de $101.092 USD. 
+
+![Image](https://www.dreamhost.com/blog/wp-content/uploads/2022/07/cuanto-gana-un-desarrollador-DreamHost-7.jpg)
+
+Mientras tanto, ZipRecruiter lista un salario promedio de $96.881 USD para desarrolladores front end. Esto es un promedio de $46.58 USD por hora, o $8,073 USD al mes. 
+
+![image](https://www.dreamhost.com/blog/wp-content/uploads/2022/07/cuanto-gana-un-desarrollador-DreamHost-3.jpg)
+
+Como desarrollador freelance front end, tu salario dependerá del número de clientes con los que trabajes. Sin embargo, los freelancers pueden ganar un promedio de $85.940 USD.
+
+![image](https://www.dreamhost.com/blog/wp-content/uploads/2022/07/cuanto-gana-un-desarrollador-DreamHost-1.jpg)
+
+
+## **14.  ¿Cuánto puede ganar un desarrollador BackEnd?**
+
+Como mencionamos anteriormente, los desarrolladores back end trabajan del lado del servidor de un sitio web. Ya que deben estar familiarizados con tecnologías como MySQL, estos desarrolladores a menudo tienden a tener salarios más altos. 
+
+En los Estados Unidos, el salario básico promedio para un empleo de desarrollo back end es de $116,605 USD. Esto es un incremento de alrededor de $14,000 USD del salario de un desarrollador front end.
+
+![image](https://www.dreamhost.com/blog/wp-content/uploads/2022/07/cuanto-gana-un-desarrollador-DreamHost-12.jpg)
+
+Glassdoor reporta un promedio nacional similar, listando los salarios de desarrollo back-end en $116,267 USD al año. Esto incluye el promedio adicional de compensación en efectivo, comisiones y reparto de utilidades.
+
+![Image](https://www.dreamhost.com/blog/wp-content/uploads/2022/07/cuanto-gana-un-desarrollador-DreamHost-10.jpg)
+
+Por otro lado, ZipRecruiter nota que la mayoría de desarrolladores back end solo ganan $102.750 USD al año. Sin embargo, aún es más alto que el salario registrado de $96,881 USD de los desarrolladores front end. 
+
+![Image](https://www.dreamhost.com/blog/wp-content/uploads/2022/07/cuanto-gana-un-desarrollador-DreamHost-4.jpg)
+
+En general, los desarrolladores back end pueden ganar más que los desarrolladores front end. Esto se debe mayormente a las habilidades avanzadas de programación y experiencia.
+
+
+## **15. ¿Cuáles son los requisitos para ser desarrollador FrontEnd?**
+
+![image](Imagenes/FrontEnd2.png)
+
+Un Front end Developer es aquella persona **encargada de programar el navegador de una web**, es decir, es el encargado de traducir las definiciones de diseño y estilo visual realizadas en etapas previas a códigos HTML semántico. Es una de las piezas fundamentales en un proyecto digital.
+
+Aunque normalmente a un Front end Developer se le asocien principios de diseño y de estructura de páginas web, como buen programador que es debe ser consciente que su trabajo se realizará en el lado cliente, en muchos casos en el navegador. Pero aún así, esta persona ha de tener conocimientos y tener en cuenta la usabilidad, legibilidad de la web o app, el diseño y la estructura de páginas web y aplicaciones para procurar que el usuario pueda tener una experiencia de 10.
+
+### **Funciones de un Front end Developer**
+Principalmente, las funciones de un Front end Developer serán: 
+
+* Traducir el diseño de un sitio a código HTML y CSS
+* Estructurar el contenido semánticamente
+* Asegurar la accesibilidad 
+* Controlar tipografías, plantillas, formas del diseño y la interactividad
+* Programar, cambiar y mantener un sitio web
+* Adaptar el diseño de una web a diversos dispositivos y navegadores
+* Crear herramientas que mejoren la interacción entre usuario y web
+* Usar APIs para conectar la web con servicios y sistemas
+
+### **Habilidades de un Front end Developer**
+Todo aquel profesional que sea un Front end Developer tendrá que tener unas habilidades y conocimientos necesarios, te nombramos algunos a continuación: 
+
+* Conocer HTML5 y CSS. HyperText Markup Language, es el componente estructural clave de todas las páginas webs que se encuentran en internet. Y el Cascading Style Sheets es lo que le proporciona estilo a HTML.
+* Conocimientos en Javascript. Gracias a JS se podrá conseguir una página web interactiva.
+* Saber utilizar un CMS, por ejemplo podría utilizar WordPress. 
+* Ser creativo.
+* Tener conocimientos de diseño.
+* Conocer el trabajo de un diseñador web y de un desarrollador back-end. 
+
+
+### **Principales objetivos**
+Como hemos comprobado, las funciones de un Front end Developer son varias por lo tanto, estos profesionales se enfrentan a diversos desafíos. Estos son los principales:
+
+1. **Tiempo de carga**
+
+Uno de los mayores desafíos de un Fronte end Developer es el tiempo de carga de una página web. Y es que este tiempo afecta a la conversión de tu producto. Se han realizado varias pruebas en Google que han demostrado que incluso medio segundo de carga ya puede afectar a la conversión de los usuarios. 
+Por lo tanto, un Front end Developer tiene que procurar que eso no pase y ha de mejorar ese tiempo de carga. Para asegurarnos de que una página web carga a su debido tiempo tendrá que revisar, principalmente, que los assets están comprimidos y en gzip y, por otro lado, que el tamaño de las imágenes esté adaptado. 
+
+2. **Escribir código mantenible**
+ 
+Es muy importante escribir código mantenible y, aunque con HTML y CSS es difícil, también se puede. Para CSS existen procesadores como SASS, Stylus y LESS que extienden las capacidades de CSS y añaden variables, funciones, entre otras cosas que permiten escribir mejor un código.
+En cuanto a HTML, encontramos motores de render como por ejemplo en NodeJS encontramos Jade; en Rails encontramos HAML, entre otros más. Esos motores render funcionan añadiendo el código del lenguaje con el que se está trabajando en el template, entonces se transforma el código incrustado en HTML puro y se le manda al navegador. 
+
+3. **Funcionalidad en distintos navegadores**
+
+Un Front end Developer ha de confirmar que una página web funcione correctamente en toda clase de navegadores. Un desafío complicado pero imprescindible. Para ello, existen los Polyfills, scripts que usando javaScript pueden añadir al navegador las capacidades de un navegador más nuevo y moderno.
+Por otro lado, también encontramos detectores de capacidades como, por ejemplo, Modernizr, que realizando una serie de pruebas te indica rápidamente qué es lo que está o no disponible en un navegador. 
+
+
+## **16.  ¿Cuáles son los requisitos para ser desarrollador BackEnd?**
+
+![Image](Imagenes/BackEnd2.png)
+
+Entre las funciones que corresponden a un Backend Developer se incluyen las siguientes:  
+
+* **La colaboración con frontend developers** para diseñar elementos de alta calidad para el usuario.  
+* **La optimización de las aplicaciones** para ofrecer una mayor rapidez y comodidad, asegurándose de que las plataformas existentes puedan expandirse en el futuro.  
+* **La incorporación de elementos de seguridad adecuados y preparados para el futuro**y la supervisión de su funcionalidad permanente.  
+* **La implementación de aplicaciones de almacenamiento de datos** y el mantenimiento de su eficacia.  
+* **El trabajo con la dirección** para garantizar que la experiencia de usuario siga siendo de alto nivel.  
+* **La colaboración con los miembros del equipo correspondientes** en todas las fases de los procesos pertinentes.  
+
+### **Cualidades necesarias para llegar a ser un Backend Developer de éxito**
+
+Los Backend Developers de éxito pueden proceder de una gran variedad de entornos diferentes, pero hay varios aspectos personales que suelen tener en común. Entre ellos destacan la atención al detalle, la capacidad para encargarse de varias tareas y una buena organización. Además, es probable que sepan gestionar bien el tiempo y que tengan una gran capacidad para resolver problemas en situaciones de presión.  
+
+Por lo general, un Backend Developer tendrá experiencia previa en el puesto o habrá trabajado en otros ámbitos del desarrollo de aplicaciones móviles, web y en la nube. Por lo general, la persona que desempeña esta función forma parte de un equipo compuesto por otros expertos y, en ocasiones, puede colaborar directamente con uno o más frontend developers.   
+
+Es importante que los Backend Developers dominen el lenguaje de programación, los marcos de sistemas y los entornos de hosting. El cumplimiento de las normas de seguridad también resulta relevante, especialmente en lo que respecta a la ciberseguridad. También será una ventaja tener un amplio conocimiento del sector en el que opera el empleador.
+
+### **Estudios y habilidades técnicas - ¿Qué se necesita para ser un Backend Developer?** 
+Se espera que los profesionales tengan conocimientos de al menos uno de los lenguajes de programación backend comunes: PHP, Python, Ruby, Java, Net, JavaScript, Golang o Rust y conocimiento de bases de datos como MySQL, Postgress, MongoDB, Redis y Neo4j. Conocimiento de versionado de código (GIT) y pipelines de construcción CI/CD. También será importante tener conocimientos prácticos de HTML, JavaScript y CSS, aunque menos que para un puesto de desarrollador frontend. Los profesionales con una sólida experiencia laboral en este campo están muy demandados en el mercado laboral.  
+
+Es probable que la mayoría de los Backend Developers tengan una sólida formación académica, con una titulación en sectores como informática, matemáticas avanzadas, desarrollo de sitios web o programación informática. En algunos casos, también se espera que el candidato/a demuestre un buen dominio del lenguaje informático.
+
+### **Desarrollo profesional - ¿Cuál es el próximo paso de carrera para un Backend Developer?**  
+Algunas personas acceden a las posiciones de Backend Developer a través de su puesto de desarrollador frontend o programador informático. Después de haberse asentado, pueden convertirse en desarrolladores sénior o superiores, así como en directores IT. Los niveles más avanzados de este puesto suelen involucrar una mayor gestión de equipos. 
+
+## **17.  ¿Qué es la metodología SCRUM y AGILE?**
+![Image](https://development.grupogaratu.com/wp-content/uploads/sites/3/2020/01/scrum-metodologia-agil-grupo-garatu.jpg)
+
+Scrum es un marco de gestión de proyectos de metodología ágil que ayuda a los equipos a estructurar y gestionar el trabajo mediante un conjunto de valores, principios y prácticas. Al igual que un equipo de rugby (de donde proviene su nombre) cuando entrena para un gran partido, scrum anima a los equipos a aprender a través de las experiencias, a autoorganizarse mientras aborda un problema y a reflexionar sobre sus victorias y derrotas para mejorar continuamente.
+
+Aunque son los equipos de desarrollo de software los que utilizan con mayor frecuencia este tipo de scrum, sus principios y lecciones se pueden aplicar a todo tipo de trabajo en equipo. Esta es una de las razones por las que es tan popular. Aunque se considera a menudo un marco de gestión de proyectos ágil, scrum incluye un conjunto de reuniones, herramientas y funciones que, de forma coordinada, ayudan a los equipos a estructurar y gestionar su trabajo.
+
+En este artículo, analizaremos cómo se compone un marco de trabajo tradicional de scrum con la ayuda de la [guía de scrum](https://scrumguides.org/) y David West, director ejecutivo de Scrum.org. También incluiremos ejemplos de cómo nuestros clientes se desvían de estos principios para satisfacer sus necesidades específicas. Para ello, nuestra propia Megan Cook, gestora de productos de grupo para Jira Software y anteriormente orientadora ágil, proporcionará consejos y trucos en la serie de vídeos de orientador ágil:
+
+![Image](https://www.prozessgroup.com/wp-content/uploads/2016/10/ProcesosScrumPost.jpg)
+
+### **¿En qué consiste Scrum?**
+Scrum es un marco de administración que los equipos utilizan para organizarse por cuenta propia y trabajar en aras de alcanzar un objetivo común. Describe un conjunto de reuniones, herramientas y funciones para entregar proyectos de forma eficiente. Al igual que un equipo deportivo que practica para un importante partido, las prácticas de Scrum permiten a los equipos de trabajo gestionarse por cuenta propia, aprender a partir de la experiencia y adaptarse al cambio. Los equipos de software utilizan Scrum para resolver problemas complejos de forma rentable y sostenible. 
+
+### **¿En qué consiste la metodología de Scrum?**
+La metodología de Scrum se caracteriza por ciertos principios y valores: 
+
+### **Principios de Scrum para el éxito de los proyectos**
+**Transparencia**
+
+Los equipos trabajan en un entorno en el que todos son conscientes de los retos que pueden experimentar los demás. Las conversaciones periódicas cara a cara entre los miembros del equipo interdisciplinario y los propietarios del proyecto evitan la falta de comunicación y los cuellos de botella de la información.
+
+**Reflexión**
+
+Se incorporan puntos de reflexión frecuentes en el marco para permitir a los miembros del equipo revisar los avances logrados. Los gerentes de proyecto utilizan la información adquirida en estas reuniones de revisión para las estimaciones y la planificación de cara al futuro. Como resultado, los proyectos se pueden llevar a cabo de forma más eficiente, dentro del presupuesto y en el plazo previsto.
+
+**Adaptación**
+
+Los miembros del equipo pueden volver a priorizar las tareas en función de los requisitos cambiantes de los clientes. Deciden qué tareas se completan primero y cuáles se retoman en el futuro.
+
+### **Valores de Scrum para los equipos de trabajo de los proyectos**
+Los equipos de trabajo de Scrum siguen cinco valores fundamentales.
+
+**Compromiso**
+
+Los miembros del equipo de Scrum están comprometidos con las tareas y los objetivos basados en el tiempo y se dedican a la mejora continua para encontrar la mejor solución.
+
+**Valentía**
+
+Los equipos Scrum demuestran valentía al formular preguntas abiertas y que suponen un reto. Mantienen conversaciones honestas y transparentes para encontrar la mejor solución.
+
+**Concentración**
+
+Durante un periodo determinado, los miembros del equipo trabajarán a partir de las tareas del Product Backlog. Se centrarán en las tareas seleccionadas para proporcionar resultados en un plazo limitado.
+
+**Actitud receptiva**
+
+Los miembros del equipo de Scrum se muestran receptivos a las nuevas ideas y oportunidades que apoyan el aprendizaje individual y la calidad general del proyecto.
+
+**Respeto**
+
+Los miembros del equipo de trabajo respetan a los directores del proyecto, a los demás y al proceso Scrum. Esta cultura basada en el respeto crea un espíritu de colaboración y cooperación mutua dentro del equipo de trabajo.
+
+### **¿Cómo funciona Scrum?**
+Scrum es un marco de trabajo que resulta fácil de aprender, pero es difícil convertirse en un experto. Los cocreadores de Scrum, Jeff Sutherland y Ken Schwaber, han explicado los conceptos subyacentes en The Scrum Guide. La guía ofrece una visión detallada de los procesos de Scrum y de cómo aplicarlos eficazmente.
+
+La esencia de Scrum es un equipo organizado por cuenta propia que aporta valor al cliente en un período limitado conocido como Sprint. Scrum define los artefactos, los roles y los eventos asociados a cada Sprint. A continuación, examinaremos cada uno de estos aspectos en detalle.
+
+### **¿Qué son los artefactos de Scrum?**
+Los equipos de trabajo de Scrum utilizan herramientas denominadas artefactos de Scrum para resolver problemas y administrar los proyectos. Los artefactos de Scrum proporcionan información crítica de planificación y sobre la tarea tanto a los miembros del equipo de trabajo como a las partes interesadas. Estos son los tres principales artefactos:
+
+**Product Backlog**
+
+Product Backlog se refiere a una lista dinámica de características, requisitos, mejoras y arreglos que se deben completar para que el proyecto tenga éxito. Consiste básicamente en la lista de quehaceres del equipo, que se revisa constantemente para ajustar las prioridades y adaptarse a los cambios que se producen en el mercado. El propietario del producto es quien mantiene y actualiza la lista. Está encargado de eliminar los elementos irrelevantes o de agregar nuevas solicitudes realizadas por los clientes.
+
+**Sprint Backlog**
+
+Sprint Backlog se refiere a una lista de los elementos que el equipo de desarrollo debe completar durante el ciclo Sprint en curso. Antes de cada Sprint, el equipo escoge en qué elementos trabajará a partir del Product Backlog. Un Sprint Backlog es flexible y puede evolucionar durante un Sprint.
+
+**Incremento**
+
+Un Incremento se refiere a un avance hacia la consecución de un logro o una visión. Es el producto final y utilizable que surge a partir de un Sprint. Los equipos pueden adoptar diferentes métodos para definir y demostrar los objetivos del Sprint. A pesar de la flexibilidad, el objetivo fundamental del Sprint, lo que el equipo desea alcanzar a partir del Sprint en curso, no puede verse comprometido.
+
+Por ejemplo, algunos equipos de trabajo optan por lanzar algo para los clientes al final del Sprint, por lo que el objetivo del Sprint se consideraría alcanzado una vez que se publique el cambio de software. Otros equipos quizá trabajen en función de completar un conjunto de características para lanzar conjuntamente. En este caso, el objetivo del Sprint se consideraría alcanzado una vez se pruebe una característica con éxito. 
+
+### **¿En qué consisten los roles de Scrum?**
+Un equipo de trabajo de Scrum necesita tres roles específicos: un propietario de producto, un líder de Scrum y un equipo de desarrollo.
+
+**Propietario de producto**
+
+El propietario de producto se concentra en garantizar que el equipo de desarrollo proporcione el mayor valor al negocio. Comprende y prioriza las necesidades cambiantes de los usuarios finales y de los clientes. Los propietarios de producto exitosos trabajan así:
+
+* Suministran al equipo de trabajo orientación clara sobre qué características se deben entregar a continuación.
+* Tienden un puente entre lo que desea el negocio y lo que el equipo de trabajo entiende.
+* Deciden en qué momento y con qué frecuencia realizar los lanzamientos.
+
+**Líder de Scrum**
+
+Los líderes de Scrum se encargan de velar por la metodología Scrum dentro de los equipos de trabajo. Son responsables por la efectividad del equipo de Scrum. Forman a los equipos, a los propietarios de los productos y al negocio para mejorar los procesos de Scrum y optimizar la entrega. Los líderes de Scrum también tienen las siguientes responsabilidades:
+ 
+* Programar los recursos necesarios para cada Sprint.
+* Organizar otros eventos del Sprint y las reuniones del equipo de trabajo.
+* Liderar la transformación digital dentro del equipo de trabajo.
+* Organizar las formaciones dirigidas al equipo al adoptar nuevas tecnologías.
+* Comunicarse con grupos externos para resolver cualquier reto al que se enfrente el equipo en su conjunto.
+
+**Equipo de desarrollo de Scrum**
+
+El equipo de Scrum está formado por personas que realizan pruebas, diseñadores, especialistas en la experiencia del usuario, ingenieros de operaciones y desarrolladores. Los miembros del equipo cuentan con habilidades diferentes y se entrenan entre sí de modo que ninguna persona se convierta en un cuello de botella para la entrega del trabajo. 
+
+Jeff Bezos, fundador de Amazon, recomienda la regla de las dos pizzas al tomar una decisión para determinar el tamaño del equipo: el equipo debe ser lo suficientemente pequeño como para compartir dos pizzas. 
+
+Los equipos de desarrollo de Scrum se ocupan de lo siguiente:
+
+* Trabajar de forma colaborativa para garantizar que el Sprint se complete con éxito.
+* Promover prácticas de desarrollo sostenible.
+* Organizarse por cuenta propia y abordar los proyectos con una actitud fraternal y solidaria evidente.
+* Controlar la planificación y estimar qué tanto trabajo se requiere para completar con éxito cada Sprint.
+
+**¿En qué consisten los eventos de Scrum?**
+
+Los eventos o las ceremonias de Scrum son un conjunto de reuniones secuenciales que los equipos de Scrum sostienen periódicamente. Estos son algunos de los eventos de Scrum:
+
+**Planificación del Sprint**
+
+Durante este evento, el equipo estima el trabajo que se debe completar durante el siguiente Sprint. Los miembros definen los objetivos del Sprint, que a su vez deben ser específicos, medibles y viables. Tras la reunión de planificación, cada miembro del equipo de Scrum debe comprender cómo se puede entregar cada incremento durante el Sprint.
+
+**Sprint**
+
+Sprint se refiere al periodo durante el cual el equipo de Scrum trabaja conjuntamente para la consecución de un incremento. Habitualmente un Sprint dura dos semanas. Sin embargo, puede variar en función de las necesidades del proyecto y del equipo. Entre más complejo sea el trabajo y más factores desconocidos haya, el periodo del Sprint debe ser más corto.
+
+**Reunión de pie o diaria de Scrum**
+
+La reunión diaria de Scrum es una sesión breve en la que los miembros del equipo se reportan y planifican el día. Informan sobre el trabajo concluido y expresan cualquier desafío para alcanzar los objetivos del Sprint. Se conoce como reunión de pie porque se busca que esta sea lo más breve posible, como cuando todos están de pie.
+
+**Revisión del Sprint**
+
+Al finalizar el Sprint, el equipo se reúne en el marco de una sesión informal para revisar el trabajo concluido y exponerlo ante las partes interesadas. Es posible que el propietario de producto también ajuste el Product Backlog en función del Sprint en curso.
+
+**Retrospectiva del Sprint**
+
+El equipo de trabajo se reúne para documentar y hablar sobre qué funcionó y qué no durante el Sprint. Las ideas generadas se utilizan para mejorar los próximos Sprints.
+
+### **¿Por qué la metodología Scrum es importante para el desarrollo de software?**
+
+Equipos de toda clase, como los de recursos humanos, marketing y diseño utilizan Scrum de manera eficaz. Sin embargo, Scrum es más común en los equipos de desarrollo de software y de ingeniería. Permite a los equipos responder de forma más rápida ante los requisitos cambiantes, sin permitir que los costos o los presupuestos se desborden. La metodología es importante debido a los siguientes motivos:
+
+**Capacidad de mantener la calidad en situaciones que plantean desafíos**
+
+Hay comprobaciones para garantizar la calidad integradas en el marco de Scrum. Los equipos definen los requisitos al inicio de cada Sprint. Los equipos también evalúan de forma integral el software o el ciclo de vida del producto al establecer una visión de equipo basada en la capacidad de hacer. Esto implica que los requisitos se mantienen relevantes y viables durante un periodo breve. La retroalimentación periódica por parte del propietario del producto y las revisiones de Sprint permiten la mejora continua del equipo durante el transcurso del proyecto. 
+
+**Un mayor rendimiento de la inversión**
+
+Los equipos de Scrum priorizan los requerimientos en función del valor para el cliente y los análisis de riesgos. Se enfocan en desarrollar un producto funcional inicial que se pueda lanzar al mercado para obtener comentarios por parte de los clientes en una fase temprana. El desarrollo de Scrum se caracteriza por menos defectos costosos, la eficiencia del equipo y un enfoque de errores rápidos que ahorra dinero a largo plazo. 
+
+**Equipos más felices y productivos**
+
+Las estructuras de equipos que se organizan y administran por cuenta propia permiten a los miembros ser más creativos e innovadores. Los miembros cuentan con la flexibilidad de organizar el trabajo según sus estilos de trabajo, personalidades y metas de vida individuales. Trabajar en equipos interdisciplinarios permite a los miembros aprender nuevas habilidades y guiarse entre sí. Como resultado, Scrum crea un entorno de apoyo y confianza, en el que se aumenta la moral y la motivación en general de los individuos. 
+
+**Métricas relevantes que mejoran las estimaciones**
+
+Los equipos de Scrum eligen sus propias métricas para medir el desempeño del proyecto. Estiman los plazos, los presupuestos y las métricas de calidad en función de su experiencia y capacidades. El propietario del producto tiene el control porque las estimaciones son relativas. Los equipos obtienen más apoyo al comienzo del proyecto y naturalmente adquieren agilidad con el paso del tiempo. Las partes interesadas en el proyecto revisan los productos funcionales y proporcionan comentarios periódicos para garantizar que el proyecto se mantenga enfocado.
+
+![Image](https://www.tithink.com/wp-content/uploads/2018/10/flujo-metodologia-agil-proyecto-tecnologico-tithink.jpg)
+
+
+La metodología Agile es un enfoque para la gestión de proyectos que utiliza cuatro pilares clave y 12 principios Agile para organizar los proyectos. A continuación, hacemos una descripción general de la metodología Agile sobre todo lo que necesitas saber acerca de este enfoque.
+
+Los cuatro pilares clave del libro Manifiesto Agile están diseñados para valorar:
+
+1. Personas e interacciones por encima de herramientas y procesos
+2. Software funcional por encima de documentación exhaustiva
+3. Colaboración con el cliente por encima de negociación contractual
+4. Respuesta ante el cambio por encima de seguir un plan
+
+Para definir Agile, el método se basa en el concepto de olas continuas o sprints de planificación y ejecución de proyectos, lo que te permite adaptar y desarrollar continuamente tu plan, alcance y diseño a lo largo del proyecto. 
+
+De acuerdo con la definición de metodología Agile, los proyectos Agile requieren un enfoque iterativo, que admite entregas incrementales, frecuentes y coherentes de productos funcionales a tu cliente. Este enfoque innovador garantiza que tu equipo de proyecto pueda entregar productos concretos de manera coherente sin retrasarse por los cambios y los requisitos cambiantes.  
+
+Agile tiene un alto nivel de participación del cliente e incluye revisiones frecuentes del progreso tanto con el equipo del proyecto como con el cliente. 
+
+Hay varios marcos diferentes que se pueden utilizar para ejecutar un proyecto Agile. Algunos de los marcos más populares incluyen:
+
+* Scrum
+* Kanban
+* Extreme Programming
+* DSDM
+
+### **Los 12 principios Agile**
+
+El Manifiesto Agile para el desarrollo de software describe los 12 principios de Agile que deben seguir todos los proyectos. Estos son: 
+
+1. **Nuestra máxima prioridad es satisfacer al cliente a través de la entrega anticipada y continua de software valioso**
+
+El primer principio de la metodología Agile establece que los clientes deben recibir entregas o iteraciones del proyecto en intervalos regulares a lo largo del ciclo de vida de su proyecto, en lugar de solo una entrega del producto al final.  
+
+2. **Aprecia los requisitos cambiantes, incluso al final del desarrollo.**
+
+Los procesos Agile aprovechan el cambio para la ventaja competitiva del cliente. Uno de los problemas que los autores del Manifiesto encontraron con la gestión tradicional de proyectos es que era difícil complacer las solicitudes de cambio de última hora del cliente. Este principio garantiza que los proyectos Agile tengan la capacidad de adaptarse a cualquier cambio, sin importar en qué momento haya que hacerlo, con un retraso mínimo.
+
+3. **Entrega de software funcional con frecuencia, desde un par de semanas hasta un par de meses, con preferencia por el plazo más corto.**
+
+Los proyectos Agile planean plazos de proyectos cortos y frecuentes que permiten una rápida entrega de productos funcionales. A menudo, los proyectos Agile se dividirán en sprints o intervalos de proyecto de 1 a 4 semanas y cada uno de ellos terminará con la entrega de un producto.
+
+4. **Los empresarios y desarrolladores deben trabajar juntos todos los días durante todo el proyecto.**
+
+Este principio de Agile establece que la comunicación regular con todas las partes interesadas es fundamental para el éxito del proyecto. Normalmente, esto implica una breve reunión diaria tanto con el equipo del proyecto como con otras partes interesadas clave.
+
+5. **Desarrolla proyectos en torno a personas motivadas. Bríndales el entorno y el apoyo que necesitan y confía en ellas para que hagan el trabajo.**
+
+Un concepto clave de la metodología de gestión de proyectos Agile es que hay que colocar a las personas adecuadas en los puestos idóneos y hay que darles la autonomía necesaria para hacer bien su trabajo.
+Es importante diseñar un equipo de proyecto basado en capacidades en lugar de en puestos de trabajo o cargos dentro de la empresa. El enfoque del gestor de proyectos debe centrarse en motivar al equipo del proyecto y apoyarlo, en lugar de microdirigirlo.
+
+6. **El método más eficiente y efectivo para transmitir información a un equipo de desarrollo y dentro de él es la conversación cara a cara.**
+
+Los creadores del Manifiesto Agile creen firmemente en la importancia de que los equipos y las partes interesadas se encuentren en el mismo lugar siempre que sea posible, ya que la comunicación cara a cara es más efectiva que otras opciones, como el correo electrónico o el teléfono. Si el equipo no puede estar en la misma ubicación, la videoconferencia es una opción que aún puede captar algunos de los mismos valores, como las señales no verbales.
+
+7. **El software funcional es la medida principal del progreso.El énfasis dentro de la metodología Agile se pone en proporcionar resultados completos y funcionales.**
+
+Esto siempre debe tener prioridad sobre cualquier requisito adicional, como la documentación del proyecto. Además, otras métricas, como las horas dedicadas o el tiempo transcurrido, no se consideran tan importantes como entregar productos funcionales. 
+
+8. **Los procesos Agile promueven el desarrollo sostenible. Los patrocinadores, desarrolladores y usuarios deben poder mantener un ritmo constante indefinidamente.** 
+
+De acuerdo con este principio, los proyectos Agile deben tener un ritmo constante para cada ciclo iterativo o sprint dentro del proyecto. Este desglose debería eliminar la necesidad de horas extra o plazos en caso de fallos, al tiempo que promueve la producción frecuente de productos funcionales. También debe crear un ciclo repetible que el equipo pueda seguir continuamente durante el tiempo que sea necesario. 
+
+9. **La atención continua a la excelencia técnica y al buen diseño mejora la agilidad.**
+
+Un enfoque principal de un proyecto Agile debería ser mejorar el producto final y lograr avances sistemáticamente a lo largo del tiempo. En otras palabras, cada iteración siempre debe ser una mejora con respecto a la anterior, y el equipo siempre debe buscar nuevas innovaciones.
+
+10. **La simplicidad, el arte de maximizar la cantidad de trabajo no realizado, es esencial.**
+
+El objetivo de un proyecto Agile es hacer lo suficiente para completar con éxito el proyecto encargado y cumplir con las especificaciones solicitadas. Ha de evitarse o eliminarse cualquier documentación, pasos, procesos o trabajo adicionales que no añadan valor al cliente o mejoren los resultados del proyecto. 
+
+11. **Las mejores arquitecturas, requisitos y diseños surgen de equipos autoorganizados.**
+
+Agile se basa en la creencia de que se requieren equipos motivados, autónomos y cualificados para ofrecer los mejores resultados y productos. Los equipos deben estar capacitados para organizarse y estructurarse según sea necesario. Deben tener la libertad de colaborar e innovar como mejor les parezca, sin verse obstaculizados por demasiada supervisión. 
+
+12. **A intervalos regulares, el equipo reflexiona sobre cómo ser más efectivo, luego sintoniza y ajusta su comportamiento en consecuencia.**
+
+Un equipo exitoso y motivado requiere un fuerte enfoque en cómo puede potenciar sus habilidades y procesos para crecer y mejorar continuamente. El equipo debe tener revisiones periódicas sobre su rendimiento y resultados, incluida una conversación sobre cómo puede mejorar a medida que avanza.
+
+### **Ventajas de la gestión de proyectos Agile**
+
+Las ventajas de la gestión de proyectos Agile son muchas, particularmente para las siguientes organizaciones y tipos de proyectos:
+
+* Cualquier proyecto que evolucione con el tiempo o que no tenga un alcance y requisitos claros al principio.
+* Organizaciones que trabajan en un entorno que cambia rápidamente, como la tecnología. 
+* Organizaciones que necesitan trabajar estrechamente con sus clientes y otras partes externas durante la vida del proyecto.
+* Empresas que hacen hincapié en la mejora de procesos y productos y buscan constantemente innovar. 
+* Proyectos que tienen muchas tareas interdependientes, donde el equipo necesita trabajar en estrecha colaboración y comunicarse con frecuencia para garantizar el éxito. 
+* Empresas que necesitan crear un prototipo antes de generar el resultado final del proyecto. 
+* Proyectos que requieren comentarios rápidos de las partes interesadas sobre cada iteración del producto antes de pasar a la siguiente versión o borrador.
+
+### **A continuación, enumeramos las cinco ventajas principales de adoptar un método Agile:**
+
+1. **Contacto continuo con el cliente**
+
+En los métodos tradicionales de gestión de proyectos, el equipo del proyecto normalmente solo estaba en contacto con el cliente al principio y al final del proyecto, lo que implicaba que si los requisitos o expectativas del cliente no se captaron correctamente al principio, o cambiaron con el tiempo, el equipo del proyecto no se enteraba hasta que era demasiado tarde. Con Agile, hay un contacto continuo durante todo el proceso y entregas iterativas para garantizar que tu equipo va por buen camino, por lo que el producto final será exactamente lo que el cliente quiere.  
+
+2. **Capacidad de adaptarse**
+    
+¿Qué sucede si tu cliente te dijo a mitad de un proyecto que necesitaba un cambio de alcance? Utilizando un enfoque tradicional para la gestión de proyectos, no se pudo llevar a cabo o probablemente implicó aumentos significativos tanto de coste como de tiempo del proyecto. Con Agile, los cambios se pueden incorporar con un mínimo esfuerzo, sin importar lo avanzado que vaya tu equipo con el proyecto, ya que se pueden añadir fácilmente a la siguiente iteración.   
+
+3. **Entrega más rápida**
+   
+Agile incorpora un enfoque de desarrollo continuo que garantiza que tu equipo entregue constantemente productos funcionales. Esto significa que en lugar de esperar de 6 a 12 meses o más por un producto final, tu cliente obtiene una versión funcional del producto a intervalos mucho más cortos, generalmente cada 2 a 4 semanas. 
+
+4. **Menor riesgo del proyecto**
+
+Dado que tu equipo desarrolla versiones del producto con frecuencia y recibe comentarios de los clientes desde el principio, se minimiza el riesgo de que falle un proyecto. Al dividir un proyecto grande en iteraciones, su riesgo también se reduce al fracaso de una iteración o borrador solamente. Es más probable que encuentres pronto problemas pequeños, que pueden abordarse fácilmente, en lugar de descubrir un problema importante ya en el momento de la última prueba antes de la entrega final. Esto significa que habrás invertido menos tiempo y dinero cuando se descubra un problema o el proyecto deba cancelarse. 
+
+5. **Innovación continua**
+
+Agile apoya la colaboración y la mejora continua, lo que puede conducir a la innovación y al desarrollo de nuevos productos y funciones. Al encontrarse los equipos en la misma ubicación y tener reuniones diarias, se apoyan las sesiones de intercambio y generación de ideas. Agile respalda una «meritocracia de ideas» donde triunfa la mejor idea, sin importar quién la sugiera. El equipo del proyecto, otras partes interesadas y el cliente pueden determinar las funciones y las características juntos como un equipo. 
+
+### **Cuándo no usar el método de gestión de proyectos Agile**
+
+A pesar de los muchos beneficios de Agile, la metodología no es para todos los proyectos u organizaciones. Pero, ¿cómo saber cuándo no utilizar el método de gestión de proyectos Agile y cuáles son las ventajas y desventajas de la metodología Agile?
+
+### **A continuación, exponemos cuatro ocasiones en las que la metodología de desarrollo Agile no es la mejor opción:**
+El resultado del proyecto es estable y se comprende adecuadamente. 
+Agile tiene por objeto ayudar a reducir el coste del cambio y la incertidumbre en un proyecto al dividirlo en etapas iterativas de gestión de proyectos. Sin embargo, si hay muy poca incertidumbre y una mínima posibilidad de cambios, puede que Agile no sea el enfoque más efectivo. Por ejemplo, si trabajas en una industria con fuertes regulaciones o donde ya se conocen muchos de los requisitos del proyecto, entonces no necesitas planificación iterativa y varios borradores.   
+
+Tu proyecto debe producir una entrega repetible. 
+Por definición, un proyecto es «un esfuerzo temporal con un principio y un final, y debe usarse para crear un producto, servicio o resultado único». Pero, ¿qué sucede si un cliente te pide que construyas cinco casas idénticas y tú decides crear un proyecto independiente y formar un equipo de proyecto para cada una? Con Agile, esto podría dar lugar a cinco casas únicas en lugar de a cinco idénticas. Una de las desventajas de Agile es que no está diseñado para la reproducibilidad. 
+
+Tu cliente no quiere Agile.  
+Un proyecto Agile requiere un contacto continuo con el cliente final. Sin embargo, puede que algunos clientes no tengan el tiempo, la capacidad o el deseo de dedicarse a un proyecto. Si el proyecto se considera de bajo valor o de bajo riesgo, pueden preferir un enfoque más tradicional en el que solo se los involucre en las fases clave o la entrega final. 
+
+Tu empresa no puede respaldar Agile.  
+Si tu empresa o equipo de proyecto no está listo, intentar adoptar el ciclo de desarrollo Agile puede presentar riesgos para tu proyecto. 
+
+Estos son cinco indicadores de que tu empresa no está lista para usar Agile:
+
+Agile no se entiende bien. Si tu equipo y tu empresa no tienen formación en Agile o una comprensión sólida de sus principios, prácticas y marcos, no están listos para usar esta metodología. 
+Las partes interesadas clave son reticentes. Ya sea el patrocinador de tu proyecto o un miembro clave del equipo, si alguien se resiste a adoptar Agile, tendrás que resolver el problema antes de poder adoptar con éxito la metodología. 
+Tu organización no puede respaldar la colaboración diaria. Si existen barreras importantes para la comunicación diaria y la colaboración abierta entre los miembros del equipo, puede que Agile no sea el mejor enfoque. 
+La estructura de la empresa no puede respaldar equipos interfuncionales. En un proyecto Agile, las personas de muchas funciones diferentes necesitan reunirse, comunicarse y colaborar durante todo el ciclo de vida del proyecto. Si en tu empresa las funciones están aisladas, puede que esto no sea realista.  
+Tu organización requiere grandes cantidades de documentación. Si tu empresa requiere mucha documentación e informes de prueba, puede que adoptar Agile sea demasiado costoso. Uno de los 12 principios de Agile se basa en la reducción de informes de proyectos, matrices de trazabilidad de requisitos.
+
+## **18.  ¿Qué es TESTING?**
+![Image](https://www.adictosaltrabajo.com/wp-content/uploads/2019/12/testing-en-un-mundo-agile.png)
+
+El testing de [software o software QA](https://profile.es/blog/qa-en-el-desarrollo-de-software/), **es un proceso para verificar y validar la funcionalidad de un programa o una aplicación de software** con el objetivo de garantizar que el producto de software esté libre de defectos. La intención final es que coincida con los requisitos esperados para entregar un  producto de calidad. Implica la ejecución de componentes de software o sistema utilizando herramientas manuales o automatizadas para evaluar una o más propiedades de interés.
+
+El testing de **software es un proceso paralelo al [desarrollo de software](https://profile.es/creamos-soluciones-digitales/custom-development/)** cuyas tareas deben ir realizándose a medida que se construye el producto para evitar problemas en la funcionalidad de manera previa a su lanzamiento.
+
+### **¿Por qué es importante el software testing?**
+Las pruebas de software son importantes porque **permiten identificar** de manera temprana si hay **algún problema** en el software, facilitando su resolución antes de la entrega del producto. Un producto de software debidamente probado garantiza calidad, seguridad, confiabilidad y alto rendimiento, además de otros beneficios como ahorro de tiempo, seguridad y satisfacción del cliente.
+
+### **Objetivos del testing de software**
+* Detectar y corregir errores.
+* Proporcionar calidad y confiabilidad del software.
+* Asegurar la correcta funcionalidad del producto.
+* Evitar futuros errores.
+* Facilitar  la toma de decisiones para pasar a producción los desarrollos que no contengan errores.
+* Cumplir con los requisitos del negocio y satisfacción del usuario.
+* Evitar la aparición de nuevos defectos en el futuro que puedan afectar al software.
+### **Tipos de pruebas**
+Las pruebas de software se clasifican generalmente en dos categorías principales: **pruebas funcionales y pruebas no funcionales**. También, existe un tercer tipo de prueba llamada prueba de mantenimiento.
+
+* **Pruebas funcionales**: Verifican cada función de una aplicación o software, su funcionalidad con un conjunto específico de requisitos.
+* **Pruebas no funcionales o pruebas de rendimiento**: Consideran parámetros como la confiabilidad, la usabilidad y el rendimiento.
+* Mantenimiento (regresión y mantenimiento).
+
+![Image](https://profile.es/wp-content/media/Tipos-de-Pruebas-de-software-1-1024x578.png)
+
+### **Pruebas funcionales**:
+* **[Pruebas unitarias (Unit testing)](https://profile.es/blog/pruebas-unitarias-con-junit/)**: Es una forma de probar una unidad o fragmento de código más pequeño que se puede aislar lógicamente en un sistema.
+
+* **Pruebas de integración (Integration testing)**: Prueban la integración o interfaces entre componentes, interacciones con diferentes partes del sistema, como sistema de archivos y hardware, sistema operativo,o interfaces entre sistemas.
+
+* **Pruebas de sistema (System testing)**: Se evalúa cómo los diferentes componentes de una aplicación interactúan juntos en el sistema o aplicación completa e integrada.
+
+* **Pruebas de sanidad (Sanity testing)**: Se trata de una prueba rápida y básica para determinar si se comporta correctamente una aplicación o componente en particular.
+
+* **Pruebas de humo (Smoke testing)**: Es el proceso de prueba inicial que verifica la funcionalidad principal de un programa para garantizar que esté listo para más pruebas. 
+
+* **Pruebas de interfaz (Interface testing)**: Verifica la comunicación entre dos sistemas de software diferentes comprobando la autenticación de la conexión establecida.
+
+* **Pruebas de regresión (Regression testing)**: Garantiza que una aplicación siga funcionando según lo esperado después de producirse alguna actualización, cambio o mejora de código.
+
+* **Pruebas de aceptación (Beta/acceptance testing)**: se realiza en un producto o prototipo antes de su comercialización o entrega, para decidir si se han cumplido las especificaciones o el contrato. Se asegura de que la calidad y el diseño del producto cumplan con los requisitos en términos de funcionalidad, usabilidad, durabilidad y seguridad.
+
+### **Pruebas no funcionales**:
+
+* **Pruebas de rendimiento (Permormance testing)**: Evalúa el rendimiento, la velocidad o capacidad de respuesta de la aplicación que se prueba bajo la carga de trabajo requerida.
+
+* **Prueba de carga (Load testing)**: Prueba el comportamiento de una aplicación bajo una gran carga de trabajo. 
+
+* **Pruebas de estrés (Stress Testing)**: Las pruebas de estrés determinan la solidez del software al evaluar el funcionamiento normal en condiciones de carga extremadamente pesada, garantizando así que el software no se bloquea en situaciones críticas.
+
+* **Pruebas de volumen (Volume Testing)**: Prueba el rendimiento del software cargando cuando procesa grandes volúmenes de datos.
+
+* **Pruebas de seguridad (Security Testing)**: Verifican si el sistema está protegido contra ataques repentinos o deliberados de fuentes internas y externas.
+
+* **Pruebas de compatibilidad (Compatibility Testing)**: Comprueban si la aplicación es compatible con diferentes entornos.
+
+* **Pruebas de instalación (Install Testing)**: Verifica si un software funciona según las expectativas después de la instalación.
+
+* **Pruebas de recuperación (Recovery Testing)**: Determina si un sistema puede recuperarse de fallas o no. 
+
+* **Pruebas de confiabilidad (Reliability Testing)**: Garantiza que el software funciona de manera consistente realizando una tarea sin fallar dentro un período específico.
+
+* **Pruebas de usabilidad (Usability Testing)**: Testean la facilidad de uso del usuario en términos de operación, aprendizaje y preparación de entradas y salidas.
+
+* **Pruebas de conformidad (Compliance Testing)**: Determina si un programa o sistema de software cumple con un conjunto definido de estándares internos o externos antes de su lanzamiento a producción.
+
+* **Pruebas de localización (Localization Testing)**: Verifican el comportamiento de un producto de acuerdo con los entornos locales o culturales específicos.
+
+## **19.  ¿Cuáles son los roles en el desarrollo de software?**
+
+Al igual que la construcción de una casa, un equipo de desarrollo de software tiene su propio conjunto de funciones que ayudan a que funcione sin problemas. Normalmente, estas funciones están ocupadas por profesionales experimentados con las habilidades y la personalidad necesarias para sobresalir en sus puestos.
+
+A continuación, identificaremos y describiremos las funciones más demandadas en los equipos de desarrollo de software para que pueda comprender mejor la dinámica en juego.
+
+He aquí las diez funciones de un equipo de desarrollo y sus principales responsabilidades:
+
+### **1. Jefe de proyecto**
+A veces llamado el "policía de tráfico", el gestor de proyectos se asegura de que el proyecto siga su curso y cumpla los plazos. Además, son ellos quienes distribuyen las tareas, organizan las funciones y actualizan el estado del proyecto para el cliente.
+
+Si busca un gestor de proyectos para su equipo, debe tener las siguientes aptitudes:
+
+* excelente comunicador
+* excelente capacidad de organización
+* manejar bien el estrés
+* preparado para retos inesperados
+### **2. Analista de negocio**
+El analista de negocio es responsable de entender las necesidades del cliente y traducir los requisitos de negocio para el equipo de desarrollo de software. En cierto modo, son el puente entre el cliente y el equipo.
+
+Algunas de las competencias que deben tener los analistas de negocio son:
+
+* comunicación clara
+* redacción técnica
+* análisis de datos
+* modelado
+
+### **3. Jefe de equipo**
+Antes de identificar a los miembros que construyen la arquitectura técnica y funcional de su software, hay que conocer primero al jefe del equipo.
+
+A veces llamado director técnico o director de desarrollo de software, esta función se asigna a uno de los desarrolladores, no necesariamente el mejor ni el más experimentado. Ayuda a reunir al equipo, ofrece orientación y garantiza la calidad del producto final.
+
+Esta persona debería incluirlas en su currículum:
+
+* dotes de liderazgo
+* experiencia en desarrollo de software
+* experiencia sobre el terreno
+### **4. Desarrolladores Full-stack**
+Ahora, llegamos al corazón de cualquier equipo de desarrollo de software: los desarrolladores de software. Empezaremos con desarrolladores full-stack porque son los que tienen un conocimiento exhaustivo del desarrollo tanto del front-end como del back-end.
+
+Hoy en día, se accede a la mayoría de las aplicaciones a través de dos métodos: el lado del cliente y el lado del servidor. Los desarrolladores Fullstack pueden codificar para ambos aspectos del software.
+
+Conocen la arquitectura del software, como bases de datos, servidores e integración en la nube para aplicaciones basadas en web y aplicaciones móviles.
+
+Además, deben saber lo siguiente:
+
+* lenguajes de programación back-end como Python, NodeJS, PHP
+* crear un servidor
+* optimizar las bases de datos
+* aprovechar las bibliotecas externas
+
+Básicamente, un desarrollador full-stack es un desarrollador integral. Pero si buscas a alguien con habilidades más especializadas, otros roles de desarrollador pueden satisfacer tus necesidades.
+
+### **5. Desarrolladores frontales**
+El miembro del equipo responsable de la apariencia del solución digital empresarial es el desarrollador del front-end. Todo con lo que el usuario interactúa en la pantalla, como los botones, enlaces, menús desplegables, texto e imágenes, lo aportan estos desarrolladores.
+
+Tus desarrolladores de front-end son los que crean el aspecto de tu software, así que es importante que colabores con ellos para conseguir las especificaciones que deseas. Con un solo vistazo, pueden identificar posibles problemas para los usuarios.
+
+En relación con esto, hacen recomendaciones firmes y soluciones codificadas para resolver probables problemas en el diseño. Poseen las siguientes competencias:
+
+* dominio de la programación HTML, CSS y Javascript
+* colaboración con analistas y diseñadores de experiencia de usuario
+* capacidad de codificar para distintos navegadores y dispositivos
+* producir imágenes de alta calidad
+
+Un desarrollador front-end es como un diseñador de interiores para un proyecto de desarrollo de software. Y si no estás satisfecho con el aspecto de tu software, probablemente sea el momento de consultar con un desarrollador front-end.
+
+### **6. Desarrolladores de back-end**
+Si los desarrolladores de front-end se encargan del diseño interior, los desarrolladores de back-end son los que construyen la casa. Son los programadores responsables de unir todas las piezas del proyecto y desarrollar la lógica empresarial y las capas de datos.
+
+Sin duda los querrá en su equipo de desarrollo, ya que garantizan que su soluciones de software para Startups pueden gestionar todas las solicitudes y datos de los usuarios. Además, mantienen tu tecnología en línea, se encargan de su mantenimiento y comprueban periódicamente las bases de datos en busca de errores.
+
+En comparación con otros miembros del equipo, utilizan lenguajes informáticos, herramientas y cualidades diferentes. Estas son las cualidades de un desarrollador back-end ideal:
+
+* dominio de lenguajes de programación del lado del servidor como PHP, Python, Java, Ruby y .NET (cualquiera que se aplique a un determinado producto digital)
+* dominio de bases de datos como MySQL, MongoDB y Cassandra
+* capacidad de codificar para distintas plataformas
+* una comprensión clara de los problemas de escalabilidad
+
+Poco a poco te vas acercando a la meta. La casa está casi terminada y lo único que necesita es que alguien se asegure de que sus ventanas, puertas y electrodomésticos funcionan bien.
+
+### **7. Diseñadores UI/UX**
+Un proyecto de desarrollo no sería nada sin los diseñadores de UI y UX. Son los miembros del equipo que se aseguran de que su producto digital no solo sea funcional, sino también fácil y agradable de usar.
+
+Los miembros del equipo de esta categoría suelen equivocarse al pensar que su papel se limita al diseño. Si bien es cierto que se encargan de la estética, la descripción de su trabajo es mucho más que eso. Han estudiado para entender cómo interactúan las personas con tecnología y qué hace que un producto sea fácil de usar.
+
+Aunque ambos forman parte integral de un producto digital, existe una diferencia significativa entre un diseñador de interfaz de usuario y un diseñador de experiencia del usuario.
+
+Un diseñador de interfaces de usuario (UI) se ocupa de:
+
+* el diseño gráfico de un sitio web o una aplicación
+* los tipos de letra, colores y botones
+* el aspecto general
+
+Un papel de diseñador de experiencia de usuario (UX) incluye:
+
+* la experiencia general de una persona al interactuar con su empresa
+* estudiar y comprender el comportamiento de los usuarios
+* analizar los datos para identificar áreas de mejora
+* encontrar soluciones para mejorar la experiencia del usuario
+### **8. Ingenieros de control de calidad**
+Como su nombre indica, un ingeniero de control de calidad es responsable de la calidad del software. Se asegura de que el producto no contenga errores ni fallos. Para ello, crean planes y casos de prueba, los ejecutan e informan de cualquier fallo al equipo de desarrollo.
+
+Se trata de un papel fundamental, ya que son ellos quienes pueden identificar los problemas que pueden encontrar los usuarios. Un proyecto de software no está completo hasta que Miembros del equipo de control de calidad aprobar el producto final.
+
+Para realizar pruebas de software, un ingeniero de control de calidad debe tener lo siguiente:
+
+* paciencia y atención al detalle
+* capacidad de análisis
+* un profundo conocimiento del proceso de desarrollo
+* familiaridad con los distintos tipos de pruebas (funcionales, no funcionales, de regresión, etc.)
+### **9. Arquitecto de software**
+Un arquitecto de software es la persona responsable de describir todo el sistema de arquitectura de un proyecto. Son como el plano de un proyecto de construcción porque dictan normas de codificación con herramientas y plataformas.
+
+Un perfecto arquitecto de software debe tener las siguientes responsabilidades:
+
+* crear un sistema de arquitectura completo
+* preparación de herramientas y plataformas
+* definición de normas de codificación
+* garantizar la escalabilidad del sistema
+* supervisar el proceso de desarrollo
+### **10. El Scrum Master**
+El Scrum Master es una de las funciones clave de la metodología Agile. Es el responsable de garantizar que el equipo se adhiere a los principios y prácticas Agile.
+
+El Scrum Master no es un jefe de proyecto en los equipos ágiles. Son más como un entrenador que facilita los equipos. No le dice al equipo qué hacer y cuándo hacerlo. En su lugar, facilitan la comunicación y la colaboración entre los miembros del equipo.
+
+## **Pasos para iniciar el proceso de desarrollo de software**
+Aunque no existe un equipo ni un flujo de trabajo perfectos que garanticen el éxito de un proyecto de desarrollo de software, hay ciertas medidas que pueden tomarse para aumentar las posibilidades de éxito.
+
+A continuación le indicamos cómo puede iniciar su proceso de desarrollo:
+### **1. Defina su proyecto**
+Tanto si quiere desarrollar un nuevo producto como mejorar uno ya existente, es importante tener una idea clara de lo que quiere conseguir. En la medida de lo posible, debe ponerlo por escrito.
+
+Debe responder a las preguntas:
+
+* ¿Cuál es el problema que intenta resolver?
+* ¿Quiénes son sus usuarios objetivo?
+* ¿Cuáles son sus objetivos empresariales?
+* ¿Qué características quiere incluir en el producto?
+### **2. Crear un prototipo**
+Una vez que tenga una idea clara de su producto de software, es hora de crear un prototipo. Esto le ayudará a visualizar cómo funcionará. La creación de prototipos también es una forma estupenda de obtener opiniones de los usuarios potenciales.
+
+### **3. Reúna a su equipo de desarrollo de software**
+Ahora que ya tiene un prototipo, es hora de encontrar personas cualificadas que desempeñen las funciones del equipo de desarrollo de software que hemos comentado antes. Normalmente, no se necesitan los 10 miembros de un equipo. Dependiendo del tamaño y el alcance de su proyecto, puede tener un equipo más pequeño con sólo las funciones esenciales.
+
+Estos son los tipos de equipos de desarrollo de software que puede reunir:
+
+* Equipo dedicado: se trata de un equipo de empleados a tiempo completo que se dedican a su proyecto.
+* Equipo ampliado: este equipo es una mezcla de sus empleados a tiempo completo y trabajadores a tiempo parcial o autónomos.
+* Equipo virtual: este equipo está compuesto por trabajadores a distancia.
+### **3 consejos para encontrar un equipo de desarrollo de software**
+Entonces, ¿cómo encontrar el equipo de desarrollo de software adecuado para su proyecto? Aquí tiene algunos consejos que pueden ayudarle:
+
+**Comience en su red**
+
+Nunca está de más empezar por su red personal y profesional. Si conoces a alguien que haya trabajado con un gran equipo de desarrollo de software, es un buen punto de partida.
+
+**Considere su cartera**
+
+Comprueba los proyectos complejos, las herramientas, los lenguajes de programación y los marcos de trabajo que han utilizado en sus antiguos proyectos. Esto te dará una idea de sus conocimientos técnicos y te permitirá saber si también pueden encargarse del tuyo.
+
+**Consultar directorios en línea**
+
+Si aún no sabe qué equipo de desarrollo contratar, puede consultar directorios en línea como Clutch y GoodFirms. En ellos encontrarás valoraciones y reseñas de clientes anteriores.
+
+## **20.  ¿Cuál es el camino que deseas seguir ¿Desarrollador FrontEnd o Desarrollador BackEnd?**
+
+## ***Deseo tomar el camino BackEnd.***
+
+![Imagen](https://ih1.redbubble.net/image.2918066447.7566/mp,504x498,matte,f8f8f8,t-pad,600x600,f8f8f8.jpg)
