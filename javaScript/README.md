@@ -130,7 +130,7 @@ Un framework sirve para acometer un proyecto en menos tiempo, y en el sector de 
 
 [**Framework**](https://www.edix.com/es/instituto/framework/)
 
-## 8. **¿Qué es una librería?**
+## **8. ¿Qué es una librería?**
 
 Las librerías o bibliotecas en programación son colecciones de código previamente escritos y que los desarrolladores importan o llaman para optimizar su trabajo, escribiendo menos líneas de código. Si entendemos que cada elemento que vemos en un sitio web debió ser previamente pensado y escrito por un desarrollador, se hace bastante lógico que tanto para ahorrar en presupuesto como para salud mental del mismo desarrollador, sea necesario buscar herramientas para optimizar las horas de trabajo. Por eso muchos programadores usan librerías para ayudarse a programar, importando código previamente escrito y reutilizándolo para agilizar el trabajo de desarrollo, porque las librerías puedan ser llamadas por distintos desarrollades para crear funcionalidades en distintos sitios web. 
 
@@ -139,7 +139,7 @@ Un ejemplo de librería conocida es [**normalize.css**](https://necolas.github.i
 [**¿Qué son las librerías en Programación?**](https://crony.io/blog/que-son-las-librerias)
 
 
-## 9. ¿Cuánto tiempo tarda una persona en aprender un lenguaje de programación?
+## **9. ¿Cuánto tiempo tarda una persona en aprender un lenguaje de programación?**
 
 No hay una respuesta definitiva a la pregunta de cuánto se tarda en aprender a programar. Cualquier número puede ser fácilmente cuestionado por los demás. Muchos elementos se tienen en cuenta cuando se empieza a aprender a programar. Algunas personas aprenden más rápido y otras simplemente usan mejores recursos que aceleran su proceso de aprendizaje, como los cursos de programación o tutoriales de expertos en YouTube, allí podrás ver un curso de programacion cuanto dura. En ocasiones, tú eres el único responsable de cuánto se tarda en aprender un lenguaje de programación.
 
@@ -156,7 +156,7 @@ Afortunadamente, hay otro método para aprender a programar que requiere mucho m
 
 [**¿Cuánto se tarda en aprender a programar?**](https://keepcoding.io/blog/cuanto-se-tarda-en-aprender-a-programar/)
 
-## 10. ¿Qué es un STACK en desarrollo?
+## **10. ¿Qué es un STACK en desarrollo?**
 
 ### Stacks de Desarrollo
 
@@ -190,14 +190,14 @@ LAMP es la primera opción en la que muchos piensan cuando se trata de desarroll
 
 [**Stacks de Desarrollo**](https://www.tecnologias-informacion.com/stacksdesarrollo.html#:~:text=Q%20u%C3%A9%20son%20los%20stacks%20de%20desarrollo%20Los,vuelven%20m%C3%A1s%20f%C3%A1ciles%20de%20descargar%20e%20implementar%20simult%C3%A1neamente.)
 
-## 11. ¿Cuáles son los lenguajes de programación más demandados en el mercado colombiano?
+## **11. ¿Cuáles son los lenguajes de programación más demandados en el mercado colombiano?**
 La lista la encabeza JavaScript. Seguido de HTML y CSS, Python, SQL, Java, Node.js, TypeScript, C#, C++ y PHP. Del resto de la lista, destacan principalmente los lenguajes relacionados con desarrollo web: JavaScript y su versión mejorada TypeScript, Node.js, también relacionado con JavaScript, HTML, CSS, SQL y PHP. Y en la parte de programación de software, destacan Python, C# y C++, de los que hable más arriba. El primero por su versatilidad y facilidad de uso en procesamiento y gestión de datos. Y los otros dos por las facilidades que da Microsoft para su utilización.
 
 [**Los lenguajes de programación más demandados en 2022**](https://hipertextual.com/2022/07/lenguajes-programacion-mas-demandados-2022)
 
 
 
-## 12. ¿Cuáles son los lenguajes de programación más demandados en el mercado Internacional?
+## **12. ¿Cuáles son los lenguajes de programación más demandados en el mercado Internacional?**
 
 ### 1. Phyton 
 Ampliametne utilizado en aplicacoines web, desarrollo de software, ciencia de datos y machine learnig, se puede ejecutar en muchas plataformas diferentes.
@@ -228,7 +228,7 @@ Desarrollado por Alan Cooper para Microsoft. Esta rientado a objetos. Después d
 
 
 [**Indicador de la popularidad de los lenguajes**](https://www.tiobe.com/tiobe-index/)
-## 13. ¿Cuánto puede ganar un desarrollador FrontEnd?
+## **13. ¿Cuánto puede ganar un desarrollador FrontEnd?**
 **Ciudades con los mejores sueldos para programadores Frontend en Colombia**
 
 
@@ -238,7 +238,7 @@ Desarrollado por Alan Cooper para Microsoft. Esta rientado a objetos. Después d
 
 [**Indeed**](https://co.indeed.com/career/programador-front-end/salaries)
 
-## 14. ¿Cuánto puede ganar un desarrollador BackEnd?
+## **14. ¿Cuánto puede ganar un desarrollador BackEnd?**
 **Ciudades con los mejores sueldos para programadores Backend en Colombia** 
 
 |   Medellín    |   Bogotá   |
@@ -246,7 +246,7 @@ Desarrollado por Alan Cooper para Microsoft. Esta rientado a objetos. Después d
 | $ 3.749.164   | $ 4.561.957|
 
 [**Indeed**](https://co.indeed.com/career/backend-developer/salaries/Medell%C3%ADn--Antioquia)
-## 15. ¿Cuáles son los requisitos para ser desarrollador FrontEnd?
+## **15. ¿Cuáles son los requisitos para ser desarrollador FrontEnd?**
 Todos los desarrolladores frontend deben tener conocimientos de HTML, CSS y JavaScript. Esos tres lenguajes son la base de casi todo lo que harás. También necesitarás otras habilidades, pero el mismo conjunto de habilidades requerido variará de un trabajo a otro.
 ### 1. HTML y CSS
 HTML y CSS van de la mano y son los componentes básicos del diseño de sitios web.
@@ -331,7 +331,7 @@ Git es el sistema de gestión de control de versiones más popular y será neces
   - [GitHub](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/installing-and-authenticating-to-github-desktop/installing-github-desktop)
 
 [**Kinsta**](https://kinsta.com/es/base-de-conocimiento/que-es-github/)
-## 16. ¿Cuáles son los requisitos para ser desarrollador BackEnd?
+## **16. ¿Cuáles son los requisitos para ser desarrollador BackEnd?**
 Cada trabajo de desarrollador backend requiere un conjunto de habilidades ligeramente diferente.
 
   - JavaScript
@@ -349,7 +349,7 @@ Cada trabajo de desarrollador backend requiere un conjunto de habilidades ligera
   - Habilidades de comunicación
 
 [**Kinsta**](https://kinsta.com/es/blog/desarrollador-de-backend/#habilidades-y-lenguajes-de-programacin-de-los-desarrolladores-backend)
-## 17. ¿Qué es la metodología SCRUM y AGILE?
+## **17. ¿Qué es la metodología SCRUM y AGILE?**
 ### Agile
 La metodología Agile es una práctica que ayuda a promover la iteración continua de desarrollo y testeo. Agile permite obtener una percepción dividida sobre el producto y pensarlo como construcciones más pequeñas. En esta metodología, las actividades de desarrollo y testeo son concurrentes, a diferencia de otras metodologías de desarrollo de software.
 
@@ -361,11 +361,11 @@ El marco Scrum generalmente debe enfrentarse al hecho de que los requerimientos 
 
 [**Agile vs Scrum**](https://robertotouza.com/agile/agile-vs-scrum/#:~:text=Scrum%20es%20un%20proceso%20de,hacia%20una%20meta%20bien%20definida.)
 
-## 18. ¿Qué es TESTING?
+## **18. ¿Qué es TESTING?**
 En el proceso de desarrollo de software es normal encontrar errores. Cuando esto sucede en la etapa de prueba de software, no supone un gran inconveniente. Continuar sin abordarlos puede generar problemas graves para todas las partes involucradas en el proceso de desarrollo del proyecto. El testing de software juega un papel fundamental y supone una garantía de calidad de suma importancia para cualquier empresa.
 
 [**Testing de software**](https://profile.es/blog/que-es-el-testing-de-software/)
-## 19. ¿Cuáles son los roles en el desarrollo de software? 
+## **19. ¿Cuáles son los roles en el desarrollo de software?**
 Se necesitan más que desarrolladores e ingenieros para formar un equipo de desarrollo de software eficaz. Se necesitan muchos roles en el ciclo de vida del desarrollo de software, y el equipo ideal está formado por los siguientes roles:
 
   - Dueño del producto
@@ -376,7 +376,7 @@ Se necesitan más que desarrolladores e ingenieros para formar un equipo de desa
   - Lider de equipo y de tercnología
   - Scrum master 
 [**Roles de un equipo de desarrollo de software**](https://projectcor.com/es/blog/roles-fundamentales-en-un-equipo-de-desarrollo-de-software/)
-## 20. ¿Cuál es el camino que deseas seguir? ¿Desarrollador FrontEnd o Desarrollador BackEnd?
+## **20. ¿Cuál es el camino que deseas seguir? ¿Desarrollador FrontEnd o Desarrollador BackEnd?**
     
 **Desarrollador BackEn**
 <div/>
